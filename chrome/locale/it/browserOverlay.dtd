@@ -1,0 +1,41 @@
+<!ENTITY downloadbar.lnch "Esegui">
+<!ENTITY downloadbar.shwfl "Mostra file">
+<!ENTITY downloadbar.shwmngr "Download Manager">
+<!ENTITY downloadbar.cncl "Annulla">
+<!ENTITY downloadbar.pause "Arresta temporaneamente">
+<!ENTITY downloadbar.strt "Avvia">
+<!ENTITY downloadbar.clr "Svuota">
+<!ENTITY downloadbar.clsbr "Chiudi la barra">
+<!ENTITY downloadbar.clrlldwnlds "Svuota la barra da tutti i download">
+<!ENTITY downloadbar.pslldwnlds "Arresta temporaneamente tutti i download">
+<!ENTITY downloadbar.rsmlldwnlds "Riprendi tutti i download">
+<!ENTITY downloadbar.cncllldwnlds "Annulla tutti i download">
+<!ENTITY downloadbar.dwnlds "Download">
+<!ENTITY downloadbar.vrscn "Scansione anti-malware">
+<!ENTITY downloadbar.dltfl "Cancella file">
+<!ENTITY downloadbar.rnm "Rinomina">
+<!ENTITY downloadbar.clrll "Svuota la barra di tutto">
+<!ENTITY downloadbar.pndwnldtb "Apri la scheda dei download">
+<!ENTITY downloadbar.shwlldwnldshstry "Mostra la cronologia dei download">
+<!ENTITY downloadbar.gtdwnlpg "Va alla pagina di download">
+<!ENTITY downloadbar.cpydwnldlnk "Copia il link al download">
+<!ENTITY downloadbar.ptns "Opzioni">
+<!ENTITY downloadbar.src "Sorgente">
+<!ENTITY downloadbar.trgt "Destinazione">
+<!ENTITY downloadbar.crrntspd "Velocità istantanea">
+<!ENTITY downloadbar.vrgspd "Velocità media">
+<!ENTITY downloadbar.prgrs "Percentuale di avanzamento">
+<!ENTITY downloadbar.rmngtm "Tempo rimanente">
+<!ENTITY downloadbar.dwnldbyt "Scaricamento">
+<!ENTITY downloadbar.flsz "Dimensioni file">
+<!ENTITY downloadbar.dwnldtm "Tempo di scaricamento">
+<!ENTITY downloadbar.resume "Riprendi scaricamento">
+<!ENTITY downloadbar.sttstcs "Statistiche">
+<!ENTITY downloadbar.chksm "Codice di controllo">
+<!ENTITY downloadbar.cpy "Copia">
+<!ENTITY downloadbar.hlp "Aiuto">
+<!ENTITY downloadbar.md5hsh "Hash MD5">
+<!ENTITY downloadbar.sendto "Invia a">
+<!ENTITY downloadbar.desktopfolder "Desktop">
+<!ENTITY downloadbar.downloadsfolder "Cartella Download">
+<!ENTITY downloadbar.customfolder "Cartella personalizzata">

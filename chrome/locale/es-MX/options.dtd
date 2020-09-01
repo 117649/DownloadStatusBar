@@ -1,0 +1,62 @@
+<!ENTITY downloadbaropt.ptns "Opciones">
+<!ENTITY downloadbaropt.clrrftrlnch "Quitar el elemento descargado después de ejecutarlo/abrirlo">
+<!ENTITY downloadbaropt.clrrftrshw "Quitar el elemento descargado después de mostrar su ubicación">
+<!ENTITY downloadbaropt.shwddbbrbttn "Mostrar botón en la barra de complementos">
+<!ENTITY downloadbaropt.attclswhndlcmp "Cerrar automáticamente la Barra de descargas cuando se hayan completado todas las descargas">
+<!ENTITY downloadbaropt.pnftrdwncmp "Abrir automáticamente la carpeta de destino cuando se complete una descarga">
+<!ENTITY downloadbaropt.clr "Colores">
+<!ENTITY downloadbaropt.dwnprgrssclr "Color para progreso de la descarga">
+<!ENTITY downloadbaropt.dwntxtclr "Color para el texto de la descarga">
+<!ENTITY downloadbaropt.dwncmpltclr "Color para las descargas completadas">
+<!ENTITY downloadbaropt.dwnldpsclr "Color para las descargas pausadas">
+<!ENTITY downloadbaropt.brbckgrndclr "Color de fondo para la barra">
+<!ENTITY downloadbaropt.vrscn "Análisis de virus">
+<!ENTITY downloadbaropt.vrscnnrpth "Ruta del anti-virus">
+<!ENTITY downloadbaropt.vrscnlct "Localizar">
+<!ENTITY downloadbaropt.dsbscnfltyps "Omitir el análisis en estos tipos de archivo">
+<!ENTITY downloadbaropt.ttscndwnldfl "Analizar automáticamente los archivos descargados">
+<!ENTITY downloadbaropt.ttclrthsfltyps "Quitar automáticamente estos tipos de archivo">
+<!ENTITY downloadbaropt.ftr "después de">
+<!ENTITY downloadbaropt.scnds "segundos">
+<!ENTITY downloadbaropt.ntfctn "Notificaciones">
+<!ENTITY downloadbaropt.doflpth "Ruta del archivo de audio">
+<!ENTITY downloadbaropt.dofllct "Localizar">
+<!ENTITY downloadbaropt.prvwsnd "Escuchar sonido (Vista Previa)">
+<!ENTITY downloadbaropt.plysndwhncdwnldcomlts "Reproducir sonido de notificación cuando se complete una descarga">
+<!ENTITY downloadbaropt.pprnc "Apariencia">
+<!ENTITY downloadbaropt.bdnwtdh "Ancho de banda">
+<!ENTITY downloadbaropt.spdd "Colores por velocidad de descarga">
+<!ENTITY downloadbaropt.slwstspd "Velocidad más lenta">
+<!ENTITY downloadbaropt.vrgspd "Velocidad promedio">
+<!ENTITY downloadbaropt.fstsspd "Velocidad más rápida">
+<!ENTITY downloadbaropt.bckgndclr "Color para el fondo de las descargas">
+<!ENTITY downloadbaropt.dwnbrdclr "Color para el borde de las descargas">
+<!ENTITY downloadbaropt.rststtngs "Restaurar opciones">
+<!ENTITY downloadbaropt.srntrfc "Interfáz para mostrar las descargas">
+<!ENTITY downloadbaropt.dnwldbr "En la Barra de descargas">
+<!ENTITY downloadbaropt.dnwlpnl "En el Panel del botón de descargas">
+<!ENTITY downloadbaropt.atpndwnldtb "Abrir automáticamente la pestaña de descargas al iniciar una descarga">
+<!ENTITY downloadbaropt.hdclrbttn "Ocultar el botón Despejar de la Barra de descargas">
+<!ENTITY downloadbaropt.hddwnldsbttn "Ocultar el botón Descargas de la Barra de descargas">
+<!ENTITY downloadbaropt.dwldtm "Ajustes para los elementos de descarga">
+<!ENTITY downloadbaropt.apply "Aplicar">
+<!ENTITY downloadbaropt.width "Ancho">
+<!ENTITY downloadbaropt.height "Alto">
+<!ENTITY downloadbaropt.vrsscnrgmnts "Argumentos">
+<!ENTITY downloadbaropt.atclnwhnffqt "Quitar las descargas completadas al salir de Firefox">
+<!ENTITY downloadbaropt.prgrsntfcts "Detalles en sección de progreso">
+<!ENTITY downloadbaropt.prgrssntfct "Progreso">
+<!ENTITY downloadbaropt.spdntfct "Velocidad">
+<!ENTITY downloadbaropt.tmntfct "Tiempo restante">
+<!ENTITY downloadbaropt.over "Arriba de">
+<!ENTITY downloadbaropt.skcnfrmtnbfrdlt "Solicitar confirmación antes de eliminar un archivo descargado">
+<!ENTITY downloadbaropt.prgrsslgnmnt "Orientación de la sección de progreso">
+<!ENTITY downloadbaropt.hrzntllgnmnt "Horizontal">
+<!ENTITY downloadbaropt.vrtcllgnmnt "Vertical">
+<!ENTITY downloadbaropt.fntsz "Tamaño de fuente tipográfica">
+<!ENTITY downloadbaropt.flnmsz "Nombre de archivo">
+<!ENTITY downloadbaropt.prgrsssz "Apariencia de la sección de progreso">
+<!ENTITY downloadbaropt.flnmszfntsz "Tamaño de fuente para nombre de archivo">
+<!ENTITY downloadbaropt.prgrssszfntsz "Tamaño de fuente para detalles de progreso">
+<!ENTITY downloadbaropt.dblclckdwnldtm "Funcionalidad para doble clic en los elementos de descarga:">
+<!ENTITY downloadbaropt.cntndwnldswhnbrwsrqts "Continuar las descargas en el Administrador de descargas al cerrar Firefox">

@@ -1,0 +1,5 @@
+<!ENTITY downloadbarstats.title "Statistiques de téléchargement">
+<!ENTITY downloadbarstats.nostats "Pas de statistique pour l'instant!">
+<!ENTITY downloadbarstats.dwnldgrph "Téléchargez quelques fichiers pour obtenir un graphique, s'il vous plait!">
+<!ENTITY downloadbarstats.bybyts "par Octets">
+<!ENTITY downloadbarstats.bycnt "par le Nombre">

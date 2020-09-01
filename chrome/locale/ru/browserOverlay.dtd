@@ -1,0 +1,41 @@
+<!ENTITY downloadbar.lnch "Запустить">
+<!ENTITY downloadbar.shwfl "Показать файл">
+<!ENTITY downloadbar.shwmngr "Показать менеджер">
+<!ENTITY downloadbar.cncl "Отмена">
+<!ENTITY downloadbar.pause "Пауза">
+<!ENTITY downloadbar.strt "Начать">
+<!ENTITY downloadbar.clr "Очистить">
+<!ENTITY downloadbar.clsbr "Закрыть панель">
+<!ENTITY downloadbar.clrlldwnlds "Очистить все загрузки">
+<!ENTITY downloadbar.pslldwnlds "Приостановить все загрузки">
+<!ENTITY downloadbar.rsmlldwnlds "Возобновить все загрузки">
+<!ENTITY downloadbar.cncllldwnlds "Отменить все загрузки">
+<!ENTITY downloadbar.dwnlds "Загрузки">
+<!ENTITY downloadbar.vrscn "Проверить антивирусом">
+<!ENTITY downloadbar.dltfl "Удалить файл">
+<!ENTITY downloadbar.rnm "Переименовать">
+<!ENTITY downloadbar.clrll "Очистить всё">
+<!ENTITY downloadbar.pndwnldtb "Открыть вкладку загрузок">
+<!ENTITY downloadbar.shwlldwnldshstry "Показать историю загрузок">
+<!ENTITY downloadbar.gtdwnlpg "Перейти на страницу загрузки">
+<!ENTITY downloadbar.cpydwnldlnk "Скопировать ссылку на загрузку">
+<!ENTITY downloadbar.ptns "Настройки">
+<!ENTITY downloadbar.src "Источник">
+<!ENTITY downloadbar.trgt "Назначение">
+<!ENTITY downloadbar.crrntspd "Текущая скорость">
+<!ENTITY downloadbar.vrgspd "Средняя скорость">
+<!ENTITY downloadbar.prgrs "Прогресс">
+<!ENTITY downloadbar.rmngtm "Оставшееся время">
+<!ENTITY downloadbar.dwnldbyt "Загружено">
+<!ENTITY downloadbar.flsz "Размер файла">
+<!ENTITY downloadbar.dwnldtm "Время загрузки">
+<!ENTITY downloadbar.resume "Продолжить">
+<!ENTITY downloadbar.sttstcs "Статистика">
+<!ENTITY downloadbar.chksm "Контрольная сумма">
+<!ENTITY downloadbar.cpy "Копировать">
+<!ENTITY downloadbar.hlp "Справка">
+<!ENTITY downloadbar.md5hsh "Хэш MD5">
+<!ENTITY downloadbar.sendto "Отправить">
+<!ENTITY downloadbar.desktopfolder "Рабочий стол">
+<!ENTITY downloadbar.downloadsfolder "Папка загрузок">
+<!ENTITY downloadbar.customfolder "Другая папка">

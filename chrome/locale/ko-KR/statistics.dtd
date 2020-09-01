@@ -1,0 +1,5 @@
+<!ENTITY downloadbarstats.title "다운로드 통계">
+<!ENTITY downloadbarstats.nostats "표시할 통계가 없습니다!">
+<!ENTITY downloadbarstats.dwnldgrph "통계 그래프를 보려면 우선 몇 번 다운로드 하세요.">
+<!ENTITY downloadbarstats.bybyts "용량순">
+<!ENTITY downloadbarstats.bycnt "횟수순">

@@ -1,0 +1,62 @@
+<!ENTITY downloadbaropt.ptns "Opties">
+<!ENTITY downloadbaropt.clrrftrlnch "Downloaditem wissen na starten">
+<!ENTITY downloadbaropt.clrrftrshw "Downloaditem wissen na weergave">
+<!ENTITY downloadbaropt.shwddbbrbttn "Add-onbalkknop weergeven">
+<!ENTITY downloadbaropt.attclswhndlcmp "Downloadbalk automatisch sluiten als alle downloads zijn afgerond">
+<!ENTITY downloadbaropt.pnftrdwncmp "Downloadmap automatisch openen als download is afgerond">
+<!ENTITY downloadbaropt.clr "Kleur">
+<!ENTITY downloadbaropt.dwnprgrssclr "Kleur downloadvoortgang">
+<!ENTITY downloadbaropt.dwntxtclr "Kleur downloadtekst">
+<!ENTITY downloadbaropt.dwncmpltclr "Kleur download afgerond">
+<!ENTITY downloadbaropt.dwnldpsclr "Kleur gepauzeerde download">
+<!ENTITY downloadbaropt.brbckgrndclr "Kleur achtergrond">
+<!ENTITY downloadbaropt.vrscn "Virusscan">
+<!ENTITY downloadbaropt.vrscnnrpth "Pad naar virusscanner">
+<!ENTITY downloadbaropt.vrscnlct "Zoeken">
+<!ENTITY downloadbaropt.dsbscnfltyps "Scan voor deze bestandstypes uitschakelen">
+<!ENTITY downloadbaropt.ttscndwnldfl "Gedownloade bestanden automatisch scannen">
+<!ENTITY downloadbaropt.ttclrthsfltyps "Deze bestandstypes automatisch wissen">
+<!ENTITY downloadbaropt.ftr "na">
+<!ENTITY downloadbaropt.scnds "seconden">
+<!ENTITY downloadbaropt.ntfctn "Bericht">
+<!ENTITY downloadbaropt.doflpth "Pad naar geluidsbestand">
+<!ENTITY downloadbaropt.dofllct "Zoeken">
+<!ENTITY downloadbaropt.prvwsnd "Voorbeeldgeluid">
+<!ENTITY downloadbaropt.plysndwhncdwnldcomlts "Geluid afspelen als download is afgerond">
+<!ENTITY downloadbaropt.pprnc "Weergave">
+<!ENTITY downloadbaropt.bdnwtdh "Bandbreedte">
+<!ENTITY downloadbaropt.spdd "Downloadsnelheid">
+<!ENTITY downloadbaropt.slwstspd "Laagste snelheid">
+<!ENTITY downloadbaropt.vrgspd "Gemiddelde snelheid">
+<!ENTITY downloadbaropt.fstsspd "Hoogste snelheid">
+<!ENTITY downloadbaropt.bckgndclr "Achtergrondkleur download">
+<!ENTITY downloadbaropt.dwnbrdclr "Randkleur download">
+<!ENTITY downloadbaropt.rststtngs "Instellingen resetten">
+<!ENTITY downloadbaropt.srntrfc "Gebruikersinterface">
+<!ENTITY downloadbaropt.dnwldbr "Downloadbalk">
+<!ENTITY downloadbaropt.dnwlpnl "Downloadpaneel">
+<!ENTITY downloadbaropt.atpndwnldtb "Downloadtabblad automatisch openen als download start">
+<!ENTITY downloadbaropt.hdclrbttn "Knop Wissen in downloadbalk verbergen">
+<!ENTITY downloadbaropt.hddwnldsbttn "Knop Downloads in downloadbalk verbergen">
+<!ENTITY downloadbaropt.dwldtm "Downloaditem">
+<!ENTITY downloadbaropt.apply "Toepassen">
+<!ENTITY downloadbaropt.width "Breedte">
+<!ENTITY downloadbaropt.height "Hoogte">
+<!ENTITY downloadbaropt.vrsscnrgmnts "Argumenten">
+<!ENTITY downloadbaropt.atclnwhnffqt "Afgeronde downloads opruimen als Firefox afsluit">
+<!ENTITY downloadbaropt.prgrsntfcts "Voortgangsnotificaties">
+<!ENTITY downloadbaropt.prgrssntfct "Voortgang">
+<!ENTITY downloadbaropt.spdntfct "Snelheid">
+<!ENTITY downloadbaropt.tmntfct "Resterende tijd">
+<!ENTITY downloadbaropt.over "Meer dan">
+<!ENTITY downloadbaropt.skcnfrmtnbfrdlt "Bevestiging vragen voor verwijdering gedownload bestand">
+<!ENTITY downloadbaropt.prgrsslgnmnt "Voortgangsuitlijning">
+<!ENTITY downloadbaropt.hrzntllgnmnt "Horizontaal">
+<!ENTITY downloadbaropt.vrtcllgnmnt "Verticaal">
+<!ENTITY downloadbaropt.fntsz "Lettergrootte">
+<!ENTITY downloadbaropt.flnmsz "Besatndsnaam">
+<!ENTITY downloadbaropt.prgrsssz "Voortgang">
+<!ENTITY downloadbaropt.flnmszfntsz "Lettergrootte bestandsnaam">
+<!ENTITY downloadbaropt.prgrssszfntsz "Lettergrootte voortgang">
+<!ENTITY downloadbaropt.dblclckdwnldtm "Dubbelklikfunctionaliteit voor downloaditem:">
+<!ENTITY downloadbaropt.cntndwnldswhnbrwsrqts "Downloads in downloadbeheerder voortzetten bij afsluiten Firefox">

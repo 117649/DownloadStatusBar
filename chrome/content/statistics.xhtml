@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE window [
+  <!ENTITY % html SYSTEM "chrome://downloadbar/locale/statistics.dtd">
+  %html;
+  <!ENTITY % statistics_b1 SYSTEM "chrome://downloadbar/locale/statistics_b1.dtd">
+  %statistics_b1;
+]>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<head>
+		<meta charset="UTF-8" />
+		<xul:stringbundleset>	
+			<xul:stringbundle id="downloadbar-sttstcsprts" src="chrome://downloadbar/locale/statistics.properties"/>
+		</xul:stringbundleset>		
+		<title>&downloadbarstats.title;</title>
+		<script type="application/x-javascript" src="chrome://downloadbar/content/statistics.js"></script>
+		<link rel="stylesheet" href="chrome://downloadbar/skin/statistics.css" type="text/css" />
+		<link rel="icon" href="chrome://downloadbar/skin/images/statistics.png" />
+	</head>
+	<body contextmenu="menu">
+		<menu type="context" id="menu">
+			<menuitem label="&downloadbarstats.resetstatistics;" onclick="DBStatistics.rstSttstcs();" icon="chrome://downloadbar/skin/16.png"></menuitem>
+		</menu>	
+		<div id="main">
+			<div id="notification">
+				<em>&downloadbarstats.nostats;</em>
+				<p>&downloadbarstats.dwnldgrph;</p>	  
+			</div>
+			<div class="graphdiv">
+				<iframe id="statbybyte" src="" type="content"/>
+				<div>
+					<b>&downloadbarstats.bybyts;</b>
+				</div>
+			</div>
+			<div class="graphdiv">
+				<iframe id="statbycount" src="" type="content"/>
+				<div>
+					<b>&downloadbarstats.bycnt;</b>
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>

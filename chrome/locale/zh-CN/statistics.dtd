@@ -1,0 +1,5 @@
+<!ENTITY downloadbarstats.title "下载统计">
+<!ENTITY downloadbarstats.nostats "没有下载统计可显示！">
+<!ENTITY downloadbarstats.dwnldgrph "请下载一些文件以获得统计图表！">
+<!ENTITY downloadbarstats.bybyts "按字节">
+<!ENTITY downloadbarstats.bycnt "按次数">

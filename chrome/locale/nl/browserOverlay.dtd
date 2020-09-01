@@ -1,0 +1,41 @@
+<!ENTITY downloadbar.lnch "Starten">
+<!ENTITY downloadbar.shwfl "Bestand weergeven">
+<!ENTITY downloadbar.shwmngr "Beheerder weergeven">
+<!ENTITY downloadbar.cncl "Annuleren">
+<!ENTITY downloadbar.pause "Pauzeren">
+<!ENTITY downloadbar.strt "Starten">
+<!ENTITY downloadbar.clr "Wissen">
+<!ENTITY downloadbar.clsbr "Balk sluiten">
+<!ENTITY downloadbar.clrlldwnlds "Alle downloads wissen">
+<!ENTITY downloadbar.pslldwnlds "Alle downloads pauzeren">
+<!ENTITY downloadbar.rsmlldwnlds "Alle downloads hervatten">
+<!ENTITY downloadbar.cncllldwnlds "Alle downloads annuleren">
+<!ENTITY downloadbar.dwnlds "Downloads">
+<!ENTITY downloadbar.vrscn "Virusscan">
+<!ENTITY downloadbar.dltfl "Bestand verwijderen">
+<!ENTITY downloadbar.rnm "Hernoemen">
+<!ENTITY downloadbar.clrll "Alles wissen">
+<!ENTITY downloadbar.pndwnldtb "Downloadtabblad openen">
+<!ENTITY downloadbar.shwlldwnldshstry "Downloadgeschiedenis weergeven">
+<!ENTITY downloadbar.gtdwnlpg "Naar downloadpagina">
+<!ENTITY downloadbar.cpydwnldlnk "Downloadkoppeling kopiëren">
+<!ENTITY downloadbar.ptns "Opties">
+<!ENTITY downloadbar.src "Bron">
+<!ENTITY downloadbar.trgt "Doel">
+<!ENTITY downloadbar.crrntspd "Huidige snelheid">
+<!ENTITY downloadbar.vrgspd "Gemiddelde snelheid">
+<!ENTITY downloadbar.prgrs "Voortgang">
+<!ENTITY downloadbar.rmngtm "Resterende tijd">
+<!ENTITY downloadbar.dwnldbyt "Gedownload">
+<!ENTITY downloadbar.flsz "Bestandsgrootte">
+<!ENTITY downloadbar.dwnldtm "Downloadtijd">
+<!ENTITY downloadbar.resume "Hervatten">
+<!ENTITY downloadbar.sttstcs "Statistieken">
+<!ENTITY downloadbar.chksm "Checksum">
+<!ENTITY downloadbar.cpy "Kopiëren">
+<!ENTITY downloadbar.hlp "Help">
+<!ENTITY downloadbar.md5hsh "MD5-hash">
+<!ENTITY downloadbar.sendto "Verzenden naar">
+<!ENTITY downloadbar.desktopfolder "Bureaublad">
+<!ENTITY downloadbar.downloadsfolder "Downloads">
+<!ENTITY downloadbar.customfolder "Aangepast">

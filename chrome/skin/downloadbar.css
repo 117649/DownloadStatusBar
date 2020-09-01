@@ -1,0 +1,153 @@
+#downloadbar-16, toolbar[iconsize="small"] #downloadbar-16 {
+	list-style-image: url('chrome://downloadbar/skin/16.png') !important;
+}
+
+hbox.downloadbar-itempanel-hblft, hbox.downloadbar-itempanel-hbright{
+	/*margin-top:5px;*/
+}
+
+hbox.downloadbar-itempanel-hbright{
+	/*margin-left:10px;*/
+}
+
+/*BAR*/
+#downloadbar-bar stack.downloadbar-dwnldtmstck{
+	border: 1px solid rgba(113, 144, 152, 0.5);
+	margin-right:5px;
+	height:20px;
+}
+
+#downloadbar-bar hbox.downloadbar-dwnldtmhbx{
+	padding-left:5px;
+}
+
+/*PANEL*/
+#downloadbar-downloadpanel stack.downloadbar-dwnldtmstck{
+	border: 1px solid rgba(113, 144, 152, 0.5);
+	margin-bottom:5px;
+	height:20px;
+}
+
+#downloadbar-downloadpanel stack:last-of-type{
+	margin-bottom:0;
+}
+
+#downloadbar-downloadpanel hbox.downloadbar-dwnldtmhbx{
+	padding-left:5px;
+}
+
+/*FIX PANEL*/
+#downloadbar-downloadpanel stack.downloadbar-dwnldtmstck{
+	max-width:325px !important;/*Needs to be same below*/	
+}
+
+#downloadbar-panel{
+	width:325px !important;/*Needs to be same above*/
+}
+/*FIX PANEL*/
+
+#downloadbar-pnlbll {
+	border: 1px solid rgba(113, 144, 152, 0.5);
+	background: linear-gradient(to bottom,  #cdeb8e 0%,#a5c956 100%);	
+}
+
+/*FIX DOUBLE CLICK*/
+panel#downloadbar-itempanel, panel#downloadbar-itempanel *,panel#downloadbar-itempanel > *{
+  transition: none !important;
+}
+
+#downloadsbar-mn, #downloadbar-bar-clrbttn {
+   border: 1px solid rgba(113, 144, 152, 0.5) !important;
+   border-radius:4px !important;
+   padding:0 !important;
+   background: linear-gradient(to bottom,  #dddddd 0%, #999999 100%) !important;
+   color: black !important;
+   cursor:pointer;
+}
+
+#downloadsbar-mn {
+  margin-right:5px !important;
+}
+
+#downloadsbar-mn label, #downloadbar-bar-clrbttn label{
+  cursor:pointer !important;
+}
+
+/*DOWNLOADS BUTTON TYPE CSS*/
+#downloadsbar-mn.dbtxticonic  image{
+  margin-left:5px !important;
+  margin-right:5px !important;
+}
+
+#downloadsbar-mn.dbtxticonic  label{
+  margin-left:0px !important;
+  margin-right:7px !important;/*For Proportional Reasons*/
+}
+
+#downloadsbar-mn.dbiconic image{
+  margin-left:5px !important;
+  margin-right:5px !important
+}
+
+#downloadsbar-mn.dbiconic label{
+  display:none !important;
+}
+
+#downloadsbar-mn.dbtxt image {
+  display:none !important;
+}
+
+/*CLEAR BUTTON TYPE CSS*/
+#downloadbar-bar-clrbttn.dbtxticonic image {
+  margin-left:5px !important;
+  margin-right:5px !important; 
+}
+
+#downloadbar-bar-clrbttn.dbtxticonic label {
+  margin-left:0px !important;
+  margin-right:7px !important;/*For Proportional Reasons*/ 
+}
+
+#downloadbar-bar-clrbttn.dbiconic image {
+  margin-left:5px !important;
+  margin-right:5px !important; 
+}
+
+#downloadbar-bar-clrbttn.dbiconic label {
+  display:none !important;
+}
+
+#downloadbar-bar-clrbttn.dbtxt image {
+  display:none !important;
+}
+
+#downloadbar-ddnbr {
+	list-style-image:url('chrome://downloadbar/skin/16.png');
+}
+
+toolbar[iconsize="small"] #downloadbar-ddnbr {
+	list-style-image: url('chrome://downloadbar/skin/16.png');
+}
+
+#downloadbar-ppprvwimg{
+  box-shadow:
+  0 0 0 1px grey,
+  0 0 0 10px white,
+  0 0 4px 11px grey !important;
+  border:none !important;
+  /*margin-right:10px !important;*/
+  border-radius:4px !important;
+  background-size:contain !important;
+  background-repeat:no-repeat !important;
+  background-position:center !important;
+  background-color:white !important;
+}
+
+#downloadbar-cntr{
+    margin-bottom:0 !important;
+    margin-top:0 !important;
+}
+
+#downloadbar-tls {
+	list-style-image:url('chrome://downloadbar/skin/icon16.png') !important;
+}

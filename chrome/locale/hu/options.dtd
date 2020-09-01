@@ -1,0 +1,62 @@
+<!ENTITY downloadbaropt.ptns "Beállítások">
+<!ENTITY downloadbaropt.clrrftrlnch "Befejezett letöltések eltávolítása futtatásukat követően">
+<!ENTITY downloadbaropt.clrrftrshw "Befejezett letöltések eltávolítása elérési helyük megjelenítését követően">
+<!ENTITY downloadbaropt.shwddbbrbttn "Mutassa a Sáv megjelenítése gombot">
+<!ENTITY downloadbaropt.attclswhndlcmp "A letöltési sáv automatikus bezárása az összes letöltés elkészültekor">
+<!ENTITY downloadbaropt.pnftrdwncmp "Az elérési hely automatikus megnyitása a letöltések elkészültekor">
+<!ENTITY downloadbaropt.clr "Szín">
+<!ENTITY downloadbaropt.dwnprgrssclr "Letöltési folyamat jelzőszíne">
+<!ENTITY downloadbaropt.dwntxtclr "Letöltés szövegének színe">
+<!ENTITY downloadbaropt.dwncmpltclr "Elkészült letöltés színe">
+<!ENTITY downloadbaropt.dwnldpsclr "Szüneteltetett letöltés színe">
+<!ENTITY downloadbaropt.brbckgrndclr "Letöltési sáv háttérszíne">
+<!ENTITY downloadbaropt.vrscn "Víruskeresés">
+<!ENTITY downloadbaropt.vrscnnrpth "Víruskereső elérési útvonala:">
+<!ENTITY downloadbaropt.vrscnlct "Tallózás">
+<!ENTITY downloadbaropt.dsbscnfltyps "Keresés tiltása az alábbi fájltípusok esetén:">
+<!ENTITY downloadbaropt.ttscndwnldfl "Letöltött fájlok automatikus ellenőrzése">
+<!ENTITY downloadbaropt.ttclrthsfltyps "Az alábbi fájltípusok automatikus eltávolítása:">
+<!ENTITY downloadbaropt.ftr "idő:">
+<!ENTITY downloadbaropt.scnds "másodperc">
+<!ENTITY downloadbaropt.ntfctn "Értesítés">
+<!ENTITY downloadbaropt.doflpth "Audiofájl elérési útja:">
+<!ENTITY downloadbaropt.dofllct "Tallózás">
+<!ENTITY downloadbaropt.prvwsnd "Előnézet">
+<!ENTITY downloadbaropt.plysndwhncdwnldcomlts "Értesítési hang lejátszása a letöltés befejezését követően">
+<!ENTITY downloadbaropt.pprnc "Megjelenés">
+<!ENTITY downloadbaropt.bdnwtdh "Sávszélesség">
+<!ENTITY downloadbaropt.spdd "Letöltési sebesség">
+<!ENTITY downloadbaropt.slwstspd "Kis sebesség">
+<!ENTITY downloadbaropt.vrgspd "Átlagos sebesség">
+<!ENTITY downloadbaropt.fstsspd "Nagy sebesség">
+<!ENTITY downloadbaropt.bckgndclr "Letöltés folyamatának háttérszíne">
+<!ENTITY downloadbaropt.dwnbrdclr "Letöltés körvonalának színe">
+<!ENTITY downloadbaropt.rststtngs "Alaphelyzet">
+<!ENTITY downloadbaropt.srntrfc "Felhasználói felület">
+<!ENTITY downloadbaropt.dnwldbr "Letöltési sáv">
+<!ENTITY downloadbaropt.dnwlpnl "Letöltési panel">
+<!ENTITY downloadbaropt.atpndwnldtb "Letöltési fül megnyitása, amikor elindul egy letöltés">
+<!ENTITY downloadbaropt.hdclrbttn "Eltávolítás gomb elrejtése a letöltési sávról">
+<!ENTITY downloadbaropt.hddwnldsbttn "Letöltések gomb elrejtése a letöltési sávról">
+<!ENTITY downloadbaropt.dwldtm "Letöltési elem">
+<!ENTITY downloadbaropt.apply "Alkalmaz">
+<!ENTITY downloadbaropt.width "Szélesség">
+<!ENTITY downloadbaropt.height "Magasság">
+<!ENTITY downloadbaropt.vrsscnrgmnts "Paraméterek:">
+<!ENTITY downloadbaropt.atclnwhnffqt "Befejezett letöltések eltávolítása a Firefox bezárásakor">
+<!ENTITY downloadbaropt.prgrsntfcts "Folyamatjelzés">
+<!ENTITY downloadbaropt.prgrssntfct "Folyamat százaléka">
+<!ENTITY downloadbaropt.spdntfct "Letöltés sebessége">
+<!ENTITY downloadbaropt.tmntfct "Hátralévő idő">
+<!ENTITY downloadbaropt.over "Több mint">
+<!ENTITY downloadbaropt.skcnfrmtnbfrdlt "Megerősítő kérdés egy letöltött fájl törlése előtt">
+<!ENTITY downloadbaropt.prgrsslgnmnt "Folyamatjelzések rendezése">
+<!ENTITY downloadbaropt.hrzntllgnmnt "Vízszintesen">
+<!ENTITY downloadbaropt.vrtcllgnmnt "Függőlegesen">
+<!ENTITY downloadbaropt.fntsz "Betűméret">
+<!ENTITY downloadbaropt.flnmsz "Fájlnév">
+<!ENTITY downloadbaropt.prgrsssz "Folyamat">
+<!ENTITY downloadbaropt.flnmszfntsz "Fájlnév betűméret">
+<!ENTITY downloadbaropt.prgrssszfntsz "Folyamatjelzés betűméret">
+<!ENTITY downloadbaropt.dblclckdwnldtm "Double Click functionality for Download Item:">
+<!ENTITY downloadbaropt.cntndwnldswhnbrwsrqts "Continue downloads in Download Manage when Firefox quits">

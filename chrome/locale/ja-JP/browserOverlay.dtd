@@ -1,0 +1,41 @@
+<!ENTITY downloadbar.lnch "開く">
+<!ENTITY downloadbar.shwfl "保存フォルダーを表示">
+<!ENTITY downloadbar.shwmngr "ダウンロードマネージャを表示">
+<!ENTITY downloadbar.cncl "キャンセル">
+<!ENTITY downloadbar.pause "一時停止">
+<!ENTITY downloadbar.strt "開始">
+<!ENTITY downloadbar.clr "消去">
+<!ENTITY downloadbar.clsbr "バーを閉じる">
+<!ENTITY downloadbar.clrlldwnlds "すべてのダウンロードを消去">
+<!ENTITY downloadbar.pslldwnlds "すべてのタウンロードを一時停止">
+<!ENTITY downloadbar.rsmlldwnlds "すべてのダウンロードを再開">
+<!ENTITY downloadbar.cncllldwnlds "すべてのダウンロードをキャンセル">
+<!ENTITY downloadbar.dwnlds "ダウンロード">
+<!ENTITY downloadbar.vrscn "ウィルス スキャン">
+<!ENTITY downloadbar.dltfl "ファイルの削除">
+<!ENTITY downloadbar.rnm "名前の変更">
+<!ENTITY downloadbar.clrll "すべて消去">
+<!ENTITY downloadbar.pndwnldtb "ダウンロード タブを開く">
+<!ENTITY downloadbar.shwlldwnldshstry "ダウンロードの履歴を表示">
+<!ENTITY downloadbar.gtdwnlpg "ダウンロードしたページを表示">
+<!ENTITY downloadbar.cpydwnldlnk "ダウンロードした URL をコピー">
+<!ENTITY downloadbar.ptns "オプション">
+<!ENTITY downloadbar.src "ソース">
+<!ENTITY downloadbar.trgt "保存先">
+<!ENTITY downloadbar.crrntspd "現在速度">
+<!ENTITY downloadbar.vrgspd "平均速度">
+<!ENTITY downloadbar.prgrs "進行状況">
+<!ENTITY downloadbar.rmngtm "残り時間">
+<!ENTITY downloadbar.dwnldbyt "ダウンロード済">
+<!ENTITY downloadbar.flsz "ファイル サイズ">
+<!ENTITY downloadbar.dwnldtm "ダウンロード時間">
+<!ENTITY downloadbar.resume "再開">
+<!ENTITY downloadbar.sttstcs "統計">
+<!ENTITY downloadbar.chksm "Checksum">
+<!ENTITY downloadbar.cpy "コピー">
+<!ENTITY downloadbar.hlp "ヘルプ">
+<!ENTITY downloadbar.md5hsh "MD5 ハッシュ">
+<!ENTITY downloadbar.sendto "送る">
+<!ENTITY downloadbar.desktopfolder "デスクトップ">
+<!ENTITY downloadbar.downloadsfolder "ダウンロードフォルダー">
+<!ENTITY downloadbar.customfolder "カスタム">

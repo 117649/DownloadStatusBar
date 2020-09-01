@@ -1,0 +1,130 @@
+<!ENTITY downloadbarhelp.description "Si eres del tipo de persona que le gusta tener un control total de cada aspecto de sus descargas, Download Status Bar es el complemento que estabas buscando.">
+<!ENTITY downloadbarhelp.onlnvlbl1 "Esta página también está disponible en otros idiomas vía online.">
+<!ENTITY downloadbarhelp.onlnvlbl2 "Por favor haz clic en alguna de las banderas relacionadas para abrir la página traducida en dicho idioma en una nueva pestaña.">
+<!ENTITY downloadbarhelp.description2sntc1 "Download Status Bar administra cada aspecto de tus descargas">
+<!ENTITY downloadbarhelp.Launch "Ejecutar/Abrir">
+<!ENTITY downloadbarhelp.Show "Mostrar ubicación">
+<!ENTITY downloadbarhelp.Scan "Buscar virus">
+<!ENTITY downloadbarhelp.Rename "Renombrar">
+<!ENTITY downloadbarhelp.Checksum "Verificar autenticidad">
+<!ENTITY downloadbarhelp.Pause "Pausar">
+<!ENTITY downloadbarhelp.Resume "Resumir">
+<!ENTITY downloadbarhelp.Cancel "Cancelar">
+<!ENTITY downloadbarhelp.Clean "Despejar">
+<!ENTITY downloadbarhelp.Delete "Eliminar">
+<!ENTITY downloadbarhelp.description2sntc2 "genera estadísticas de tus acciones de descarga, mantiene el historial de descargas de tus sesiones previas y mucho más. No es solo un complemento gestor de descargas, es además una herramienta auxiliar para mejorar tu productividad.">
+<!ENTITY downloadbarhelp.description3 "Download Status Bar está especialmente diseñada en base a tus necesidades y requerimientos, poniendo tus espectativas como objetivo primordial del complemento, y aprovechando las nuevas características de Firefox 26 para mejorar el rendimiento de tu navegador y descargas. Download Status Bar es un proyecto manejado y administrado por sus propios usuarios, lo cual le mantiene vigente y robusto.">
+<!ENTITY downloadbarhelp.description4 "Adquiere una copia de Download Status Bar para obtener un control total de tus descargas.">
+<!ENTITY downloadbarhelp.features "Características">
+<!ENTITY downloadbarhelp.description5 "Cuando descargues archivos de Internet, Download Status Bar automáticamente mostrará el progreso de esos elementos en la Barra de descargas. Como el nombre lo indica, la Barra de descargas se localiza en la parte baja de Firefox, generalmente encima de la Barra de complementos (Add-on Bar). Gracias al afán de pretender ser intuitiva y agradable al usuario, la Barra de descargas solo es visible cuando hay una descarga activa. Si no hay ninguna descarga que mostrar, la Barra de descargas se oculta automáticamente para preservar limpia el área de contenido de la página. Y volverá a aparecer por sí sola cuando inicies la descarga de algún otro archivo de Internet.">
+<!ENTITY downloadbarhelp.description6 "Pero además tú puedes forzar a que se muestre la Barra de descargas incluso si no hay una descarga activa, usando los siguientes atajos de teclado:">
+<!ENTITY downloadbarhelp.description7 "Windows: CTRL + ALT + D">
+<!ENTITY downloadbarhelp.description8b "Mac OS X: SHIFT + ALT + D">
+<!ENTITY downloadbarhelp.description9 "Linux: (CTRL/CMD) + ALT + D">
+<!ENTITY downloadbarhelp.description10 "También puedes usar los atajos antes mencionados para forzar a que se oculte la Barra de descargas en cualquier momento que así lo desees. En resúmen, dichos atajos sirven para alternar la visibilidad de la Barra de descargas.">
+<!ENTITY downloadbarhelp.description10a "Como opción adicional, puedes alternar la visibilidad de la Barra de descargas desde el menú de Download Status Bar localizado dentro del menú Herramientas de Firefox.">
+<!ENTITY downloadbarhelp.fwdysntfcn "Esta página de ayuda estará completa en los próximos días. Gracias por tu comprención y paciencia.">
+<!ENTITY downloadbarhelp.description11 "Al abrir la Barra de descargas, notarás al lado izquierdo el botón Descargas y al lado derecho el botón Despejar. El botón Descargas es el botón principal, desde el cual puedes acceder al menú de Download Status Bar. El botón Despejar sirve para quitar todas las descargas completadas, con un solo clic.">
+<!ENTITY downloadbarhelp.description12 "Al hacer clic en el botón Descargas se abrirá el menú contextual del complemento, cuyo contenido se describe a continuación">
+<!ENTITY downloadbarhelp.options "Opciones">
+<!ENTITY downloadbarhelp.description13 "Esta opción del menú abre la ventana de Opciones, donde puedes ajustar el complemento de acuerdo a tus necesidades.">
+<!ENTITY downloadbarhelp.statistics "Estadísticas">
+<!ENTITY downloadbarhelp.description14 "Esta opción del menú abre la página de estadísticas, donde se muestran los detalles y las gráficas de tus descargas pasadas.">
+<!ENTITY downloadbarhelp.showdownloadhistory "Historial de descargas">
+<!ENTITY downloadbarhelp.description15 "Esta opción del menú sirve para abrir el catálogo de Historial, Marcadores y Descargas de Firefox, en caso de que quieras ver tus descargas previas listadas en una ventana.">
+<!ENTITY downloadbarhelp.opendownloadtab "Pestaña de descargas">
+<!ENTITY downloadbarhelp.description16 "Esta opción del menú abre el catálogo de Historial, Marcadores y Descargas de Firefox en una pestaña del navegador.">
+<!ENTITY downloadbarhelp.downloads "Descargas">
+<!ENTITY downloadbarhelp.description17 "Este sub-menú ofrece opciones para Pausar, Resumir, Cancelar y/o Despejar TODAS las descargas en un solo paso.">
+<!ENTITY downloadbarhelp.help "Ayuda">
+<!ENTITY downloadbarhelp.description18 "Esta opción del menú abre la página de ayuda de Download Status Bar, donde puedes ver detalles acerca del complemento y como usarlo de forma eficiente.">
+<!ENTITY downloadbarhelp.closedownloadbar "Ocultar Barra">
+<!ENTITY downloadbarhelp.description19 "Esta opción del menú te permite forzar el cierre de la Barra de descargas.">
+<!ENTITY downloadbarhelp.description20 "Cuando descargas archivos de Internet, Download Status Bar automáticamente muestra esos elementos en la Barra de descargas. A continuación hay algunos programas de Mozilla que te pueden servir de ejemplo para ver el funcionamiento, haz clic en los enlaces para iniciar su descarga.">
+<!ENTITY downloadbarhelp.description21 "Cada elemento de descarga incluye los siguientes componentes:">
+<!ENTITY downloadbarhelp.dwnldcn "Ícono de descarga">
+<!ENTITY downloadbarhelp.description22 "Un ícono específico de acuerdo al tipo de archivo descargado. (Podría lucir diferente en base al tema de Firefox que estes usando).">
+<!ENTITY downloadbarhelp.flnm "Nombre de archivo">
+<!ENTITY downloadbarhelp.description23 "Nombre de archivo del elemento descargado. (Si el nombre es más largo que el ancho predefinido, automáticamente es visualmente recortado para ajustarse).">
+<!ENTITY downloadbarhelp.prgrssctn "Sección de progreso">
+<!ENTITY downloadbarhelp.description24 "Esta sección muestra el porcentaje de avance (porcentaje de descarga completado) y la información de Velocidad actual (taza de bits por segundo). También puedes hacer que se muestre el Tiempo restante para completar la descarga en esta sección, mediante la ventana de opciones.">
+<!ENTITY downloadbarhelp.description25 "Además puedes hacer clic derecho sobre cada elemento de descarga para mostrar su menú contextual, el cual contiene más opciones e información, las cuales se describen a continuación">
+<!ENTITY downloadbarhelp.description26 "Ejecuta o abre el archivo descargado. (Esta opción solo está disponible al completarse la descarga).">
+<!ENTITY downloadbarhelp.description27 "Muestra el archivo descargado dentro de su carpeta contenedora. (Abre la ubicación del archivo).">
+<!ENTITY downloadbarhelp.description28 "Muestra la ventana del catálogo de Firefox, enfocando el apartado Historial de Descargas.">
+<!ENTITY downloadbarhelp.description29 "Analiza manualmente el archivo descargado en busca de virus con el programa que hayas predefinido. (En caso de no haberlo hecho antes, se te solicitará que especifiques la ruta del programa de seguridad que quieras usar).">
+<!ENTITY downloadbarhelp.description30 "Abre la ventana de verificación de autenticidad, donde puedes hacer que se calcule y compare el valor de las suma de verificación (Checksum) del archivo descargado, aceptando valores de los algoritmos MD5, MD2, SHA1, SHA256, SHA384 y SHA512.">
+<!ENTITY downloadbarhelp.description31 "Abre la ventana de Renombrado, donde se puede cambiar el nombre del archivo descargado. (Esta opción solo está disponible al completarse la descarga).">
+<!ENTITY downloadbarhelp.description32 "Elimina el archivo descargado de tu sistema. Se te solicitará una confirmación antes de proceder a la eliminación. (Esta opción solo está disponible al completarse la descarga).">
+<!ENTITY downloadbarhelp.description33 "Abre la página de origen de la descarga en una nueva pestaña. (Cuando es posible).">
+<!ENTITY downloadbarhelp.description34 "Copia la dirección de descarga al portapapeles.">
+<!ENTITY downloadbarhelp.description35 "Cancela la descarga actual y elimina el archivo parcialmente descargado de tu sistema. (Esta opción solo está disponible mientras la descarga está en progreso).">
+<!ENTITY downloadbarhelp.description36 "Pausa la descarga activa.">
+<!ENTITY downloadbarhelp.description37 "Resume la descarga pausada.">
+<!ENTITY downloadbarhelp.description38 "Quita el elemento de descarga, despejando el espacio que ocupaba en la Barra de descargas.">
+<!ENTITY downloadbarhelp.description39 "También puedes hacer clic normal en cada elemento de descarga para mostrar un cuadro emergente con la información relacionada a dicha descarga, esta información se describe a continuación:">
+<!ENTITY downloadbarhelp.description40 "Dirección URL de origen de descarga del archivo. Haciendo clic sobre el enlace se intentará abrir la dirección en una nueva pestaña. Haciendo clic derecho sobre el enlace se abre el menú con la opción para copiar la dirección de origen al portapapeles.">
+<!ENTITY downloadbarhelp.description41 "Ruta de la ubicación donde se ha almacenado el archivo descargado en tu sistema. Al hacer clic en el enlace de destino se abrirá la carpeta contenedora y se seleccionará el archivo para mostrártelo. También puedes hacer clic derecho para abrir el menú con la opción para copiar la ruta de la ubicación del archivo al portapapeles.">
+<!ENTITY downloadbarhelp.description42 "Velocidad de descarga actual de la descarga activa (en KB/s).">
+<!ENTITY downloadbarhelp.description43 "Velocidad de descarga promedio de la descarga completada (en KB/s). (Esta información solo está disponible al completarse la descarga).">
+<!ENTITY downloadbarhelp.description44 "Porcentaje de progreso completado de la descarga.">
+<!ENTITY downloadbarhelp.description45 "Tiempo restante para completar la descarga.">
+<!ENTITY downloadbarhelp.description46 "Tiempo utilizado para completar la descarga o duración total de descarga. (Esta información solo está disponible al completarse la descarga).">
+<!ENTITY downloadbarhelp.description47 "La primer sección de este campo representa el tamaño actual completado, que es la cantidad de bytes que ya se han trasferido, mientras que la segunda sección representa el tamaño total de la descarga, es decir, la cantidad total de bytes que se necesitarían descargar para completar la descarga.">
+<!ENTITY downloadbarhelp.description48 "Tamaño del archivo descargado en disco. (Esta información solo está disponible al completarse la descarga).">
+<!ENTITY downloadbarhelp.description49 "Cálculo automático del valor Hash MD5 del archivo descargado. (Esta información solo está disponible al completarse la descarga).">
+<!ENTITY downloadbarhelp.description50 "El cuadro emergente de información incluye la funcionalidad de Vista Previa para las imágenes descargadas, mostrándolas como miniaturas. Esta funcionalidad soporta los tipos de archivo PNG, JPG, GIF y BMP. Al hacer clic sobre una miniatura se abrirá la imagen descargada dentro del navegador, en una nueva pestaña.">
+<!ENTITY downloadbarhelp.description51 "También puedes simplemente colocar el puntero del mouse sobre algún elemento de descarga para que aparezca un globo de texto emergente informativo, el cual sirve para ver de forma rápida los detalles generales de dicha descarga.">
+<!ENTITY downloadbarhelp.tip "Consejo">
+<!ENTITY downloadbarhelp.description52 "Al hacer doble clic en un elemento de descarga se ejecutará/abrirá automáticamente el archivo descargado.">
+<!ENTITY downloadbarhelp.description53 "Al hacer doble clic en una zona vacía de la Barra de descargas se despejará la barra automáticamente, quitando todas las descargas ya completadas.">
+<!ENTITY downloadbarhelp.description54 "Al hacer clic con el botón central del mouse sobre un elemento de descarga lo quitará inmediatamente de la barra, despejando el espacio que ocupaba.">
+<!ENTITY downloadbarhelp.description55 "Al hacer un clic normal en una zona vacía de la Barra de descargas se mostrará el menú principal del complemento.">
+<!ENTITY downloadbarhelp.description56 "Siempre puedes ajustar Download Status Bar de acuerdo a tus necesidades desde la ventana de Opciones. Para abrir dicha ventana puedes hacer clic normal o clic derecho sobre el botón Descargas y seleccionar el elemento Opciones del menú contextual que aparece. Otra alternativa es abrir el menú Herramientas de Firefox y seleccionar Complementos para abrir el Administrador de complementos, luego, si no estás ya en ella, pasar a la pestaña Extensiones y localizar Download Status Bar para pulsar el botón Opciones. Las opciones disponibles son las siguientes:">
+<!ENTITY downloadbarhelp.description57 "Con esta opción marcada, cada elemento descargado será quitado automáticamente de la Barra de descargas al momento de ejecutarlo/abrirlo, ya sea mediante la opción Ejecutar/Abrir del menú contextual o haciendo doble clic sobre el elemento.">
+<!ENTITY downloadbarhelp.description58 "Con esta opción marcada, cada elemento descargado será quitado automáticamente de la Barra de descargas al momento de mostrar el archivo en la carpeta contenedora donde fue almacenado.">
+<!ENTITY downloadbarhelp.description59 "Con esta opción marcada, se abrirá automáticamente la carpeta donde se ha almacenado el archivo al momento de terminar la descarga.">
+<!ENTITY downloadbarhelp.description60 "Con esta opción marcada, se abrirá automáticamente la pestaña de descargas al iniciar una descarga.">
+<!ENTITY downloadbarhelp.description61 "Download Status Bar conserva el historial de las descargas de la sesión anterior dentro de la Barra de descargas, dicha barra se abrirá automáticamente al iniciar una nueva sesión para mostrar las descargas previas. Si no deseas conservar el historial de descargas de la sesión anterior dentro de la Barra de descargas, puedes marcar esta opción para quitar todas las descargas completadas al salir de Firefox.">
+<!ENTITY downloadbarhelp.description62 "Antes de eliminar físicamente algún elemento, Download Status Bar muestra un diálogo de confirmación para evitar eliminaciones accidentales. Si deseas agilizar las eliminaciones evitando que dicho diálogo de confirmación aparezca, puedes hacerlo marcando esta opción.">
+<!ENTITY downloadbarhelp.description63 "Con esta opción marcada, la Barra de descargas permanecerá visible mientras exista una descarga activa, pero se ocultará automáticamente cuando todas las descargas hayan finalizado, para así preservar el espacio visual de las páginas. También puedes especificar un intervalo de tiempo de demora antes de que la Barra de descargas se oculte.">
+<!ENTITY downloadbarhelp.description64 "Quizás te parezca que ciertos tipos de archivo no sean lo suficientemente importantes como para mantenerlos visibles dentro de la Barra de descargas, y quieras que sean quitados automáticamente después de un periodo de tiempo específico. Bien, pues en este campo puedes escribir las extensiones de archivo que quieras que se quiten automáticamente, separándolas por comas. Con un caracter de asterisco (*) puedes abarcar TODOS los tipos de archivo sin escepción.">
+<!ENTITY downloadbarhelp.description65 "Puedes definir que los archivos descargados sean analizados automáticamente en busca de virus modificando los valores de este grupo de opciones.">
+<!ENTITY downloadbarhelp.description66 "Ruta donde se encuentra almacenado el ejecutable de tu Programa de Seguridad favorito. Pulsa el botón Localizar para abrir un explorador de archivos y así encontrar el programa que deseas utilizar para analizar los archivos descargados, si es que aún no lo habías hecho.">
+<!ENTITY downloadbarhelp.description67 "Si deseas omitir el análisis para buscar virus en ciertos tipos de archivo, puedes escribir las extensiones de archivo correspondientes en este campo, separadas por comas.">
+<!ENTITY downloadbarhelp.description68 "La mayoría de los programas de seguridad no necesitan argumentos adicionales para realizar los análisis en busca de virus, por lo que esta sección suele dejarse vacía de forma predeterminada. Sin embargo, si tu programa de seguridad necesita argumentos adicionales, puedes escribirlos en este campo. Puedes usar la expresión &#37;1 como definición de ruta del archivo descargado.">
+<!ENTITY downloadbarhelp.description69 "Con esta opción marcada, cada archivo será analizado automáticamente en busca de virus al momento de finalizar la descarga, usando el programa que hayas predefinido.">
+<!ENTITY downloadbarhelp.description70 "Puedes hacer que se escuchen sonidos de notificación al finalizar las descargas modificando los valores de los campos de este grupo de opciones.">
+<!ENTITY downloadbarhelp.description71 "Ruta hacia donde se encuentra almacenado tu archivo de audio favorito para ser reproducido como notificación. Pulsa el botón Localizar para abrir un explorador de archivos con el fin de ubicar el archivo, esto si es que aún no la habías hecho antes. Los formatos soportados para ser utilizados como sonidos de notificación son .ogg, .wav y .mp3. El sonido predeterminado es el correspondiente a un archivo de audio que viene incluido dentro de la extensión misma.">
+<!ENTITY downloadbarhelp.description72 "Si deseas pre-visualizar (escuchar) el sonido actualmente designado, puedes pulsar el botón Reproducir del reproductor de sonidos.">
+<!ENTITY downloadbarhelp.description73 "Con esta opción marcada, recibirás notificaciones acústicas al momento de completar las descargas.">
+<!ENTITY downloadbarhelp.description74 "Pulsando el botón Restaurar opciones se restaurarán los valores predeterminados de las opciones de notificaciones.">
+<!ENTITY downloadbarhelp.description75 "Puedes personalizar la interfaz de Download Status Bar desde las opciones disponibles en esta pestaña.">
+<!ENTITY downloadbarhelp.description76 "Puedes cambiar la apariencia de los elementos de descarga modificando los controles de este grupo de opciones. Cada color está basado en gradientes, con el afán de crear unos efectos confortables en la interfaz de los elementos. Cada cambio de color es aplicado instantáneamente por Download Status Bar:">
+<!ENTITY downloadbarhelp.description77 "Elige un color del selector de colores relacionado para definirlo como color de fondo de los elementos de descarga. Por motivo de que el color de progreso va reemplazando paulatinamente al color de fondo hasta reemplazarlo por completo al finalizar la descarga, quizás debieras modificar este color al iniciar la descarga de un archivo grande para poder ir viendo como lucen los colores y ajustarle mejor a tu completo agrado.">
+<!ENTITY downloadbarhelp.description78 "Elige un color del selector de colores relacionado para definirlo como color de progreso para las descargas activas.">
+<!ENTITY downloadbarhelp.description79 "Elige un color del selector de colores relacionado para definirlo como color de texto del nombre de archivo y de la información de la sección de progreso del elemento de descarga.">
+<!ENTITY downloadbarhelp.description80 "Elige un color del selector de colores relacionado para definirlo como color final de las descargas completadas.">
+<!ENTITY downloadbarhelp.description81 "Elige un color del selector de colores relacionado para definirlo como color para las descargas pausadas.">
+<!ENTITY downloadbarhelp.description82 "Elige un color del selector de colores relacionado para asignarlo como color de fondo para la Barra de descargas.">
+<!ENTITY downloadbarhelp.description83 "Pulsando el botón Restaurar opciones se restaurarán los valores predeterminados de las opciones de Colores.">
+<!ENTITY downloadbarhelp.description84 "Puedes asignar colores diferentes para distintas velocidades de descarga ajustando los valores de los campos de este grupo de opciones. Al asignar colores de velocidades se ignorará el valor definido como color de Progreso del grupo de opciones de colores, si habías definido alguno.">
+<!ENTITY downloadbarhelp.description85 "Puedes ajustar el modo en que Download Status Bar muestra las descargas por medio de los campos disponibles en este grupo de opciones:">
+<!ENTITY downloadbarhelp.description86 "Esta es la interfaz predeterminada de Download Status Bar. Si seleccionas esta opción, los elementos de descarga serán mostrados en la Barra de descargas ubicada en la parte baja del navegador.">
+<!ENTITY downloadbarhelp.description87 "Si deseas mantener tu privacidad alejada de miradas curiosas, puedes seleccionar esta opción para mostrar los elementos de descarga en un panel incluido dentro de un botón de descargas. Dicho botón es colocado de forma predeterminada en la barra de complementos (Add-on Bar). Pero si no existe una barra de complementos, o si ésta se encuentra oculta en esos momentos, el botón entonces es colocado en la barra de navegación. Dicho botón incluye además un contador justo a su lado. La primer sección del contador indica el número de descargas activas en progreso, y la segunda sección indica el número de descargas completadas.">
+<!ENTITY downloadbarhelp.description88 "Por medio de las casillas de este grupo de opciones, tú controlas que detalles mostrar y cuales dejar ocultos en la sección de progreso de los elementos de descarga, las opciones de que dispones son: Porcentaje de progreso, Velocidad actual y Tiempo restante.">
+<!ENTITY downloadbarhelp.description89 "Puedes ajustar la orientación de la sección de progreso de los elementos de descarga ajustando los campos de este grupo de opciones. Seleccionando la opción Horizontal hará que el porcentaje de progreso, la velocidad y el tiempo restante aparezcan uno al lado del otro horizontalmente, mientras que cambiando a la opción Vertical hará que aparezcan uno abajo del otro, es decir, en forma vertical.">
+<!ENTITY downloadbarhelp.description90 "Puedes cambiar el ancho y la altura de los elementos de descarga modificando los campos de este grupo de opciones:">
+<!ENTITY downloadbarhelp.description91 "Especifica un valor numérico en este campo para definir un ancho fijo para los elementos de descarga.">
+<!ENTITY downloadbarhelp.description92 "Especifica un valor numérico en este campo para definir la altura de los elementos de descarga.">
+<!ENTITY downloadbarhelp.description93 "Especifica un valor numérico en este campo para definir el tamaño de la fuente tipográfica para el nombre de archivo de los elementos de descarga.">
+<!ENTITY downloadbarhelp.description94 "Especifica un valor numérico en este campo para definir el tamaño de la fuente tipográfica para los detalles de la sección de progreso de los elementos de descarga.">
+<!ENTITY downloadbarhelp.description95 "Marcando esta opción se ocultará el botón Despejar de la barra de descargas.">
+<!ENTITY downloadbarhelp.description96 "Marcando esta opción se ocultará el botón Descargas de la barra de descargas.">
+<!ENTITY downloadbarhelp.imagecaption1 "Al hacer clic derecho en los elementos de descarga se mostrará el menú contextual, el cual contiene las opciones para administrar tus descargas.">
+<!ENTITY downloadbarhelp.imagecaption2 "Puedes forzar a que tus descargas solo se muestren dentro del panel de un botón para mantener en privacidad lo que descargas y evitar miradas curiosas.">
+<!ENTITY downloadbarhelp.imagecaption3 "Puesdes consultar las estadísticas de descargas para ver que tipos de archivos son los que más descargas, y en que cantidades.">
+<!ENTITY downloadbarhelp.imagecaption4 "Haciendo clic normal en un elemento de descarga se abrirá un cuadro emergente donde podrás ver la información de la descarga com más detalles.">
+<!ENTITY downloadbarhelp.imagecaption5 "La ventana de opciones te permite tener total control de tus descargas en base a tus necesidades.">
+<!ENTITY downloadbarhelp.babelzilla "Si deseas ver a Download Status Bar en tu propio idioma, te invito a que colabores en su traducción registrándote en BabelZilla.">
+<!ENTITY downloadbarhelp.mozillazine "Puedes obtener un mejor soporte para Download Status Bar en los foros de MozillaZine (en Inglés):">

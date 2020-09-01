@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+<Description about="urn:mozilla:install-manifest">
+<em:id>{6c28e999-e900-4635-a39d-b1ec90ba0c0f}</em:id>
+<em:version>15.0.0.1</em:version>
+<em:type>2</em:type>
+<em:bootstrap>true</em:bootstrap>
+<em:unpack>false</em:unpack>
+
+<!-- Target Application this extension can install into,
+    with minimum and maximum supported versions:
+    Firefox -->
+<em:targetApplication>
+    <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>4.0</em:minVersion>
+        <em:maxVersion>51.*</em:maxVersion>
+    </Description>
+</em:targetApplication>
+<!-- Thunderbird -->
+<em:targetApplication>
+	<Description>
+		<em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
+		<em:minVersion>0.3</em:minVersion>
+		<em:maxVersion>45.0</em:maxVersion>
+	</Description>
+</em:targetApplication>
+<!-- SeaMonkey -->	
+<em:targetApplication>
+	<Description>
+		<em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+		<em:minVersion>2.0</em:minVersion>
+		<em:maxVersion>2.46</em:maxVersion>
+	</Description>
+</em:targetApplication>
+<!-- Pale Moon -->	
+<em:targetApplication>
+	<Description>
+		<em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
+		<em:minVersion>25.0</em:minVersion>
+		<em:maxVersion>26.*</em:maxVersion>
+	</Description>
+</em:targetApplication>
+
+<!-- Front End MetaData -->
+<em:name>Download Status Bar</em:name>
+<em:optionsURL>chrome://downloadbar/content/options.xul</em:optionsURL>
+<em:multiprocessCompatible>true</em:multiprocessCompatible>
+
+<em:translator>Grinch Finnish</em:translator>
+<em:translator>Centauri39 German</em:translator>
+<em:translator>topoldo Italian</em:translator>
+<em:translator>markh Dutch</em:translator>
+<em:translator>gitbi Korean [ko-KR]</em:translator>
+<em:translator>full_interest French</em:translator>
+<em:translator>Lakrits Swedish</em:translator>
+<em:translator>yfdyh000 Chinese (Simplified)</em:translator>
+<em:translator>on9123 Chinese (Traditional)</em:translator>
+<em:translator>internero Portuguese (Brazilian)</em:translator>
+<em:translator>BrYaNTr Turkish</em:translator>
+<em:translator>essz Hungarian</em:translator>
+<em:translator>x10firefox Romanian</em:translator>
+<em:translator>matsumoto Japanese</em:translator>
+<em:translator>TLemur Russian</em:translator>
+<em:translator>inventif Macedonian</em:translator>
+<em:translator>ZuGro Spanish (Mexico)</em:translator>
+<em:translator>mdr.ksk Estonian</em:translator>
+
+</Description>
+
+</RDF>

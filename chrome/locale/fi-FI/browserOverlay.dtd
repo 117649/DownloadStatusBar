@@ -1,0 +1,41 @@
+<!ENTITY downloadbar.lnch "Avaa">
+<!ENTITY downloadbar.shwfl "Näytä tiedosto">
+<!ENTITY downloadbar.shwmngr "Näytä lataukset">
+<!ENTITY downloadbar.cncl "Peruuta">
+<!ENTITY downloadbar.pause "Tauko">
+<!ENTITY downloadbar.strt "Aloita">
+<!ENTITY downloadbar.clr "Tyhjennä">
+<!ENTITY downloadbar.clsbr "Sulje palkki">
+<!ENTITY downloadbar.clrlldwnlds "Tyhjennä kaikki lataukset">
+<!ENTITY downloadbar.pslldwnlds "Tauota kaikki lataukset">
+<!ENTITY downloadbar.rsmlldwnlds "Jatka latauksia">
+<!ENTITY downloadbar.cncllldwnlds "Peruuta kaikki lataukset">
+<!ENTITY downloadbar.dwnlds "Lataukset">
+<!ENTITY downloadbar.vrscn "Virusskannaus">
+<!ENTITY downloadbar.dltfl "Poista tiedosto">
+<!ENTITY downloadbar.rnm "Nimeä uudelleen">
+<!ENTITY downloadbar.clrll "Tyhjennä kaikki">
+<!ENTITY downloadbar.pndwnldtb "Avaa Lataukset-välilehti">
+<!ENTITY downloadbar.shwlldwnldshstry "Näytä lataushistoria">
+<!ENTITY downloadbar.gtdwnlpg "Mene lataussivulle">
+<!ENTITY downloadbar.cpydwnldlnk "Kopioi latauslinkki">
+<!ENTITY downloadbar.ptns "Asetukset">
+<!ENTITY downloadbar.src "Lähde">
+<!ENTITY downloadbar.trgt "Kohde">
+<!ENTITY downloadbar.crrntspd "Nykyinen nopeus">
+<!ENTITY downloadbar.vrgspd "Keskinopeus">
+<!ENTITY downloadbar.prgrs "Edistyminen">
+<!ENTITY downloadbar.rmngtm "Jäljellä oleva aika">
+<!ENTITY downloadbar.dwnldbyt "Ladattu">
+<!ENTITY downloadbar.flsz "Tiedostokoko">
+<!ENTITY downloadbar.dwnldtm "Latausaika">
+<!ENTITY downloadbar.resume "Jatka">
+<!ENTITY downloadbar.sttstcs "Tilastot">
+<!ENTITY downloadbar.chksm "Tarkistussumma">
+<!ENTITY downloadbar.cpy "Kopioi">
+<!ENTITY downloadbar.hlp "Apua">
+<!ENTITY downloadbar.md5hsh "MD5-tarkistussumma">
+<!ENTITY downloadbar.sendto "Lähetä">
+<!ENTITY downloadbar.desktopfolder "Työpöytä">
+<!ENTITY downloadbar.downloadsfolder "Lataukset">
+<!ENTITY downloadbar.customfolder "Mukautettu">

@@ -1,0 +1,62 @@
+<!ENTITY downloadbaropt.ptns "Настройки">
+<!ENTITY downloadbaropt.clrrftrlnch "Удалять загрузку из списка после ее запуска">
+<!ENTITY downloadbaropt.clrrftrshw "Удалять загрузку из списка после показа файла">
+<!ENTITY downloadbaropt.shwddbbrbttn "Показывать кнопку на панели дополнений">
+<!ENTITY downloadbaropt.attclswhndlcmp "Автоматически закрывать панель загрузок после завершения всех загрузок">
+<!ENTITY downloadbaropt.pnftrdwncmp "Автоматически открывать каталог загрузок после завершения загрузки">
+<!ENTITY downloadbaropt.clr "Цвета">
+<!ENTITY downloadbaropt.dwnprgrssclr "Цвет прогресс-бара">
+<!ENTITY downloadbaropt.dwntxtclr "Цвет сообщения о загрузке">
+<!ENTITY downloadbaropt.dwncmpltclr "Цвет сообщения о завершении">
+<!ENTITY downloadbaropt.dwnldpsclr "Цвет приостановленной загрузки">
+<!ENTITY downloadbaropt.brbckgrndclr "Цвет панели">
+<!ENTITY downloadbaropt.vrscn "Антивирус">
+<!ENTITY downloadbaropt.vrscnnrpth "Путь к антивирусному сканеру">
+<!ENTITY downloadbaropt.vrscnlct "Указать">
+<!ENTITY downloadbaropt.dsbscnfltyps "Отключить сканирование для файлов этих типов">
+<!ENTITY downloadbaropt.ttscndwnldfl "Автоматически сканировать загруженные файлы">
+<!ENTITY downloadbaropt.ttclrthsfltyps "Автоматически удалять загрузки файлов этих типов из списка">
+<!ENTITY downloadbaropt.ftr "после">
+<!ENTITY downloadbaropt.scnds "с.">
+<!ENTITY downloadbaropt.ntfctn "Уведомление">
+<!ENTITY downloadbaropt.doflpth "Путь к аудио-файлу">
+<!ENTITY downloadbaropt.dofllct "Указать">
+<!ENTITY downloadbaropt.prvwsnd "Проиграть звук">
+<!ENTITY downloadbaropt.plysndwhncdwnldcomlts "Проигрывать звук после завершения загрузки">
+<!ENTITY downloadbaropt.pprnc "Внешний вид">
+<!ENTITY downloadbaropt.bdnwtdh "Подключение к интернету">
+<!ENTITY downloadbaropt.spdd "Скорость загрузки">
+<!ENTITY downloadbaropt.slwstspd "Минимальная скорость">
+<!ENTITY downloadbaropt.vrgspd "Средняя скорость">
+<!ENTITY downloadbaropt.fstsspd "Максимальная скорость">
+<!ENTITY downloadbaropt.bckgndclr "Фон окна загрузок">
+<!ENTITY downloadbaropt.dwnbrdclr "Цвет границы окна">
+<!ENTITY downloadbaropt.rststtngs "Сбросить настройки">
+<!ENTITY downloadbaropt.srntrfc "Интерфейс пользователя">
+<!ENTITY downloadbaropt.dnwldbr "Прогресс-бар">
+<!ENTITY downloadbaropt.dnwlpnl "Панель загрузок">
+<!ENTITY downloadbaropt.atpndwnldtb "Автоматически открывать вкладку загрузок при запуске загрузки">
+<!ENTITY downloadbaropt.hdclrbttn "Спрятать кнопку Очистить на панели загрузок">
+<!ENTITY downloadbaropt.hddwnldsbttn "Спрятать кнопку Загрузки на панели загрузок">
+<!ENTITY downloadbaropt.dwldtm "Загрузка">
+<!ENTITY downloadbaropt.apply "Применить">
+<!ENTITY downloadbaropt.width "Ширина">
+<!ENTITY downloadbaropt.height "Высота">
+<!ENTITY downloadbaropt.vrsscnrgmnts "Переменные">
+<!ENTITY downloadbaropt.atclnwhnffqt "Очищать завершенные загрузки при выходе из Firefox">
+<!ENTITY downloadbaropt.prgrsntfcts "Уведомление о ходе загрузок">
+<!ENTITY downloadbaropt.prgrssntfct "&#37; завершения">
+<!ENTITY downloadbaropt.spdntfct "Скорость">
+<!ENTITY downloadbaropt.tmntfct "Осталось времени">
+<!ENTITY downloadbaropt.over "Более">
+<!ENTITY downloadbaropt.skcnfrmtnbfrdlt "Спрашивать перед удалением скачанных файлов">
+<!ENTITY downloadbaropt.prgrsslgnmnt "Расположение прогресс-бара">
+<!ENTITY downloadbaropt.hrzntllgnmnt "Горизонтально">
+<!ENTITY downloadbaropt.vrtcllgnmnt "Вертикально">
+<!ENTITY downloadbaropt.fntsz "Размер шрифта">
+<!ENTITY downloadbaropt.flnmsz "Имя файла">
+<!ENTITY downloadbaropt.prgrsssz "Прогресс">
+<!ENTITY downloadbaropt.flnmszfntsz "Размер шрифта имени файла">
+<!ENTITY downloadbaropt.prgrssszfntsz "Размер шрифта прогресс-бара">
+<!ENTITY downloadbaropt.dblclckdwnldtm "При двойном щелчке на загрузку:">
+<!ENTITY downloadbaropt.cntndwnldswhnbrwsrqts "Продолжать скачивание в Менеджере закачек при выходе из Firefox">

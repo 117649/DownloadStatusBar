@@ -1,0 +1,41 @@
+<!ENTITY downloadbar.lnch "Lancer">
+<!ENTITY downloadbar.shwfl "Afficher fichier">
+<!ENTITY downloadbar.shwmngr "Afficher gestionnaire">
+<!ENTITY downloadbar.cncl "Annuler">
+<!ENTITY downloadbar.pause "Pause">
+<!ENTITY downloadbar.strt "Démarrer">
+<!ENTITY downloadbar.clr "Effacer">
+<!ENTITY downloadbar.clsbr "Fermer barre">
+<!ENTITY downloadbar.clrlldwnlds "Effacer tous les téléchargements">
+<!ENTITY downloadbar.pslldwnlds "Mettre en pause tous les téléchargements">
+<!ENTITY downloadbar.rsmlldwnlds "Reprendre tous les téléchargements">
+<!ENTITY downloadbar.cncllldwnlds "Annuler tous les téléchargements">
+<!ENTITY downloadbar.dwnlds "Téléchargements">
+<!ENTITY downloadbar.vrscn "Analyse virus">
+<!ENTITY downloadbar.dltfl "Supprimer fichier">
+<!ENTITY downloadbar.rnm "Renommer">
+<!ENTITY downloadbar.clrll "Effacer tous">
+<!ENTITY downloadbar.pndwnldtb "Ouvrir l'onglet téléchargement">
+<!ENTITY downloadbar.shwlldwnldshstry "Afficher l'historique de téléchargement">
+<!ENTITY downloadbar.gtdwnlpg "Aller à la page de téléchargement">
+<!ENTITY downloadbar.cpydwnldlnk "Copier de lien de téléchargement">
+<!ENTITY downloadbar.ptns "Options">
+<!ENTITY downloadbar.src "Source">
+<!ENTITY downloadbar.trgt "Cible">
+<!ENTITY downloadbar.crrntspd "Vitesse actuelle">
+<!ENTITY downloadbar.vrgspd "Vitesse moyenne">
+<!ENTITY downloadbar.prgrs "Progression">
+<!ENTITY downloadbar.rmngtm "Temps restant">
+<!ENTITY downloadbar.dwnldbyt "Téléchargé">
+<!ENTITY downloadbar.flsz "Taille du fichier">
+<!ENTITY downloadbar.dwnldtm "Temps de téléchargement">
+<!ENTITY downloadbar.resume "Reprendre">
+<!ENTITY downloadbar.sttstcs "Statistiques">
+<!ENTITY downloadbar.chksm "Somme de contrôle">
+<!ENTITY downloadbar.cpy "Copier">
+<!ENTITY downloadbar.hlp "Aide">
+<!ENTITY downloadbar.md5hsh "Hachage MD5">
+<!ENTITY downloadbar.sendto "Envoyer vers">
+<!ENTITY downloadbar.desktopfolder "Bureau">
+<!ENTITY downloadbar.downloadsfolder "Téléchargements">
+<!ENTITY downloadbar.customfolder "Personnalisé">

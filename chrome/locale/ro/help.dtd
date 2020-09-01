@@ -1,0 +1,130 @@
+<!ENTITY downloadbarhelp.description "Dacă sunteți o persoană căreia îi place să aibă control total asupra descărcărilor, Download Status Bar este extensia pe care o căutați.">
+<!ENTITY downloadbarhelp.onlnvlbl1 "Această pagină este disponibilă și în alte limbi.">
+<!ENTITY downloadbarhelp.onlnvlbl2 "Dați clic pe un drapel pentru a deschide într-o filă nouă pagina corespunzătoare, tradusă.">
+<!ENTITY downloadbarhelp.description2sntc1 "Download Status Bar gestionează în mod exhaustiv descărcările pe care le faceți">
+<!ENTITY downloadbarhelp.Launch "deschidere, lansare în execuție">
+<!ENTITY downloadbarhelp.Show "afișare dosar de stocare">
+<!ENTITY downloadbarhelp.Scan "scanare împotriva virușilor">
+<!ENTITY downloadbarhelp.Rename "redenumire">
+<!ENTITY downloadbarhelp.Checksum "verificare sumă de control">
+<!ENTITY downloadbarhelp.Pause "suspendare">
+<!ENTITY downloadbarhelp.Resume "reluare">
+<!ENTITY downloadbarhelp.Cancel "anulare">
+<!ENTITY downloadbarhelp.Clean "curățare elemente aferente fișierelor descărcate">
+<!ENTITY downloadbarhelp.Delete "ștergere">
+<!ENTITY downloadbarhelp.description2sntc2 "elaborează statistici, menține istoricul descărcărilor anterioare și face încă multe altele.  Download Status Bar nu este doar o extensie de gestiune a descărcărilor ci este un instrument de îmbunătățire a productivității dumneavoastră.">
+<!ENTITY downloadbarhelp.description3 "Download Status Bar este special proiectată pentru a ține cont de nevoile și solicitările utilizatorilor. Toate așteptările dumneavoastră sunt reflectate în nucleul extensiei astfel încât, utilizând noile caracteristici ale Firefox, aceasta să îmbunătățească performanțele navigării și descărcărilor dumneavoastră.  Download Status Bar este un proiect gestionat de către proprii utilizatori, care se păstrează proaspăt și puternic.">
+<!ENTITY downloadbarhelp.description4 "Instalați Download Status Bar pentru obține controlul total asupra descărcărilor dumneavoastră.">
+<!ENTITY downloadbarhelp.features "Caracteristici">
+<!ENTITY downloadbarhelp.description5 "Atunci când descărcați fișiere de pe internet, Download Status Bar va plasa în mod automat elementele de progres aferente în bara de descărcări.  După cum sugerează numele, bara de descărcări este o bară, plasată în partea de jos a ferestrei navigatorului, în general deasupra barei de suplimente.  Deoarece Download Status Bar este ușor de utilizat și destul de inteligentă, bara de descărcări va fi vizibilă numai atunci când există o descărcare activă. Dacă nu există nici o descărcare de afișat, bara de descărcări se ascunde în mod automat pentru a păstra zona paginii web cât mai mare.  Și, evident, se va afișa din nou, în mod automat, atunci când începe descărcarea unui fișier.">
+<!ENTITY downloadbarhelp.description6 "Dacă doriți să afișați bara de descărcări, chiar dacă nu există nici o descărcare, puteți folosi tastele directe menționate mai jos:">
+<!ENTITY downloadbarhelp.description7 "Windows: Ctrl+Alt+D">
+<!ENTITY downloadbarhelp.description8b "Mac OS X: shift+alt+D">
+<!ENTITY downloadbarhelp.description9 "Linux: Ctrl/Cmd+Alt+D">
+<!ENTITY downloadbarhelp.description10 "De asemenea, puteți să utilizați aceste taste directe și pentru a ascunde în orice moment bara de descărcări.  Cu alte cuvinte, aceste taste directe comută între afișarea și ascunderea barei.">
+<!ENTITY downloadbarhelp.description10a "O altă posibilitate de comutare este selectarea opțiunii „Download Status Bar” din meniul „Unelte”.">
+<!ENTITY downloadbarhelp.fwdysntfcn "Această pagină va fi finalizată în câteva zile. Vă mulțumim pentru înțelegere.">
+<!ENTITY downloadbarhelp.description11 "După afișarea barei de descărcări, veți observa butonul „Descărcări” în marginea stângă și butonul „Curăță bara” în marginea dreaptă a acesteia.  Butonul „Descărcări” este butonul principal al extensiei Download Status Bar pe care puteți da clic pentru a afișa meniul contextual al acesteia.  Butonul „Curăță bara” este folosit pentru a elimina toate elementele aferente descărcărilor finalizate din bara de descărcări.">
+<!ENTITY downloadbarhelp.description12 "Dând clic pe butonul „Descărcări”, veți avea acces la meniul contextual al extensiei, ale cărui componente și acțiuni sunt descrise mai jos">
+<!ENTITY downloadbarhelp.options "Opțiuni">
+<!ENTITY downloadbarhelp.description13 "deschide o casetă în care se pot selecta opțiuni pentru personalizarea extensiei după preferințe.">
+<!ENTITY downloadbarhelp.statistics "Statistici">
+<!ENTITY downloadbarhelp.description14 "afișează o pagină care conține informații și grafice privind descărcările anterioare.">
+<!ENTITY downloadbarhelp.showdownloadhistory "Afișează toate descărcările">
+<!ENTITY downloadbarhelp.description15 "deschide colecția implicită de descărcări a Firefox unde sunt afișate toate descărcările anterioare.">
+<!ENTITY downloadbarhelp.opendownloadtab "Afișează descărcările într-o filă">
+<!ENTITY downloadbarhelp.description16 "afișează colecția implicită de descărcări a Firefox într-o filă nouă.">
+<!ENTITY downloadbarhelp.downloads "Descărcări">
+<!ENTITY downloadbarhelp.description17 "deschide un submeniu care oferă posibilitatea suspendării, reluării, anulării și eliminării elementelor aferente descărcărilor, prin câte o singură acțiune.">
+<!ENTITY downloadbarhelp.help "Ajutor">
+<!ENTITY downloadbarhelp.description18 "afișează o pagină web de unde puteți obține informații detaliate despre utilizarea extensiei într-un mod eficient.">
+<!ENTITY downloadbarhelp.closedownloadbar "Ascunde bara">
+<!ENTITY downloadbarhelp.description19 "ascunde bara de descărcări.">
+<!ENTITY downloadbarhelp.description20 "Atunci când descărcați fișiere de pe internet, Download Status Bar plasează automat elemente de descărcare în bara de descărcări.  Mai jos sunt câteva legături la fișiere de pe Mozilla.org, ca exemple de descărcare.  Dați clic pe ele pentru a începe descărcarea.">
+<!ENTITY downloadbarhelp.description21 "Fiecare element de descărcare conține următoarele informații:">
+<!ENTITY downloadbarhelp.dwnldcn "Pictogramă">
+<!ENTITY downloadbarhelp.description22 "indică tipul de fișier care se descarcă.  Aspectul pictogramei poate să difere în funcție de tema Firefox care este utilizată.">
+<!ENTITY downloadbarhelp.flnm "Denumire">
+<!ENTITY downloadbarhelp.description23 "reprezintă denumirea și extensia fișierului descărcat.  Dacă aceasta este prea lungă pentru a se încadra în elementul de descărcare, ea va fi trunchiată.">
+<!ENTITY downloadbarhelp.prgrssctn "Progres">
+<!ENTITY downloadbarhelp.description24 "afișează evoluția descărcării, indicând viteza de descărcare și procentul descărcat.  Se poate, de asemenea, afișa timpul rămas până la finalizarea descărcării, selectând opțiunea corespunzătoare în caseta de opțiuni.">
+<!ENTITY downloadbarhelp.description25 "De asemenea, dând clic-dreapta pe un element de descărcare veți avea acces la un meniu contextual ale cărui opțiuni sunt descrise în continuare">
+<!ENTITY downloadbarhelp.description26 "deschide sau lansează în execuție fișierul descărcat.  Această opțiune devine disponibilă după ce descărcarea s-a finalizat.">
+<!ENTITY downloadbarhelp.description27 "localizează și afișează fișierul descărcat în dosarul care îl conține.">
+<!ENTITY downloadbarhelp.description28 "afișează colecția fișierelor descărcate.">
+<!ENTITY downloadbarhelp.description29 "scanează manual împotriva virușilor fișierul descărcat cu programul antivirus desemnat.  Această opțiune vă cere să localizați și să desemnați un program antivirus, dacă nu ați făcut-o deja.">
+<!ENTITY downloadbarhelp.description30 "deschide o casetă de dialog în care se afișează, la alegere, sumele de control MD5, MD2, SHA1, SHA256, SHA384, SHA512, ale fișierului descărcat pe care, apoi, le puteți compara cu cele cunoscute ca fiind corecte.">
+<!ENTITY downloadbarhelp.description31 "deschide o caseta de dialog în care puteți modifica denumirea și extensia fișierului descărcat.  Această opțiune devine disponibilă după ce descărcarea s-a finalizat.">
+<!ENTITY downloadbarhelp.description32 "șterge definitiv fișierul de pe sistem.  Înainte de inițierea acțiunii se va cere o reconfirmare a ei.  Această opțiune devine disponibilă după ce descărcarea s-a finalizat.">
+<!ENTITY downloadbarhelp.description33 "deschide pagina de descărcare a fișierului într-o filă nouă.">
+<!ENTITY downloadbarhelp.description34 "copiază legătura de descărcare a fișierului (URL) în memoria tampon.">
+<!ENTITY downloadbarhelp.description35 "anulează descărcarea și șterge fișierul din sistem.  Această opțiune este disponibilă numai pentru descărcările în curs.">
+<!ENTITY downloadbarhelp.description36 "suspendă o descărcare activă.">
+<!ENTITY downloadbarhelp.description37 "reia o descărcare suspendată.">
+<!ENTITY downloadbarhelp.description38 "elimină elementul de descărcare din bara de descărcări.">
+<!ENTITY downloadbarhelp.description39 "Dând clic pe un element de descărcare se va afișa o casetă cu informații despre descărcarea respectivă, ale căror semnificații detaliate sunt redate în continuare:">
+<!ENTITY downloadbarhelp.description40 "sursa (URL-ul) fișierului descărcat.  Un clic pe această legătură va deschide pagina sursă într-o filă nouă.  Cu clic-dreapta va fi afișată opțiunea de copiere a legăturii.">
+<!ENTITY downloadbarhelp.description41 "locația unde este salvat fișierul descărcat.">
+<!ENTITY downloadbarhelp.description42 "viteza curentă de descărcare a fișierului, în KB/s.">
+<!ENTITY downloadbarhelp.description43 "viteza medie de descărcare a fișierului, în KB/s.  Această informație va fi disponibilă după finalizarea descărcării.">
+<!ENTITY downloadbarhelp.description44 "procentul din dimensiunea totală a fișierului, care s-a descărcat.">
+<!ENTITY downloadbarhelp.description45 "timpul rămas până la finalizarea descărcării.">
+<!ENTITY downloadbarhelp.description46 "timpul total de descărcare.  Această informație va fi disponibilă după finalizarea descărcării.">
+<!ENTITY downloadbarhelp.description47 "numărul de KB descărcați și numărul total de KB pe care îi are fișierul.">
+<!ENTITY downloadbarhelp.description48 "dimensiunea fișierului pe disc.  Această informație va fi disponibilă după finalizarea descărcării.">
+<!ENTITY downloadbarhelp.description49 "suma de control MD5 calculată automat.  Această informație va fi disponibilă după finalizarea descărcării.">
+<!ENTITY downloadbarhelp.description50 "Caseta cu informații mai conține și o miniatură a fișierului descărcat, dacă acesta este o imagine.  Sunt afișate miniaturi pentru tipurile PNG, JPG, GIF și BMP.  Un clic pe miniatură va deschide imaginea descărcată într-o filă nouă.">
+<!ENTITY downloadbarhelp.description51 "Aceleași informații despre descărcare, redate mai sus, sunt prezentate și în balonul informativ care se afișează la survolarea cu mausul a elementului de descărcare.">
+<!ENTITY downloadbarhelp.tip "Sfat">
+<!ENTITY downloadbarhelp.description52 "Cu dublu-clic pe un element de descărcare se deschide automat fișierul descărcat.">
+<!ENTITY downloadbarhelp.description53 "Cu dublu-clic pe bara de descărcare se elimină automat toate elementele aferente fișierelor complet descărcate.">
+<!ENTITY downloadbarhelp.description54 "Cu clic-mijloc (clic cu rozeta) pe un element de descărcare se elimină acesta din bara de descărcare.">
+<!ENTITY downloadbarhelp.description55 "Cu clic pe spațiul liber al barei de descărcare se afișează meniul contextual al extensiei.">
+<!ENTITY downloadbarhelp.description56 "Aspectul și comportamentul extensiei pot fi personalizate după preferințe în caseta „Opțiuni”.  Puteți deschide această casetă dând clic-dreapta pe butonul „Descărcări” sau pe spațiul liber al barei de descărcări și selectând elementul „Opțiuni”.  Ca alternativă, puteți deschide caseta și selectând din meniul „Unelte” al navigatorului opțiunea „Suplimente”, deschizând secțiunea „Extensii”, căutând extensia „Download Status Bar” și dând clic pe butonul „Opțiuni” aferent extensiei.  Opțiunile disponibile în prima secțiune a casetei sunt descrise în continuare:">
+<!ENTITY downloadbarhelp.description57 "se elimină automat din bara de descărcări elementul de descărcare după deschiderea/lansarea fișierului din meniul contextual sau cu dublu-clic.">
+<!ENTITY downloadbarhelp.description58 "se elimină automat din bara de descărcări elementul de descărcare după afișarea fișierului în dosarului care îl conține.">
+<!ENTITY downloadbarhelp.description59 "se deschide automat dosarul care conține fișierul descărcat după finalizarea descărcării.">
+<!ENTITY downloadbarhelp.description60 "se deschide automat colecția descărcărilor într-o filă nouă la pornirea unei descărcări.">
+<!ENTITY downloadbarhelp.description61 "se elimină elementele de descărcare aferente descărcărilor finalizate la închiderea navigatorului.  Download Status Bar păstrează elementele de descărcare din sesiunile precedente și le afișează din nou în bara de descărcări la pornirea unei noi sesiuni.">
+<!ENTITY downloadbarhelp.description62 "pentru a evita ștergerea accidentală a unui fișier descărcat, se cere reconfirmarea ștergerii acestuia.  Puteți mări viteza de ștergere a fișierelor prin deselectarea acestei opțiuni.">
+<!ENTITY downloadbarhelp.description63 "se ascunde automat bara de descărcări după ce se finalizează toate descărcările.  Această preferință mărește zona de afișare a paginii web atunci când nu mai sunt descărcări active.  De asemenea puteți specifica un interval de timp după care bara de descărcări se va ascunde.">
+<!ENTITY downloadbarhelp.description64 "se elimină automat elementele de descărcare aferente tipurilor de fișiere specificate, după intervalul de timp specificat.  Puteți tasta aceste tipuri de fișiere (extensii) separate prin virgule.  Pentru a specifica toate tipurile de fișiere, tastați caracterul asterisc „*”.">
+<!ENTITY downloadbarhelp.description65 "În această secțiune puteți specifica opțiuni de scanare împotriva virușilor.">
+<!ENTITY downloadbarhelp.description66 "locația unde este instalat programul antivirus.  Dați clic pe butonul „Răsfoiește…” pentru a alege din sistem acest program.">
+<!ENTITY downloadbarhelp.description67 "tipurile de fișiere care se elimină de la scanare.  Puteți tasta aceste tipuri de fișiere (extensii) separate prin virgule.">
+<!ENTITY downloadbarhelp.description68 "detalii de care are nevoie programul antivirus pentru a executa operațiunea de scanare.  Unele aplicații antivirus nu necesită parametri speciali, însă pentru a scana fișierul corect, acesta trebuie specificat programului antivirus.  Puteți folosi expresia „&#37;1” ca substituent pentru locația fișierului descărcat care va fi transmisă programului antivirus.">
+<!ENTITY downloadbarhelp.description69 "se scanează automat pentru viruși toate fișierele după finalizarea descărcării acestora.">
+<!ENTITY downloadbarhelp.description70 "În această secțiune puteți opta pentru notificarea sonoră a finalizării descărcărilor.">
+<!ENTITY downloadbarhelp.description71 "locația unde se găsește fișierul sunet preferat pentru notificare.  Dați clic pe butonul „Răsfoiește…” pentru a alege din sistem acest fișier.  Formatele de fișiere sunet acceptate sunt .ogg, .wav și .mp3.  Sunetul implicit de notificare este inclus în extensia Download Status Bar.">
+<!ENTITY downloadbarhelp.description72 "puteți asculta sunetul ales pentru notificarea sonoră dând clic pe butonul ► al playerului încorporat.">
+<!ENTITY downloadbarhelp.description73 "se emite o notificare sonoră cu sunetul ales sau cel implicit, după finalizarea descărcărilor.">
+<!ENTITY downloadbarhelp.description74 "dând clic pe acest buton, toate opţiunile de notificare vor reveni la valorile iniţiale.">
+<!ENTITY downloadbarhelp.description75 "În această secțiune puteţi personaliza interfaţa extensiei Download Status Bar.">
+<!ENTITY downloadbarhelp.description76 "Puteți schimba aspectul elementelor de descărcare prin alegerea diverselor culori în acest grup de opțiuni.  Colorarea se face în degradé pentru a crea un efect de frumos pentru elementele de interfață.  Fiecare schimbare de culoare este aplicată imediat elementului respectiv:">
+<!ENTITY downloadbarhelp.description77 "Alegeţi o culoare specifică pentru fundalul elementelor de descărcare.  Progresul descărcărilor se suprapune peste fundal, deci este posibil să apreciaţi şi pe baza culorilor starea descărcărilor active.">
+<!ENTITY downloadbarhelp.description78 "Alegeţi o culoare specifică pentru progresul descărcărilor active.">
+<!ENTITY downloadbarhelp.description79 "Alegeţi o culoare specifică pentru textul de pe elementele de descărcare.">
+<!ENTITY downloadbarhelp.description80 "Alegeţi o culoare specifică pentru elementele de descărcare aferente descărcărilor finalizate.">
+<!ENTITY downloadbarhelp.description81 "Alegeţi o culoare specifică pentru elementele descărcărilor suspendate.">
+<!ENTITY downloadbarhelp.description82 "Alegeţi o culoare specifică pentru fundalul barei de descărcare.">
+<!ENTITY downloadbarhelp.description83 "Dând clic pe acest buton, se vor restabili culorile iniţiale pentru elementele de descărcare. .">
+<!ENTITY downloadbarhelp.description84 "Puteți atribui diferite culori pentru diferite viteze de descărcare, alegându-le în acest grup de opțiuni.  Aceste culori vor modifica culoarea progresului descărcări, dacă a fost aleasă vreuna.">
+<!ENTITY downloadbarhelp.description85 "You can change the interface of Download Status Bar by the fields provided in this options group:">
+<!ENTITY downloadbarhelp.description86 "This is the default download interface for Download Status Bar. If you select this option, Download Items are put in the Download Bar which is placed at the bottom section of the browser.">
+<!ENTITY downloadbarhelp.description87 "If you want to keep your Download privacy from others, you can select this option to place all Download Items in a Toolbar Button Panel. The Toolbar Button will be placed in Add-on Bar as default. If there are no Add-on Bar or if Add-on Bar is hidden at the moment, the Toolbar Button will be placed inside the Navigation Toolbar of Firefox. Toolbar Button has also a counter next to it. First section of counter indicates the number of active downloads in progress and the second part of the counter indicates the number of completed downloads.">
+<!ENTITY downloadbarhelp.description88 "You can hide or show Progress Percent, Speed and Remaining Time items in the Progress Section of Download Items by tuning the checkboxes in this option group.">
+<!ENTITY downloadbarhelp.description89 "You can adjust the Progress Section alignment of Download Items by tuning the fields of this options group. Selecting Horizontal option will place Progress, Speed and Remaining Time elements side by side while switching to Vertical place all Progress elements in vertical position.">
+<!ENTITY downloadbarhelp.description90 "You can change the width and height values of a Download item  by tuning the fields in this options group:">
+<!ENTITY downloadbarhelp.description91 "Place a numerical value in this field to set the width of the Download Item.">
+<!ENTITY downloadbarhelp.description92 "Place a numerical value in this field to set the height of the Download Item.">
+<!ENTITY downloadbarhelp.description93 "Place a numerical value in this field to set the font size for the File Name of the Download Item.">
+<!ENTITY downloadbarhelp.description94 "Place a numerical value in this field to set the font size for the Progress Section of the Download Item.">
+<!ENTITY downloadbarhelp.description95 "Checking this option will hide Clear button in Download Bar.">
+<!ENTITY downloadbarhelp.description96 "Checking this option will hide Download button in Download Bar.">
+<!ENTITY downloadbarhelp.imagecaption1 "Right Clicking download items will provide context menu options to manage your downloads.">
+<!ENTITY downloadbarhelp.imagecaption2 "You can have your downloads in button panel to keep your download privacy from others.">
+<!ENTITY downloadbarhelp.imagecaption3 "Puteți vedea o statistică a descărcărilor ce conţine informaţii de tipurile şi numărul fişierelor descărcate.">
+<!ENTITY downloadbarhelp.imagecaption4 "Făcând clic pe elementul de descărcare se va afișa o casetă de unde puteți obține mai multe detalii despre descărcare.">
+<!ENTITY downloadbarhelp.imagecaption5 "Caseta de opţiuni vă va oferi modalitatea prin care veţi avea control total asupra descărcărilor în funcție de nevoile dvs.">
+<!ENTITY downloadbarhelp.babelzilla "If you wish to see Download Status Bar in your own language, please feel free to translate it by registering Babelzilla.">
+<!ENTITY downloadbarhelp.mozillazine "Puteți obține informații detaliate despre Download Status Bar de pe forumul Mozillazine:">

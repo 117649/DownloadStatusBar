@@ -1,0 +1,130 @@
+<!ENTITY downloadbarhelp.description "Si vous êtes le genre de personne qui aime avoir un contrôle complet sur tous les aspects de vos téléchargements, Download Status Bar est l'extension que vous recherchez.">
+<!ENTITY downloadbarhelp.onlnvlbl1 "Cette page est disponible en ligne dans d'autres langues, aussi.">
+<!ENTITY downloadbarhelp.onlnvlbl2 "Cliquez sur les drapeaux liés pour ouvrir les pages traduites dans un nouvel onglet.">
+<!ENTITY downloadbarhelp.description2sntc1 "Download Status Bar gère tous les aspects de vos téléchargement">
+<!ENTITY downloadbarhelp.Launch "Lancer">
+<!ENTITY downloadbarhelp.Show "Afficher">
+<!ENTITY downloadbarhelp.Scan "Analyse">
+<!ENTITY downloadbarhelp.Rename "Renommer">
+<!ENTITY downloadbarhelp.Checksum "Somme de contrôle">
+<!ENTITY downloadbarhelp.Pause "Pause">
+<!ENTITY downloadbarhelp.Resume "Reprendre">
+<!ENTITY downloadbarhelp.Cancel "Annuler">
+<!ENTITY downloadbarhelp.Clean "Nettoyer">
+<!ENTITY downloadbarhelp.Delete "Supprimer">
+<!ENTITY downloadbarhelp.description2sntc2 "Génère des statistiques depuis vos téléchargements, garde l'historique de vos précédentes sessions et plus encore. Ce n'est pas la seule extension de gestion de téléchargement, mais un outil pour booster votre productivité, aussi.">
+<!ENTITY downloadbarhelp.description3 "Download Status Bar est spécialement conçu par vos besoins et demandes et toutes vos attentes sont placées dans le centre de base de l'add-on, tout en utilisant les plus récentes fonctionnalités de Firefox 26 pour améliorer les performances de votre navigateur et de vos téléchargements. Download Status Bar mené et géré par ses propres utilisateurs qui maintiennent sa fraîcheur et sa puissance.">
+<!ENTITY downloadbarhelp.description4 "Obtenez une copie de Download Status Bar pour prendre le contrôle total de vos téléchargements.">
+<!ENTITY downloadbarhelp.features "Fonctionnalités">
+<!ENTITY downloadbarhelp.description5 "Lorsque vous téléchargez des fichiers sur Internet, Download Status Bar placera automatiquement les éléments de progression dans la barre de téléchargement pour vous. Comme son nom l'indique, la barre de téléchargement est la barre qui se trouve à la section inférieure de Firefox, généralement au-dessus de la barre de modules. Parce que Download Status Bar est convivial et suffisamment intelligent, la barre de téléchargement ne sera visible que quand il ya un téléchargement actif. S'il n'y a pas de téléchargement à montrer, la barre de téléchargement se cache automatiquement pour préserver la zone de page web pour vous. Et il va se montrer de nouveau automatiquement lorsque vous commencez à télécharger un fichier sur le web.">
+<!ENTITY downloadbarhelp.description6 "Mais si vous souhaitez afficher la barre de téléchargement, même si il n'y a pas téléchargement, vous pouvez utiliser les raccourcis clavier ci-dessous:">
+<!ENTITY downloadbarhelp.description7 "Windows: CTRL + ALT + D">
+<!ENTITY downloadbarhelp.description8b "Mac OS X: MAJ + ALT + D">
+<!ENTITY downloadbarhelp.description9 "Linux: (CTRL/CMD) + ALT + D">
+<!ENTITY downloadbarhelp.description10 "Vous pouvez également utiliser les raccourcis clavier précédents pour cacher la barre de téléchargement. En d'autres termes ces raccourcis fonctionnent pour télécharger Bar pour vous.">
+<!ENTITY downloadbarhelp.description10a "Comme autre option, vous pouvez basculer la barre de téléchargement dans l'option de menu de Download Status Bar, dans le menu Outil de Firefox.">
+<!ENTITY downloadbarhelp.fwdysntfcn "Cette page d'aide sera complétée dans quelques jours. Merci beaucoup pour votre compréhension et patience.">
+<!ENTITY downloadbarhelp.description11 "Après ouvrir la barre de téléchargement, vous remarquerez que le bouton de &quot;Téléchargements&quot; à gauche et &quot;Effacer&quot; à droite de la barre. Le bouton de &quot;Téléchargements&quot; est le bouton principal de l'addon Download Status Bar, vous pouvez cliquer pour ouvrir le menu contextuel de l'addon. Le bouton Effacer permet d'effacer tous les téléchargements terminés de la barre par un clic de souris.">
+<!ENTITY downloadbarhelp.description12 "Cliquer sur le bouton &quot;Téléchargements&quot; fourni le menu contextuel de l'addon comme décrit au-dessous">
+<!ENTITY downloadbarhelp.options "Options">
+<!ENTITY downloadbarhelp.description13 "Cette option de menu va ouvrir la fenêtre d'options de l'addon où vous pouvez personnaliser l'addon celons vos besoins">
+<!ENTITY downloadbarhelp.statistics "Statistiques">
+<!ENTITY downloadbarhelp.description14 "Cette option de menuva ouvrir la page de statiques qui va générer les détails statistiques sur vos téléchargements précédents.">
+<!ENTITY downloadbarhelp.showdownloadhistory "Afficher l'historique de téléchargement">
+<!ENTITY downloadbarhelp.description15 "Cette option de menu ouvrira la bibliothèque de l'historique de Firefox par défaut dans le cas où vous voudriez vous référer à vos téléchargements comme une liste de fenêtre.">
+<!ENTITY downloadbarhelp.opendownloadtab "Ouvrir l'onglet de téléchargement">
+<!ENTITY downloadbarhelp.description16 "Cette option de menu la bibliothèque de l'historique de Firefox par défaut dans un onglet.">
+<!ENTITY downloadbarhelp.downloads "Téléchargements">
+<!ENTITY downloadbarhelp.description17 "Ce menu permet d'avoir accès aux options de pause, de reprise, d’annulation, et d'effacement de tous les téléchargements pour les gérer en lot.">
+<!ENTITY downloadbarhelp.help "Aide">
+<!ENTITY downloadbarhelp.description18 "Cette option de menu ouvrira la page d'aide de Download Status Bar où vous pouvez obtenir les détails à propos de l'addon et comment l'utiliser de manière efficace.">
+<!ENTITY downloadbarhelp.closedownloadbar "Fermer la barre de téléchargement">
+<!ENTITY downloadbarhelp.description19 "Cette option de menu va fermer la barre de téléchargement pour vous.">
+<!ENTITY downloadbarhelp.description20 "Quand vous téléchargé des fichiers sur le web, Download Status Bar place automatiquement les téléchargements dans la barre de téléchargement. Ci-après sont des exemples de logiciel Mozilla à télécharger. Cliquez dessus pour commencer le téléchargement.">
+<!ENTITY downloadbarhelp.description21 "Chaque élément de téléchargement contient les éléments suivant:">
+<!ENTITY downloadbarhelp.dwnldcn "Icône de téléchargement">
+<!ENTITY downloadbarhelp.description22 "L’icône spécifique indiquant le genre du fichier téléchargé. Cette icône sera peut être différence en fonction de votre thème Firefox que vous utilisez.">
+<!ENTITY downloadbarhelp.flnm "Nom de fichier">
+<!ENTITY downloadbarhelp.description23 "Nom du fichier téléchargé. Si le nom du fichier téléchargé est trop gros pour aller dans l'élément de téléchargement, il sera automatiquement rogné.">
+<!ENTITY downloadbarhelp.prgrssctn "Section de progression">
+<!ENTITY downloadbarhelp.description24 "Cette section contient pourcentage d'avancement qui montre le pourcentage accompli et les informations de vitesse indiquant la vitesse actuelle de téléchargement par seconde. Vous pouvez également ajouter l'information du temps restant informations à cette section de pourcentage d'avancement à l'aide de la fenêtre des options.">
+<!ENTITY downloadbarhelp.description25 "Vous pouvez aussi cliquer droit sur chaque téléchargement pour obtenir le menu contextuel pour plus d'action et information décrites ci-après.">
+<!ENTITY downloadbarhelp.description26 "Ouvre ou exécute le fichier téléchargé. Cette option sera disponible après la fin du téléchargement.">
+<!ENTITY downloadbarhelp.description27 "Afficher le fichier téléchargé dans son dossier contenant.">
+<!ENTITY downloadbarhelp.description28 "Afficher la fenêtre de l'historique de téléchargement.">
+<!ENTITY downloadbarhelp.description29 "Analyse le fichier téléchargé manuellement pour le logiciel de sécurité que vous avez assigné. Cette vous demandera de localiser et assigner le logiciel de sécurité si cela n'es pas déjà fait.">
+<!ENTITY downloadbarhelp.description30 "Ouvre la fenêtre de somme de contrôle où vous pouvez calculer et comparer les valeurs MD5, MD2, SHA1, SHA256, SHA384, SHA512 du fichier téléchargé.">
+<!ENTITY downloadbarhelp.description31 "Ouvre la fenêtre de renommage vous permettant de renommer votre fichier téléchargé. Cette option sera disponible après la fin du téléchargement.">
+<!ENTITY downloadbarhelp.description32 "Supprime le fichier téléchargé de votre ordinateur. Cela vous demandera une confirmation avant de supprimer le fichier. Cette option sera disponible après la fin du téléchargement.">
+<!ENTITY downloadbarhelp.description33 "Ouvre la page de téléchargement dans un nouvel onglet.">
+<!ENTITY downloadbarhelp.description34 "Copie l'URL du téléchargement dans le presse-papier.">
+<!ENTITY downloadbarhelp.description35 "Annule le téléchargement actif et l'efface de votre ordination. Cette option est disponible pour les téléchargement en cours.">
+<!ENTITY downloadbarhelp.description36 "Mets en pause le téléchargement actif.">
+<!ENTITY downloadbarhelp.description37 "Reprends le téléchargement actif.">
+<!ENTITY downloadbarhelp.description38 "Efface les téléchargements de la barre de téléchargement.">
+<!ENTITY downloadbarhelp.description39 "Vous pouvez également cliquer droit sur chaque téléchargement pour ouvrir pour le popup d'information du téléchargement lié, décrit ci-après en détail:">
+<!ENTITY downloadbarhelp.description40 "URL source du fichier téléchargé. Cliquer gauche sur le lien source ouvrira l'URL source dans le navigateur dans un nouvel onglet. Cliquer droit sur le lien ouvre le menu de copie pour copier l'URL source du téléchargement.">
+<!ENTITY downloadbarhelp.description41 "Localisation où est stocké votre fichier téléchargé dans votre ordinateur. Cliquer gauche sur le lien cible ouvrira le fichier téléchargé dans son dossier contenant. Cliquer droit sur le lien cible ouvrira le menu pour copier le chemin du fichier téléchargé.">
+<!ENTITY downloadbarhelp.description42 "Vitesse de téléchargement actuelle du téléchargement actif, en Ko/s.">
+<!ENTITY downloadbarhelp.description43 "Moyenne de vitesse du téléchargement du téléchargement terminé en Ko/s. Cette information sera disponible après que la fin téléchargement.">
+<!ENTITY downloadbarhelp.description44 "Pourcentage d'avancement réalisé du téléchargement.">
+<!ENTITY downloadbarhelp.description45 "Temps restant pour finir le téléchargement.">
+<!ENTITY downloadbarhelp.description46 "Temps utilisé pour accomplir le téléchargement. Cette information sera disponible après la fin du téléchargement.">
+<!ENTITY downloadbarhelp.description47 "La première section de ce champ indique octets actuels qui est le nombre d'octets actuellement transférés tandis que la seconde section indique total d'octets qui est le nombre total d'octets à transférer avant la fin du téléchargement.">
+<!ENTITY downloadbarhelp.description48 "Taille du fichier téléchargé du le disque. Cette information sera disponible après la fin du téléchargement.">
+<!ENTITY downloadbarhelp.description49 "Calcule automatiquement le hachage MD5 du fichier téléchargé. Cette information sera disponible après la fin du téléchargement.">
+<!ENTITY downloadbarhelp.description50 "L'information contextuelle contient également fonction de prévisualisation pour les images téléchargées pour les prévisualiser sous forme de vignettes. La fonction aperçu supporte le PNG, JPG, GIF et types de fichiers BMP. En cliquant sur l'aperçu miniature, l'image téléchargé est ouverte dans le navigateur comme un nouvel onglet.">
+<!ENTITY downloadbarhelp.description51 "Vous pouvez également survoler un élément téléchargé pour ouvrir l'information info-bulle pour obtenir détails de téléchargement rapidement.">
+<!ENTITY downloadbarhelp.tip "Conseil">
+<!ENTITY downloadbarhelp.description52 "Double-cliquer sur le téléchargement lancera automatiquement le fichier téléchargé.">
+<!ENTITY downloadbarhelp.description53 "Double-cliquer sur la barre de téléchargement effacera automatiquement les téléchargements terminés.">
+<!ENTITY downloadbarhelp.description54 "Un clic milieu sur l'élément de téléchargement l'effacera de la barre de téléchargement.">
+<!ENTITY downloadbarhelp.description55 "Un clic gauche dans un espace vide de la barre de téléchargement ouvrira le menu contextuel de l'extension.">
+<!ENTITY downloadbarhelp.description56 "Vous pouvez personnaliser Download Status Bar en fonction de vos besoins par la fenêtre options. Vous pouvez ouvrir la fenêtre d'options en cliquant à droite sur bouton &quot;Téléchargements&quot; et sélectionner le menu Options. Comme alternative, vous pouvez cliquer sur Outils dans le menu Firefox, puis allez à dans &quot;Modules complémentaires&quot;, et trouver Download Status Bar dans l'onglet Extensions et cliquez sur le bouton Préférences pour ouvrir la fenêtre Options. Les options disponibles sont décrites ci-dessous:">
+<!ENTITY downloadbarhelp.description57 "Cocher cette option vous permettra d'effacer les éléments de téléchargement automatiquement de la barre de téléchargement après que vous lancez le fichier soit par l'option de lancement du menu contextuel ou simplement en double-cliquant sur l'élément.">
+<!ENTITY downloadbarhelp.description58 "Cocher cette option vous permettra d'effacer les éléments de téléchargement automatiquement de la barre de téléchargement après que vous afficher le dossier contenant du fichier téléchargé.">
+<!ENTITY downloadbarhelp.description59 "Cocher cette option vous ouvrira le dossier de téléchargement automatiquement après la fin du téléchargement.">
+<!ENTITY downloadbarhelp.description60 "Cocher cette option vous permettra d'ouvrir l'onglet téléchargement automatiquement dans le navigateur comme un onglet quand un téléchargement commence.">
+<!ENTITY downloadbarhelp.description61 "Download Status Bar conserve l'historique de vos téléchargements de la session précédente et les montrent dans la barre de téléchargement à nouveau lorsque la nouvelle session démarre. Si vous ne souhaitez pas conserver l'historique de téléchargement dans la barre de téléchargement vous pouvez cocher cette option pour effacer les éléments de téléchargements automatiquement de l'historique quand Firefox se ferme.">
+<!ENTITY downloadbarhelp.description62 "Avant de supprimer un élément de téléchargement, Download Status Bar demande confirmation pour éviter des suppressions involontaires. Si vous ne voulez pas que cette fenêtre de confirmation pour accélérer le processus de suppression, vous pouvez décocher cette option.">
+<!ENTITY downloadbarhelp.description63 "Cocher cette option vous permettra de garder la barre de téléchargement quand il y a des téléchargements actifs mais la cacher automatiquement lorsque tous les téléchargements sont terminés pour préserver l'espace de la page Web. Vous pouvez également spécifier un intervalle de temps avant la barre de téléchargement ne disparaisse automatiquement.">
+<!ENTITY downloadbarhelp.description64 "Vous pouvez trouver certains types de fichiers sans importance à garder dans la barre de téléchargement et que vous voulez les faire disparaître automatiquement après un intervalle de temps spécifique. Vous pouvez taper les extensions de fichiers à effacer dans ce champs, séparés par des virgules. Un caractère * dans ce champs est un raccourci pour tous les types de fichiers.">
+<!ENTITY downloadbarhelp.description65 "Vous pouvez analyser automatiquement les fichiers téléchargés en réglant les champs de ce groupe d'options.">
+<!ENTITY downloadbarhelp.description66 "Emplacement à laquelle votre logiciel de sécurité préféré est stocké sur votre ordinateur. Cliquez sur Rechercher pour ouvrir le sélecteur de fichier pour attribuer un logiciel de sécurité pour l'analyse de virus si vous n'avez pas affecté déjà.">
+<!ENTITY downloadbarhelp.description67 "Si vous voulez omettre l'analyse automatique de virus pour certains types de fichiers, vous pouvez taper leurs extensions de fichiers dans ce champs, séparées par des virgules.">
+<!ENTITY downloadbarhelp.description68 "La plupart des logiciels de sécurité n'ont pas besoin d'arguments complémentaires pour l'analyse de virus, vous pouvez donc laisser cette section vide par défaut. Si votre logiciel de sécurité a besoins arguments complémentaires, vous pouvez les taper dans ce champs. Vous pouvez utiliser l'expression &#37;1 comme un espace réservé pour l'emplacement du fichier de fichier téléchargé.">
+<!ENTITY downloadbarhelp.description69 "Cochez cette option pour analyser automatiquement les fichiers téléchargés par votre logiciel de sécurité lorsque le téléchargement est terminé.">
+<!ENTITY downloadbarhelp.description70 "Vous pouvez recevoir des notifications sonores lorsque les téléchargements se terminent, le réglage des ces champs sont dans ce groupe d'options.">
+<!ENTITY downloadbarhelp.description71 "Emplacement à laquelle votre son de notification préférée est stocké sur votre ordinateur. Cliquez sur Rechercher pour ouvrir sélecteur de fichiers pour affecter un fichier son de notification si vous n'avez pas déjà attribué. Les fichiers sonores possibles qui peuvent lui être confiées dans la notification sont: .ogg, .wav et fichiers de  types .mp3 . Le son par défaut est le son de notification qui est inclus à l'intérieur de l'extension Download Status Bar.">
+<!ENTITY downloadbarhelp.description72 "Si vous voulez écouter la notification sonore actuelle, vous pouvez cliquer sur le bouton de lecture du lecteur audio pour prévisualiser le fichier sonore attribué.">
+<!ENTITY downloadbarhelp.description73 "Cochez cette option si vous souhaitez recevoir des notifications sonores lorsque les téléchargements sont terminés.">
+<!ENTITY downloadbarhelp.description74 "En cliquant sur le bouton &quot;Restaurer les paramètres par défaut&quot; permet de réinitialiser les valeurs des options de notification.">
+<!ENTITY downloadbarhelp.description75 "Vous pouvez personnaliser l'interface de téléchargement barre d'état par les options fournies dans cet onglet.">
+<!ENTITY downloadbarhelp.description76 "Vous pouvez modifier l'apparence des téléchargements en réglant les sélecteurs de couleurs dans ce groupe d'options. Chaque couleur a un dégradé de base pour créer un bel effet pour les éléments de l'interface. Chaque changement de couleur est appliqué instantanément par téléchargement Barre d'état:">
+<!ENTITY downloadbarhelp.description77 "Choisissez une couleur spéciale du sélecteur de couleurs lié à lui assigner une couleur pour le fond du téléchargement. Parce que la couleur de progression sera superposé à la couleur de fond de l'élément de téléchargement lors de la finition de téléchargement, vous voudrez peut-être de changer cette couleur lorsque vous démarrez le téléchargement d'un fichier de grande taille pour être en mesure de voir à quoi ressemble la couleur.">
+<!ENTITY downloadbarhelp.description78 "Choisissez une couleur spéciale à partir du sélecteur de couleurs lié à affecter en tant que couleur de progression pour les téléchargements actifs.">
+<!ENTITY downloadbarhelp.description79 "Choisissez une couleur spéciale à partir du Sélecteur de couleurs lié à assigner comme la couleur du texte pour le nom du fichier et la section de progression du téléchargement.">
+<!ENTITY downloadbarhelp.description80 "Choisissez une couleur spéciale à partir du sélecteur de couleurs lié à assigner comme une couleur pour indiquer les téléchargements terminés.">
+<!ENTITY downloadbarhelp.description81 "Choisissez une couleur spéciale à partir du sélecteur de couleurs lié à affecter en tant que couleur de pause pour indiquer les téléchargements interrompus.">
+<!ENTITY downloadbarhelp.description82 "Choisissez une couleur spéciale, à partir du sélecteur de couleur lié, à assigner comme une couleur de fond pour la barre de téléchargement.">
+<!ENTITY downloadbarhelp.description83 "Cliquer sur le bouton &quot;Restauration des paramètres par défaut&quot; permet de réinitialiser les valeurs des options de couleur.">
+<!ENTITY downloadbarhelp.description84 "Vous pouvez attribuer des couleurs différentes pour différentes vitesses de téléchargement en réglant les champs de ce groupe d'options. Affecter les couleurs au vitesses remplacent la couleur de progression du groupe d'options de couleur si vous avez attribué une.">
+<!ENTITY downloadbarhelp.description85 "Vous pouvez modifier l'interface de Download Status Bar par les champs prévus dans ce groupe d'options:">
+<!ENTITY downloadbarhelp.description86 "C'est l'interface de téléchargement par défaut pour  Download Status Bar. Si vous sélectionnez cette option, les éléments sont placés dans la barre de téléchargement, étant placé à la partie inférieure du navigateur.">
+<!ENTITY downloadbarhelp.description87 "Si vous voulez préserver votre vie privée des autres en ce qui concerne vos téléchargement, vous pouvez sélectionner cette option pour placer tous les éléments de téléchargements dans un panneau de boutons dans la barre d'outils. Le bouton de barre d'outils sera placé dans la barre de l'addon par défaut. S'il n'y a pas de de barre d'extension ou si la barre d'extension est cachée pour le moment, le bouton de la barre d'outils sera placé à l'intérieur de la barre de navigation de Firefox. Le bouton de barre d'outils dispose également d'un compteur à côté de lui. La première section de compteur indique le nombre de téléchargements actifs en cours et la deuxième partie du compteur indique le nombre de téléchargements terminés.">
+<!ENTITY downloadbarhelp.description88 "Vous pouvez masquer ou afficher un pourcentage d'avancement, la vitesse et élément de temps restant dans la section avancement du téléchargement des éléments en réglant les cases dans ce groupe d'options.">
+<!ENTITY downloadbarhelp.description89 "Vous pouvez régler l'alignement des éléments de téléchargément dans la section de progression en réglant les champs de ce groupe d'options. En sélectionnant l'option Horizontal mettra progrès, la vitesse et le temps restant éléments côte à côte et de changement de lieu Vertical tous les éléments de progression en position verticale.">
+<!ENTITY downloadbarhelp.description90 "Vous pouvez modifier les valeurs largeur et hauteur d'un élément de téléchargement en réglant les champs de ce groupe d'options:">
+<!ENTITY downloadbarhelp.description91 "Placez une valeur numérique dans ce champ pour définir la largeur de l'élément de téléchargement.">
+<!ENTITY downloadbarhelp.description92 "Placez une valeur numérique dans ce champ pour définir la hauteur de l'élément de téléchargement.">
+<!ENTITY downloadbarhelp.description93 "Placez une valeur numérique dans ce champ pour définir la taille de police du nom de fichier de l'élément de téléchargement.">
+<!ENTITY downloadbarhelp.description94 "Placez une valeur numérique dans ce champ pour définir la taille de police de la section de progression de l'élément de téléchargement.">
+<!ENTITY downloadbarhelp.description95 "Cocher cette option permet de masquer le bouton &quot;Effacer&quot; de la barre de téléchargement.">
+<!ENTITY downloadbarhelp.description96 "Cocher cette option permet de masquer le bouton &quot;Téléchargements&quot; de la barre de téléchargement.">
+<!ENTITY downloadbarhelp.imagecaption1 "Un clic droit sur les téléchargements fournira des options de menu contextuel pour gérer vos téléchargements.">
+<!ENTITY downloadbarhelp.imagecaption2 "Vous pouvez avoir vos téléchargements dans le panneau de bouton pour garder votre vie privée de téléchargement des autres.">
+<!ENTITY downloadbarhelp.imagecaption3 "Vous pouvez consulter vos statistiques de téléchargement voir quels types de téléchargement particuliers vous générez le plus et les compter.">
+<!ENTITY downloadbarhelp.imagecaption4 "En cliquant sur le téléchargement ouvrira le popup d'information où vous pouvez obtenir les détails en plus sur le téléchargement.">
+<!ENTITY downloadbarhelp.imagecaption5 "La fenêtre d'options vous permettra d'avoir un contrôle total sur vos téléchargements en fonction de vos besoins.">
+<!ENTITY downloadbarhelp.babelzilla "Si vous souhaitez voir Download Status Bar dans votre propre langue, n'hésitez pas à le traduire en vous enregistrant Babelzilla.">
+<!ENTITY downloadbarhelp.mozillazine "Vous pouvez obtenir de l'aide plus détaillée pour  Download Status Bar sur le forum Mozillazine:">

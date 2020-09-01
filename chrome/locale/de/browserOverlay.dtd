@@ -1,0 +1,41 @@
+<!ENTITY downloadbar.lnch "Starten">
+<!ENTITY downloadbar.shwfl "Öffne Download-Ordner">
+<!ENTITY downloadbar.shwmngr "Öffne Download-Manager">
+<!ENTITY downloadbar.cncl "Abbrechen">
+<!ENTITY downloadbar.pause "Pause">
+<!ENTITY downloadbar.strt "Starte">
+<!ENTITY downloadbar.clr "Entfernen">
+<!ENTITY downloadbar.clsbr "Leiste schließen">
+<!ENTITY downloadbar.clrlldwnlds "Alle Downloads entfernen">
+<!ENTITY downloadbar.pslldwnlds "Alle Downloads pausieren">
+<!ENTITY downloadbar.rsmlldwnlds "Alle Downloads fortsetzen">
+<!ENTITY downloadbar.cncllldwnlds "Alle Downloads abbrechen">
+<!ENTITY downloadbar.dwnlds "Downloads">
+<!ENTITY downloadbar.vrscn "Virenscan">
+<!ENTITY downloadbar.dltfl "Datei löschen">
+<!ENTITY downloadbar.rnm "Umbenennen">
+<!ENTITY downloadbar.clrll "Alle entfernen">
+<!ENTITY downloadbar.pndwnldtb "Öffne Download-Tab">
+<!ENTITY downloadbar.shwlldwnldshstry "Öffne Download-Verlauf">
+<!ENTITY downloadbar.gtdwnlpg "Zur Download-Seite">
+<!ENTITY downloadbar.cpydwnldlnk "Kopiere Download-Link">
+<!ENTITY downloadbar.ptns "Einstellungen">
+<!ENTITY downloadbar.src "Quelle">
+<!ENTITY downloadbar.trgt "Ziel">
+<!ENTITY downloadbar.crrntspd "Aktuelle Geschwindigkeit">
+<!ENTITY downloadbar.vrgspd "Durchschnittsgeschwindigkeit">
+<!ENTITY downloadbar.prgrs "Fortschritt">
+<!ENTITY downloadbar.rmngtm "Verbleibende Zeit">
+<!ENTITY downloadbar.dwnldbyt "Heruntergeladen">
+<!ENTITY downloadbar.flsz "Dateigröße">
+<!ENTITY downloadbar.dwnldtm "Downloaddauer">
+<!ENTITY downloadbar.resume "Fortfahren">
+<!ENTITY downloadbar.sttstcs "Statistik">
+<!ENTITY downloadbar.chksm "Prüfsumme">
+<!ENTITY downloadbar.cpy "Kopieren">
+<!ENTITY downloadbar.hlp "Hilfe">
+<!ENTITY downloadbar.md5hsh "MD5-Hash">
+<!ENTITY downloadbar.sendto "Senden an">
+<!ENTITY downloadbar.desktopfolder "Desktop">
+<!ENTITY downloadbar.downloadsfolder "Downloads">
+<!ENTITY downloadbar.customfolder "Benutzerdefiniert">

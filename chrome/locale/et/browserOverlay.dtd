@@ -1,0 +1,41 @@
+<!ENTITY downloadbar.lnch "Käivita">
+<!ENTITY downloadbar.shwfl "Näita faili">
+<!ENTITY downloadbar.shwmngr "Näita allalaadimiste haldurit">
+<!ENTITY downloadbar.cncl "Tühista">
+<!ENTITY downloadbar.pause "Peata">
+<!ENTITY downloadbar.strt "Alusta">
+<!ENTITY downloadbar.clr "Eemalda">
+<!ENTITY downloadbar.clsbr "Sulge riba">
+<!ENTITY downloadbar.clrlldwnlds "Eemalda kõik allalaadimised">
+<!ENTITY downloadbar.pslldwnlds "Peata kõik allalaadimised">
+<!ENTITY downloadbar.rsmlldwnlds "Jätka kõiki allalaadimisi">
+<!ENTITY downloadbar.cncllldwnlds "Tühista kõik allalaadimised">
+<!ENTITY downloadbar.dwnlds "Allalaadimised">
+<!ENTITY downloadbar.vrscn "Viirusekontroll">
+<!ENTITY downloadbar.dltfl "Kustuta fail">
+<!ENTITY downloadbar.rnm "Muuda nime">
+<!ENTITY downloadbar.clrll "Eemalda kõik">
+<!ENTITY downloadbar.pndwnldtb "Ava allalaadimiste kaart">
+<!ENTITY downloadbar.shwlldwnldshstry "Näita allalaadimiste ajalugu">
+<!ENTITY downloadbar.gtdwnlpg "Mine allalaadimise lehele">
+<!ENTITY downloadbar.cpydwnldlnk "Kopeeri allalaadimise link">
+<!ENTITY downloadbar.ptns "Sätted">
+<!ENTITY downloadbar.src "Allikas">
+<!ENTITY downloadbar.trgt "Sihtkoht">
+<!ENTITY downloadbar.crrntspd "Hetkekiirus">
+<!ENTITY downloadbar.vrgspd "Keskmine kiirus">
+<!ENTITY downloadbar.prgrs "Edenemine">
+<!ENTITY downloadbar.rmngtm "Aega jäänud">
+<!ENTITY downloadbar.dwnldbyt "Alla laaditud">
+<!ENTITY downloadbar.flsz "Faili suurus">
+<!ENTITY downloadbar.dwnldtm "Allalaadimise kestvus">
+<!ENTITY downloadbar.resume "Jätka">
+<!ENTITY downloadbar.sttstcs "Statistika">
+<!ENTITY downloadbar.chksm "Kontrollsumma">
+<!ENTITY downloadbar.cpy "Kopeeri">
+<!ENTITY downloadbar.hlp "Abi">
+<!ENTITY downloadbar.md5hsh "MD5 räsi">
+<!ENTITY downloadbar.sendto "Saada kausta">
+<!ENTITY downloadbar.desktopfolder "Töölaud">
+<!ENTITY downloadbar.downloadsfolder "Allalaadimised">
+<!ENTITY downloadbar.customfolder "Vali ise">

@@ -1,0 +1,62 @@
+<!ENTITY downloadbaropt.ptns "Asetukset">
+<!ENTITY downloadbaropt.clrrftrlnch "Tyhjennä lataus avaamisen jälkeen">
+<!ENTITY downloadbaropt.clrrftrshw "Tyhjennä lataus tiedoston näyttämisen jälkeen">
+<!ENTITY downloadbaropt.shwddbbrbttn "Näytä nappi lisäosapalkissa">
+<!ENTITY downloadbaropt.attclswhndlcmp "Sulje palkki automaattisesti kun kaikki lataukset ovat valmiit">
+<!ENTITY downloadbaropt.pnftrdwncmp "Avaa latauskansio automaattisesti kun lataus on valmis">
+<!ENTITY downloadbaropt.clr "Väri">
+<!ENTITY downloadbaropt.dwnprgrssclr "Latauksen etenemisen väri">
+<!ENTITY downloadbaropt.dwntxtclr "Latauksen tekstin väri">
+<!ENTITY downloadbaropt.dwncmpltclr "Valmiin latauksen väri">
+<!ENTITY downloadbaropt.dwnldpsclr "Tauotetun latauksen väri">
+<!ENTITY downloadbaropt.brbckgrndclr "Palkin taustaväri">
+<!ENTITY downloadbaropt.vrscn "Virusskanneri">
+<!ENTITY downloadbaropt.vrscnnrpth "Virusskannerin polku">
+<!ENTITY downloadbaropt.vrscnlct "Etsi">
+<!ENTITY downloadbaropt.dsbscnfltyps "Älä skannaa näitä tiedostotyyppejä">
+<!ENTITY downloadbaropt.ttscndwnldfl "Skannaa ladatut tiedostot automaattisesti">
+<!ENTITY downloadbaropt.ttclrthsfltyps "Tyhjennä seuraavat tiedostotyypit automaattisesti">
+<!ENTITY downloadbaropt.ftr "kun on kulunut">
+<!ENTITY downloadbaropt.scnds "sekuntia">
+<!ENTITY downloadbaropt.ntfctn "Huomautus">
+<!ENTITY downloadbaropt.doflpth "Äänitiedoston polku">
+<!ENTITY downloadbaropt.dofllct "Etsi">
+<!ENTITY downloadbaropt.prvwsnd "Esikuuntele ääni">
+<!ENTITY downloadbaropt.plysndwhncdwnldcomlts "Soita huomautusääni kun lataus on valmis">
+<!ENTITY downloadbaropt.pprnc "Ulkoasu">
+<!ENTITY downloadbaropt.bdnwtdh "Kaista">
+<!ENTITY downloadbaropt.spdd "Latausnopeus">
+<!ENTITY downloadbaropt.slwstspd "Hitain nopeus">
+<!ENTITY downloadbaropt.vrgspd "Keskinopeus">
+<!ENTITY downloadbaropt.fstsspd "Suurin nopeus">
+<!ENTITY downloadbaropt.bckgndclr "Latauksen taustaväri">
+<!ENTITY downloadbaropt.dwnbrdclr "Latauksen reunaväri">
+<!ENTITY downloadbaropt.rststtngs "Nollaa asetukset">
+<!ENTITY downloadbaropt.srntrfc "Käyttöliittymä">
+<!ENTITY downloadbaropt.dnwldbr "Latauspalkki">
+<!ENTITY downloadbaropt.dnwlpnl "Latauspaneeli">
+<!ENTITY downloadbaropt.atpndwnldtb "Avaa Lataukset-välilehti automaattisesti kun lataus alkaa">
+<!ENTITY downloadbaropt.hdclrbttn "Piilota Tyhjennä-nappi latauspalkissa">
+<!ENTITY downloadbaropt.hddwnldsbttn "Piilota Lataukset-nappi latauspalkissa">
+<!ENTITY downloadbaropt.dwldtm "Ladattava tiedosto">
+<!ENTITY downloadbaropt.apply "Käytä">
+<!ENTITY downloadbaropt.width "Leveys">
+<!ENTITY downloadbaropt.height "Korkeus">
+<!ENTITY downloadbaropt.vrsscnrgmnts "Parametrit">
+<!ENTITY downloadbaropt.atclnwhnffqt "Tyhjennä valmiit lataukset kun Firefox suljetaan">
+<!ENTITY downloadbaropt.prgrsntfcts "Etenemisen ilmoitukset">
+<!ENTITY downloadbaropt.prgrssntfct "Eteneminen">
+<!ENTITY downloadbaropt.spdntfct "Nopeus">
+<!ENTITY downloadbaropt.tmntfct "Jäljellä oleva aika">
+<!ENTITY downloadbaropt.over "Yli">
+<!ENTITY downloadbaropt.skcnfrmtnbfrdlt "Kysy varmistus ennen tiedoston poistoa">
+<!ENTITY downloadbaropt.prgrsslgnmnt "Etenemisen kohdistaminen">
+<!ENTITY downloadbaropt.hrzntllgnmnt "Vaakasuora">
+<!ENTITY downloadbaropt.vrtcllgnmnt "Pystysuora">
+<!ENTITY downloadbaropt.fntsz "Fontin koko">
+<!ENTITY downloadbaropt.flnmsz "Tiedostonimi">
+<!ENTITY downloadbaropt.prgrsssz "Edistyminen">
+<!ENTITY downloadbaropt.flnmszfntsz "Tiedostonimen fonttikoko">
+<!ENTITY downloadbaropt.prgrssszfntsz "Etenemisen fonttikoko">
+<!ENTITY downloadbaropt.dblclckdwnldtm "Tuplaklikkauksen toiminto lataukselle:">
+<!ENTITY downloadbaropt.cntndwnldswhnbrwsrqts "Jatka latauksia kun Firefox suljetaan">

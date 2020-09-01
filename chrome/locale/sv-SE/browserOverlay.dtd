@@ -1,0 +1,41 @@
+<!ENTITY downloadbar.lnch "Kör">
+<!ENTITY downloadbar.shwfl "Visa fil">
+<!ENTITY downloadbar.shwmngr "Visa Filhämtaren">
+<!ENTITY downloadbar.cncl "Avbryt">
+<!ENTITY downloadbar.pause "Pausa">
+<!ENTITY downloadbar.strt "Starta">
+<!ENTITY downloadbar.clr "Rensa">
+<!ENTITY downloadbar.clsbr "Stäng filhämtningsfältet">
+<!ENTITY downloadbar.clrlldwnlds "Rensa alla hämtningar">
+<!ENTITY downloadbar.pslldwnlds "Pausa alla hämtningar">
+<!ENTITY downloadbar.rsmlldwnlds "Återuppta alla hämtningar">
+<!ENTITY downloadbar.cncllldwnlds "Avbryt alla hämtningar">
+<!ENTITY downloadbar.dwnlds "Hämtningar">
+<!ENTITY downloadbar.vrscn "Viruskontroll">
+<!ENTITY downloadbar.dltfl "Ta bort fil">
+<!ENTITY downloadbar.rnm "Byt namn">
+<!ENTITY downloadbar.clrll "Rensa alla">
+<!ENTITY downloadbar.pndwnldtb "Öppna Filhämtaren i en flik">
+<!ENTITY downloadbar.shwlldwnldshstry "Visa hämtningshistorik">
+<!ENTITY downloadbar.gtdwnlpg "Gå till hämtningssidan">
+<!ENTITY downloadbar.cpydwnldlnk "Kopiera hämtningslänk">
+<!ENTITY downloadbar.ptns "Inställningar">
+<!ENTITY downloadbar.src "Källa">
+<!ENTITY downloadbar.trgt "Mål">
+<!ENTITY downloadbar.crrntspd "Aktuell hastighet">
+<!ENTITY downloadbar.vrgspd "Genomsnittlig hastighet">
+<!ENTITY downloadbar.prgrs "Förlopp">
+<!ENTITY downloadbar.rmngtm "Återstående tid">
+<!ENTITY downloadbar.dwnldbyt "Hämtad">
+<!ENTITY downloadbar.flsz "Filstorlek">
+<!ENTITY downloadbar.dwnldtm "Hämtningstid">
+<!ENTITY downloadbar.resume "Återuppta">
+<!ENTITY downloadbar.sttstcs "Statistik">
+<!ENTITY downloadbar.chksm "Kontrollsumma">
+<!ENTITY downloadbar.cpy "Kopiera">
+<!ENTITY downloadbar.hlp "Hjälp">
+<!ENTITY downloadbar.md5hsh "MD5-kondensat">
+<!ENTITY downloadbar.sendto "Skicka till">
+<!ENTITY downloadbar.desktopfolder "Skrivbord">
+<!ENTITY downloadbar.downloadsfolder "Hämtade filer">
+<!ENTITY downloadbar.customfolder "Egen mapp">

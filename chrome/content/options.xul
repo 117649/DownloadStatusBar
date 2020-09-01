@@ -1,0 +1,279 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE window [
+  <!ENTITY % options SYSTEM "chrome://downloadbar/locale/options.dtd">
+  %options;
+  <!ENTITY % browserOverlay SYSTEM "chrome://downloadbar/locale/browserOverlay.dtd">
+  %browserOverlay;
+  <!ENTITY % options_b1 SYSTEM "chrome://downloadbar/locale/options_b1.dtd">
+  %options_b1;
+]>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://downloadbar/skin/options.css" type="text/css"?>
+<window id="downloadbar-options" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" xmlns:html="http://www.w3.org/1999/xhtml" title="Download Status Bar">
+	<script type="application/x-javascript" src="chrome://downloadbar/content/options.js"></script>
+	<stringbundleset>	
+		<stringbundle id="downloadbar-prprts" src="chrome://downloadbar/locale/browserOverlay.properties"/>
+	</stringbundleset>		
+	<vbox style="padding:20px;">
+		<tabbox>
+		<tabs>
+		<tab label="&downloadbaropt.ptns;"/>
+		<tab label="&downloadbaropt.pprnc;"/>
+		</tabs>
+		<tabpanels>
+			<tabpanel id="" pack="center">
+			<vbox>
+				<checkbox label="&downloadbaropt.clrrftrlnch;" id="downloadbar-opt-clrftrlnch" />
+				<checkbox label="&downloadbaropt.clrrftrshw;" id="downloadbar-opt-clrftrshwfl" />		
+				<checkbox label="&downloadbaropt.shwddbbrbttn;" id="downloadbar-opt-shwddnbrbttn" hidden="true" />		
+				<checkbox label="&downloadbaropt.pnftrdwncmp;" id="downloadbar-opt-pnatmtcllyftrdwnld" />
+				<checkbox label="&downloadbaropt.atpndwnldtb;" id="downloadbar-opt-atpndwnldtb" />
+				<checkbox label="&downloadbaropt.atclnwhnffqt;" id="downloadbar-opt-atclnwhnffqt" />
+				<checkbox label="&downloadbaropt.skcnfrmtnbfrdlt;" id="downloadbar-opt-skcnfrmtnbfrdlt" />
+				<checkbox label="&downloadbaropt.cntndwnldswhnbrwsrqts;" id="downloadbar-opt-cntndwnldswhnbrwsrqts" hidden="true" />
+				<hbox align="center">
+					<label value="&downloadbaropt.dblclckdwnldtm;" />
+					<menulist id="downloadbar-opt-dblclckctn">
+						<menupopup>
+							<menuitem id="downloadbar-opt-lnch" label="&downloadbar.lnch;"  value="Launch"/>
+							<menuitem id="downloadbar-opt-shwmngr" label="&downloadbar.shwfl;"  value="Show File"/>
+						</menupopup>
+					</menulist>
+				</hbox>				
+				<grid>
+					<columns>
+					  <column flex="1"/>
+					  <column flex="1"/>
+					</columns>
+					<rows>
+					  <row>
+						<vbox pack="center"><checkbox label="&downloadbaropt.attclswhndlcmp;" id="downloadbar-opt-clsbrwhndwnldscmplt" /></vbox>
+						<hbox>
+							<vbox pack="center"><label value="&downloadbaropt.ftr;" /></vbox>					
+							<textbox id="downloadbar-opt-ttclsscnd" flex="1" type="number" increment="1" />
+							<vbox pack="center"><label value="&downloadbaropt.scnds;" /></vbox>
+						</hbox>	
+					  </row>
+					  <row>
+						<hbox>
+							<vbox pack="center"><label value="&downloadbaropt.ttclrthsfltyps;" /></vbox>
+							<vbox pack="center" flex="1"><textbox id="downloadbar-opt-ttclrfltyps" /></vbox>
+						</hbox>
+						<hbox>
+							<vbox pack="center"><label value="&downloadbaropt.ftr;" /></vbox>
+							<textbox id="downloadbar-opt-ttclrscnd" flex="1" type="number" increment="1" />
+							<vbox pack="center"><label value="&downloadbaropt.scnds;" /></vbox>
+						</hbox>					
+					  </row>
+					</rows>
+				</grid>			
+				<groupbox>
+				<caption label="&downloadbaropt.vrscn;" />
+					<hbox>
+						<vbox pack="center"><label value="&downloadbaropt.vrscnnrpth;" /></vbox>
+						<textbox id="downloadbar-opt-vrsscnpath" flex="1" />
+						<button id="downloadbar-opt-vrsscnbtn" label="&downloadbaropt.vrscnlct;" />
+					</hbox>
+					<hbox><vbox pack="center"><label value="&downloadbaropt.dsbscnfltyps;" /></vbox><textbox id="downloadbar-opt-scnxcldfltyps" flex="1"/></hbox>
+					<hbox><vbox pack="center"><label value="&downloadbaropt.vrsscnrgmnts;" /></vbox><textbox id="downloadbar-opt-vrsscnrgmnts" flex="1"/></hbox>
+					<checkbox id="downloadbar-opt-tmtcvrsscan" label="&downloadbaropt.ttscndwnldfl;" />
+				</groupbox>		
+				<groupbox>
+				<caption label="&downloadbaropt.ntfctn;" />
+					<hbox>
+						<vbox pack="center"><label value="&downloadbaropt.doflpth;" /></vbox>
+						<textbox id="downloadbar-opt-doflpth" flex="1" />
+						<button id="downloadbar-opt-dofllct" label="&downloadbaropt.dofllct;" />
+					</hbox>
+					<hbox style="padding-top:10px;padding-bottom:5px;"><vbox pack="center" style="margin-right:10px;"><label value="&downloadbaropt.prvwsnd;" /></vbox><vbox flex="1"><html:audio src="" id="downloadbar-opt-doplyr" preload="auto" controls="controls"></html:audio></vbox></hbox>
+					<checkbox id="downloadbar-opt-plysndwhncdwnldcomlts" label="&downloadbaropt.plysndwhncdwnldcomlts;" />
+					<hbox pack="end" id="downloadbar-opt-plysndrst">
+						<button label="&downloadbaropt.rststtngs;" />
+					</hbox>							
+				</groupbox>
+			</vbox>
+			</tabpanel>
+			<tabpanel id="">
+				<vbox flex="1">
+					<grid>
+						<columns>
+						  <column flex="12" style="margin-right:7px;"/>
+						  <column flex="1"/>
+						</columns>
+						<rows>
+							<row>
+								<groupbox flex="1" id="colorgrid" class="colorgroupbox">
+								<caption label="&downloadbaropt.clr;" />
+									<grid>
+										<columns>
+										  <column flex="1"/>
+										  <column flex="1"/>
+										</columns>
+										<rows>
+											<row>
+												<vbox pack="center" flex="1"><label value="&downloadbaropt.bckgndclr;" /></vbox>
+												<hbox pack="end">
+													<colorpicker type="button" id="downloadbar-opt-bckgndclr" />
+												</hbox>	
+											</row>
+											<row>
+												<vbox pack="center" flex="1"><label value="&downloadbaropt.dwnprgrssclr;" /></vbox>
+												<hbox pack="end">
+													<colorpicker type="button" id="downloadbar-opt-dwnlprgrssclr" />
+												</hbox>	
+											</row>
+											<row>
+												<vbox pack="center" flex="1"><label value="&downloadbaropt.dwntxtclr;" /></vbox>
+												<hbox pack="end">
+													<colorpicker type="button" id="downloadbar-opt-dwnldtxtclr" />
+												</hbox>	
+											</row>
+											<row>
+												<vbox pack="center" flex="1"><label value="&downloadbaropt.dwncmpltclr;" /></vbox>
+												<hbox pack="end">
+													<colorpicker type="button" id="downloadbar-opt-dwncmpltclr" />
+												</hbox>	
+											</row>
+											<row>
+												<vbox pack="center" flex="1"><label value="&downloadbaropt.dwnldpsclr;" /></vbox>
+												<hbox pack="end">
+													<colorpicker type="button" id="downloadbar-opt-dwnldpsclr" />
+												</hbox>	
+											</row>
+											<row>
+												<vbox pack="center" flex="1"><label value="&downloadbaropt.brbckgrndclr;" /></vbox>
+												<hbox pack="end">
+													<colorpicker type="button" id="downloadbar-opt-brbckgrndclr" />
+												</hbox>	
+											</row>
+										</rows>
+									</grid>					
+									<hbox hidden="true">
+										<vbox pack="center" flex="1"><label value="&downloadbaropt.dwnbrdclr;" /></vbox>
+										<colorpicker type="button" id="downloadbar-opt-dwnbrdclr" />
+									</hbox>
+									<hbox pack="end" style="margin-top:10px;" id="downloadbar-opt-dwnclrrst">
+										<button label="&downloadbaropt.rststtngs;" />
+									</hbox>					
+								</groupbox>	
+								<groupbox style="padding-right:10px;">
+								<caption label="&downloadbaropt.spdd;" />
+									<hbox align="center">
+										<spacer flex="12"/>
+										<textbox value="0" disabled="true" maxlength="5" size="5" />
+										<label value="-"/>						
+										<textbox id="downloadbar-opt-slwstspdtxt" type="number" increment="10" maxlength="5" size="5" />
+										<label value="KB/s"/>						
+										<colorpicker type="button" id="downloadbar-opt-slwstspdclr" />
+									</hbox>
+									<hbox align="center">
+										<spacer flex="12"/>
+										<textbox id="downloadbar-opt-vrgspdfrsttxtbxdsbld" disabled="true" maxlength="5" size="5" />
+										<label value="-"/>
+										<textbox id="downloadbar-opt-vrgspdfrsttxtbx" type="number" increment="10" maxlength="5" size="5" />
+										<label value="KB/s"/>						
+										<colorpicker type="button" id="downloadbar-opt-vrgspdfrstclr" />
+									</hbox>
+									<hbox align="center">
+										<spacer flex="12"/>
+										<textbox id="downloadbar-opt-vrgspdscndtxtbxdsbld" disabled="true" maxlength="5" size="5" />
+										<label value="-"/>
+										<textbox id="downloadbar-opt-vrgspdscndtxtbx" type="number" increment="10" maxlength="5" size="5" />
+										<label value="KB/s"/>						
+										<colorpicker type="button" id="downloadbar-opt-vrgspdscndclr" />
+									</hbox>
+									<hbox align="center">
+										<spacer flex="12"/>          
+										<label value="&downloadbaropt.over; >"/>						
+										<textbox id="downloadbar-opt-fststtxtbxdsbld" disabled="true" type="number" increment="10" maxlength="5" size="5"/>
+										<label value="KB/s"/>						
+										<colorpicker type="button" id="downloadbar-opt-fstsspdclr" />
+									</hbox>
+									<spacer flex="12" />
+									<hbox pack="end" style="margin-top:10px;" id="downloadbar-opt-spdclrrst">
+										<button label="&downloadbaropt.rststtngs;" />
+									</hbox>						
+								</groupbox>	
+						  </row>
+						  <row>
+								<vbox flex="2">
+									<groupbox flex="12">
+									<caption label="&downloadbaropt.srntrfc;" />
+										<hbox>
+											<radiogroup id="downloadbar-opt-srntrfcrdgrp">					
+												<radio id="downloadbar-opt-dwnldbrrdio" label="&downloadbaropt.dnwldbr;" value="bar" />
+												<radio id="downloadbar-opt-dwnldpnlrdio" label="&downloadbaropt.dnwlpnl;" value="panel" />
+											</radiogroup>	
+										</hbox>					
+									</groupbox>
+									<hbox>
+										<groupbox flex="1">
+										<caption label="&downloadbaropt.prgrsntfcts;" />
+											<vbox>
+												<checkbox label="&downloadbaropt.prgrssntfct;" id="downloadbar-opt-prgrssntfct" />
+												<checkbox label="&downloadbaropt.spdntfct;" id="downloadbar-opt-spdntfct" />		
+												<checkbox label="&downloadbaropt.tmntfct;" id="downloadbar-opt-tmntfct" />				
+											</vbox>			
+										</groupbox>
+										<groupbox flex="1">
+										<caption label="&downloadbaropt.prgrsslgnmnt;" />
+											<vbox>
+												<radiogroup id="downloadbar-opt-prgrsslngmntrdgrp">					
+													<radio id="downloadbar-opt-hrzntllgnmntrdio" label="&downloadbaropt.hrzntllgnmnt;" value="horizontal" />
+													<radio id="downloadbar-opt-vrtcllgnmntrdio" label="&downloadbaropt.vrtcllgnmnt;" value="vertical" />
+												</radiogroup>		
+											</vbox>			
+										</groupbox>
+									</hbox>
+								</vbox>
+								<vbox flex="1">
+									<groupbox flex="1">
+									<caption label="&downloadbaropt.dwldtm;" />					
+									  <grid>
+										<columns>
+										  <column flex="1"/>
+										  <column flex="1"/>
+										</columns>
+										<rows>
+										  <row>
+												<vbox pack="center" style="width:100px;"><label value="&downloadbaropt.width;" /></vbox>
+												<textbox id="downloadbar-opt-dwnldtmwdth" type="number" increment="10" maxlength="5" size="10"/>
+										  </row>
+										  <row>
+												<vbox pack="center" style="width:100px;"><label value="&downloadbaropt.height;" /></vbox>
+												<textbox id="downloadbar-opt-dwnldtmhght" type="number" increment="1" maxlength="5" size="10" />						
+										  </row>
+										  <row>
+												<vbox pack="center" style="width:100px;"><label value="&downloadbaropt.flnmszfntsz;" /></vbox>
+												<textbox id="downloadbar-opt-flnmsz" type="number" increment="1" maxlength="5" size="10" />
+										  </row>
+										  <row>
+												<vbox pack="center" style="width:100px;"><label value="&downloadbaropt.prgrssszfntsz;" /></vbox>
+												<textbox id="downloadbar-opt-prgrsssz" type="number" increment="1" maxlength="5" size="10" />						
+										  </row>
+										</rows>
+									  </grid>					
+									</groupbox>									
+								</vbox>	
+						  </row>
+						</rows>
+					</grid>
+					<groupbox style="padding-right:10px;">
+					<caption label="&downloadbaropt.bttns;" />
+						<checkbox label="&downloadbaropt.hdclrbttn;" id="downloadbar-opt-hdclrbttn" />				
+						<checkbox label="&downloadbaropt.hddwnldsbttn;" id="downloadbar-opt-hddwnldsbttn" />
+						<hbox align="center">
+							<label value="&downloadbaropt.bttntype; :"/>	
+							<radiogroup id="downloadbar-opt-bttntyprdgrp" orient="horizontal">					
+								<radio id="downloadbar-opt-bttntypcncrdio" label="&downloadbaropt.cnc;" value="iconic" />
+								<radio id="downloadbar-opt-bttntyptxtcncrdio" label="&downloadbaropt.txtcnc;" value="txticonic" />
+								<radio id="downloadbar-opt-bttntyptxtrdio" label="&downloadbaropt.txt;" value="txt" />
+							</radiogroup>							
+						</hbox>							
+					</groupbox>						
+				</vbox>
+			</tabpanel>
+		</tabpanels>
+		</tabbox>	
+	</vbox>
+</window>

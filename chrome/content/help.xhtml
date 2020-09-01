@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html [
+  <!ENTITY % help SYSTEM "chrome://downloadbar/locale/help.dtd">
+  %help;
+  <!ENTITY % amo SYSTEM "chrome://downloadbar/locale/amo.dtd">
+  %amo;
+  <!ENTITY % options SYSTEM "chrome://downloadbar/locale/options.dtd">  
+  %options;
+  <!ENTITY % browserOverlay SYSTEM "chrome://downloadbar/locale/browserOverlay.dtd">  
+  %browserOverlay;
+  <!ENTITY % help_b1 SYSTEM "chrome://downloadbar/locale/help_b1.dtd">
+  %help_b1;      
+]>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Download Status Bar</title>
+		<script type="application/x-javascript" src="chrome://downloadbar/content/help.js"></script>
+		<link rel="stylesheet" href="chrome://downloadbar/skin/help.css" type="text/css" />
+		<link rel="icon" href="chrome://downloadbar/skin/16.png" />
+		<xul:stringbundleset>	
+			<xul:stringbundle id="downloadbar-hlpprprts" src="chrome://downloadbar/locale/help.properties"/>
+		</xul:stringbundleset>						
+	</head>
+	<body>
+		<div id="main">
+			<h1 id="heading">Download Status Bar</h1>
+			<p>&downloadbarhelp.description;</p>
+			<div id="onlinetuts">
+				<p>&downloadbarhelp.onlnvlbl1;<br/>&downloadbarhelp.onlnvlbl2;</p>
+				<div id="flags"></div>
+			</div>
+			<p class="amo">&downloadbarhelp.description2sntc1; (<strong>&downloadbarhelp.Launch;</strong>, <strong>&downloadbarhelp.Show;</strong>, <strong>&downloadbarhelp.Scan;</strong>, <strong>&downloadbarhelp.Rename;</strong>, <strong>&downloadbarhelp.Checksum;</strong>, <strong>&downloadbarhelp.Pause;</strong>, <strong>&downloadbarhelp.Resume;</strong>, <strong>&downloadbarhelp.Cancel;</strong>, <strong>&downloadbarhelp.Clean;</strong>, <strong>&downloadbarhelp.Delete;</strong>), &downloadbarhelp.description2sntc2;</p>			
+			<p class="amo">&downloadbarhelp.description3;</p>			
+			<p class="nodisplay amo">&downloadbarhelp.description4;</p>
+			<p class="nodisplay amo"><b>&downloadbarhelp.features;</b></p>					
+			<p class="nodisplay amo"><b>==placeholder==</b></p>					
+			<h2>&downloadbarhelp.features;</h2>
+			<p class="amo">&downloadbarhelp.description5;</p>
+			<p class="amo">&downloadbarhelp.description6;</p>					
+			<div class="centertext">
+				<p class="amo"><b>&downloadbarhelp.description7;</b></p>
+				<p class="amo"><b>&downloadbarhelp.description8b;</b></p>
+				<p class="amo"><b>&downloadbarhelp.description9;</b></p>
+			</div>
+			<p class="amo">&downloadbarhelp.description10; &downloadbarhelp.description10a;</p>						
+			<p class="amo">&downloadbarhelp.description11;</p>
+			<p class="amo">&downloadbarhelp.description12;:</p>
+
+			<div class="amo">
+				<ul>
+					<li><p><b>&downloadbar.ptns;:</b> &downloadbarhelp.description13;</p></li>
+					<li><p><b>&downloadbar.sttstcs;:</b> &downloadbarhelp.description14;</p></li>
+					<li><p><b>&downloadbar.shwlldwnldshstry;:</b> &downloadbarhelp.description15;</p></li>
+					<li><p><b>&downloadbar.pndwnldtb;:</b> &downloadbarhelp.description16;</p></li>
+					<li><p><b>&downloadbar.dwnlds;:</b> &downloadbarhelp.description17;</p></li>
+					<li><p><b>&downloadbar.hlp;:</b> &downloadbarhelp.description18;</p></li>
+					<li><p><b>&downloadbar.clsbr;:</b> &downloadbarhelp.description19;</p></li>													
+				</ul>
+			</div>
+			
+			<p class="amo">&downloadbarhelp.description20;</p>
+			<div class="centertext nodisplay">
+				<p class="amo"><a href="https://download.mozilla.org/?product=firefox-26.0&amp;os=osx&amp;lang=en-US" id="firefoxdllink">Firefox</a></p>
+				<p class="amo"><a href="https://download.mozilla.org/?product=thunderbird-24.2.0&amp;os=osx&amp;lang=en-US" id="thunderbirddllink">Thunderbird</a></p>
+				<p class="amo"><a href="https://download.mozilla.org/?product=seamonkey-2.23&amp;os=osx&amp;lang=en-US" id="seamonkeydllink">Seamonkey</a></p>								
+			</div>
+			
+			<div class="centertext">
+				<a href="https://download.mozilla.org/?product=firefox-28.0-SSL&amp;os=win&amp;lang=en-US" id="firefoxdllinkiconic"><img src="chrome://downloadbar/skin/images/firefox.png" style="margin-right: 18px;"/></a>
+				<a href="https://download.mozilla.org/?product=thunderbird-24.4.0&amp;os=win&amp;lang=en-US" id="thunderbirddllinkiconic"><img src="chrome://downloadbar/skin/images/thunderbird.png"/></a>
+				<a href="https://download.mozilla.org/?product=seamonkey-2.25&amp;os=win&amp;lang=en-US" id="seamonkeydllinkiconic"><img src="chrome://downloadbar/skin/images/seamonkey.png" style="margin-bottom: 10px; margin-left: 17px;"/></a>
+			</div>
+						
+			<p class="amo">&downloadbarhelp.description21;</p>			
+			<ul>
+				<li><p><b>&downloadbarhelp.dwnldcn;:</b> &downloadbarhelp.description22;</p></li>
+				<li><p><b>&downloadbarhelp.flnm;:</b> &downloadbarhelp.description23;</p></li>
+				<li><p><b>&downloadbarhelp.prgrssctn;:</b> &downloadbarhelp.description24;</p></li>										
+			</ul>			
+			<p class="amo">&downloadbarhelp.description25;:</p>
+			<div class="amo">
+				<ul>
+					<li><p><b>&downloadbar.lnch;:</b> &downloadbarhelp.description26;</p></li>
+					<li><p><b>&downloadbar.shwfl;:</b> &downloadbarhelp.description27;</p></li>
+					<li><p><b>&downloadbar.shwmngr;:</b> &downloadbarhelp.description28;</p></li>
+					<li><p><b>&downloadbar.vrscn;:</b> &downloadbarhelp.description29;</p></li>
+					<li><p><b>&downloadbar.chksm;:</b> &downloadbarhelp.description30;</p></li>
+					<li><p><b>&downloadbar.rnm;:</b> &downloadbarhelp.description31;</p></li>
+					<li><p><b>&downloadbar.dltfl;:</b> &downloadbarhelp.description32;</p></li>
+					<li><p><b>&downloadbar.gtdwnlpg;:</b> &downloadbarhelp.description33;</p></li>																	
+					<li><p><b>&downloadbar.cpydwnldlnk;:</b> &downloadbarhelp.description34;</p></li>
+					<li><p><b>&downloadbar.cncl;:</b> &downloadbarhelp.description35;</p></li>
+					<li><p><b>&downloadbar.pause;:</b> &downloadbarhelp.description36;</p></li>																		
+					<li><p><b>&downloadbar.resume;:</b> &downloadbarhelp.description37;</p></li>
+					<li><p><b>&downloadbar.clr;:</b> &downloadbarhelp.description38;</p></li>					
+				</ul>
+			</div>
+			<p class="amo">&downloadbarhelp.description39;</p>
+			<div class="amo">
+				<ul>
+					<li><p><b>&downloadbar.src;:</b> &downloadbarhelp.description40;</p></li>
+					<li><p><b>&downloadbar.trgt;:</b> &downloadbarhelp.description41;</p></li>
+					<li><p><b>&downloadbar.crrntspd;:</b> &downloadbarhelp.description42;</p></li>
+					<li><p><b>&downloadbar.vrgspd;:</b> &downloadbarhelp.description43;</p></li>
+					<li><p><b>&downloadbar.prgrs;:</b> &downloadbarhelp.description44;</p></li>																		
+					<li><p><b>&downloadbar.rmngtm;:</b> &downloadbarhelp.description45;</p></li>
+					<li><p><b>&downloadbar.dwnldtm;:</b> &downloadbarhelp.description46;</p></li>
+					<li><p><b>&downloadbar.dwnldbyt;:</b> &downloadbarhelp.description47;</p></li>					
+					<li><p><b>&downloadbar.flsz;:</b> &downloadbarhelp.description48;</p></li>				
+					<li><p><b>&downloadbar.md5hsh;:</b> &downloadbarhelp.description49;</p></li>																
+				</ul>
+			</div>
+			<p class="amo">&downloadbarhelp.description50;</p>				
+			<p class="amo">&downloadbarhelp.description51;</p>
+			
+			<p class="amo"><b>&downloadbarhelp.tip;:</b> &downloadbarhelp.description52;</p>					
+			<p class="amo"><b>&downloadbarhelp.tip;:</b> &downloadbarhelp.description53;</p>					
+			<p class="amo"><b>&downloadbarhelp.tip;:</b> &downloadbarhelp.description54;</p>				
+			<p class="amo"><b>&downloadbarhelp.tip;:</b> &downloadbarhelp.description55a;</p>
+			
+			<h2>&downloadbar.ptns;</h2>
+			
+			<p class="amo">&downloadbarhelp.description56;</p>
+			
+			<div class="amo">
+				<ul>
+					<li><p><b>&downloadbaropt.clrrftrlnch;:</b> &downloadbarhelp.description57;</p></li>
+					<li><p><b>&downloadbaropt.clrrftrshw;:</b> &downloadbarhelp.description58;</p></li>
+					<li><p><b>&downloadbaropt.pnftrdwncmp;:</b> &downloadbarhelp.description59;</p></li>
+					<li><p><b>&downloadbaropt.atpndwnldtb;:</b> &downloadbarhelp.description60;</p></li>
+					<li><p><b>&downloadbaropt.atclnwhnffqt;:</b> &downloadbarhelp.description61;</p></li>
+					<li><p><b>&downloadbaropt.skcnfrmtnbfrdlt;:</b> &downloadbarhelp.description62;</p></li>
+					<li><p><b>&downloadbaropt.attclswhndlcmp;:</b> &downloadbarhelp.description63;</p></li>
+					<li><p><b>&downloadbaropt.ttclrthsfltyps;:</b> &downloadbarhelp.description64;</p></li>														
+				</ul>
+			</div>
+			
+			<p class="amo"><b>&downloadbaropt.vrscn;</b></p>
+			<p class="amo">&downloadbarhelp.description65;</p>												
+			
+			<div class="amo">
+				<ul>
+					<li><p><b>&downloadbaropt.vrscnnrpth;:</b> &downloadbarhelp.description66;</p></li>
+					<li><p><b>&downloadbaropt.dsbscnfltyps;:</b> &downloadbarhelp.description67;</p></li>
+					<li><p><b>&downloadbaropt.vrsscnrgmnts;:</b> &downloadbarhelp.description68;</p></li>
+					<li><p><b>&downloadbaropt.ttscndwnldfl;:</b> &downloadbarhelp.description69;</p></li>																	
+				</ul>
+			</div>
+			
+			<p class="amo"><b>&downloadbaropt.ntfctn;</b></p>
+			<p class="amo">&downloadbarhelp.description70;</p>
+			
+			<div class="amo">							
+				<ul>
+					<li><p><b>&downloadbaropt.doflpth;:</b> &downloadbarhelp.description71;</p></li>
+					<li><p><b>&downloadbaropt.prvwsnd;:</b> &downloadbarhelp.description72;</p></li>
+					<li><p><b>&downloadbaropt.plysndwhncdwnldcomlts;:</b> &downloadbarhelp.description73;</p></li>
+					<li><p><b>&downloadbaropt.rststtngs;:</b> &downloadbarhelp.description74;</p></li>			
+				</ul>
+			</div>
+			
+			<h2 class="amo"><b>&downloadbaropt.pprnc;</b></h2>
+			<p class="amo">&downloadbarhelp.description75;</p>
+			<p class="amo"><b>&downloadbaropt.clr;</b></p>
+			<p class="amo">&downloadbarhelp.description76;</p>
+			
+			<div class="amo">										
+				<ul>
+					<li><p><b>&downloadbaropt.bckgndclr;:</b> &downloadbarhelp.description77;</p></li>
+					<li><p><b>&downloadbaropt.dwnprgrssclr;:</b> &downloadbarhelp.description78;</p></li>
+					<li><p><b>&downloadbaropt.dwntxtclr;:</b> &downloadbarhelp.description79;</p></li>																
+					<li><p><b>&downloadbaropt.dwncmpltclr;:</b> &downloadbarhelp.description80;</p></li>
+					<li><p><b>&downloadbaropt.dwnldpsclr;:</b> &downloadbarhelp.description81;</p></li>
+					<li><p><b>&downloadbaropt.brbckgrndclr;:</b> &downloadbarhelp.description82;</p></li>
+					<li><p><b>&downloadbaropt.rststtngs;:</b> &downloadbarhelp.description83;</p></li>															
+				</ul>
+			</div>
+			
+			<p class="amo"><b>&downloadbaropt.spdd;</b></p>
+			<p class="amo">&downloadbarhelp.description84;</p>	
+						
+			<p class="amo"><b>&downloadbaropt.srntrfc;</b></p>
+			<p class="amo">&downloadbarhelp.description85;</p>
+			
+			<div class="amo">							
+				<ul>
+					<li><p><b>&downloadbaropt.dnwldbr;:</b> &downloadbarhelp.description86;</p></li>
+					<li><p><b>&downloadbaropt.dnwlpnl;:</b> &downloadbarhelp.description87;</p></li>										
+				</ul>
+			</div>
+
+			<p class="amo"><b>&downloadbaropt.prgrsntfcts;</b></p>
+			<p class="amo">&downloadbarhelp.description88;</p>
+			
+			<p class="amo"><b>&downloadbaropt.prgrsslgnmnt;</b></p>
+			<p class="amo">&downloadbarhelp.description89;</p>
+			
+			<p class="amo"><b>&downloadbaropt.dwldtm;</b></p>
+			<p class="amo">&downloadbarhelp.description90;</p>
+			
+			<div class="amo">					
+				<ul>
+					<li><p><b>&downloadbaropt.width;:</b> &downloadbarhelp.description91;</p></li>
+					<li><p><b>&downloadbaropt.height;:</b> &downloadbarhelp.description92;</p></li>
+					<li><p><b>&downloadbaropt.flnmszfntsz;:</b> &downloadbarhelp.description93;</p></li>				
+					<li><p><b>&downloadbaropt.prgrssszfntsz;:</b> &downloadbarhelp.description94;</p></li>
+				</ul>
+			</div>			
+			
+			<p class="amo"><b>&downloadbaropt.hdclrbttn;:</b> &downloadbarhelp.description95;</p>
+			<p class="amo"><b>&downloadbaropt.hddwnldsbttn;:</b> &downloadbarhelp.description96;</p>
+			
+			<p class="nodisplay amo">&downloadbaramo.vlbllngs;</p>
+			<div id="anchors" class="nodisplay amo"></div>
+			
+			<p class="nodisplay amo"><i>&downloadbaramo.trnsltfwdys;</i></p>								
+			<p id="fwdysntfcn" class="nodisplay">&downloadbarhelp.fwdysntfcn;</p>
+			<p class="nodisplay amo">&downloadbarhelp.babelzilla;</p>
+			<p class="nodisplay amo"><a href="http://www.babelzilla.org/index.php?option=com_wts&amp;extension=5704&amp;type=show">http://www.babelzilla.org/index.php?option=com_wts&amp;extension=5704&amp;type=show</a></p>
+			<p class="nodisplay amo">+++++++++++++++++++++++++++++++++</p>
+			<p class="nodisplay amo">&downloadbarhelp.mozillazine;</p>
+			<p class="nodisplay amo"><a href="http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2782661">http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2782661</a></p>			
+			<div class="nodisplay"><textarea id="code" /></div>						
+		</div>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!ENTITY downloadbar.lnch "Abrir">
+<!ENTITY downloadbar.shwfl "Mostrar na pasta">
+<!ENTITY downloadbar.shwmngr "Exibir o gerenciador de downloads">
+<!ENTITY downloadbar.cncl "Cancelar">
+<!ENTITY downloadbar.pause "Pausar">
+<!ENTITY downloadbar.strt "Iniciar">
+<!ENTITY downloadbar.clr "Limpar">
+<!ENTITY downloadbar.clsbr "Fechar barra">
+<!ENTITY downloadbar.clrlldwnlds "Limpar todos os downloads">
+<!ENTITY downloadbar.pslldwnlds "Pausar todos os downloads">
+<!ENTITY downloadbar.rsmlldwnlds "Continuar todos os downloads">
+<!ENTITY downloadbar.cncllldwnlds "Cancelar todos os downloads">
+<!ENTITY downloadbar.dwnlds "Downloads">
+<!ENTITY downloadbar.vrscn "Escanear com antivírus">
+<!ENTITY downloadbar.dltfl "Excluir arquivo">
+<!ENTITY downloadbar.rnm "Renomear">
+<!ENTITY downloadbar.clrll "Limpar todos">
+<!ENTITY downloadbar.pndwnldtb "Abrir a aba de downloads">
+<!ENTITY downloadbar.shwlldwnldshstry "Exibir o histórico de downloads">
+<!ENTITY downloadbar.gtdwnlpg "Ir para a página de downloads">
+<!ENTITY downloadbar.cpydwnldlnk "Copiar o link do download">
+<!ENTITY downloadbar.ptns "Opções">
+<!ENTITY downloadbar.src "URL">
+<!ENTITY downloadbar.trgt "Destino">
+<!ENTITY downloadbar.crrntspd "Velocidade atual">
+<!ENTITY downloadbar.vrgspd "Velocidade média">
+<!ENTITY downloadbar.prgrs "Progresso">
+<!ENTITY downloadbar.rmngtm "Tempo restante">
+<!ENTITY downloadbar.dwnldbyt "Baixado">
+<!ENTITY downloadbar.flsz "Tamanho do arquivo">
+<!ENTITY downloadbar.dwnldtm "Tempo do download">
+<!ENTITY downloadbar.resume "Continuar">
+<!ENTITY downloadbar.sttstcs "Estatísticas">
+<!ENTITY downloadbar.chksm "Checksum">
+<!ENTITY downloadbar.cpy "Copiar">
+<!ENTITY downloadbar.hlp "Ajuda">
+<!ENTITY downloadbar.md5hsh "Hash MD5">
+<!ENTITY downloadbar.sendto "Enviar para">
+<!ENTITY downloadbar.desktopfolder "Área de Trabalho">
+<!ENTITY downloadbar.downloadsfolder "Downloads">
+<!ENTITY downloadbar.customfolder "Personalizado">

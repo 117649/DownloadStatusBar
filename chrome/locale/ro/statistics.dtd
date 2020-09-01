@@ -1,0 +1,5 @@
+<!ENTITY downloadbarstats.title "Statistici privind descărcările">
+<!ENTITY downloadbarstats.nostats "Nu există informații de afișat!">
+<!ENTITY downloadbarstats.dwnldgrph "Descărcați câteva fișiere pentru a obține grafice statistice!">
+<!ENTITY downloadbarstats.bybyts "Procentual">
+<!ENTITY downloadbarstats.bycnt "Numeric">

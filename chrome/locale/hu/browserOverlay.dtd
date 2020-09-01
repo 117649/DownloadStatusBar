@@ -1,0 +1,41 @@
+<!ENTITY downloadbar.lnch "Futtatás">
+<!ENTITY downloadbar.shwfl "Fájl megjelenítése">
+<!ENTITY downloadbar.shwmngr "Letöltéskezelő megjelenítése">
+<!ENTITY downloadbar.cncl "Mégse">
+<!ENTITY downloadbar.pause "Szünet">
+<!ENTITY downloadbar.strt "Indítás">
+<!ENTITY downloadbar.clr "Eltávolítás">
+<!ENTITY downloadbar.clsbr "Sáv bezárása">
+<!ENTITY downloadbar.clrlldwnlds "Összes letöltés eltávolítása">
+<!ENTITY downloadbar.pslldwnlds "Összes letöltés szüneteltetése">
+<!ENTITY downloadbar.rsmlldwnlds "Összes letöltés folytatása">
+<!ENTITY downloadbar.cncllldwnlds "Összes letöltés leállítása">
+<!ENTITY downloadbar.dwnlds "Letöltések">
+<!ENTITY downloadbar.vrscn "Víruskeresés">
+<!ENTITY downloadbar.dltfl "Fájl törlése">
+<!ENTITY downloadbar.rnm "Átnevezés">
+<!ENTITY downloadbar.clrll "Összes eltávolítása">
+<!ENTITY downloadbar.pndwnldtb "Letöltési fül megnyitása">
+<!ENTITY downloadbar.shwlldwnldshstry "Letöltéskezelő megjelenítése">
+<!ENTITY downloadbar.gtdwnlpg "Ugrás a letöltési oldalra">
+<!ENTITY downloadbar.cpydwnldlnk "Letöltési link másolása">
+<!ENTITY downloadbar.ptns "Beállítások">
+<!ENTITY downloadbar.src "Forrás">
+<!ENTITY downloadbar.trgt "Cél">
+<!ENTITY downloadbar.crrntspd "Pillanatnyi sebesség">
+<!ENTITY downloadbar.vrgspd "Átlagsebesség">
+<!ENTITY downloadbar.prgrs "Folyamat">
+<!ENTITY downloadbar.rmngtm "Hátralévő idő">
+<!ENTITY downloadbar.dwnldbyt "Letöltve">
+<!ENTITY downloadbar.flsz "Fájlméret">
+<!ENTITY downloadbar.dwnldtm "Letöltési idő">
+<!ENTITY downloadbar.resume "Folytatás">
+<!ENTITY downloadbar.sttstcs "Statisztika">
+<!ENTITY downloadbar.chksm "Ellenőrző összeg">
+<!ENTITY downloadbar.cpy "Másolás">
+<!ENTITY downloadbar.hlp "Súgó">
+<!ENTITY downloadbar.md5hsh "MD5 Hash">
+<!ENTITY downloadbar.sendto "Send to">
+<!ENTITY downloadbar.desktopfolder "Desktop">
+<!ENTITY downloadbar.downloadsfolder "Downloads">
+<!ENTITY downloadbar.customfolder "Custom">

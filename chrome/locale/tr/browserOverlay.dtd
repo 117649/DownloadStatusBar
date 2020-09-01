@@ -1,0 +1,41 @@
+<!ENTITY downloadbar.lnch "Başlat">
+<!ENTITY downloadbar.shwfl "Dosyayı Göster">
+<!ENTITY downloadbar.shwmngr "Yöneticiyi Göster">
+<!ENTITY downloadbar.cncl "İptal">
+<!ENTITY downloadbar.pause "Duraklat">
+<!ENTITY downloadbar.strt "Başlat">
+<!ENTITY downloadbar.clr "Temizle">
+<!ENTITY downloadbar.clsbr "Kapat">
+<!ENTITY downloadbar.clrlldwnlds "Tüm İndirilenleri Temizle">
+<!ENTITY downloadbar.pslldwnlds "Hepsini Duraklat">
+<!ENTITY downloadbar.rsmlldwnlds "Hepsini Devam Ettir">
+<!ENTITY downloadbar.cncllldwnlds "Hepsini İptal Et">
+<!ENTITY downloadbar.dwnlds "İndirilenler">
+<!ENTITY downloadbar.vrscn "Virüs Taraması">
+<!ENTITY downloadbar.dltfl "Dosyayı Sil">
+<!ENTITY downloadbar.rnm "Yeniden Adlandır">
+<!ENTITY downloadbar.clrll "Hepsini Temizle">
+<!ENTITY downloadbar.pndwnldtb "İndirilenler Sekmesini Aç">
+<!ENTITY downloadbar.shwlldwnldshstry "İndirme Geçmişini Göster">
+<!ENTITY downloadbar.gtdwnlpg "İndirme Sayfasına Git">
+<!ENTITY downloadbar.cpydwnldlnk "İndirme Köprüsünü Kopyala">
+<!ENTITY downloadbar.ptns "Tercihler">
+<!ENTITY downloadbar.src "Kaynak">
+<!ENTITY downloadbar.trgt "Hedef">
+<!ENTITY downloadbar.crrntspd "Şu Anki Hız">
+<!ENTITY downloadbar.vrgspd "Ortalama Hız">
+<!ENTITY downloadbar.prgrs "İlerleme">
+<!ENTITY downloadbar.rmngtm "Kalan Zaman">
+<!ENTITY downloadbar.dwnldbyt "İndirildi">
+<!ENTITY downloadbar.flsz "Dosya Boyutu">
+<!ENTITY downloadbar.dwnldtm "İndirme Zamanı">
+<!ENTITY downloadbar.resume "Devam">
+<!ENTITY downloadbar.sttstcs "İstatistikler">
+<!ENTITY downloadbar.chksm "Sağlama Toplamı">
+<!ENTITY downloadbar.cpy "Kopyala">
+<!ENTITY downloadbar.hlp "Yardım">
+<!ENTITY downloadbar.md5hsh "MD5 Hash">
+<!ENTITY downloadbar.sendto "Gönder">
+<!ENTITY downloadbar.desktopfolder "Masaüstü">
+<!ENTITY downloadbar.downloadsfolder "İndirmeler">
+<!ENTITY downloadbar.customfolder "Özel">

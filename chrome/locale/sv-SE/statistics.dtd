@@ -1,0 +1,5 @@
+<!ENTITY downloadbarstats.title "Filhämtningsstatistik">
+<!ENTITY downloadbarstats.nostats "Det finns ingen statistik att visa!">
+<!ENTITY downloadbarstats.dwnldgrph "Hämta några filer för att samla data till ett diagram!">
+<!ENTITY downloadbarstats.bybyts "efter storlek (B)">
+<!ENTITY downloadbarstats.bycnt "efter antal">

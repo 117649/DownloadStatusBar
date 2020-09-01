@@ -1,0 +1,130 @@
+<!ENTITY downloadbarhelp.description "If you are the kind of person who likes to have total control over every aspect of your downloads, Download Status Bar is the add-on you are looking for.">
+<!ENTITY downloadbarhelp.onlnvlbl1 "This page is available online in other languages, too.">
+<!ENTITY downloadbarhelp.onlnvlbl2 "Please click related flags to open up translated page in new tab.">
+<!ENTITY downloadbarhelp.description2sntc1 "Download Status Bar manages every aspect of your downloads">
+<!ENTITY downloadbarhelp.Launch "Launch">
+<!ENTITY downloadbarhelp.Show "Show">
+<!ENTITY downloadbarhelp.Scan "Scan">
+<!ENTITY downloadbarhelp.Rename "Rename">
+<!ENTITY downloadbarhelp.Checksum "Checksum">
+<!ENTITY downloadbarhelp.Pause "Pause">
+<!ENTITY downloadbarhelp.Resume "Resume">
+<!ENTITY downloadbarhelp.Cancel "Cancel">
+<!ENTITY downloadbarhelp.Clean "Clean">
+<!ENTITY downloadbarhelp.Delete "Delete">
+<!ENTITY downloadbarhelp.description2sntc2 "generates Statistics from your Download actions, keeps the History of your previous session downloads, and much more. It is not only a download management add-on, but a helper tool for boosting your Productivity, too.">
+<!ENTITY downloadbarhelp.description3 "Download Status Bar is designed specifically according to your needs and requests. All your expectations are placed at the core centre of the add-on, while utilizing the newest Firefox 26 features to improve performance of your browser and downloads. Download Status Bar is project driven, managed by its own users, which keeps it fresh and powerful.">
+<!ENTITY downloadbarhelp.description4 "Get a copy of Download Status Bar to take total control over your Downloads.">
+<!ENTITY downloadbarhelp.features "Features">
+<!ENTITY downloadbarhelp.description5 "When you download files from the internet, Download Status Bar places progress items on the Download Bar for you automatically. As the name suggests, Download Status Bar is the bar at bottom section of your Firefox window, generally above the Add-on Bar. Because Download Status Bar is user friendly and smart enough, Download Status Bar will only be visible when there is an active download. If there is no download to show, Download Bar hides itself automatically to preserve the web page area for you. Naturally, it will show itself again automatically when you start downloading any file from the web.">
+<!ENTITY downloadbarhelp.description6 "But if you want to view Download Status Bar even when there is no download, you can use these keyboard short-cuts:">
+<!ENTITY downloadbarhelp.description7 "Windows: CTRL + ALT + D">
+<!ENTITY downloadbarhelp.description8b "Mac OS X: SHIFT + ALT + D">
+<!ENTITY downloadbarhelp.description9 "Linux: (CTRL/CMD) + ALT + D">
+<!ENTITY downloadbarhelp.description10 "You can also use these keyboard short-cuts to hide the Download Status Bar any time you wish. In short, these short-cuts work to toggle Download Status Bar for you.">
+<!ENTITY downloadbarhelp.description10a "As an additional option, you can toggle Download Bar with the Download Status Bar menu option under the Tools menu of Firefox.">
+<!ENTITY downloadbarhelp.fwdysntfcn "This help page will be completed in a few days. Thank you very much for your understanding and patience.">
+<!ENTITY downloadbarhelp.description11 "After you open up Download Status Bar, you will notice a Downloads button on the left and a Clear button on the right side of the bar. The Downloads button is the main button of the Download Status Bar add-on, which you can click to open up the Add-on Context Menu. The Clear button is used to clear all completed downloads from the Download Status Bar by a mouse click.">
+<!ENTITY downloadbarhelp.description12 "Clicking on the Download button will provide the Add-on Context Menu as described below">
+<!ENTITY downloadbarhelp.options "Options">
+<!ENTITY downloadbarhelp.description13 "This menu option will open up the add-on Options window where you can customise the add-on according to your needs.">
+<!ENTITY downloadbarhelp.statistics "Statistics">
+<!ENTITY downloadbarhelp.description14 "This menu option will open up the Statistics page, which will generate Statistics details and graphs of your previous Download actions.">
+<!ENTITY downloadbarhelp.showdownloadhistory "Show Download History">
+<!ENTITY downloadbarhelp.description15 "This menu option opens up the default Firefox History Library in case you want to refer to your Downloads as a list of the window.">
+<!ENTITY downloadbarhelp.opendownloadtab "Open Download Tab">
+<!ENTITY downloadbarhelp.description16 "This menu option opens up the default Firefox History Library as a browser tab.">
+<!ENTITY downloadbarhelp.downloads "Downloads">
+<!ENTITY downloadbarhelp.description17 "This menu provides you Pause All Downloads, Resume All Downloads, Cancel All Downloads, and Clear All Downloads options to manage your downloads in batch.">
+<!ENTITY downloadbarhelp.help "Help">
+<!ENTITY downloadbarhelp.description18 "This menu option opens up the Help page of Download Status Bar where you can get details about the add-on, and how to use it in an efficient way.">
+<!ENTITY downloadbarhelp.closedownloadbar "Close Download Bar">
+<!ENTITY downloadbarhelp.description19 "This menu option will close up Download Bar for you.">
+<!ENTITY downloadbarhelp.description20 "When you download files from the web, Download Status Bar places download items in Download Bar automatically. Below is some example software from Mozilla to download. Click to start downloading.">
+<!ENTITY downloadbarhelp.description21 "Each download item contains the following elements:">
+<!ENTITY downloadbarhelp.dwnldcn "Download Icon">
+<!ENTITY downloadbarhelp.description22 "The specific icon which indicates genre of the Download file. This icon may look different according to Firefox Theme that you use.">
+<!ENTITY downloadbarhelp.flnm "File Name">
+<!ENTITY downloadbarhelp.description23 "Name of Download file. If the file name is too big to fit in the Download item, it will be trimmed automatically.">
+<!ENTITY downloadbarhelp.prgrssctn "Progress Section">
+<!ENTITY downloadbarhelp.description24 "This section contains Progress Percent, which shows the percentage completed. Speed info shows the current download speed per second. You can also add Remaining Time info to this Percent Section with the help of the Options window.">
+<!ENTITY downloadbarhelp.description25 "You can also right click each download item to get a context menu for more actions and information, as described as below">
+<!ENTITY downloadbarhelp.description26 "Opens or executes the downloaded file. This option is available after the download has completed.">
+<!ENTITY downloadbarhelp.description27 "Shows the Download file in its containing folder.">
+<!ENTITY downloadbarhelp.description28 "Shows the Download History window.">
+<!ENTITY downloadbarhelp.description29 "Scans the download file manually with the Security Software you assigned. This option will ask you to locate and assign the Security Software, if you did not assign previously.">
+<!ENTITY downloadbarhelp.description30 "Opens up Checksum window, where you can calculate and compare MD5, MD2, SHA1, SHA256, SHA384, SHA512 values for the downloaded file.">
+<!ENTITY downloadbarhelp.description31 "Opens up Rename window to let you rename your downloaded file. This option will be available after the download has completed.">
+<!ENTITY downloadbarhelp.description32 "Deletes the downloaded file from your computer. It will ask you for confirmation before attempting to delete the file. This option will be available after the download has completed.">
+<!ENTITY downloadbarhelp.description33 "Opens up the download page in a new tab.">
+<!ENTITY downloadbarhelp.description34 "Copies the URL of the dowload to the Clipboard.">
+<!ENTITY downloadbarhelp.description35 "Cancels the active download and removes it from your computer. This option is available for the downloads that are in progress.">
+<!ENTITY downloadbarhelp.description36 "Pauses the active download.">
+<!ENTITY downloadbarhelp.description37 "Resumes the paused download.">
+<!ENTITY downloadbarhelp.description38 "Clears the download item from Download Bar.">
+<!ENTITY downloadbarhelp.description39 "You can also left click on each download item to open up the Information Pop Up. This is described in more detail below:">
+<!ENTITY downloadbarhelp.description40 "Source URL of the download file. Left clicking on Source link will open up Source URL in your browser as a new tab. Right clicking on Source link opens the Copy menu, enabling to copy the Source URL of the download.">
+<!ENTITY downloadbarhelp.description41 "Location where the downloaded file is stored on your computer. Left clicking on Target link will open up the download file in its directory. Right clicking on Target link opens the Copy menu, enabling to copy the file path of the download file.">
+<!ENTITY downloadbarhelp.description42 "Current download speed of the active download in KB/s.">
+<!ENTITY downloadbarhelp.description43 "Average download speed of the completed download in KB/s. This information will be available after the download has completed.">
+<!ENTITY downloadbarhelp.description44 "Percentage of download completed.">
+<!ENTITY downloadbarhelp.description45 "Time remaining to completion of the download.">
+<!ENTITY downloadbarhelp.description46 "Time spent to complete the download. This information will be available after the download has completed.">
+<!ENTITY downloadbarhelp.description47 "First section of this field indicates Current Bytes; this is the number of bytes transferred currently. The second section shows Total Bytes, i.e. the total number of bytes to be transferred before the download finishes.">
+<!ENTITY downloadbarhelp.description48 "Size of the downloaded file on disk. This information will be available after the download has completed.">
+<!ENTITY downloadbarhelp.description49 "MD5 Hash, calculated automatically for the downloaded file. This information will be available after the download has completed.">
+<!ENTITY downloadbarhelp.description50 "Information Pop-up also contains a Preview feature for downloaded images, enabling preview as thumbnails. This Preview feature supports PNG, JPG, GIF and BMP file types. Clicking on Preview thumbnail opens the downloaded image in a new tab of the browser.">
+<!ENTITY downloadbarhelp.description51 "You can also hover over a download item, opening the Information Tool Tip to get download details instantaneously.">
+<!ENTITY downloadbarhelp.tip "Tip">
+<!ENTITY downloadbarhelp.description52 "Double clicking the download item launches the downloaded file automatically.">
+<!ENTITY downloadbarhelp.description53 "Double clicking on Download Bar clears all completed downloads automatically.">
+<!ENTITY downloadbarhelp.description54 "Middle clicking the download item will clear it from Download Bar.">
+<!ENTITY downloadbarhelp.description55 "Left clicking on the empty space in Download Bar opens the Add-on Context Menu.">
+<!ENTITY downloadbarhelp.description56 "You can customise Download Status Bar according to your needs with the Options window. You can open up the Options window by right clicking on the Downloads button and selecting Options menu. As an alternative, you can also click Tools from Firefox menu, then go to Add-ons, find Download Status Bar in the Extensions tab, and click on the Preferences button to open the Options window. Available options are described below:">
+<!ENTITY downloadbarhelp.description57 "Ticking this option lets you clear download items automatically from Download bar after you launch the file, either with the help of the context menu Launch option, or simply by double clicking the Download item.">
+<!ENTITY downloadbarhelp.description58 "Ticking this option lets you clear download item automatically from Download bar after showing the download file in its containing folder.">
+<!ENTITY downloadbarhelp.description59 "Ticking this option lets you open the Download directory automatically after the download has completed.">
+<!ENTITY downloadbarhelp.description60 "Ticking this option lets you open the Download Tab of your browser automatically when a download starts.">
+<!ENTITY downloadbarhelp.description61 "Download Status Bar keeps the History of your previous download sessions, and will show them again in the Download Bar when a new session starts. If you do not want to keep your download history in Download Bar, you can tick this option to clear downloaded items automatically from History when Firefox quits.">
+<!ENTITY downloadbarhelp.description62 "Before deleting a download item, Download Status Bar will ask for confirmation to prevent unintended deletions. If you do not want a confirmation window, e.g. to speed up your deletion process, remove the tick for this option.">
+<!ENTITY downloadbarhelp.description63 "Ticking this option shows you Download Bar when there are active Downloads, but hides it automatically after all Downloads have completed to preserve web page area. Additionally, you can also set a time interval before the Download Bar disappears automatically.">
+<!ENTITY downloadbarhelp.description64 "You may find it unnecessary to keep some specific file types and might want to clear them automatically after a specific time interval. You can type the file extensions to clear in this field, separated by commas. An asterisk (*) can be entered in this field as a wild card for all file types.">
+<!ENTITY downloadbarhelp.description65 "You can scan downloaded files automatically by tuning the fields in this options group.">
+<!ENTITY downloadbarhelp.description66 "Location where your preferred Security Software is stored on your computer. Click Locate to open File Picker to assign Security Software for Virus Scan (if you did assign it already).">
+<!ENTITY downloadbarhelp.description67 "If you want to exclude Automatic Virus Scanning for certain file types, type their file extensions in this field, separated by commas.">
+<!ENTITY downloadbarhelp.description68 "Most Security Software does not need any additional arguments for a Virus Scan, so you can leave this section empty by default. If your Security Software needs additional arguments, you can type them in this field. You can use an &#37;1 expression as a placeholder for the file location of downloaded file.">
+<!ENTITY downloadbarhelp.description69 "Check this option to scan downloaded files automatically with your Security Software after the download has completed.">
+<!ENTITY downloadbarhelp.description70 "You can get sound notifications when downloads finish by tuning the fields in this options group.">
+<!ENTITY downloadbarhelp.description71 "Location where your preferred Notification Sound is stored on your computer. Click Locate to open the File Picker to assign a sound file for notification (if you did not assign one already). Sound files that can be assigned as notification sounds are .ogg, .wav and .mp3 files. Default Sound is the notification sound which is included with the Download Status Bar add-on.">
+<!ENTITY downloadbarhelp.description72 "If you want to listen to current Notification Sound, click the play button of the sound player to preview the assigned sound file.">
+<!ENTITY downloadbarhelp.description73 "Tick this option if you want sound notifications when downloads are completed.">
+<!ENTITY downloadbarhelp.description74 "Clicking the Reset Settings button resets the values for the Notification options.">
+<!ENTITY downloadbarhelp.description75 "You can customise the interface of the Download Status Bar with the options in this tab.">
+<!ENTITY downloadbarhelp.description76 "You can change the appearance of the Download Items by tuning the colour pickers of this options group. Each colour is gradient based to create a nice effect for the interface elements. Every colour change is applied instantly by Download Status Bar:">
+<!ENTITY downloadbarhelp.description77 "Pick a special colour from the appropriate Colour Picker to assign a background colour for the Download Item. The Progress Colour superposes/ replaces the background colour as the download progresses. Hence, if you change this colour while you are downloading a large file, you will be able to see what the colour combination looks like.">
+<!ENTITY downloadbarhelp.description78 "Pick a special colour from the appropriate Colour Picker to assign it as the progress colour for the active downloads.">
+<!ENTITY downloadbarhelp.description79 "Pick a special colour from the appropriate Colour Picker to assign it as the text colour for the File Name and Progress Data of the Download Item.">
+<!ENTITY downloadbarhelp.description80 "Pick a special colour from the appropriate Colour Picker to assign it as a colour to indicate completed Downloads.">
+<!ENTITY downloadbarhelp.description81 "Pick a special colour from the appropriate Colour Picker to assign it as a colour to indicate paused Downloads.">
+<!ENTITY downloadbarhelp.description82 "Pick a special colour from the appropriate Colour Picker to assign it as a background colour for Download Bar.">
+<!ENTITY downloadbarhelp.description83 "Clicking the Reset Settings button will reset all Colour options.">
+<!ENTITY downloadbarhelp.description84 "You can assign different colours for different download speeds by altering the fields in this options group. Assigned Speed Colours will overwrite the Progress Colour from the Colour options group (if you set any).">
+<!ENTITY downloadbarhelp.description85 "You can change the interface of Download Status Bar by the fields provided in this options group:">
+<!ENTITY downloadbarhelp.description86 "This is the default download interface for Download Status Bar. If you select this option, Download Items are put on the Download Bar, which is placed at the bottom of the browser.">
+<!ENTITY downloadbarhelp.description87 "If you want to keep your downloads private, you can select this option to place all Download Items in a Toolbar Button Panel. The Toolbar Button will be placed in an Add-on Bar as default. If there is no Add-on Bar,  or the Add-on Bar is hidden, the Toolbar Button will be placed inside the Navigation Toolbar of Firefox. The Toolbar Button has also a counter next to it. The first section of counter indicates the number of active downloads in progress, and the second part of the counter shows the number of completed downloads.">
+<!ENTITY downloadbarhelp.description88 "You can show or hide the Progress Percentage, Speed and Remaining Time items in the Progress Section of the Download Items, by tuning the tickboxes in this option group.">
+<!ENTITY downloadbarhelp.description89 "You can adjust the Progress Section alignment of the Download Items by tuning the fields of this options group. Selecting the Horizontal option will place Progress, Speed and Remaining Time elements side by side,  while Vertical places all Progress elements in a vertical position.">
+<!ENTITY downloadbarhelp.description90 "You can change the width and height values of a Download Item  by adjusting the fields in this options group:">
+<!ENTITY downloadbarhelp.description91 "Place a numerical value in this field to set the width of the Download Item.">
+<!ENTITY downloadbarhelp.description92 "Place a numerical value in this field to set the height of the Download Item.">
+<!ENTITY downloadbarhelp.description93 "Place a numerical value in this field to set the font size for the File Name of the Download Item.">
+<!ENTITY downloadbarhelp.description94 "Place a numerical value in this field to set the font size for the Progress Section of the Download Item.">
+<!ENTITY downloadbarhelp.description95 "Ticking this option hides the Clear button of the Download Bar.">
+<!ENTITY downloadbarhelp.description96 "Ticking this option hides the Download button of the Download Bar.">
+<!ENTITY downloadbarhelp.imagecaption1 "Right Clicking download items will provide context menu options to manage your downloads.">
+<!ENTITY downloadbarhelp.imagecaption2 "You can have your downloads in button panel to keep your download privacy from others.">
+<!ENTITY downloadbarhelp.imagecaption3 "You can view your Download Statistics and see which particular download types and count you are mostly generating.">
+<!ENTITY downloadbarhelp.imagecaption4 "Clicking on Download item will open up Information Popup where you can get Download details in more.">
+<!ENTITY downloadbarhelp.imagecaption5 "Options windows will provide you options to have total control on your Downloads according to your needs.">
+<!ENTITY downloadbarhelp.babelzilla "If you wish to see Download Status Bar in your own language, please feel free to translate it by registering Babelzilla.">
+<!ENTITY downloadbarhelp.mozillazine "You can get more detailed support for Download Status Bar from Mozillazine forum:">

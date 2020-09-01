@@ -1,0 +1,5 @@
+<!ENTITY downloadbarstats.title "İstatistikleri İndir">
+<!ENTITY downloadbarstats.nostats "Gösterecek İstatistik yok">
+<!ENTITY downloadbarstats.dwnldgrph "İstatistik grafiğini görebilmek için lütfen birkaç dosya indirin">
+<!ENTITY downloadbarstats.bybyts "Boyuta göre">
+<!ENTITY downloadbarstats.bycnt "Sayıya göre">

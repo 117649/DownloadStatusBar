@@ -1,0 +1,62 @@
+<!ENTITY downloadbaropt.ptns "Opzioni">
+<!ENTITY downloadbaropt.clrrftrlnch "Dopo aver eseguito l'elemento scaricato, eliminalo dalla Barra di Download">
+<!ENTITY downloadbaropt.clrrftrshw "Dopo aver visualizzato l'elemento scaricato, eliminalo dalla Barra di Download">
+<!ENTITY downloadbaropt.shwddbbrbttn "Mostra il pulsante della Barra di Download">
+<!ENTITY downloadbaropt.attclswhndlcmp "Chiudi automaticamente la Barra di Download a scaricamenti completati">
+<!ENTITY downloadbaropt.pnftrdwncmp "A scaricamento completato, apri automaticamente la cartella di download">
+<!ENTITY downloadbaropt.clr "Colori">
+<!ENTITY downloadbaropt.dwnprgrssclr "Colore di avanzamento del download">
+<!ENTITY downloadbaropt.dwntxtclr "Colore del testo del download">
+<!ENTITY downloadbaropt.dwncmpltclr "Colore del download completato">
+<!ENTITY downloadbaropt.dwnldpsclr "Colore del download arrestato temporaneamente">
+<!ENTITY downloadbaropt.brbckgrndclr "Colore di sfondo della Barra di Download">
+<!ENTITY downloadbaropt.vrscn "Scansione anti-malware">
+<!ENTITY downloadbaropt.vrscnnrpth "Percorso dello scanner anti-malware">
+<!ENTITY downloadbaropt.vrscnlct "Sfoglia…">
+<!ENTITY downloadbaropt.dsbscnfltyps "Disabilita la scansione per questi tipi di file">
+<!ENTITY downloadbaropt.ttscndwnldfl "Scansiona automaticamente i file scaricati">
+<!ENTITY downloadbaropt.ttclrthsfltyps "Togli automaticamente dalla Barra di Download questi tipi di file">
+<!ENTITY downloadbaropt.ftr "dopo">
+<!ENTITY downloadbaropt.scnds "secondi">
+<!ENTITY downloadbaropt.ntfctn "Notifiche">
+<!ENTITY downloadbaropt.doflpth "Percorso del file sonoro">
+<!ENTITY downloadbaropt.dofllct "Sfoglia…">
+<!ENTITY downloadbaropt.prvwsnd "Ascolta">
+<!ENTITY downloadbaropt.plysndwhncdwnldcomlts "Riproduci la notifica sonora a scaricamento completato">
+<!ENTITY downloadbaropt.pprnc "Aspetto">
+<!ENTITY downloadbaropt.bdnwtdh "Ampiezza di banda">
+<!ENTITY downloadbaropt.spdd "Velocità di scaricamento">
+<!ENTITY downloadbaropt.slwstspd "Velocità minima">
+<!ENTITY downloadbaropt.vrgspd "Velocità intermedia">
+<!ENTITY downloadbaropt.fstsspd "Velocità massima">
+<!ENTITY downloadbaropt.bckgndclr "Colore di sfondo del download">
+<!ENTITY downloadbaropt.dwnbrdclr "Colore del bordo del download">
+<!ENTITY downloadbaropt.rststtngs "Azzeramento delle impostazioni">
+<!ENTITY downloadbaropt.srntrfc "Interfaccia utente">
+<!ENTITY downloadbaropt.dnwldbr "Barra di Download">
+<!ENTITY downloadbaropt.dnwlpnl "Pulsante di Download Status Bar">
+<!ENTITY downloadbaropt.atpndwnldtb "Quando inizia uno scaricamento, apri automaticamente la scheda di download">
+<!ENTITY downloadbaropt.hdclrbttn "Nascondi il pulsante Svuota nella Barra di Download">
+<!ENTITY downloadbaropt.hddwnldsbttn "Nascondi il pulsante Download nella Barra di Download">
+<!ENTITY downloadbaropt.dwldtm "Elementi da scaricare">
+<!ENTITY downloadbaropt.apply "Applica">
+<!ENTITY downloadbaropt.width "Larghezza">
+<!ENTITY downloadbaropt.height "Altezza">
+<!ENTITY downloadbaropt.vrsscnrgmnts "Parametri addizionali">
+<!ENTITY downloadbaropt.atclnwhnffqt "Alla chiusura di Firefox, svuota completamente la Barra di Download">
+<!ENTITY downloadbaropt.prgrsntfcts "Parametri di avanzamento">
+<!ENTITY downloadbaropt.prgrssntfct "Percentuale di avanzamento">
+<!ENTITY downloadbaropt.spdntfct "Velocità di avanzamento">
+<!ENTITY downloadbaropt.tmntfct "Tempo rimanente">
+<!ENTITY downloadbaropt.over "Oltre">
+<!ENTITY downloadbaropt.skcnfrmtnbfrdlt "Chiedi conferma prima di eliminare il file scaricato dal computer">
+<!ENTITY downloadbaropt.prgrsslgnmnt "Allineamento dell'avanzamento">
+<!ENTITY downloadbaropt.hrzntllgnmnt "Orizzontale">
+<!ENTITY downloadbaropt.vrtcllgnmnt "Verticale">
+<!ENTITY downloadbaropt.fntsz "Dimensione caratteri">
+<!ENTITY downloadbaropt.flnmsz "Nome file">
+<!ENTITY downloadbaropt.prgrsssz "Avanzamento">
+<!ENTITY downloadbaropt.flnmszfntsz "Dimensione caratteri del nome file">
+<!ENTITY downloadbaropt.prgrssszfntsz "Dimensione caratteri di avanzamento">
+<!ENTITY downloadbaropt.dblclckdwnldtm "Funzione del doppio clic per l'oggetto scaricato:">
+<!ENTITY downloadbaropt.cntndwnldswhnbrwsrqts "Prosegui gli scaricamenti nel Download Manager anche quando Firefox viene chiuso">

@@ -1,0 +1,62 @@
+<!ENTITY downloadbaropt.ptns "설정">
+<!ENTITY downloadbaropt.clrrftrlnch "실행 후 다운로드 항목 정리하기">
+<!ENTITY downloadbaropt.clrrftrshw "실행 후 다운로드 항목 지우기">
+<!ENTITY downloadbaropt.shwddbbrbttn "부가 기능 막대 단추 표시하기">
+<!ENTITY downloadbaropt.attclswhndlcmp "다운로드가 모두 완료되면 자동으로 다운로드 막대 닫기">
+<!ENTITY downloadbaropt.pnftrdwncmp "다운로드가 완료되면 자동으로 다운로드 디렉터리 열기">
+<!ENTITY downloadbaropt.clr "색상">
+<!ENTITY downloadbaropt.dwnprgrssclr "다운로드 진행 색상">
+<!ENTITY downloadbaropt.dwntxtclr "다운로드 글자 색상">
+<!ENTITY downloadbaropt.dwncmpltclr "다운로드 완료 색상">
+<!ENTITY downloadbaropt.dwnldpsclr "다운로드 정지 색상">
+<!ENTITY downloadbaropt.brbckgrndclr "막대 배경 색상">
+<!ENTITY downloadbaropt.vrscn "바이러스 검사">
+<!ENTITY downloadbaropt.vrscnnrpth "바이러스 백신 경로">
+<!ENTITY downloadbaropt.vrscnlct "찾기">
+<!ENTITY downloadbaropt.dsbscnfltyps "해당 파일 형식으로 탐색 안 함">
+<!ENTITY downloadbaropt.ttscndwnldfl "다운로드한 파일 자동으로 탐색">
+<!ENTITY downloadbaropt.ttclrthsfltyps "해당 파일 형식 자동으로 지우기">
+<!ENTITY downloadbaropt.ftr "after">
+<!ENTITY downloadbaropt.scnds "seconds">
+<!ENTITY downloadbaropt.ntfctn "알림">
+<!ENTITY downloadbaropt.doflpth "오디오 파일 경로">
+<!ENTITY downloadbaropt.dofllct "찾기">
+<!ENTITY downloadbaropt.prvwsnd "미리 듣기">
+<!ENTITY downloadbaropt.plysndwhncdwnldcomlts "다운로드가 완료되면 알림 소리 재생하기">
+<!ENTITY downloadbaropt.pprnc "모양">
+<!ENTITY downloadbaropt.bdnwtdh "Bandwidth">
+<!ENTITY downloadbaropt.spdd "다운로드 속도">
+<!ENTITY downloadbaropt.slwstspd "최저 속도">
+<!ENTITY downloadbaropt.vrgspd "평균 속도">
+<!ENTITY downloadbaropt.fstsspd "최고 속도">
+<!ENTITY downloadbaropt.bckgndclr "다운로드 배경 색상">
+<!ENTITY downloadbaropt.dwnbrdclr "다운로드 경계 색상">
+<!ENTITY downloadbaropt.rststtngs "설정 초기화">
+<!ENTITY downloadbaropt.srntrfc "사용자 설정">
+<!ENTITY downloadbaropt.dnwldbr "다운로드 막대">
+<!ENTITY downloadbaropt.dnwlpnl "다운로드 틀">
+<!ENTITY downloadbaropt.atpndwnldtb "다운로드가 시작되면 다운로드 색인 자동으로 열기">
+<!ENTITY downloadbaropt.hdclrbttn "다운로드 막대에서 지우기 단추 숨기기">
+<!ENTITY downloadbaropt.hddwnldsbttn "다운로드 막대에서 다운로드 단추 숨기기">
+<!ENTITY downloadbaropt.dwldtm "다운로드 항목">
+<!ENTITY downloadbaropt.apply "적용">
+<!ENTITY downloadbaropt.width "너비">
+<!ENTITY downloadbaropt.height "높이">
+<!ENTITY downloadbaropt.vrsscnrgmnts "인수">
+<!ENTITY downloadbaropt.atclnwhnffqt "Firefox를 끝내면 완료된 다운로드 정리하기">
+<!ENTITY downloadbaropt.prgrsntfcts "진행 알림">
+<!ENTITY downloadbaropt.prgrssntfct "진행">
+<!ENTITY downloadbaropt.spdntfct "속도">
+<!ENTITY downloadbaropt.tmntfct "남은 시간">
+<!ENTITY downloadbaropt.over "Over">
+<!ENTITY downloadbaropt.skcnfrmtnbfrdlt "다운로드된 파일을 삭제하기 전에 묻기">
+<!ENTITY downloadbaropt.prgrsslgnmnt "진행 맞춤">
+<!ENTITY downloadbaropt.hrzntllgnmnt "수평">
+<!ENTITY downloadbaropt.vrtcllgnmnt "수직">
+<!ENTITY downloadbaropt.fntsz "글자 크기">
+<!ENTITY downloadbaropt.flnmsz "파일 이름">
+<!ENTITY downloadbaropt.prgrsssz "진행">
+<!ENTITY downloadbaropt.flnmszfntsz "파일 이름 글자 크기">
+<!ENTITY downloadbaropt.prgrssszfntsz "진행 글자 크기">
+<!ENTITY downloadbaropt.dblclckdwnldtm "다운로드 항목에 대한 더블 클릭 기능:">
+<!ENTITY downloadbaropt.cntndwnldswhnbrwsrqts "Firefox를 끝내면 다운로드 관리에서 다운로드 계속하기">

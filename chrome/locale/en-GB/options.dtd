@@ -1,0 +1,62 @@
+<!ENTITY downloadbaropt.ptns "Options">
+<!ENTITY downloadbaropt.clrrftrlnch "Clear download item after launching it">
+<!ENTITY downloadbaropt.clrrftrshw "Clear download item after showing file">
+<!ENTITY downloadbaropt.shwddbbrbttn "Show Add-on Bar Button">
+<!ENTITY downloadbaropt.attclswhndlcmp "Close download bar automatically when all downloads are complete">
+<!ENTITY downloadbaropt.pnftrdwncmp "Open download directory automatically after download is completed">
+<!ENTITY downloadbaropt.clr "Colour">
+<!ENTITY downloadbaropt.dwnprgrssclr "Download Progress Colour">
+<!ENTITY downloadbaropt.dwntxtclr "Download Text Colour">
+<!ENTITY downloadbaropt.dwncmpltclr "Download Complete Colour">
+<!ENTITY downloadbaropt.dwnldpsclr "Download Pause Colour">
+<!ENTITY downloadbaropt.brbckgrndclr "Bar Background Colour">
+<!ENTITY downloadbaropt.vrscn "Virus Scan">
+<!ENTITY downloadbaropt.vrscnnrpth "Virus Scanner Path">
+<!ENTITY downloadbaropt.vrscnlct "Locate">
+<!ENTITY downloadbaropt.dsbscnfltyps "Disable scan for these file types">
+<!ENTITY downloadbaropt.ttscndwnldfl "Scan downloaded files automatically">
+<!ENTITY downloadbaropt.ttclrthsfltyps "Clear these file types automatically">
+<!ENTITY downloadbaropt.ftr "after">
+<!ENTITY downloadbaropt.scnds "seconds">
+<!ENTITY downloadbaropt.ntfctn "Notification">
+<!ENTITY downloadbaropt.doflpth "Audio File Path">
+<!ENTITY downloadbaropt.dofllct "Locate">
+<!ENTITY downloadbaropt.prvwsnd "Preview Sound">
+<!ENTITY downloadbaropt.plysndwhncdwnldcomlts "Play notification sound when download is completed">
+<!ENTITY downloadbaropt.pprnc "Appearance">
+<!ENTITY downloadbaropt.bdnwtdh "Bandwidth">
+<!ENTITY downloadbaropt.spdd "Download Speed">
+<!ENTITY downloadbaropt.slwstspd "Slowest Speed">
+<!ENTITY downloadbaropt.vrgspd "Average Speed">
+<!ENTITY downloadbaropt.fstsspd "Fastest Speed">
+<!ENTITY downloadbaropt.bckgndclr "Download Background Colour">
+<!ENTITY downloadbaropt.dwnbrdclr "Download Border Colour">
+<!ENTITY downloadbaropt.rststtngs "Reset Settings">
+<!ENTITY downloadbaropt.srntrfc "User Interface">
+<!ENTITY downloadbaropt.dnwldbr "Download Bar">
+<!ENTITY downloadbaropt.dnwlpnl "Download Panel">
+<!ENTITY downloadbaropt.atpndwnldtb "Open Download Tab automatically when a download starts">
+<!ENTITY downloadbaropt.hdclrbttn "Hide Clear button in the Download Bar">
+<!ENTITY downloadbaropt.hddwnldsbttn "Hide Downloads button in the Download Bar">
+<!ENTITY downloadbaropt.dwldtm "Download Item">
+<!ENTITY downloadbaropt.apply "Apply">
+<!ENTITY downloadbaropt.width "Width">
+<!ENTITY downloadbaropt.height "Height">
+<!ENTITY downloadbaropt.vrsscnrgmnts "Arguments">
+<!ENTITY downloadbaropt.atclnwhnffqt "Clean completed downloads when Firefox quits">
+<!ENTITY downloadbaropt.prgrsntfcts "Progress Notifications">
+<!ENTITY downloadbaropt.prgrssntfct "Progress">
+<!ENTITY downloadbaropt.spdntfct "Speed">
+<!ENTITY downloadbaropt.tmntfct "Remaining Time">
+<!ENTITY downloadbaropt.over "Over">
+<!ENTITY downloadbaropt.skcnfrmtnbfrdlt "Ask confirmation before deleting downloaded file">
+<!ENTITY downloadbaropt.prgrsslgnmnt "Progress Alignment">
+<!ENTITY downloadbaropt.hrzntllgnmnt "Horizontal">
+<!ENTITY downloadbaropt.vrtcllgnmnt "Vertical">
+<!ENTITY downloadbaropt.fntsz "Font Size">
+<!ENTITY downloadbaropt.flnmsz "File Name">
+<!ENTITY downloadbaropt.prgrsssz "Progress">
+<!ENTITY downloadbaropt.flnmszfntsz "File name font size">
+<!ENTITY downloadbaropt.prgrssszfntsz "Progress font size">
+<!ENTITY downloadbaropt.dblclckdwnldtm "Double Click functionality for Download Item:">
+<!ENTITY downloadbaropt.cntndwnldswhnbrwsrqts "Continue downloads in Download Manage when Firefox quits">

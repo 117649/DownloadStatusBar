@@ -1,0 +1,5 @@
+<!ENTITY downloadbaropt.bttns "按钮">
+<!ENTITY downloadbaropt.bttntype "按钮类型">
+<!ENTITY downloadbaropt.cnc "图标">
+<!ENTITY downloadbaropt.txtcnc "文本+图标">
+<!ENTITY downloadbaropt.txt "文本">

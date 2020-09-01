@@ -1,0 +1,5 @@
+<!ENTITY downloadbarstats.title "Lataustilastot">
+<!ENTITY downloadbarstats.nostats "Ei näytettäviä tilastoja!">
+<!ENTITY downloadbarstats.dwnldgrph "Lataa tiedostoja saadaksesi tilastot!">
+<!ENTITY downloadbarstats.bybyts "tavujen mukaan">
+<!ENTITY downloadbarstats.bycnt "lukeman mukaan">

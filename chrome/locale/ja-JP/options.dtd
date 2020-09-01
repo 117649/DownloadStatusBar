@@ -1,0 +1,62 @@
+<!ENTITY downloadbaropt.ptns "オプション">
+<!ENTITY downloadbaropt.clrrftrlnch "ファイルを開いた後、ダウンロードアイテムを消去">
+<!ENTITY downloadbaropt.clrrftrshw "保存先を開いた後、ダウンロードアイテムを消去">
+<!ENTITY downloadbaropt.shwddbbrbttn "アドオンバー ボタンを表示">
+<!ENTITY downloadbaropt.attclswhndlcmp "すべてのダウンロードが完了したときダウンロードバーを指定秒後に自動的に閉じる">
+<!ENTITY downloadbaropt.pnftrdwncmp "ダウンロード完了後に自動的に保存先を開く">
+<!ENTITY downloadbaropt.clr "色">
+<!ENTITY downloadbaropt.dwnprgrssclr "ダウンロードの進行状況の色">
+<!ENTITY downloadbaropt.dwntxtclr "ダウンロードのテキストの色">
+<!ENTITY downloadbaropt.dwncmpltclr "完了したダウンロードの色">
+<!ENTITY downloadbaropt.dwnldpsclr "一時停止したダウンロードの色">
+<!ENTITY downloadbaropt.brbckgrndclr "バーの背景色">
+<!ENTITY downloadbaropt.vrscn "ウイルス スキャン">
+<!ENTITY downloadbaropt.vrscnnrpth "ウイルス スキャンプログラムのパス">
+<!ENTITY downloadbaropt.vrscnlct "選択">
+<!ENTITY downloadbaropt.dsbscnfltyps "スキャンしないファイルの種類">
+<!ENTITY downloadbaropt.ttscndwnldfl "ダウンロードしたファイルを自動的にスキャン">
+<!ENTITY downloadbaropt.ttclrthsfltyps "指定秒後に自動的に消去するファイルの種類">
+<!ENTITY downloadbaropt.ftr ":">
+<!ENTITY downloadbaropt.scnds "秒後">
+<!ENTITY downloadbaropt.ntfctn "通知">
+<!ENTITY downloadbaropt.doflpth "オーディオ ファイルのパス">
+<!ENTITY downloadbaropt.dofllct "選択">
+<!ENTITY downloadbaropt.prvwsnd "サウンドのプレビュー">
+<!ENTITY downloadbaropt.plysndwhncdwnldcomlts "ダウンロードが完了したときに通知サウンドを再生">
+<!ENTITY downloadbaropt.pprnc "外観">
+<!ENTITY downloadbaropt.bdnwtdh "帯域幅">
+<!ENTITY downloadbaropt.spdd "ダウンロード速度">
+<!ENTITY downloadbaropt.slwstspd "最低速度">
+<!ENTITY downloadbaropt.vrgspd "平均速度">
+<!ENTITY downloadbaropt.fstsspd "最高速度">
+<!ENTITY downloadbaropt.bckgndclr "ダウンロードの背景色">
+<!ENTITY downloadbaropt.dwnbrdclr "ダウンロードの枠線の色">
+<!ENTITY downloadbaropt.rststtngs "設定のリセット">
+<!ENTITY downloadbaropt.srntrfc "ユーザー インターフェイス">
+<!ENTITY downloadbaropt.dnwldbr "ダウンロードバー">
+<!ENTITY downloadbaropt.dnwlpnl "ダウンロードパネル">
+<!ENTITY downloadbaropt.atpndwnldtb "ダウンロード開始時に自動的にダウンロード タブを開く">
+<!ENTITY downloadbaropt.hdclrbttn "ダウンロードバーの「消去」ボタンを非表示">
+<!ENTITY downloadbaropt.hddwnldsbttn "ダウンロードバーの「ダウンロード」ボタンを非表示">
+<!ENTITY downloadbaropt.dwldtm "ダウンロードアイテム">
+<!ENTITY downloadbaropt.apply "適用">
+<!ENTITY downloadbaropt.width "幅">
+<!ENTITY downloadbaropt.height "高さ">
+<!ENTITY downloadbaropt.vrsscnrgmnts "引数">
+<!ENTITY downloadbaropt.atclnwhnffqt "Firefox の終了時に完了したダウンロードを消去">
+<!ENTITY downloadbaropt.prgrsntfcts "進行状況の通知">
+<!ENTITY downloadbaropt.prgrssntfct "進行状況">
+<!ENTITY downloadbaropt.spdntfct "速度">
+<!ENTITY downloadbaropt.tmntfct "残り時間">
+<!ENTITY downloadbaropt.over "Over">
+<!ENTITY downloadbaropt.skcnfrmtnbfrdlt "ダウンロードしたファイルを削除する前に確認">
+<!ENTITY downloadbaropt.prgrsslgnmnt "進行状況の配置">
+<!ENTITY downloadbaropt.hrzntllgnmnt "水平方向">
+<!ENTITY downloadbaropt.vrtcllgnmnt "垂直方向">
+<!ENTITY downloadbaropt.fntsz "フォント サイズ">
+<!ENTITY downloadbaropt.flnmsz "ファイル名">
+<!ENTITY downloadbaropt.prgrsssz "進行状況">
+<!ENTITY downloadbaropt.flnmszfntsz "ファイル名のフォント サイズ">
+<!ENTITY downloadbaropt.prgrssszfntsz "進行状況のフォント サイズ">
+<!ENTITY downloadbaropt.dblclckdwnldtm "ダウンロードアイテムをダブルクリックした時の動作:">
+<!ENTITY downloadbaropt.cntndwnldswhnbrwsrqts "Firefox を終了するとき、ダウンロードマネージャーでダウンロードを継続する">

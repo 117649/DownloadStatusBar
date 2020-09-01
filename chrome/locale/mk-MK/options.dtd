@@ -1,0 +1,62 @@
+<!ENTITY downloadbaropt.ptns "Опции">
+<!ENTITY downloadbaropt.clrrftrlnch "Отстрани ја преземената датотека по нејзиното лансирање">
+<!ENTITY downloadbaropt.clrrftrshw "Отстрани ја преземената датотека по нејзиното прикажување">
+<!ENTITY downloadbaropt.shwddbbrbttn "Прикажи го копчето во лентата за додатокот">
+<!ENTITY downloadbaropt.attclswhndlcmp "Автоматски затвори ја лентата со преземања откако сите преземања ќе завршат">
+<!ENTITY downloadbaropt.pnftrdwncmp "Автоматски отвори го директориумот за преземање по завршувањето на преземањето">
+<!ENTITY downloadbaropt.clr "Боја">
+<!ENTITY downloadbaropt.dwnprgrssclr "Боја за напредокот на преземањето">
+<!ENTITY downloadbaropt.dwntxtclr "Боја за текстот на преземањето">
+<!ENTITY downloadbaropt.dwncmpltclr "Боја за завршено преземање">
+<!ENTITY downloadbaropt.dwnldpsclr "Боја за паузирано преземање">
+<!ENTITY downloadbaropt.brbckgrndclr "Боја за позадината на лентата">
+<!ENTITY downloadbaropt.vrscn "Вирус скенирање">
+<!ENTITY downloadbaropt.vrscnnrpth "Адреса на вирус скенерот">
+<!ENTITY downloadbaropt.vrscnlct "Лоцирај">
+<!ENTITY downloadbaropt.dsbscnfltyps "Не ги скенирај следните типови на датотеки">
+<!ENTITY downloadbaropt.ttscndwnldfl "Автоматски скенирај ги преземените датотеки">
+<!ENTITY downloadbaropt.ttclrthsfltyps "Автоматски отстрани ги овие типови на датотеки">
+<!ENTITY downloadbaropt.ftr "по">
+<!ENTITY downloadbaropt.scnds "секунди">
+<!ENTITY downloadbaropt.ntfctn "Известување">
+<!ENTITY downloadbaropt.doflpth "Адреса на аудио датотеката">
+<!ENTITY downloadbaropt.dofllct "Лоцирај">
+<!ENTITY downloadbaropt.prvwsnd "Звук за преглед">
+<!ENTITY downloadbaropt.plysndwhncdwnldcomlts "Употреби звук за известување кога преземањето е завршено">
+<!ENTITY downloadbaropt.pprnc "Изглед">
+<!ENTITY downloadbaropt.bdnwtdh "Пропусен опфат">
+<!ENTITY downloadbaropt.spdd "Брзина на преземање">
+<!ENTITY downloadbaropt.slwstspd "Најспора брзина">
+<!ENTITY downloadbaropt.vrgspd "Просечна брзина">
+<!ENTITY downloadbaropt.fstsspd "Најголема брзина">
+<!ENTITY downloadbaropt.bckgndclr "Боја за позадината на преземањето">
+<!ENTITY downloadbaropt.dwnbrdclr "Боја за рамката на преземањето">
+<!ENTITY downloadbaropt.rststtngs "Ресетирај ги поставувањата">
+<!ENTITY downloadbaropt.srntrfc "Кориснички интерфејс">
+<!ENTITY downloadbaropt.dnwldbr "Лента за преземање">
+<!ENTITY downloadbaropt.dnwlpnl "Панел за преземања">
+<!ENTITY downloadbaropt.atpndwnldtb "Автоматски отвори го табот за преземање кога ќе започне преземањето">
+<!ENTITY downloadbaropt.hdclrbttn "Скриј го копчето за расчистување во лентата за преземање">
+<!ENTITY downloadbaropt.hddwnldsbttn "Скриј го копчето за преземање во лентата за преземање">
+<!ENTITY downloadbaropt.dwldtm "Преземи ја датотеката">
+<!ENTITY downloadbaropt.apply "Примени">
+<!ENTITY downloadbaropt.width "Ширина">
+<!ENTITY downloadbaropt.height "Висина">
+<!ENTITY downloadbaropt.vrsscnrgmnts "Параметри">
+<!ENTITY downloadbaropt.atclnwhnffqt "Исчисти ги завршените преземања кога ќе се затвори Firefox">
+<!ENTITY downloadbaropt.prgrsntfcts "Најави за напредокот">
+<!ENTITY downloadbaropt.prgrssntfct "Напредок">
+<!ENTITY downloadbaropt.spdntfct "Брзина">
+<!ENTITY downloadbaropt.tmntfct "Преостанато време">
+<!ENTITY downloadbaropt.over "Над">
+<!ENTITY downloadbaropt.skcnfrmtnbfrdlt "Побарај потврда пред да ја избришеш преземената датотека">
+<!ENTITY downloadbaropt.prgrsslgnmnt "Порамнувње на напредокот">
+<!ENTITY downloadbaropt.hrzntllgnmnt "Хоризонтално">
+<!ENTITY downloadbaropt.vrtcllgnmnt "Вертикално">
+<!ENTITY downloadbaropt.fntsz "Големина на фонтот">
+<!ENTITY downloadbaropt.flnmsz "Име на датотеката">
+<!ENTITY downloadbaropt.prgrsssz "Напредок">
+<!ENTITY downloadbaropt.flnmszfntsz "Големина на фонтот за името на датотеката">
+<!ENTITY downloadbaropt.prgrssszfntsz "Големина на фонтот за напредокот">
+<!ENTITY downloadbaropt.dblclckdwnldtm "Функционалност на двоен-клик за преземената датотека:">
+<!ENTITY downloadbaropt.cntndwnldswhnbrwsrqts "Продолжи со преземањата во Download Manager кога Firefox ќе заврши.">

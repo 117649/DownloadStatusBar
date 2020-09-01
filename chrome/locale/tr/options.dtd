@@ -1,0 +1,62 @@
+<!ENTITY downloadbaropt.ptns "Tercihler">
+<!ENTITY downloadbaropt.clrrftrlnch "İndirilen dosyayı başlattıktan sonra temizle">
+<!ENTITY downloadbaropt.clrrftrshw "İndirilen dosyayı gösterdikten sonra temizle">
+<!ENTITY downloadbaropt.shwddbbrbttn "Eklenti Çubuğu butonunu göster">
+<!ENTITY downloadbaropt.attclswhndlcmp "İndirme tamamlandıktan sonra indirme çubuğunu kapat">
+<!ENTITY downloadbaropt.pnftrdwncmp "İndirme tamamladıktan sonra indirilen klasörü aç">
+<!ENTITY downloadbaropt.clr "Renk">
+<!ENTITY downloadbaropt.dwnprgrssclr "İndirme İlerleme Rengi">
+<!ENTITY downloadbaropt.dwntxtclr "İndirme Metin Rengi">
+<!ENTITY downloadbaropt.dwncmpltclr "Tamamlanmış İndirme Rengi">
+<!ENTITY downloadbaropt.dwnldpsclr "Duraklatılmış İndirme Rengi">
+<!ENTITY downloadbaropt.brbckgrndclr "Çubuğun Arkaplan Rengi">
+<!ENTITY downloadbaropt.vrscn "Virüs Taraması">
+<!ENTITY downloadbaropt.vrscnnrpth "Virüs Tarayıcı Konumu">
+<!ENTITY downloadbaropt.vrscnlct "Konum Belirle">
+<!ENTITY downloadbaropt.dsbscnfltyps "Bu tür dosyalar için tarama yapma">
+<!ENTITY downloadbaropt.ttscndwnldfl "İndirilmiş dosyaları otomatik olarak tara">
+<!ENTITY downloadbaropt.ttclrthsfltyps "Bu tür dosyaları otomatik olarak temizle">
+<!ENTITY downloadbaropt.ftr ",">
+<!ENTITY downloadbaropt.scnds "saniye sonra">
+<!ENTITY downloadbaropt.ntfctn "Bildirim">
+<!ENTITY downloadbaropt.doflpth "Ses Dosyası Konumu">
+<!ENTITY downloadbaropt.dofllct "Konum Belirle">
+<!ENTITY downloadbaropt.prvwsnd "Sesi Önizle">
+<!ENTITY downloadbaropt.plysndwhncdwnldcomlts "İndirme tamamlandığında bildirim sesi çal">
+<!ENTITY downloadbaropt.pprnc "Görünüm">
+<!ENTITY downloadbaropt.bdnwtdh "Bant Genişliği">
+<!ENTITY downloadbaropt.spdd "İndirme Hızı">
+<!ENTITY downloadbaropt.slwstspd "En Düşük Hız">
+<!ENTITY downloadbaropt.vrgspd "Ortalama Hız">
+<!ENTITY downloadbaropt.fstsspd "En Yüksek Hız">
+<!ENTITY downloadbaropt.bckgndclr "İndirme Arkaplan Rengi">
+<!ENTITY downloadbaropt.dwnbrdclr "İndirme Çubuğu Rengi">
+<!ENTITY downloadbaropt.rststtngs "Ayarları Sıfırla">
+<!ENTITY downloadbaropt.srntrfc "Kullanıcı Arayüzü">
+<!ENTITY downloadbaropt.dnwldbr "İndirme Çubuğu">
+<!ENTITY downloadbaropt.dnwlpnl "İndirme Paneli">
+<!ENTITY downloadbaropt.atpndwnldtb "İndirme başladığında indirme sekmesini aç">
+<!ENTITY downloadbaropt.hdclrbttn "İndirme çubuğunda Temizle düğmesini gizle">
+<!ENTITY downloadbaropt.hddwnldsbttn "İndirme çubuğunda İndirilenler düğmesini gizle">
+<!ENTITY downloadbaropt.dwldtm "İndirilen Dosya">
+<!ENTITY downloadbaropt.apply "Uygula">
+<!ENTITY downloadbaropt.width "Genişlik">
+<!ENTITY downloadbaropt.height "Yükseklik">
+<!ENTITY downloadbaropt.vrsscnrgmnts "Argümanlar">
+<!ENTITY downloadbaropt.atclnwhnffqt "Firefox kapandığında tamamlanmış indirmeleri temizle">
+<!ENTITY downloadbaropt.prgrsntfcts "İlerleme Bildirimleri">
+<!ENTITY downloadbaropt.prgrssntfct "İlerleme">
+<!ENTITY downloadbaropt.spdntfct "Hız">
+<!ENTITY downloadbaropt.tmntfct "Kalan Zaman">
+<!ENTITY downloadbaropt.over "Üzeri">
+<!ENTITY downloadbaropt.skcnfrmtnbfrdlt "İndirilmiş dosyayı silmeden önce onay iste">
+<!ENTITY downloadbaropt.prgrsslgnmnt "İlerleme Hizası">
+<!ENTITY downloadbaropt.hrzntllgnmnt "Yatay">
+<!ENTITY downloadbaropt.vrtcllgnmnt "Dikey">
+<!ENTITY downloadbaropt.fntsz "Yazı Tipi Boyutu">
+<!ENTITY downloadbaropt.flnmsz "Dosya Adı">
+<!ENTITY downloadbaropt.prgrsssz "İlerleme">
+<!ENTITY downloadbaropt.flnmszfntsz "Dosya adı yazı tipi boyutu">
+<!ENTITY downloadbaropt.prgrssszfntsz "İlerleme yazı tipi boyutu">
+<!ENTITY downloadbaropt.dblclckdwnldtm "İndirilen dosya için Çift Tıklama özelliği">
+<!ENTITY downloadbaropt.cntndwnldswhnbrwsrqts "Firefox kapandığında indirme işlemine indirme yöneticisinde devam et">

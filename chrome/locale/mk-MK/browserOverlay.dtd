@@ -1,0 +1,41 @@
+<!ENTITY downloadbar.lnch "Лансирај">
+<!ENTITY downloadbar.shwfl "Покажи ја датотеката">
+<!ENTITY downloadbar.shwmngr "Покажи го управувачот">
+<!ENTITY downloadbar.cncl "Откажи">
+<!ENTITY downloadbar.pause "Паузирај">
+<!ENTITY downloadbar.strt "Почни">
+<!ENTITY downloadbar.clr "Расчисти">
+<!ENTITY downloadbar.clsbr "Затвори ја лентата">
+<!ENTITY downloadbar.clrlldwnlds "Расчисти ги сите преземања">
+<!ENTITY downloadbar.pslldwnlds "Паузирај ги сите преземања">
+<!ENTITY downloadbar.rsmlldwnlds "Продолжи со сите преземања">
+<!ENTITY downloadbar.cncllldwnlds "Откажи ги сите преземања">
+<!ENTITY downloadbar.dwnlds "Преземања">
+<!ENTITY downloadbar.vrscn "Вирус скен">
+<!ENTITY downloadbar.dltfl "Избриши ја датотеката">
+<!ENTITY downloadbar.rnm "Преименувај">
+<!ENTITY downloadbar.clrll "Расчисти ги сите">
+<!ENTITY downloadbar.pndwnldtb "Отвори го табот за преземања">
+<!ENTITY downloadbar.shwlldwnldshstry "Покажи ја историјата на преземања">
+<!ENTITY downloadbar.gtdwnlpg "Оди на страната за преземања">
+<!ENTITY downloadbar.cpydwnldlnk "Копирај го линкот за преземања">
+<!ENTITY downloadbar.ptns "Опции">
+<!ENTITY downloadbar.src "Извор">
+<!ENTITY downloadbar.trgt "Цел">
+<!ENTITY downloadbar.crrntspd "Тековна брзина">
+<!ENTITY downloadbar.vrgspd "Просечна брзина">
+<!ENTITY downloadbar.prgrs "Напредок">
+<!ENTITY downloadbar.rmngtm "Преостанато време">
+<!ENTITY downloadbar.dwnldbyt "Преземени">
+<!ENTITY downloadbar.flsz "Големина на датотеката">
+<!ENTITY downloadbar.dwnldtm "Време за преземање">
+<!ENTITY downloadbar.resume "Продолжи">
+<!ENTITY downloadbar.sttstcs "Статистички податоци">
+<!ENTITY downloadbar.chksm "Збир за проверка (Checksum)">
+<!ENTITY downloadbar.cpy "Копирај">
+<!ENTITY downloadbar.hlp "Помош">
+<!ENTITY downloadbar.md5hsh "МД5 хеш (MD5 Hash)">
+<!ENTITY downloadbar.sendto "Прати на">
+<!ENTITY downloadbar.desktopfolder "Десктоп">
+<!ENTITY downloadbar.downloadsfolder "Преземања">
+<!ENTITY downloadbar.customfolder "Специфично">

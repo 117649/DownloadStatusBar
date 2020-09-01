@@ -1,0 +1,5 @@
+<!ENTITY downloadbarstats.title "Allalaadimiste statistika">
+<!ENTITY downloadbarstats.nostats "Pole statistikat, mida näidata!">
+<!ENTITY downloadbarstats.dwnldgrph "Statistika graafiku nägemiseks palun laadi mõni fail alla!">
+<!ENTITY downloadbarstats.bybyts "baitide järgi">
+<!ENTITY downloadbarstats.bycnt "arvu järgi">

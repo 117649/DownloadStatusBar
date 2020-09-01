@@ -1,0 +1,5 @@
+<!ENTITY downloadbarstats.title "Statistieken downloaden">
+<!ENTITY downloadbarstats.nostats "Geen statistieken om weer te geven!">
+<!ENTITY downloadbarstats.dwnldgrph "Download enkele bestanden om een grafiek met statistieken te krijgen!">
+<!ENTITY downloadbarstats.bybyts "op bytes">
+<!ENTITY downloadbarstats.bycnt "op aantal">

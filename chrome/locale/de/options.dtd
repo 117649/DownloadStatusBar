@@ -1,0 +1,62 @@
+<!ENTITY downloadbaropt.ptns "Einstellungen">
+<!ENTITY downloadbaropt.clrrftrlnch "Download-Element nach dessen Start aus Leiste entfernen.">
+<!ENTITY downloadbaropt.clrrftrshw "Download-Element aus Leiste entfernen, nachdem Download-Ordner geöffnet wurde.">
+<!ENTITY downloadbaropt.shwddbbrbttn "Zeige Button der Add-on-Leiste.">
+<!ENTITY downloadbaropt.attclswhndlcmp "Wenn alle Downloads fertig sind, Download-Leiste automatisch schließen -">
+<!ENTITY downloadbaropt.pnftrdwncmp "Download-Ordner automatisch öffnen, wenn alle Downloads fertig sind.">
+<!ENTITY downloadbaropt.clr "Farben">
+<!ENTITY downloadbaropt.dwnprgrssclr "Laufende Downloads">
+<!ENTITY downloadbaropt.dwntxtclr "Download-Text">
+<!ENTITY downloadbaropt.dwncmpltclr "Fertige Downloads">
+<!ENTITY downloadbaropt.dwnldpsclr "Pausierte Downloads">
+<!ENTITY downloadbaropt.brbckgrndclr "Leisten-Hintergrund">
+<!ENTITY downloadbaropt.vrscn "Viren-Scan">
+<!ENTITY downloadbaropt.vrscnnrpth "Pfad zum Scanner :">
+<!ENTITY downloadbaropt.vrscnlct "Suche">
+<!ENTITY downloadbaropt.dsbscnfltyps "Diese Dateitypen nicht scannen :">
+<!ENTITY downloadbaropt.ttscndwnldfl "Heruntergeladene Dateien automatisch scannen.">
+<!ENTITY downloadbaropt.ttclrthsfltyps "Diese Dateitypen automatisch entfernen :">
+<!ENTITY downloadbaropt.ftr "nach">
+<!ENTITY downloadbaropt.scnds "Sek.">
+<!ENTITY downloadbaropt.ntfctn "Benachrichtigung">
+<!ENTITY downloadbaropt.doflpth "Pfad zur Audiodatei :">
+<!ENTITY downloadbaropt.dofllct "Suche">
+<!ENTITY downloadbaropt.prvwsnd "Testen">
+<!ENTITY downloadbaropt.plysndwhncdwnldcomlts "Spiele Audiodatei, wenn Download fertig ist.">
+<!ENTITY downloadbaropt.pprnc "Darstellung">
+<!ENTITY downloadbaropt.bdnwtdh "Bandbreite">
+<!ENTITY downloadbaropt.spdd "Download-Geschwindigkeit">
+<!ENTITY downloadbaropt.slwstspd "Niedrigste">
+<!ENTITY downloadbaropt.vrgspd "Normale">
+<!ENTITY downloadbaropt.fstsspd "Höchste">
+<!ENTITY downloadbaropt.bckgndclr "Download-Hintergrund">
+<!ENTITY downloadbaropt.dwnbrdclr "Download-Umrandung">
+<!ENTITY downloadbaropt.rststtngs "Einstellungen zurücksetzen">
+<!ENTITY downloadbaropt.srntrfc "Benutzeroberfläche">
+<!ENTITY downloadbaropt.dnwldbr "Leistenansicht">
+<!ENTITY downloadbaropt.dnwlpnl "Symbolansicht">
+<!ENTITY downloadbaropt.atpndwnldtb "Download-Tab automatisch öffnen, wenn Download startet.">
+<!ENTITY downloadbaropt.hdclrbttn "Entfernen-Button in Download-Leiste ausblenden.">
+<!ENTITY downloadbaropt.hddwnldsbttn "Downloads-Button in Download-Leiste ausblenden.">
+<!ENTITY downloadbaropt.dwldtm "Download-Element">
+<!ENTITY downloadbaropt.apply "Hinzufügen">
+<!ENTITY downloadbaropt.width "Breite">
+<!ENTITY downloadbaropt.height "Höhe">
+<!ENTITY downloadbaropt.vrsscnrgmnts "Argumente :">
+<!ENTITY downloadbaropt.atclnwhnffqt "Fertige Downloads beim Beenden von Firefox leeren.">
+<!ENTITY downloadbaropt.prgrsntfcts "Statusbenachrichtigungen">
+<!ENTITY downloadbaropt.prgrssntfct "Fortschritt">
+<!ENTITY downloadbaropt.spdntfct "Geschwindigkeit">
+<!ENTITY downloadbaropt.tmntfct "Verbleibende Zeit">
+<!ENTITY downloadbaropt.over "Mehr als">
+<!ENTITY downloadbaropt.skcnfrmtnbfrdlt "Nachfragen, ob die heruntergeladene Datei gelöscht werden soll.">
+<!ENTITY downloadbaropt.prgrsslgnmnt "Fortschritt-Ausrichtung">
+<!ENTITY downloadbaropt.hrzntllgnmnt "Waagerecht">
+<!ENTITY downloadbaropt.vrtcllgnmnt "Senkrecht">
+<!ENTITY downloadbaropt.fntsz "Schriftgrad">
+<!ENTITY downloadbaropt.flnmsz "Datei-Name">
+<!ENTITY downloadbaropt.prgrsssz "Fortschritt">
+<!ENTITY downloadbaropt.flnmszfntsz "Schriftgrad für Datei-Name">
+<!ENTITY downloadbaropt.prgrssszfntsz "Schriftgrad für Fortschritt">
+<!ENTITY downloadbaropt.dblclckdwnldtm "Doppelklick-Funktion für Download-Elemente:">
+<!ENTITY downloadbaropt.cntndwnldswhnbrwsrqts "Mit Downloads auch nach Beenden des Firefox fortfahren">

@@ -1,0 +1,5 @@
+<!ENTITY downloadbarstats.title "Статистика загрузок">
+<!ENTITY downloadbarstats.nostats "Нечего показать!">
+<!ENTITY downloadbarstats.dwnldgrph "Скачайте что-нибудь, чтобы увидеть график и статистику!">
+<!ENTITY downloadbarstats.bybyts "по байтам">
+<!ENTITY downloadbarstats.bycnt "по количеству">

@@ -1,0 +1,62 @@
+<!ENTITY downloadbaropt.ptns "Inställningar">
+<!ENTITY downloadbaropt.clrrftrlnch "Rensa hämtningsobjektet när filen körs">
+<!ENTITY downloadbaropt.clrrftrshw "Rensa hämtningsobjektet när filen visas">
+<!ENTITY downloadbaropt.shwddbbrbttn "Visa knapp i tilläggsfältet">
+<!ENTITY downloadbaropt.attclswhndlcmp "Stäng filhämtningsfältet automatiskt när alla hämtningar har slutförts">
+<!ENTITY downloadbaropt.pnftrdwncmp "Öppna hämtningsmappen automatiskt när hämtningen har slutförts">
+<!ENTITY downloadbaropt.clr "Färg">
+<!ENTITY downloadbaropt.dwnprgrssclr "Färg på hämtningens förlopp">
+<!ENTITY downloadbaropt.dwntxtclr "Färg på hämtningens text">
+<!ENTITY downloadbaropt.dwncmpltclr "Färg på slutförd hämtning">
+<!ENTITY downloadbaropt.dwnldpsclr "Färg på pausad hämtning">
+<!ENTITY downloadbaropt.brbckgrndclr "Filhämtningsfältets bakgrundsfärg">
+<!ENTITY downloadbaropt.vrscn "Viruskontroll">
+<!ENTITY downloadbaropt.vrscnnrpth "Sökväg till antivirusprogram">
+<!ENTITY downloadbaropt.vrscnlct "Bläddra…">
+<!ENTITY downloadbaropt.dsbscnfltyps "Inaktivera genomsökning av följande filtyper">
+<!ENTITY downloadbaropt.ttscndwnldfl "Sök automatiskt igenom hämtade filer">
+<!ENTITY downloadbaropt.ttclrthsfltyps "Rensa följande filtyper automatiskt">
+<!ENTITY downloadbaropt.ftr "efter">
+<!ENTITY downloadbaropt.scnds "sekunder">
+<!ENTITY downloadbaropt.ntfctn "Ljudavisering">
+<!ENTITY downloadbaropt.doflpth "Sökväg till ljudfil">
+<!ENTITY downloadbaropt.dofllct "Bläddra…">
+<!ENTITY downloadbaropt.prvwsnd "Spela upp ljud">
+<!ENTITY downloadbaropt.plysndwhncdwnldcomlts "Spela upp ett aviseringsljud när hämtningen har slutförts">
+<!ENTITY downloadbaropt.pprnc "Utseende">
+<!ENTITY downloadbaropt.bdnwtdh "Bandbredd">
+<!ENTITY downloadbaropt.spdd "Hämtningshastighet">
+<!ENTITY downloadbaropt.slwstspd "Lägsta hastighet">
+<!ENTITY downloadbaropt.vrgspd "Genomsnittlig hastighet">
+<!ENTITY downloadbaropt.fstsspd "Högsta hastighet">
+<!ENTITY downloadbaropt.bckgndclr "Färg på hämtningens bakgrund">
+<!ENTITY downloadbaropt.dwnbrdclr "Färg på hämtningens kantlinje">
+<!ENTITY downloadbaropt.rststtngs "Återställ inställningar">
+<!ENTITY downloadbaropt.srntrfc "Användargränssnitt">
+<!ENTITY downloadbaropt.dnwldbr "Filhämtningsfält">
+<!ENTITY downloadbaropt.dnwlpnl "Filhämtningspanel">
+<!ENTITY downloadbaropt.atpndwnldtb "Öppna automatiskt Filhämtaren i en flik när en hämtning startar">
+<!ENTITY downloadbaropt.hdclrbttn "Dölj rensningsknappen i filhämtningsfältet">
+<!ENTITY downloadbaropt.hddwnldsbttn "Dölj hämtningsknappen i filhämtningsfältet">
+<!ENTITY downloadbaropt.dwldtm "Hämtningsobjekt">
+<!ENTITY downloadbaropt.apply "Verkställ">
+<!ENTITY downloadbaropt.width "Bredd">
+<!ENTITY downloadbaropt.height "Höjd">
+<!ENTITY downloadbaropt.vrsscnrgmnts "Argument">
+<!ENTITY downloadbaropt.atclnwhnffqt "Rensa slutförda hämtningar när Firefox avslutas">
+<!ENTITY downloadbaropt.prgrsntfcts "Förloppsaviseringar">
+<!ENTITY downloadbaropt.prgrssntfct "Förlopp">
+<!ENTITY downloadbaropt.spdntfct "Hastighet">
+<!ENTITY downloadbaropt.tmntfct "Återstående tid">
+<!ENTITY downloadbaropt.over "Över">
+<!ENTITY downloadbaropt.skcnfrmtnbfrdlt "Begär bekräftelse innan borttagning av hämtad fil">
+<!ENTITY downloadbaropt.prgrsslgnmnt "Justering av förloppsindikator">
+<!ENTITY downloadbaropt.hrzntllgnmnt "Vågrätt">
+<!ENTITY downloadbaropt.vrtcllgnmnt "Lodrätt">
+<!ENTITY downloadbaropt.fntsz "Teckenstorlek">
+<!ENTITY downloadbaropt.flnmsz "Filnamn">
+<!ENTITY downloadbaropt.prgrsssz "Förlopp">
+<!ENTITY downloadbaropt.flnmszfntsz "Teckenstorlek för filnamn">
+<!ENTITY downloadbaropt.prgrssszfntsz "Teckenstorlek för förlopp">
+<!ENTITY downloadbaropt.dblclckdwnldtm "Åtgärd vid dubbelklickning på hämtningsobjekt:">
+<!ENTITY downloadbaropt.cntndwnldswhnbrwsrqts "Fortsätt påbörjade hämtningar i Filhämtaren när Firefox avslutas">

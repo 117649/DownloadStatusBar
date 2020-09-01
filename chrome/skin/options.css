@@ -1,0 +1,27 @@
+    input[type="color"].ff28{
+		-moz-appearance:none !important;
+		border: 1px solid grey !important;
+		border-radius: 16px !important;
+		box-shadow: 0 0 2px black !important;
+		height: 16px !important;
+		width: 45px !important;
+    }
+	
+    input[type="color"].ff28.dsbselectcolor{
+       background-color:transparent !important;
+       background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) !important;
+    }
+	
+    input[type="color"].dsbselectcolor::-moz-color-swatch{
+       background-color:transparent !important;
+       background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) !important;
+    }
+	
+    .colorgroupbox{
+		padding-left:10px;
+		padding-right:10px;
+    }
+	
+    #colorgrid row{
+		margin-bottom:5px;
+    }

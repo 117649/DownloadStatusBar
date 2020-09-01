@@ -1,0 +1,5 @@
+<!ENTITY downloadbaropt.bttns "Botones">
+<!ENTITY downloadbaropt.bttntype "Tipo de botón">
+<!ENTITY downloadbaropt.cnc "Icono">
+<!ENTITY downloadbaropt.txtcnc "Texto e Icono">
+<!ENTITY downloadbaropt.txt "Solo texto">

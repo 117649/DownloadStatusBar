@@ -1,0 +1,62 @@
+<!ENTITY downloadbaropt.ptns "Sätted">
+<!ENTITY downloadbaropt.clrrftrlnch "Eemalda allalaadimise üksus pärast selle käivitamist">
+<!ENTITY downloadbaropt.clrrftrshw "Eemalda allalaadimise üksus pärast faili näitamist">
+<!ENTITY downloadbaropt.shwddbbrbttn "Näita nuppu lisade ribal">
+<!ENTITY downloadbaropt.attclswhndlcmp "Automaatselt sulge allalaadimiste riba, kui kõik allalaadimised valmis saavad">
+<!ENTITY downloadbaropt.pnftrdwncmp "Ava allalaaditud faili sisaldav kaust, kui allalaadimine valmis saab">
+<!ENTITY downloadbaropt.clr "Värv">
+<!ENTITY downloadbaropt.dwnprgrssclr "Allalaadimise edenemise värv">
+<!ENTITY downloadbaropt.dwntxtclr "Allalaadimise teksti värv">
+<!ENTITY downloadbaropt.dwncmpltclr "Valmis allalaadimise värv">
+<!ENTITY downloadbaropt.dwnldpsclr "Peatatud allalaadimise värv">
+<!ENTITY downloadbaropt.brbckgrndclr "Allalaadimiste riba taustavärv">
+<!ENTITY downloadbaropt.vrscn "Viirusekontroll">
+<!ENTITY downloadbaropt.vrscnnrpth "Rada viirusekontrolli programmini">
+<!ENTITY downloadbaropt.vrscnlct "Leia">
+<!ENTITY downloadbaropt.dsbscnfltyps "Ära kontrolli neid failitüüpe">
+<!ENTITY downloadbaropt.ttscndwnldfl "Automaatselt kontrolli allalaaditud faile">
+<!ENTITY downloadbaropt.ttclrthsfltyps "Automaatselt eemalda need failitüübid">
+<!ENTITY downloadbaropt.ftr "pärast">
+<!ENTITY downloadbaropt.scnds "sekundit">
+<!ENTITY downloadbaropt.ntfctn "Teavitus">
+<!ENTITY downloadbaropt.doflpth "Rada helifailini">
+<!ENTITY downloadbaropt.dofllct "Leia">
+<!ENTITY downloadbaropt.prvwsnd "Heli eelvaade">
+<!ENTITY downloadbaropt.plysndwhncdwnldcomlts "Esita teavitusheli, kui allalaadimine valmis saab">
+<!ENTITY downloadbaropt.pprnc "Välimus">
+<!ENTITY downloadbaropt.bdnwtdh "Läbilaskevõime">
+<!ENTITY downloadbaropt.spdd "Allalaadimise kiirus">
+<!ENTITY downloadbaropt.slwstspd "Väikseim kiirus">
+<!ENTITY downloadbaropt.vrgspd "Keskmine kiirus">
+<!ENTITY downloadbaropt.fstsspd "Suurim kiirus">
+<!ENTITY downloadbaropt.bckgndclr "Allalaadimise taustavärv">
+<!ENTITY downloadbaropt.dwnbrdclr "Allalaadimise piirjoone värv">
+<!ENTITY downloadbaropt.rststtngs "Taasta algseaded">
+<!ENTITY downloadbaropt.srntrfc "Kasutajaliides">
+<!ENTITY downloadbaropt.dnwldbr "Allalaadimiste riba">
+<!ENTITY downloadbaropt.dnwlpnl "Allalaadimiste paneel">
+<!ENTITY downloadbaropt.atpndwnldtb "Automaatselt ava allalaadimiste kaart, kui allalaadimine algab">
+<!ENTITY downloadbaropt.hdclrbttn "Peida eemaldamise nupp allalaadimiste ribal">
+<!ENTITY downloadbaropt.hddwnldsbttn "Peida allalaadimiste nupp allalaadimiste ribal">
+<!ENTITY downloadbaropt.dwldtm "Allalaadimise üksus">
+<!ENTITY downloadbaropt.apply "Rakenda">
+<!ENTITY downloadbaropt.width "Laius">
+<!ENTITY downloadbaropt.height "Kõrgus">
+<!ENTITY downloadbaropt.vrsscnrgmnts "Argumendid">
+<!ENTITY downloadbaropt.atclnwhnffqt "Firefoxi sulgumisel eemalda valmis allalaadimised">
+<!ENTITY downloadbaropt.prgrsntfcts "Edenemise teavitused">
+<!ENTITY downloadbaropt.prgrssntfct "Edenemise protsent">
+<!ENTITY downloadbaropt.spdntfct "Kiirus">
+<!ENTITY downloadbaropt.tmntfct "Aega jäänud">
+<!ENTITY downloadbaropt.over "Üle">
+<!ENTITY downloadbaropt.skcnfrmtnbfrdlt "Enne allalaaditud faili kustutamist küsi üle">
+<!ENTITY downloadbaropt.prgrsslgnmnt "Edenemise joondus">
+<!ENTITY downloadbaropt.hrzntllgnmnt "Horisontaalne">
+<!ENTITY downloadbaropt.vrtcllgnmnt "Vertikaalne">
+<!ENTITY downloadbaropt.fntsz "Teksti suurus">
+<!ENTITY downloadbaropt.flnmsz "Faili nimi">
+<!ENTITY downloadbaropt.prgrsssz "Edenemine">
+<!ENTITY downloadbaropt.flnmszfntsz "Failinime teksti suurus">
+<!ENTITY downloadbaropt.prgrssszfntsz "Edenemise teksti suurus">
+<!ENTITY downloadbaropt.dblclckdwnldtm "Allalaadimise üksusel topeltklõpsates teosta see toiming:">
+<!ENTITY downloadbaropt.cntndwnldswhnbrwsrqts "Firefoxi sulgumisel jätka allalaadimisi allalaadimiste halduris">

@@ -1,0 +1,62 @@
+<!ENTITY downloadbaropt.ptns "Opțiuni">
+<!ENTITY downloadbaropt.clrrftrlnch "Se elimină elementul din bară după deschiderea fișierului">
+<!ENTITY downloadbaropt.clrrftrshw "Se elimină elementul din bară după afișarea fișierului în dosarul care îl conține">
+<!ENTITY downloadbaropt.shwddbbrbttn "Se afișează butonul în bara de unelte">
+<!ENTITY downloadbaropt.attclswhndlcmp "Se ascunde automat bara de descărcări după finalizarea acestora">
+<!ENTITY downloadbaropt.pnftrdwncmp "Se deschide automat dosarul de stocare a descărcărilor după finalizarea acestora">
+<!ENTITY downloadbaropt.clr "Culori">
+<!ENTITY downloadbaropt.dwnprgrssclr "Progres descărcare">
+<!ENTITY downloadbaropt.dwntxtclr "Text descărcare">
+<!ENTITY downloadbaropt.dwncmpltclr "Descărcare completă">
+<!ENTITY downloadbaropt.dwnldpsclr "Descărcare în pauză">
+<!ENTITY downloadbaropt.brbckgrndclr "Bară de descărcare">
+<!ENTITY downloadbaropt.vrscn "Antivirus">
+<!ENTITY downloadbaropt.vrscnnrpth "Locație antivirus">
+<!ENTITY downloadbaropt.vrscnlct "Răsfoiește…">
+<!ENTITY downloadbaropt.dsbscnfltyps "Tipuri de fișiere care nu se scanează">
+<!ENTITY downloadbaropt.ttscndwnldfl "Se scanează automat fișierele descărcate">
+<!ENTITY downloadbaropt.ttclrthsfltyps "Tipuri de fișiere care se elimină automat">
+<!ENTITY downloadbaropt.ftr "după">
+<!ENTITY downloadbaropt.scnds "secunde">
+<!ENTITY downloadbaropt.ntfctn "Notificare">
+<!ENTITY downloadbaropt.doflpth "Locație fișier audio">
+<!ENTITY downloadbaropt.dofllct "Răsfoiește…">
+<!ENTITY downloadbaropt.prvwsnd "Redare sunet">
+<!ENTITY downloadbaropt.plysndwhncdwnldcomlts "Se notifică sonor finalizarea descărcărilor">
+<!ENTITY downloadbaropt.pprnc "Afișare">
+<!ENTITY downloadbaropt.bdnwtdh "Lățime de bandă">
+<!ENTITY downloadbaropt.spdd "Viteză de descărcare">
+<!ENTITY downloadbaropt.slwstspd "Mică">
+<!ENTITY downloadbaropt.vrgspd "Medie">
+<!ENTITY downloadbaropt.fstsspd "Mare">
+<!ENTITY downloadbaropt.bckgndclr "Fundal descărcare">
+<!ENTITY downloadbaropt.dwnbrdclr "Chenar descărcare">
+<!ENTITY downloadbaropt.rststtngs "Inițializează setările">
+<!ENTITY downloadbaropt.srntrfc "Interfață">
+<!ENTITY downloadbaropt.dnwldbr "Bară de descărcare">
+<!ENTITY downloadbaropt.dnwlpnl "Panou de descărcare">
+<!ENTITY downloadbaropt.atpndwnldtb "Se afișează automat o filă cu descărcări când pornește o descărcare">
+<!ENTITY downloadbaropt.hdclrbttn "Se ascunde butonul „Curăță bara” din bara de descărcare">
+<!ENTITY downloadbaropt.hddwnldsbttn "Se ascunde butonul „Descărcări” din bara de descărcare">
+<!ENTITY downloadbaropt.dwldtm "Element descărcare">
+<!ENTITY downloadbaropt.apply "Aplică">
+<!ENTITY downloadbaropt.width "Lățime">
+<!ENTITY downloadbaropt.height "Înălțime">
+<!ENTITY downloadbaropt.vrsscnrgmnts "Parametri">
+<!ENTITY downloadbaropt.atclnwhnffqt "Se elimină elementele descărcărilor finalizate când se închide navigatorul">
+<!ENTITY downloadbaropt.prgrsntfcts "Informații despre progres">
+<!ENTITY downloadbaropt.prgrssntfct "Desfășurare">
+<!ENTITY downloadbaropt.spdntfct "Viteză">
+<!ENTITY downloadbaropt.tmntfct "Timp rămas">
+<!ENTITY downloadbaropt.over "Peste">
+<!ENTITY downloadbaropt.skcnfrmtnbfrdlt "Se cere confirmare înaintea ștergerii fișierelor">
+<!ENTITY downloadbaropt.prgrsslgnmnt "Aliniere elemente">
+<!ENTITY downloadbaropt.hrzntllgnmnt "Pe orizontală">
+<!ENTITY downloadbaropt.vrtcllgnmnt "Pe verticală">
+<!ENTITY downloadbaropt.fntsz "Mărime font">
+<!ENTITY downloadbaropt.flnmsz "Denumire fișier:">
+<!ENTITY downloadbaropt.prgrsssz "Progres:">
+<!ENTITY downloadbaropt.flnmszfntsz "Mărime font pentru denumirea fișierului">
+<!ENTITY downloadbaropt.prgrssszfntsz "Mărime font pentru progres">
+<!ENTITY downloadbaropt.dblclckdwnldtm "Acțiune pentru dublu-clic pe elementul de descărcare:">
+<!ENTITY downloadbaropt.cntndwnldswhnbrwsrqts "Se continuă descărcarea după ce navigatorul a fost închis">

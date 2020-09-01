@@ -1,0 +1,130 @@
+<!ENTITY downloadbarhelp.description "Se siete una persona che ama avere il controllo totale di ogni aspetto dei propri download, Download Status Bar è proprio l'estensione che stavate cercando!">
+<!ENTITY downloadbarhelp.onlnvlbl1 "Questa pagina è disponibile online anche in altre lingue.">
+<!ENTITY downloadbarhelp.onlnvlbl2 "Facendo clic su una bandiera si apre, in una nuova scheda del browser, la pagina tradotta nella lingua corrispondente.">
+<!ENTITY downloadbarhelp.description2sntc1 "Download Status Bar (DSB) gestisce tutti gli aspetti dei propri download">
+<!ENTITY downloadbarhelp.Launch "Esegui">
+<!ENTITY downloadbarhelp.Show "Mostra file">
+<!ENTITY downloadbarhelp.Scan "Scansione anti-malware">
+<!ENTITY downloadbarhelp.Rename "Rinomina">
+<!ENTITY downloadbarhelp.Checksum "Codice di controllo">
+<!ENTITY downloadbarhelp.Pause "Arresta temporaneamente il/i download">
+<!ENTITY downloadbarhelp.Resume "Riprendi il/i download">
+<!ENTITY downloadbarhelp.Cancel "Annulla il/i download">
+<!ENTITY downloadbarhelp.Clean "Svuota">
+<!ENTITY downloadbarhelp.Delete "Cancella file">
+<!ENTITY downloadbarhelp.description2sntc2 "genera statistiche a partire dai file scaricati, mantenendo la cronologia delle precedenti sessioni di scaricamento e fa molte altre cose. Non è solo un'estensione che gestisce i download: è anche un potente mezzo per migliorare le produttività.">
+<!ENTITY downloadbarhelp.description3 "DSB è una estensione disegnata specificamente in base alle richieste e alle necessità degli utenti. Tutte le loro esigenze rappresentano il nucleo sul quale si fonda questa estensione che utilizza le innovative caratteristiche di Firefox 26 (e versioni superiori) che migliorano le prestazioni di questo browser e dei relativi scaricamenti. DSB è un progetto guidato e gestito dai suoi utilizzatori. In tal modo si mantiene sempre aggiornato e potente.">
+<!ENTITY downloadbarhelp.description4 "Scaricando una copia di DSB si ha un controllo completo sui propri download.">
+<!ENTITY downloadbarhelp.features "Caratteristiche">
+<!ENTITY downloadbarhelp.description5 "Quando si scaricano dei file da internet, l'estensione DSB mostra il loro avanzamento nella Barra di download. Come il nome suggerisce, si tratta di una barra localizzata nella parte inferiore di Firefox, generalmente al di sopra della Barra delle estensioni. Poiché DSB è un componente addizionale di Firefox facile da usare e sufficientemente intelligente, esso rende visibile la Barra di download solo quando è in atto (o è stato eseguito) uno scaricamento. Se non ve ne sono, scompare automaticamente consentendo di guadagnare dello spazio a favore del contenuto delle pagine web. Riappare automaticamente quando si inizia nuovamente a scaricare un qualsiasi file dal web.">
+<!ENTITY downloadbarhelp.description6 "Se si vuol visualizzare la Barra di download anche in assenza di scaricamenti, è possibile usare le seguenti scorciatoie da tastiera:">
+<!ENTITY downloadbarhelp.description7 "Windows: CTRL + ALT + d">
+<!ENTITY downloadbarhelp.description8b "Mac OS X: SHIFT + ALT + d">
+<!ENTITY downloadbarhelp.description9 "Linux: (CTRL/CMD) + ALT + d">
+<!ENTITY downloadbarhelp.description10 "Tali scorciatoie possono essere usate anche per nascondere, in qualsiasi momento, la Barra di download. In altre parole, queste scorciatoie si comportano come un interruttore che fa comparire/scomparire la Barra di download.">
+<!ENTITY downloadbarhelp.description10a "Alternativamente si può attivare/disattivare la Barra di download tramite la voce &quot;Download Status Bar&quot; presente nel menu Strumenti di Firefox.">
+<!ENTITY downloadbarhelp.fwdysntfcn "Questa pagina di aiuto verrà completata rapidamente. Vi ringraziamo per la vostra comprensione e per la vostra pazienza.">
+<!ENTITY downloadbarhelp.description11 "Quando la Barra di download è visibile, alle sue estremità, si notano i pulsanti &quot;Download&quot; e &quot;Svuota&quot;. Il pulsante &quot;Download&quot; è il pulsante principale dell'estensione DSB. Facendo clic su di esso si apre un menu contestuale. Il pulsante &quot;Svuota&quot; è invece utilizzato per togliere dalla Barra di download, con un semplice clic del mouse, tutti gli scaricamenti già completati.">
+<!ENTITY downloadbarhelp.description12 "Facendo clic sul pulsante Download, compare un menu contestuale contenente le voci descritte qui sotto">
+<!ENTITY downloadbarhelp.options "Opzioni">
+<!ENTITY downloadbarhelp.description13 "apre una finestra di Opzioni che consente la personalizzazione dell'estensione a seconda le proprie necessità.">
+<!ENTITY downloadbarhelp.statistics "Statistiche">
+<!ENTITY downloadbarhelp.description14 "apre la pagina delle Statistiche in cui appaiono i dettagli statistici e i grafici relativi agli scaricamenti effettuati in precedenza.">
+<!ENTITY downloadbarhelp.showdownloadhistory "Mostra la cronologia dei download">
+<!ENTITY downloadbarhelp.description15 "apre la libreria standard della cronologia di Firefox nel caso si vogliano visualizzare, in una finestra, i propri scaricamenti a mo' di elenco.">
+<!ENTITY downloadbarhelp.opendownloadtab "Apri la scheda dei download">
+<!ENTITY downloadbarhelp.description16 "apre la libreria standard della cronologia di Firefox come scheda del browser.">
+<!ENTITY downloadbarhelp.downloads "Download">
+<!ENTITY downloadbarhelp.description17 "apre un sotto-menu in cui sono presenti le seguenti opzioni: Arresta temporaneamente tutti i download, Riprendi tutti i download, Annulla tutti i download, Svuota la barra da tutti i download. Ciò consente di gestire i propri download in modalità batch.">
+<!ENTITY downloadbarhelp.help "Aiuto">
+<!ENTITY downloadbarhelp.description18 "apre la pagina di Aiuto di DSB in cui è possibile avere dettagli riguardanti questo componente aggiuntivo e su come usarlo in maniera produttiva.">
+<!ENTITY downloadbarhelp.closedownloadbar "Chiudi la barra">
+<!ENTITY downloadbarhelp.description19 "chiude la Barra di download.">
+<!ENTITY downloadbarhelp.description20 "Quando si scaricano file dal web, DSB pone automaticamente gli elementi da scaricare sulla Barra di download. Sotto sono riportati degli esempi di programmi scaricabili da Mozilla Foundation. Facendo clic su di essi, inizia il loro scaricamento.">
+<!ENTITY downloadbarhelp.description21 "Ciascun elemento scaricato contiene gli elementi sotto elencati">
+<!ENTITY downloadbarhelp.dwnldcn "Icona di Download">
+<!ENTITY downloadbarhelp.description22 "indica la tipologia di file scaricato. Questa icona ha diverso aspetto a seconda del tema di Firefox in uso.">
+<!ENTITY downloadbarhelp.flnm "Nome del file">
+<!ENTITY downloadbarhelp.description23 "nome del file scaricato. Se è questo troppo lungo per poter essere visualizzato completamente, viene automaticamente troncato.">
+<!ENTITY downloadbarhelp.prgrssctn "Parametri di avanzamento">
+<!ENTITY downloadbarhelp.description24 "si tratta della &quot;Percentuale di avanzamento&quot; che mostra la percentuale di scaricamento completato e le informazioni sulla &quot;Velocità di avanzamento&quot; che mostrano la velocità istantanea di scaricamento per secondo. Se la gestione dei &quot;Parametri di avanzamento&quot; viene attuata a livello della finestra delle Opzioni, è possibile aggiungere anche l'informazione riguardante il &quot;Tempo rimanente&quot; necessario per completare uno scaricamento.">
+<!ENTITY downloadbarhelp.description25 "Facendo clic col pulsante destro del mouse in corrispondenza di ciascun oggetto (scaricato o in fase di scaricamento) compare un menu contestuale che fa accedere ad altre azioni ed informazioni descritte qui sotto">
+<!ENTITY downloadbarhelp.description26 "apre/esegue il file scaricato. Questa opzione è disponibile solo a scaricamento completato.">
+<!ENTITY downloadbarhelp.description27 "mostra il file scaricato all'interno della cartella in cui è stato salvato.">
+<!ENTITY downloadbarhelp.description28 "mostra la finestra di &quot;Cronologia dei download&quot;.">
+<!ENTITY downloadbarhelp.description29 "scansiona manualmente il file scaricato con il software anti-malware scelto dall'utente. Questa opzione richiede, qualora non lo si sia già fatto, di scegliere un software anti-malware e individuare il percorso necessario alla sua esecuzione.">
+<!ENTITY downloadbarhelp.description30 "apre una finestra in cui si possono calcolare e paragonare i valori dei codici di controllo MD5, MD2, SHA1, SHA256, SHA384, SHA512 del file scaricato.">
+<!ENTITY downloadbarhelp.description31 "apre una finestra che consente di rinominare il file scaricato. Questa opzione è disponibile a scaricamento completato.">
+<!ENTITY downloadbarhelp.description32 "cancella il file scaricato dal proprio computer. Prima di operare la cancellazione viene richiesta conferma. Questa opzione è disponibile a scaricamento completato.">
+<!ENTITY downloadbarhelp.description33 "apre la pagina di scaricamento in una nuova scheda.">
+<!ENTITY downloadbarhelp.description34 "copia negli &quot;appunti&quot; la URL dello scaricamento.">
+<!ENTITY downloadbarhelp.description35 "annulla lo scaricamento in corso e rimuove il file scaricato dal computer. Questa opzione è disponibile per gli scaricamenti in corso (non ancora completati).">
+<!ENTITY downloadbarhelp.description36 "arresta temporaneamente lo scaricamento in corso.">
+<!ENTITY downloadbarhelp.description37 "riprende lo scaricamento arrestato temporaneamente.">
+<!ENTITY downloadbarhelp.description38 "ripulisce la Barra di Download dagli oggetti scaricati.">
+<!ENTITY downloadbarhelp.description39 "Si può anche fare clic col pulsante sinistro del mouse su ciascun elemento scaricato. In questo caso si apre un pop-up di informazioni relative allo scaricamento in questione. Esse vengono riportate in dettaglio qui sotto:">
+<!ENTITY downloadbarhelp.description40 "URL sorgente del file scaricato. Facendo clic con il pulsante sinistro del mouse su tale URL, questa si apre in una nuova scheda del browser. Invece, facendo clic con il pulsante destro del mouse, si apre il menu &quot;Copia&quot; per copiare tale URL.">
+<!ENTITY downloadbarhelp.description41 "posizione sul computer in cui viene salvato il file scaricato. Facendo clic con il pulsante sinistro del mouse su tale percorso di destinazione, il file scaricato viene visualizzato all'interno della cartella in cui è stato salvato. Invece, facendo clic con il pulsante destro del mouse sul percorso di destinazione, si apre il menu &quot;Copia&quot; per copiare tale percorso.">
+<!ENTITY downloadbarhelp.description42 "velocità istantanea di scaricamento del download in corso, espressa in KB/s.">
+<!ENTITY downloadbarhelp.description43 "velocità media di scaricamento del download completato, espressa in KB/s. Questa informazione è disponibile a scaricamento completato.">
+<!ENTITY downloadbarhelp.description44 "percentuale di avanzamento già completata dello scaricamento in corso.">
+<!ENTITY downloadbarhelp.description45 "tempo residuo necessario per completare lo scaricamento.">
+<!ENTITY downloadbarhelp.description46 "tempo totale impiegato per completare lo scaricamento. Questa informazione è disponibile a scaricamento completato.">
+<!ENTITY downloadbarhelp.description47 "la prima sezione di questo campo indica il numero di byte già trasferiti sul computer; la seconda sezione visualizza invece il numero totale di byte che devono essere trasferiti prima che lo scaricamento sia completo.">
+<!ENTITY downloadbarhelp.description48 "dimensioni su disco del file scaricato. Questa informazione è disponibile a scaricamento completato.">
+<!ENTITY downloadbarhelp.description49 "calcola automaticamente l'hash MD5 del file scaricato. Questa informazione è disponibile a scaricamento completato.">
+<!ENTITY downloadbarhelp.description50 "Il pop-up informativo mostra, in piccolo formato, anche l'anteprima delle immagini scaricate. Questa caratteristica è disponibile per i file di tipo PNG, JPG/JPEG, GIF e BMP. Facendo clic sulla piccola immagine di anteprima, l'immagine scaricata si apre in una nuova scheda del browser.">
+<!ENTITY downloadbarhelp.description51 "Ci si può anche limitare a passare il mouse sopra ad un oggetto scaricato. In questo caso si apre un riquadro informativo che fornisce i dettagli più importanti relativi allo scaricamento in questione.">
+<!ENTITY downloadbarhelp.tip "Suggerimento">
+<!ENTITY downloadbarhelp.description52 "Il doppio clic del mouse su un file scaricato ne determina l'esecuzione automatica.">
+<!ENTITY downloadbarhelp.description53 "Il doppio clic del mouse sulla Barra di download la ripulisce automaticamente da tutti gli scaricamenti completati.">
+<!ENTITY downloadbarhelp.description54 "Il singolo clic sul pulsante centrale del mouse su un oggetto scaricato, lo toglie dalla Barra di download.">
+<!ENTITY downloadbarhelp.description55 "Il clic con il pulsante sinistro del mouse in uno spazio vuoto della Barra di download, determina l'apertura del menu del componente aggiuntivo.">
+<!ENTITY downloadbarhelp.description56 "È possibile personalizzare DSB a seconda delle proprie necessità usando la finestra Opzioni che si apre facendo clic col pulsante destro del mouse sul pulsante &quot;Downoad&quot; e selezionando, dal menu che appare, la voce &quot;Opzioni&quot;. Alternativamente si può fare clic sulla voce &quot;Strumenti&quot; del menu di Firefox, selezionare quindi &quot;Componenti aggiuntivi&quot;, identificare DSB nell'ambito della scheda dei componenti aggiuntivi e fare clic sul pulsante &quot;Opzioni&quot;, il che apre la relativa finestra. Le voci disponibili sono descritte qui sotto:">
+<!ENTITY downloadbarhelp.description57 "la selezione di questa opzione toglie l'elemento scaricato dalla Barra di download dopo l'esecuzione del file (partendo dal menu contestuale o facendo doppio clic sull'oggetto scaricato).">
+<!ENTITY downloadbarhelp.description58 "la selezione di questa opzione toglie automaticamente l'elemento scaricato dalla Barra di download dopo aver visualizzato il file all'interno della cartella in cui è stato salvato.">
+<!ENTITY downloadbarhelp.description59 "la selezione di questa opzione determina l'apertura automatica (a scaricamento completato) della cartella all'interno della quale il file scaricato è stato salvato.">
+<!ENTITY downloadbarhelp.description60 "la selezione di questa opzione apre automaticamente la scheda di download del browser, quando inizia lo scaricamento.">
+<!ENTITY downloadbarhelp.description61 "DSB normalmente conserva la cronologia degli scaricamenti tra le sessioni di lavoro con Firefox. Essi pertanto rimangono visibili nella Barra di download all'apertura della successiva sessione di lavoro. Se non si vuole che DSB conservi la cronologia dei download tra le sessioni di lavoro, si può selezionare questa opzione. In tal modo, gli oggetti scaricati vengono automaticamente tolti dalla Barra di download alla chiusura di Firefox.">
+<!ENTITY downloadbarhelp.description62 "prima di cancellare un oggetto scaricato, DSB chiede conferma per prevenire possibili cancellazioni non intenzionali. Qualora si vogliano velocizzare le operazioni di cancellazione, si può deselezionare questa opzione. Ciò evita la comparsa della finestra di conferma.">
+<!ENTITY downloadbarhelp.description63 "la selezione di questa opzione mantiene visibile la Barra di download se vi sono degli scaricamenti in corso e la nasconde automaticamente quando tutti i download sono stati completati consentendo di guadagnare dello spazio a favore del contenuto delle pagine web. È anche possibile specificare un intervallo di tempo prima della scomparsa in automatico della Barra di download.">
+<!ENTITY downloadbarhelp.description64 "è possibile che vi siano dei tipi di file che non ci interessa mantenere nella Barra di download e/o che si vogliono togliere dopo un determinato intervallo di tempo. In questo campo si possono digitare le loro estensioni, separate da virgole. Il carattere asterisco (*) posto in questo campo equivale ad una scorciatoia che sta ad indicare &quot;tutti i tipi di file&quot;.">
+<!ENTITY downloadbarhelp.description65 "È possibile scansionare automaticamente i file scaricati, modificando opportunamente il contenuto dei campi di questo gruppo di opzioni.">
+<!ENTITY downloadbarhelp.description66 "posizione in cui è memorizzato,  all'interno del computer, il programma anti-malware scelto. Il clic sul pulsante &quot;Sfoglia&quot;, apre un selettore di file che consente di scegliere, qualora non lo si sia già fatto, il programma da utilizzare per effettuare la scansione anti-malware.">
+<!ENTITY downloadbarhelp.description67 "qualora si intendano escludere dalla scansione automatica anti-malware certi tipi di file, è possibile digitare le loro estensioni in questo campo, separandole con virgole.">
+<!ENTITY downloadbarhelp.description68 "la maggior parte dei programmi anti-malware non necessita di parametri addizionali per effettuare la scansione. Pertanto questa sezione abitualmente si può lasciare vuota. Se però il programma richiede dei parametri addizionali, essi vanno digitati in questo campo. In particolare si può utilizzare l'espressione &quot;&#37;1&quot; come marcatore che definisce il luogo in cui viene salvato il file scaricato.">
+<!ENTITY downloadbarhelp.description69 "selezionando questa opzione il programma anti-malware scansiona automaticamente i file scaricati, a scaricamento completato.">
+<!ENTITY downloadbarhelp.description70 "Modificando opportunamente il contenuto dei campi di questo gruppo di opzioni, è possibile ascoltare un suono di notifica a scaricamento completato.">
+<!ENTITY downloadbarhelp.description71 "posizione in cui è memorizzato sul computer il suono di notifica preferito. Il clic sul pulsante 'Sfoglia', apre un selettore di file che consente di scegliere, qualora non lo si sia già fatto, un file sonoro di notifica. I file sonori utilizzabili sono quelli aventi estensione .ogg, .wav e .mp3. Il suono predefinito è quello già incluso in DSB.">
+<!ENTITY downloadbarhelp.description72 "se si vuole ascoltare il suono di notifica in uso, si può fare clic sul pulsante &quot;Ascolta&quot; che fornisce un'anteprima del file sonoro scelto.">
+<!ENTITY downloadbarhelp.description73 "selezionare questa opzione se si vuole ascoltare una notifica sonora a scaricamento completato.">
+<!ENTITY downloadbarhelp.description74 "selezionando il pulsante &quot;Azzeramento delle impostazioni&quot; si ripristinano i valori predefiniti delle opzioni di notifica sonora.">
+<!ENTITY downloadbarhelp.description75 "Con le opzioni disponibili in questa scheda è possibile personalizzare l'interfaccia di DSB.">
+<!ENTITY downloadbarhelp.description76 "Questo gruppo di opzioni permette di variare l'aspetto degli oggetti scaricati utilizzando opportunamente il selettore dei colori.  Ciascun colore è basato su un gradiente, così da creare un piacevole effetto. Inoltre ogni variazione di colore viene applicata istantaneamente da DSB.">
+<!ENTITY downloadbarhelp.description77 "il selettore del colore consente di selezionare un colore specifico da applicare, come colore di sfondo, all'oggetto da scaricare. Poiché, al termine dello scaricamento, il colore di avanzamento si sovrappone al colore di sfondo dell'oggetto da scaricare, può essere utile modificare il colore di sfondo all'inizio dello scaricamento di un file di grosse dimensioni così da avere il tempo di poter vedere come esso appare.">
+<!ENTITY downloadbarhelp.description78 "il selettore del colore consente di selezionare un colore specifico da usare come colore di avanzamento dello scaricamento in corso.">
+<!ENTITY downloadbarhelp.description79 "il selettore del colore consente di selezionare un colore specifico da usare come colore del testo per il nome file e per la sezione di avanzamento dell'oggetto che si sta scaricando.">
+<!ENTITY downloadbarhelp.description80 "il selettore del colore consente di selezionare un colore specifico da usare come colore che indichi uno scaricamento completato.">
+<!ENTITY downloadbarhelp.description81 "il selettore del colore consente di selezionare un colore specifico da usare per indicare uno scaricamento arrestato temporaneamente.">
+<!ENTITY downloadbarhelp.description82 "il selettore di colore consente di selezionare un colore specifico da usare come colore di sfondo della Barra di Download.">
+<!ENTITY downloadbarhelp.description83 "Facendo clic sul pulsante &quot;Azzeramento delle impostazioni&quot; si ripristinano i valori predefiniti delle opzioni relative ai colori.">
+<!ENTITY downloadbarhelp.description84 "Modificando opportunamente i campi di questo gruppo di opzioni è possibile assegnare colori diversi in funzione delle differenti velocità di scaricamento. I colori assegnati alle diverse velocità di scaricamento hanno la precedenza sui colori definiti dal gruppo di opzioni di avanzamento (v. sopra), qualora essi siano stati assegnati.">
+<!ENTITY downloadbarhelp.description85 "Si può modificare l'aspetto di DSB, modificando il contenuto dei campi di questo gruppo di opzioni:">
+<!ENTITY downloadbarhelp.description86 "rappresenta la modalità predefinita con cui DSB si presenta. Selezionando questa opzione, gli oggetti scaricati vengono posti nella Barra di download che si trova nella parte inferiore del browser.">
+<!ENTITY downloadbarhelp.description87 "se si vuole mantenere la privacy riguardo ai propri download, si può selezionare questa modalità che associa tutti gli oggetti scaricati al pulsante DSB che viene posizionato nella barra dei componenti aggiuntivi. Se però non vi sono altri componenti aggiuntivi o se la barra dei componenti aggiuntivi è nascosta, il pulsante DSB viene posizionato sulla barra di navigazione di Firefox. A destra del pulsante DSB vi sono due contatori: il primo indica il numero di scaricamenti in corso, il secondo invece indica il numero di scaricamenti già completati.">
+<!ENTITY downloadbarhelp.description88 "Selezionando opportunamente le caselle associate alle opzioni presenti nella sezione &quot;Parametri di avanzamento&quot;, è possibile visualizzare o nascondere la percentuale e/o la velocità di avanzamento nonché il tempo rimanente al completamento dei download.">
+<!ENTITY downloadbarhelp.description89 "La sezione di allineamento dell'avanzamento consente di regolare l'allineamento degli oggetti scaricati, selezionando opportunamente i campi di questo gruppo di opzioni. L'opzione orizzontale pone, una di fianco all'altra, la percentuale di avanzamento, la velocità e il tempo rimanente di scaricamento dei vari download. Con l'opzione verticale invece, tutti gli elementi in corso di scaricamento si dispongono uno sotto l'altro.">
+<!ENTITY downloadbarhelp.description90 "È possibile modificare i valori di larghezza e di altezza del riquadro che definisce l'oggetto scaricato/in corso di scaricamento, modificando opportunamente i campi di questo gruppo di opzioni:">
+<!ENTITY downloadbarhelp.description91 "inserire un valore numerico in questo campo per impostare la larghezza del riquadro che definisce l'oggetto scaricato/in corso di scaricamento.">
+<!ENTITY downloadbarhelp.description92 "inserire un valore numerico in questo campo per impostare l'altezza del riquadro che definisce l'oggetto scaricato/in corso di scaricamento.">
+<!ENTITY downloadbarhelp.description93 "inserire un valore numerico in questo campo per impostare la dimensione dei caratteri del nome del file dell'oggetto scaricato/in corso di scaricamento.">
+<!ENTITY downloadbarhelp.description94 "inserire un valore numerico in questo campo per impostare le dimensioni dei caratteri delle opzioni presenti nella sezione &quot;Parametri di avanzamento&quot; dell'oggetto scaricato/in corso di scaricamento.">
+<!ENTITY downloadbarhelp.description95 "selezionando questa opzione il pulsante &quot;Svuota&quot; scompare dalla Barra di Download.">
+<!ENTITY downloadbarhelp.description96 "selezionando questa opzione il pulsante &quot;Download&quot; scompare dalla Barra di Download.">
+<!ENTITY downloadbarhelp.imagecaption1 "Facendo clic con il pulsante destro del mouse sugli oggetti scaricati si apre un menu contestuale di opzioni che ne consente la gestione.">
+<!ENTITY downloadbarhelp.imagecaption2 "Per mantenere la propria privacy sugli scaricamenti, questi possono essere visualizzati mediante il pulsante Download Status Bar.">
+<!ENTITY downloadbarhelp.imagecaption3 "È possibile visualizzare le proprie statistiche di scaricamento, quali particolari tipi di download sono stati effettuati e quali conteggi (in byte) si stanno maggiormente generando.">
+<!ENTITY downloadbarhelp.imagecaption4 "Facendo clic sugli oggetti scaricati, si apre un pop-up informativo in cui è possibile visualizzare più dettagli riguardanti lo scaricamento.">
+<!ENTITY downloadbarhelp.imagecaption5 "Le finestre delle opzioni consentono di avere il totale controllo sui propri scaricamenti, in funzione delle proprie necessità.">
+<!ENTITY downloadbarhelp.babelzilla "Se si desidera avere DSB nella propria lingua, è possibile tradurlo registrandosi su Babelzilla.">
+<!ENTITY downloadbarhelp.mozillazine "È possibile ottenere un maggiore supporto per DSB nel forum di Mozillazine:">

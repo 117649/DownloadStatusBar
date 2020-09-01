@@ -1,0 +1,130 @@
+<!ENTITY downloadbarhelp.description "Als u iemand bent die graag de volledige controle heeft over elk aspect van uw downloads, dan is Download Status Bar de add-on die u zoekt.">
+<!ENTITY downloadbarhelp.onlnvlbl1 "Deze pagina is online ook in andere talen beschikbaar.">
+<!ENTITY downloadbarhelp.onlnvlbl2 "Klik op de vlag van de gewenste taal om de vertaalde tekst in een nieuw tabblad te openen.">
+<!ENTITY downloadbarhelp.description2sntc1 "Download Status Bar verzorgt ieder aspect van uw downloads">
+<!ENTITY downloadbarhelp.Launch "Uitvoeren">
+<!ENTITY downloadbarhelp.Show "Weergeven">
+<!ENTITY downloadbarhelp.Scan "Scannen">
+<!ENTITY downloadbarhelp.Rename "Hernoemen">
+<!ENTITY downloadbarhelp.Checksum "Checksum">
+<!ENTITY downloadbarhelp.Pause "Pauzeren">
+<!ENTITY downloadbarhelp.Resume "Hervatten">
+<!ENTITY downloadbarhelp.Cancel "Annuleren">
+<!ENTITY downloadbarhelp.Clean "Opschonen">
+<!ENTITY downloadbarhelp.Delete "Verwijderen">
+<!ENTITY downloadbarhelp.description2sntc2 "genereert statistieken van uw downloads, houdt de geschiedenis van uw vorige downloadsessies bij, en nog veel meer. Het is niet slechts een add-on voor downloadbeheer, maar helpt u ook uw productiviteit te vergroten.">
+<!ENTITY downloadbarhelp.description3 "Download Status Bar is speciaal ontworpen aan de hand van uw behoeften en verzoeken. Uw verwachtingen zijn bij de ontwikkeling van de add-on centraal geplaatst, gebruikmakend van de laatste mogelijkheden van Firefox 26, om zo de prestaties van uw browser en downloads te bevorderen. Download Status Bar is projectgedreven en wordt beheerd door de gebruikers van deze add-on, wat hem actueel en krachtig houdt.">
+<!ENTITY downloadbarhelp.description4 "Installeer Download Status Bar en neem de controle over uw downloads.">
+<!ENTITY downloadbarhelp.features "Functies">
+<!ENTITY downloadbarhelp.description5 "Wanneer u bestanden van internet downloadt plaatst Download Status Bar automatisch voortgangsindicatoren in de downloadbalk voor u. Zoals de naam al suggereert is de downloadbalk de balk onderaan het Firefox-venster, meestal boven de add-onbalk. Omdat Download Status Bar gebruikersvriendelijk en slim genoeg is, is het alleen maar zichtbaar tijdens een actieve download. Als er geen download is om weer te geven, verbergt Download Status Bar zichzelf automatisch om u meer webpagina te kunnen laten zien. Het komt vanzelf weer tevoorschijn als u een bestand begint te downloaden.">
+<!ENTITY downloadbarhelp.description6 "Maar als u Download Status Bar zelfs wilt zien als er geen download is, dan kunt u onderstaande sneltoetsen gebruiken:">
+<!ENTITY downloadbarhelp.description7 "Windows: Ctrl+Alt+D">
+<!ENTITY downloadbarhelp.description8b "Mac OS X: Shift+Alt+D">
+<!ENTITY downloadbarhelp.description9 "Linux: (Ctrl/Cmd)+Alt+D">
+<!ENTITY downloadbarhelp.description10 "U kunt bovenstaande sneltoetsen ook gebruiken om de downloadbalk op elk gewenst moment te verbergen. Met andere woorden: deze sneltoetsen wisselen de downloadbalk voor u.">
+<!ENTITY downloadbarhelp.description10a "Als alternatieve optie kunt u de downloadbalk in- en uitschakelen via het menu Download Status Bar in het menu Extra van Firefox.">
+<!ENTITY downloadbarhelp.fwdysntfcn "Deze hulppagina is over enkele dagen volledig. Bedankt voor uw begrip en geduld.">
+<!ENTITY downloadbarhelp.description11 "Nadat u de downloadbalk hebt geopend ziet u een knop Downloads links en een knop Wissen rechts op de balk. De knop Downloads is de belangrijkste knop van Download Status Bar; u kunt erop klikken om de contextmenu van de add-on te openen. De knop Wissen wordt gebruikt om alle afgeronde downloads met een muisklik op te schonen uit de downloadbalk.">
+<!ENTITY downloadbarhelp.description12 "Door op de knop Downloads te klikken ziet u het hieronder beschreven contextmenu">
+<!ENTITY downloadbarhelp.options "Opties">
+<!ENTITY downloadbarhelp.description13 "Deze menu-optie opent het optiesvenster, waar u de add-on naar wens kunt aanpassen.">
+<!ENTITY downloadbarhelp.statistics "Statistieken">
+<!ENTITY downloadbarhelp.description14 "Deze menu-optie opent de statistiekenpagina met gegevens en grafieken voor uw eerdere downloadacties.">
+<!ENTITY downloadbarhelp.showdownloadhistory "Downloadgeschiedenis weergeven">
+<!ENTITY downloadbarhelp.description15 "Deze menu-optie opent de standaard Firefox-geschiedenisbibliotheek, voor het geval u uw downloads als een lijst in een venster wilt weergeven.">
+<!ENTITY downloadbarhelp.opendownloadtab "Downloadtabblad openen">
+<!ENTITY downloadbarhelp.description16 "Deze menu-optie opent de standaard Firefox-geschiedenisbibliotheek als een browsertabblad.">
+<!ENTITY downloadbarhelp.downloads "Downloads">
+<!ENTITY downloadbarhelp.description17 "Middels de opties Alle downloads pauzeren, Alle downloads hervatten, Alle downloads annuleren en Alle downloads opschonen kunt u uw downloads gegroepeerd beheren.">
+<!ENTITY downloadbarhelp.help "Help">
+<!ENTITY downloadbarhelp.description18 "Deze menu-optie opent de hulppagina van Download Status Bar, waar u details over de add-on kunt vinden en hoe u deze op efficiënte manier kunt gebruiken.">
+<!ENTITY downloadbarhelp.closedownloadbar "Downloadbalk sluiten">
+<!ENTITY downloadbarhelp.description19 "Deze menu-optie sluit de downloadbalk voor u.">
+<!ENTITY downloadbarhelp.description20 "Als u bestanden van het web downloadt plaatst Download Status Bar automatisch downloaditems in de downloadbalk. Hieronder staat wat voorbeeldsoftware van Mozilla om te downloaden. Klik erop om te starten met downloaden.">
+<!ENTITY downloadbarhelp.description21 "Elk downloaditem bevat de volgende elementen:">
+<!ENTITY downloadbarhelp.dwnldcn "Downloadpictogram">
+<!ENTITY downloadbarhelp.description22 "Het specifieke pictogram dat het genre van het downloadbestand aanduidt. Dit pictogram kan afwijken, afhankelijk van het gebruikte Firefox-thema.">
+<!ENTITY downloadbarhelp.flnm "Bestandsnaam">
+<!ENTITY downloadbarhelp.description23 "Naam van het downloadbestand. Als de naam te groot is voor het downloaditem wordt deze automatisch ingekort.">
+<!ENTITY downloadbarhelp.prgrssctn "Voortgangssectie">
+<!ENTITY downloadbarhelp.description24 "Deze sectie bevat het voortgangspercentage, dat het percentage voltooid en snelheidsinformatie (de huidige downloadsnelheid per seconde) weergeeft. U kunt ook middels het optiesvenster informatie over de resterende tijd aan deze voortgangssectie toevoegen.">
+<!ENTITY downloadbarhelp.description25 "U kunt ook rechtsklikken op elk downloaditem voor een contextmenu met meer actie en informatie zoals hieronder beschreven">
+<!ENTITY downloadbarhelp.description26 "Opent het downloadbestand of voert het uit. Deze optie is beschikbaar na afronding van de download.">
+<!ENTITY downloadbarhelp.description27 "Geeft het downloadbestand weer in de bijbehorende map.">
+<!ENTITY downloadbarhelp.description28 "Geeft het venster met de downloadgeschiedenis weer.">
+<!ENTITY downloadbarhelp.description29 "Scant het gedownloade bestand automatisch met de opgegeven beveiligingssoftware. Deze optie vraagt u om beveiligingssoftware aan te geven als dit nog niet is gebeurd.">
+<!ENTITY downloadbarhelp.description30 "Opent een venster met de checksum waar u de MD5-, MD2-, SHA1-, SHA256-, SHA384- en SHA512-waarden voor het gedownloade bestand kunt berekenen en vergelijken.">
+<!ENTITY downloadbarhelp.description31 "Opent een venster Hernoemen waarmee u het gedownloade bestand kunt hernoemen. Deze optie is beschikbaar na afronding van de download.">
+<!ENTITY downloadbarhelp.description32 "Verwijdert het gedownloade bestand van uw computer. Er wordt om bevestiging gevraagd voordat wordt geprobeerd het bestand te verwijderen. Deze optie is beschikbaar na afronding van de download.">
+<!ENTITY downloadbarhelp.description33 "Opent de downloadpagina in een nieuw tabblad.">
+<!ENTITY downloadbarhelp.description34 "Kopieert de download-URL naar het klembord.">
+<!ENTITY downloadbarhelp.description35 "Annuleert de actieve download en verwijdert het downloadbestand van uw computer. Deze optie is beschikbaar voor downloads die worden uitgevoerd.">
+<!ENTITY downloadbarhelp.description36 "Pauzeert de actieve download.">
+<!ENTITY downloadbarhelp.description37 "Hervat de gepauzeerde download.">
+<!ENTITY downloadbarhelp.description38 "Verwijdert het downloaditem uit de downloadbalk.">
+<!ENTITY downloadbarhelp.description39 "U kunt ook elk downloaditem aanklikken om een informatievenster te openen voor de desbetreffende download, zoals hieronder beschreven:">
+<!ENTITY downloadbarhelp.description40 "Bron-URL van het downloadbestand. Aanklikken van de bronkoppeling opent de bron-URL als een nieuw tabblad in de browser. Rechtklikken van de bronkoppeling opent het menu Kopiëren om de bron-URL van de download te kopiëren.">
+<!ENTITY downloadbarhelp.description41 "Locatie waar het gedownloade bestand op uw computer wordt opgeslagen. Klikken op de doelkoppeling opent het downloadbestand in de bijbehorende map. Rechtklikken van de doelkoppeling opent het menu Kopiëren om het bestandspad van het downloadbestand te kopiëren.">
+<!ENTITY downloadbarhelp.description42 "Huidige downloadsnelheid van de actieve download in KB/s.">
+<!ENTITY downloadbarhelp.description43 "Gemiddelde downloadsnelheid van de afgeronde download in KB/s. Deze informatie is beschikbaar na afronding van de download.">
+<!ENTITY downloadbarhelp.description44 "Voltooiingspercentage van de download.">
+<!ENTITY downloadbarhelp.description45 "Resterende tijd voor afronding van de download.">
+<!ENTITY downloadbarhelp.description46 "Downloadtijd. Deze informatie is beschikbaar na afronding van de download.">
+<!ENTITY downloadbarhelp.description47 "De eerste sectie van dit veld geeft Huidig aantal bytes weer, wat het aantal bytes is dat momenteel wordt overgedragen, terwijl de tweede sectie Totaal aantal bytes aangeeft, wat het totaal aantal bytes is dat overgedragen moet worden voordat de download is afgerond.">
+<!ENTITY downloadbarhelp.description48 "Bestandsgrootte van de download. Deze informatie is beschikbaar na afronding van de download.">
+<!ENTITY downloadbarhelp.description49 "Automatisch berekende MD5-hash van het gedownloade bestand. Deze informatie is beschikbaar na afronding van de download.">
+<!ENTITY downloadbarhelp.description50 "De Informatiepop-up bevat ook een voorbeeldfunctie voor gedownloade afbeeldingen om ze te kunnen bekijken als miniaturen. De voorbeeldfunctie ondersteunt bestanden van het type PNG, JPG en BMP. Klikken op een miniatuur opent het gedownloade bestand in de browser als een nieuw tabblad.">
+<!ENTITY downloadbarhelp.description51 "U kunt als u snel downloaddetails wilt weten ook een downloaditem aanwijzen om een tooltip met informatie te openen.">
+<!ENTITY downloadbarhelp.tip "Tip">
+<!ENTITY downloadbarhelp.description52 "Dubbelklikken van een downloaditem start het gedownloade bestand automatisch.">
+<!ENTITY downloadbarhelp.description53 "Dubbelklikken op de downloadbalk wist automatisch alle afgeronde downloads.">
+<!ENTITY downloadbarhelp.description54 "Middelklikken op een downloaditem verwijdert deze van de downloadbalk.">
+<!ENTITY downloadbarhelp.description55 "Klikken op een lege ruimte in de downloadbalk opent het contextmenu van de add-on.">
+<!ENTITY downloadbarhelp.description56 "U kunt Download Status Bar naar wens aanpassen in het optiesvenster. U kunt het optiesvenster openen door te rechtsklikken op de knop Downloads en het menu Opties te selecteren. Als alternatief kunt u op het menu Extra in Firefox klikken, dan naar Add-ons gaan, Download Status Bar in het tabblad Extensies zoeken en op de knop Voorkeuren klikken om het optiesvenster te openen. Beschikbare opties zijn hieronder beschreven:">
+<!ENTITY downloadbarhelp.description57 "Door deze optie aan te vinken wordt een downloaditem automatisch uit de downloadbalk verwijderd als u het bestand start via de optie Starten in het contextmenu of door dubbelklikken op het downloaditem.">
+<!ENTITY downloadbarhelp.description58 "Door deze optie aan te vinken wordt het downloaditem automatisch uit de downloadbalk verwijderd na weergeven van het downloadbestand in de bijbehorende map.">
+<!ENTITY downloadbarhelp.description59 "Door deze optie aan te vinken opent de downloadmap automatisch nadat de download is afgerond.">
+<!ENTITY downloadbarhelp.description60 "Door deze optie aan te vinken opent het downloadtabblad bij starten van een download automatisch in de browser.">
+<!ENTITY downloadbarhelp.description61 "Download Status Bar houdt de geschiedenis van uw downloads uit vorige sessies bij en geeft ze weer in de downloadbalk als de nieuwe sessie start. Als u de downloadgeschiedenis niet in de downloadbalk wilt bewaren, dan kunt u deze optie aanvinken om downloaditems automatisch uit de geschiedenis te verwijderen bij afsluiten van Firefox.">
+<!ENTITY downloadbarhelp.description62 "Voordat een downloaditem wordt verwijdert vraagt Download Status Bar om bevestiging om ongewilde verwijdering te voorkomen. Als u dit bevestigingsvenster niet wilt zien om zo het verwijderingsproces te versnellen, dan kunt u deze optie uitvinken.">
+<!ENTITY downloadbarhelp.description63 "Door deze optie aan te vinken behoudt u de downloadbalk als er actieve downloads zijn, maar wordt deze automatisch verborgen als alle downloads zijn afgerond, om zo meer van een webpagina weer te kunnen geven. U kunt ook een tijdsinterval voordat de downloadbalk automatisch wordt verborgen instellen.">
+<!ENTITY downloadbarhelp.description64 "U vindt wellicht bepaalde bestandstypes niet belangrijk om in de downloadbalk te houden en wilt deze wellicht automatisch na een bepaald tijdsinterval verwijderen. U kunt de te verwijderen bestandsextensies in dit veld opgeven, gescheiden door komma’s. Het teken ‘*’ betekent in dit veld een wildcard voor alle bestandstypes.">
+<!ENTITY downloadbarhelp.description65 "U kunt automatisch gedownloade bestanden scannen door de velden in deze optiegroep in te stellen.">
+<!ENTITY downloadbarhelp.description66 "Locatie waar de beveiligingssoftware van uw voorkeur te vinden is op uw computer. Klik Zoeken om een Bestandskiezer te open en beveiligingssoftware voor virusscannen toe te wijzen als dit nog niet is gebeurd.">
+<!ENTITY downloadbarhelp.description67 "Als u automatisch virusscannen voor bepaalde bestandstypes wilt overslaan, dan kunt u in dit veld hun bestandsextensies intypen, gescheiden door komma’s.">
+<!ENTITY downloadbarhelp.description68 "De meeste beveiligingssoftware heeft geen aanvullende argumenten voor virusscans nodig, dus u kunt deze sectie standaard leeg laten. Als uw beveiligingssoftware aanvullende argumenten nodig heeft, dan kunt u deze in dit veld intypen. U kunt de expressie &#37;1 als plaatshouder voor de bestandslocatie van het gedownloade bestand.">
+<!ENTITY downloadbarhelp.description69 "Door deze optie aan te vinken worden gedownloade bestanden na afronding automatisch door uw beveiligingssoftware gescand.">
+<!ENTITY downloadbarhelp.description70 "U kunt geluidsberichten krijgen bij afronden van downloads door de velden in deze optiegroep in te stellen.">
+<!ENTITY downloadbarhelp.description71 "Locatie waar het notificatiegeluid van uw voorkeur te vinden is op uw computer. Klik Zoeken om een Bestandskiezer te open en een notificatiegeluid toe te wijzen als dit nog niet is gebeurd. Toe te wijzen geluidsbestanden dienen van het type .ogg, .wav of .mp3 te zijn. Het standaardgeluid is het geluid dat met Download Status Bar wordt meegeleverd.">
+<!ENTITY downloadbarhelp.description72 "Als u het huidige notificatiegeluid wilt beluisteren kunt u op de knop Afspelen van de mediaspeler drukken om een voorbeeld te horen.">
+<!ENTITY downloadbarhelp.description73 "Door deze optie aan te vinken ontvangt u geluidsnotificaties na afronden van downloads.">
+<!ENTITY downloadbarhelp.description74 "Door op de knop Instellingen resetten te klikken worden de waarden voor de notificatie-opties gereset.">
+<!ENTITY downloadbarhelp.description75 "U kunt de interface van Download Status Bar aanpassen middels de opties in dit tabblad.">
+<!ENTITY downloadbarhelp.description76 "U kunt de weergave van downloaditems wijzigen door de kleurkiezers in deze optiegroep af te stemmen. Elke kleur verloopt om een mooi effect op de interface-elementen te creëren. Elke kleurwijziging wordt direct toegepast door Download Status Bar:">
+<!ENTITY downloadbarhelp.description77 "Kies een speciale kleur in de desbetreffende kleurkiezer om een kleur aan de achtergrond van een downloaditem toe te wijzen. Omdat voortgangskleur de voorkeur krijgt boven de achtergrond van een downloaditem na afronden van de download, kunt u deze kleur wijzigen als u een groot bestand gaat downloaden om te zien hoe de kleur er uit ziet.">
+<!ENTITY downloadbarhelp.description78 "Kies een speciale kleur in de desbetreffende kleurkiezer om een voortgangskleur aan de actieve downloads toe te wijzen.">
+<!ENTITY downloadbarhelp.description79 "Kies een speciale kleur in de desbetreffende kleurkiezer om deze als tekstkleur voor de bestandsnaam en de voortgangssectie van een downloaditem toe te wijzen.">
+<!ENTITY downloadbarhelp.description80 "Kies een speciale kleur in de desbetreffende kleurkiezer om deze als kleur voor afgeronde downloads toe te wijzen.">
+<!ENTITY downloadbarhelp.description81 "Kies een speciale kleur in de desbetreffende kleurkiezer om deze als kleur voor gepauzeerde downloads aan te geven.">
+<!ENTITY downloadbarhelp.description82 "Kies een speciale kleur in de desbetreffende kleurkiezer om deze als achterkleur voor de downloadbalk in te stellen.">
+<!ENTITY downloadbarhelp.description83 "Door op de knop Instellingen resetten te klikken worden de kleurwaarden gereset.">
+<!ENTITY downloadbarhelp.description84 "U kunt verschillende kleuren voor verschillende downloadsnelheden instellen door de velden in deze optiegroep in te stellen. Snelheidskleuren krijgen de voorkeur boven de voortgangskleur in de Kleuroptiegroep als u deze hebt ingesteld.">
+<!ENTITY downloadbarhelp.description85 "U kunt de interface van Download Status Bar wijzigen middels de velden in deze optiegroep:">
+<!ENTITY downloadbarhelp.description86 "Dit is de standaard downloadinterface voor Download Status Bar. Als u deze optie selecteert worden downloaditems in de downloadbalk onderin de browser geplaatst.">
+<!ENTITY downloadbarhelp.description87 "Als u uw downloads privé wilt houden kunt u deze optie om alle downloaditems in een werkbalkknoppaneel te plaatsen selecteren. De werkbalkknop wordt standaard in de add-onbalk geplaatst. Als er geen add-onbalk is of als de add-onbalk is verborgen, dan wordt de werkbalkknop in de navigatiebalk van Firefox geplaatst. De werkbalkknop is voorzien van een teller. De eerste sectie van de teller geeft het aantal actieve downloads weer, de tweede sectie geeft het aantal afgeronde downloads weer.">
+<!ENTITY downloadbarhelp.description88 "U kunt de items Voortgangspercentage, Snelheid en Resterende tijd in de voortgangssectie van downloaditems verbergen of weergeven door de velden in deze optiegroep in te stellen.">
+<!ENTITY downloadbarhelp.description89 "U kunt de uitlijning van de voortgangssectie van downloaditems bijstellen door de velden van deze optiegroep in te stellen. De optie Horizontaal plaatst voortgang, snelheid en resterende tijd naast elkaar, terwijl Verticaal deze elementen in verticale positie plaatst.">
+<!ENTITY downloadbarhelp.description90 "U kunt de breedte en hoogte van een downloaditem wijzigen door de velden in deze optiegroep in te stellen:">
+<!ENTITY downloadbarhelp.description91 "Zet een numerieke waarde in dit veld voor de breedte van het downloaditem.">
+<!ENTITY downloadbarhelp.description92 "Zet een numerieke waarde in dit veld voor de hoogte van het downloaditem.">
+<!ENTITY downloadbarhelp.description93 "Zet een numerieke waarde in dit veld om de lettergrootte voor de bestandsnaam van het downloaditem in te stellen.">
+<!ENTITY downloadbarhelp.description94 "Zet een numerieke waarde in dit veld om de lettergrootte voor de voortgangssectie van het downloaditem in te stellen.">
+<!ENTITY downloadbarhelp.description95 "Door deze optie aan te vinken wordt de knop Wissen op de downloadbalk verborgen.">
+<!ENTITY downloadbarhelp.description96 "Door deze optie aan te vinken wordt de knop Downloaden in de downloadbalk verborgen.">
+<!ENTITY downloadbarhelp.imagecaption1 "Rechtsklikken op downloaditems geeft u contextmenu-opties om uw downloads te beheren.">
+<!ENTITY downloadbarhelp.imagecaption2 "U kunt uw downloads in een knoppenpaneel zetten om uw privacy te bewaren.">
+<!ENTITY downloadbarhelp.imagecaption3 "U kunt uw downloadstatistieken bekijken en zien welk soort downloads en welk aantal u meestal heeft.">
+<!ENTITY downloadbarhelp.imagecaption4 "Door op een downloaditem te klikken opent een pop-upvenster waar u meer downloaddetails krijgt.">
+<!ENTITY downloadbarhelp.imagecaption5 "Het optiesvenster geeft u meer opties waarmee u naar wens controle kunt uitoefenen over uw downloads.">
+<!ENTITY downloadbarhelp.babelzilla "Als u Download Status Bar in uw eigen taal wilt zien, vertaal deze dan op BabelZilla.">
+<!ENTITY downloadbarhelp.mozillazine "U kunt gedetailleerdere ondersteuning voor Download Status Bar krijgen op het Mozillazine-forum:">

@@ -1,0 +1,5 @@
+<!ENTITY downloadbarstats.title "Статистики на преземања">
+<!ENTITY downloadbarstats.nostats "Нема статистики за приказ!">
+<!ENTITY downloadbarstats.dwnldgrph "Преземете некои датотеки за да добиете статистиќки графикон!">
+<!ENTITY downloadbarstats.bybyts "во бајти">
+<!ENTITY downloadbarstats.bycnt "по број">

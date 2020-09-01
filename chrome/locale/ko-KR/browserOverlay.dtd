@@ -1,0 +1,41 @@
+<!ENTITY downloadbar.lnch "실행">
+<!ENTITY downloadbar.shwfl "파일 보기">
+<!ENTITY downloadbar.shwmngr "관리자 보기">
+<!ENTITY downloadbar.cncl "취소">
+<!ENTITY downloadbar.pause "중지">
+<!ENTITY downloadbar.strt "시작">
+<!ENTITY downloadbar.clr "지우기">
+<!ENTITY downloadbar.clsbr "막대 닫기">
+<!ENTITY downloadbar.clrlldwnlds "모든 다운로드 지우기">
+<!ENTITY downloadbar.pslldwnlds "모든 다운로드 중지">
+<!ENTITY downloadbar.rsmlldwnlds "모든 다운로드 다시 시작">
+<!ENTITY downloadbar.cncllldwnlds "모든 다운로드 취소">
+<!ENTITY downloadbar.dwnlds "다운로드">
+<!ENTITY downloadbar.vrscn "바이러스 검사">
+<!ENTITY downloadbar.dltfl "파일 삭제">
+<!ENTITY downloadbar.rnm "이름 바꾸기">
+<!ENTITY downloadbar.clrll "모두 지우기">
+<!ENTITY downloadbar.pndwnldtb "다운로드 탭 열기">
+<!ENTITY downloadbar.shwlldwnldshstry "다운로드 기록 보기">
+<!ENTITY downloadbar.gtdwnlpg "다운로드 페이지 가기">
+<!ENTITY downloadbar.cpydwnldlnk "다운로드 링크 복사">
+<!ENTITY downloadbar.ptns "설정">
+<!ENTITY downloadbar.src "소스">
+<!ENTITY downloadbar.trgt "대상">
+<!ENTITY downloadbar.crrntspd "현재 속도">
+<!ENTITY downloadbar.vrgspd "평균 속도">
+<!ENTITY downloadbar.prgrs "진행">
+<!ENTITY downloadbar.rmngtm "남은 시간">
+<!ENTITY downloadbar.dwnldbyt "다운로드 완료">
+<!ENTITY downloadbar.flsz "파일 크기">
+<!ENTITY downloadbar.dwnldtm "다운로드 시간">
+<!ENTITY downloadbar.resume "다시 시작">
+<!ENTITY downloadbar.sttstcs "통계">
+<!ENTITY downloadbar.chksm "검사 합계">
+<!ENTITY downloadbar.cpy "복사">
+<!ENTITY downloadbar.hlp "도움말">
+<!ENTITY downloadbar.md5hsh "MD5 해시">
+<!ENTITY downloadbar.sendto "보내기">
+<!ENTITY downloadbar.desktopfolder "바탕화면">
+<!ENTITY downloadbar.downloadsfolder "다운로드">
+<!ENTITY downloadbar.customfolder "사용자 임의">

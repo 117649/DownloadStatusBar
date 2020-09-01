@@ -1,0 +1,130 @@
+<!ENTITY downloadbarhelp.description "Download Status Bar は、ダウンロードのすべてをコントロールしたい人に適した拡張機能です。">
+<!ENTITY downloadbarhelp.onlnvlbl1 "このページは他言語でも利用できます。">
+<!ENTITY downloadbarhelp.onlnvlbl2 "国旗をクリックすると、翻訳されたページを新しいタブで開きます。">
+<!ENTITY downloadbarhelp.description2sntc1 "Download Status Bar はあなたのダウンロードのすべてを管理します">
+<!ENTITY downloadbarhelp.Launch "開く">
+<!ENTITY downloadbarhelp.Show "表示">
+<!ENTITY downloadbarhelp.Scan "スキャン">
+<!ENTITY downloadbarhelp.Rename "名前の変更">
+<!ENTITY downloadbarhelp.Checksum "Checksum">
+<!ENTITY downloadbarhelp.Pause "一時停止">
+<!ENTITY downloadbarhelp.Resume "再開">
+<!ENTITY downloadbarhelp.Cancel "キャンセル">
+<!ENTITY downloadbarhelp.Clean "消去">
+<!ENTITY downloadbarhelp.Delete "削除">
+<!ENTITY downloadbarhelp.description2sntc2 "そして、あなたの実行したダウンロードから統計情報を作成したり、前のセッションで実行したダウンロード履歴を保持したり、他にも様々な事ができます。ダウンロード管理拡張機能というだけでなく、あなたの生産生を促進するヘルプツールでもあるのです。">
+<!ENTITY downloadbarhelp.description3 "Download Status Bar はあなたのニーズやリクエストだけを元にデザインされており、この拡張機能の核にはあなたが期待する事すべてが詰まっています。そしてあなたのブラウザーやダウンロードのパフォーマンスを改善するために最新の Firefox 26 の機能を利用しています。Download Status Bar はこの拡張機能を斬新で強力なものにし続けようとするユーザー達によって管理・運営しているプロジェクトです。">
+<!ENTITY downloadbarhelp.description4 "Download Status Bar を手に入れて、ダウンロードのすべてをコントロールしましょう。">
+<!ENTITY downloadbarhelp.features "特徴">
+<!ENTITY downloadbarhelp.description5 "インターネットからファイルをダウンロードする時、Download Status Bar はダウンロードバー上に進行状況を示すアイテムを自動的に表示します。バーという名前の通り、ダウンロードバーとは通常 Firefox のアドオンバーの上部に表示されるバーです。Download Status Bar は使いやすく賢いので、ダウンロードバーはダウンロードが実行中のときのみ表示されます。もし表示させるダウンロードがない場合、ダウンロードバーは Web ページの表示領域を狭めないように自動的に非表示になります。そしてあなたが Web からファイルをダウンロードすると再び自動的に表示されるのです。">
+<!ENTITY downloadbarhelp.description6 "ダウンロードしていないときもダウンロードバーを表示させたい場合、下記のキーボードショートカットで表示する事ができます:">
+<!ENTITY downloadbarhelp.description7 "Windows: CTRL + ALT + D">
+<!ENTITY downloadbarhelp.description8b "Mac OS X: SHIFT + ALT + D">
+<!ENTITY downloadbarhelp.description9 "Linux: (CTRL/CMD) + ALT + D">
+<!ENTITY downloadbarhelp.description10 "上記のキーボードショートカットでダウンロードバーを隠す事もできます。つまり、キーボードショートカットはダウンロードバーを表示/非表示を切り替えることができるのです。">
+<!ENTITY downloadbarhelp.description10a "その他のオプションとして、Firefox の「ツール」メニュー内のメニュー項目 Download Status Bar でダウンロードバーの表示/非表示を切り替えることができます。">
+<!ENTITY downloadbarhelp.fwdysntfcn "このページは近日中にあなたの母国語に翻訳されます。ご容赦、ご理解のほどよろしくお願いいたします。">
+<!ENTITY downloadbarhelp.description11 "ダウンロードバーを開くと、バーの左端には「ダウンロード」ボタンが、右端には「消去」ボタンが表示されています。「ダウンロード」ボタンは Download Status Bar のコンテキストメニューを開くことができます。「消去」ボタンはマウスでクリックするとダウンロードバーから完了したダウンロードをすべて消去する際に使用します。">
+<!ENTITY downloadbarhelp.description12 "「ダウンロード」ボタンをクリックすると、下記に挙げる項目を備えたコンテキストメニューを表示します">
+<!ENTITY downloadbarhelp.options "オプション">
+<!ENTITY downloadbarhelp.description13 "この拡張機能をあなたのニーズに合わせてカスタマイズする事が可能なオプションウィンドウを開きます。">
+<!ENTITY downloadbarhelp.statistics "統計">
+<!ENTITY downloadbarhelp.description14 "以前のダウンロード行為の詳細とグラフを生成する統計情報ページを開きます。">
+<!ENTITY downloadbarhelp.showdownloadhistory "ダウンロードの履歴を表示">
+<!ENTITY downloadbarhelp.description15 "「履歴とブックマークの管理」を開きます。ダウンロードをリスト形式で参照したいとき用です。">
+<!ENTITY downloadbarhelp.opendownloadtab "ダウンロードタブを開く">
+<!ENTITY downloadbarhelp.description16 "ブラウザーのタブで既定の Firefox の履歴を開きます。">
+<!ENTITY downloadbarhelp.downloads "ダウンロード">
+<!ENTITY downloadbarhelp.description17 "このメニュー項目には、ダウンロードを一度に管理するための「すべてのダウンロードを一時停止」「すべてのダウンロードを再開」「すべてのダウンロードをキャンセル」「すべてのダウンロードを消去」オプションを備えています。">
+<!ENTITY downloadbarhelp.help "ヘルプ">
+<!ENTITY downloadbarhelp.description18 "Download Status Bar のヘルプページを開きます。ヘルプページにはこの拡張機能に関する詳細と有効な使い方が記載されています。">
+<!ENTITY downloadbarhelp.closedownloadbar "ダウンロードバーを閉じる">
+<!ENTITY downloadbarhelp.description19 "ダウンロードバーを閉じます。">
+<!ENTITY downloadbarhelp.description20 "Web からファイルをダウンロードする時、Download Status Bar はダウンロードアイテムを自動的にダウンロードバーに表示します。下記は Mozilla からダウンロードするソフトウェアの例です。リンクをクリックするとダウンロードが始まります。">
+<!ENTITY downloadbarhelp.description21 "各ダウンロードアイテムには下記の要素を持っています。">
+<!ENTITY downloadbarhelp.dwnldcn "ダウンロード アイコン">
+<!ENTITY downloadbarhelp.description22 "ダウンロードしているファイルの種類を示すアイコンです。アイコンの形状はあなたが使用している Firefox のテーマによって異なります。">
+<!ENTITY downloadbarhelp.flnm "ファイル名">
+<!ENTITY downloadbarhelp.description23 "ダウンロードしているファイルの名前です。もしファイル名がダウンロードアイテム内に収まりきらない場合、自動的にトリミングします。">
+<!ENTITY downloadbarhelp.prgrssctn "進行状況">
+<!ENTITY downloadbarhelp.description24 "進行状況には、ダウンロードの完了率を表す進行状況(％)と現在のダウンロード速度(秒速)を表す速度情報があります。オプションで進行状況に残り時間表示を追加する事も可能です。">
+<!ENTITY downloadbarhelp.description25 "ダウンロードアイテムを右クリックすると、下記で説明する機能や情報を得るためのコンテキストメニューを開きます。">
+<!ENTITY downloadbarhelp.description26 "ダウンロードしたファイルを実行または開きます。このオプションはダウンロードが完了した後に利用できます。">
+<!ENTITY downloadbarhelp.description27 "ダウンロードしたファイルが保存されているフォルダーを表示します。">
+<!ENTITY downloadbarhelp.description28 "「ダウンロードの履歴」ウィンドウを表示します。">
+<!ENTITY downloadbarhelp.description29 "あなたが指定したセキュリティソフトウェアでダウンロードしたファイルをスキャンします。もしソフトウェアを指定していない場合、このオプションはセキュリティソフトウェアの指定を促します。">
+<!ENTITY downloadbarhelp.description30 "Checksum ウィンドウを開き、ダウンロードしたファイルの MD5, MD2, SHA1, SHA256, SHA384, SHA512 の値を算出し比較します。">
+<!ENTITY downloadbarhelp.description31 "「名前の変更」ウィンドウを開き、ダウンロードしたファイル名の変更を促します。このオプションはダウンロードが完了した後に利用できます。">
+<!ENTITY downloadbarhelp.description32 "ダウンロードしたファイルをあなたのコンピューターから削除します。ファイルを削除する前に確認を促します。このオプションはダウンロードが完了した後に利用できます。">
+<!ENTITY downloadbarhelp.description33 "ダウンロードしたページを新しいタブで開きます。">
+<!ENTITY downloadbarhelp.description34 "ダウンロードした URL をクリップボードにコピーします。">
+<!ENTITY downloadbarhelp.description35 "実行中のダウンロードをキャンセルし、ダウンロードしたファイルをあなたのコンピューターから削除します。このオプションはダウンロードが進行中に利用できます。">
+<!ENTITY downloadbarhelp.description36 "実行中のダウンロードを一時停止します。">
+<!ENTITY downloadbarhelp.description37 "一時停止したダウンロードを再開します。">
+<!ENTITY downloadbarhelp.description38 "ダウンロードアイテムをダウンロードバーから消去します。">
+<!ENTITY downloadbarhelp.description39 "各ダウンロードアイテムを右クリックすることでダウンロードの情報ポップアップを開くことができます。ポップアップで表示する項目の詳細は下記になります:">
+<!ENTITY downloadbarhelp.description40 "ダウンロードファイルのソース URL です。ソースのリンクを左クリックするとブラウザーの新しいタブでソース URL を開きます。ソースのリンクを右クリックすると、ソース URL をコピーするためのコピーメニューを開きます。">
+<!ENTITY downloadbarhelp.description41 "あなたのコンピューター上に保存したダウンロード済みのファイルの保存場所です。保存先のリンクを左クリックすると、ダウンロードファイルの保存先を開きます。保存先のリンクを右クリックすると、保存したダウンロードファイルのパスをコピーするためのコピーメニューを開きます。">
+<!ENTITY downloadbarhelp.description42 "ダウンロード中アイテムの現在のダウンロード速度(KB/s)です。">
+<!ENTITY downloadbarhelp.description43 "完了したダウンロードの平均ダウンロード速度(KB/s)です。この情報はダウンロードが完了した後に利用できます。">
+<!ENTITY downloadbarhelp.description44 "ダウンロード完了までの進行状況の割合です。">
+<!ENTITY downloadbarhelp.description45 "ダウンロードが完了するまでの残り時間です。">
+<!ENTITY downloadbarhelp.description46 "ダウンロードが完了するまでに費やした時間です。この情報はダウンロードが完了した後に利用できます。">
+<!ENTITY downloadbarhelp.description47 "左側の数字は、現在のダウンロード済みのファイルサイズで、右側の数字が、ダウンロードが完了した場合のファイルサイズになります。">
+<!ENTITY downloadbarhelp.description48 "ディスク上にダウンロードしたファイルのサイズです。この情報はダウンロードが完了した後に利用できます。">
+<!ENTITY downloadbarhelp.description49 "ダウンロードしたファイルの MD5 ハッシュを計算します。この情報はダウンロードが完了した後に利用可能です。">
+<!ENTITY downloadbarhelp.description50 "情報ポップアップにはダウンロードした画像をサムネイル形式で表示するプレビュー機能もあります。プレビュー機能では、PNG, JPG, GIF そして BMP 形式ファイルをサポートしています。サムネイルをクリックすると、ダウンロードした画像をブラウザーの新しいタブで開きます。">
+<!ENTITY downloadbarhelp.description51 "ダウンロードアイテムをマウスオーバーすることで情報ツールチップを表示することもできます。">
+<!ENTITY downloadbarhelp.tip "ヒント">
+<!ENTITY downloadbarhelp.description52 "ダウンロードアイテムをダブルクリックすると、ダウンロードしたファイルを開きます。">
+<!ENTITY downloadbarhelp.description53 "ダウンロードバーをダブルクリックすると、完了したダウンロードをすべて消去します。">
+<!ENTITY downloadbarhelp.description54 "ダウンロードアイテムを中クリックするとダウンロードバーからダウンロードアイテムを消去します。">
+<!ENTITY downloadbarhelp.description55 "ダウンロードバーの空きスペースで左クリックするとコンテキストメニューを開きます。">
+<!ENTITY downloadbarhelp.description56 "オプションで Download Status Bar をカスタマイズすることができます。「ダウンロード」ボタンを右クリックして「オプション」メニューを選択することで、オプションを開くことができます。または、Firefox の「ツール」メニューから「アドオン」を選択して、「拡張機能」から Download Status Bar を探して「設定」ボタンをクリックするとオプションを開くことができます。利用可能なオプション項目の詳細は下記になります:">
+<!ENTITY downloadbarhelp.description57 "このオプションにチェックすると、コンテキストメニューの「開く」オプションや、ダウンロードアイテムをダブルクリックでファイルを開いた際に、ダウンロードバーからダウンロードアイテムを自動的に消去します。">
+<!ENTITY downloadbarhelp.description58 "このオプションにチェックすると、ダウンロードしたファイルの保存先を開いた後に、ダウンロードバーからダウンロードアイテムを自動的に消去します。">
+<!ENTITY downloadbarhelp.description59 "このオプションにチェックすると、ダウンロード完了後に自動的に保存先を開きます。">
+<!ENTITY downloadbarhelp.description60 "このオプションにチェックすると、ダウンロード開始時にダウンロード タブを自動的に開きます。">
+<!ENTITY downloadbarhelp.description61 "Download Status Bar は以前のセッションのダウンロード履歴を保持し、新しいセッションの開始時にダウンロードバーに履歴を表示します。もし、ダウンロードバーにダウンロード履歴を残したくないばあいは、このオプションをチェックすることで、Firefox の終了時に履歴からダウンロードアイテムを自動的に消去する事ができます。">
+<!ENTITY downloadbarhelp.description62 "ダウンロードアイテムを削除する際に、意図しない削除を防ぐために Download Status Bar が確認メッセージを表示します。削除の操作をスムーズにするために確認メッセージを表示させたくない場合は、このオプションのチェックをはずしてください。">
+<!ENTITY downloadbarhelp.description63 "このオプションをチェックすると、ダウンロードバーを、ダウンロード実行中は表示し、すべてのダウンロードの完了時に自動的に非表示にして、Web ページ領域を狭めないようにします。ダウンロードが自動的に非表示になるまでの時間を指定する事もできます。">
+<!ENTITY downloadbarhelp.description64 "あなたは、ダウンロードバー上に表示し続ける必要のないファイルの種類があると感じて、それらのファイルを一定時間経過後に自動的に消去したいと思っていませんか。この欄に消去したいファイル拡張子をカンマで区切って入力することができます。この欄に*を入力すると、すべてのファイルの種類を入力した事と同じになります。">
+<!ENTITY downloadbarhelp.description65 "このオプション欄で、ダウンロードしたファイルの自動スキャンを設定することができます。">
+<!ENTITY downloadbarhelp.description66 "あなたのコンピューターに保存されているセキュリティソフトウェアの場所になります。もし指定していない場合は、「選択」をクリックしてファイル選択ウィンドウを開き、ウィルススキャンプログラムを指定して下さい。">
+<!ENTITY downloadbarhelp.description67 "特定のファイルでは自動ウィルススキャンを省略したい場合、そのファイルの拡張子をカンマで区切って、この欄に入力してください。">
+<!ENTITY downloadbarhelp.description68 "ほとんどのセキュリティソフトウェアはウィルス スキャン用の追加引数を持っていないので、この欄は空のままにすることができます。もしあなたのセキュリティソフトウェアが追加引数を必要とする場合は、この欄に入力する事ができます。ダウンロードしたファイルの保存場所のプレースホルダーとして &#37;1 を使用する事ができます。">
+<!ENTITY downloadbarhelp.description69 "このオプションをチェックすると、ダウンロードが完了したときにあなたが指定したセキュリティソフトウェアでダウンロードファイルを自動的にスキャンします。">
+<!ENTITY downloadbarhelp.description70 "このオプション欄で、ダウンロード完了時のサウンド通知を設定することができます。">
+<!ENTITY downloadbarhelp.description71 "あなたのコンピューターに保存されている任意の通知サウンドの保存場所です。もし、まだ通知用のサウンドファイルを割り当てていない場合は、「選択」をクリックしてファイル選択ウィンドウを開いてください。通知サウンドとして割り当て可能な音楽ファイル形式は、 .ogg, .wav そして .mp3 ファイルです。既定のサウンドは Download Status Bar に内蔵されている通知サウンドになります。">
+<!ENTITY downloadbarhelp.description72 "現在の通知サウンドを聴く場合は、選択したサウンドファイルをプレビューするサウンドプレイヤーの再生ボタンをクリックしてください。">
+<!ENTITY downloadbarhelp.description73 "このオプションにチェックすると、ダウンロードが完了した時にサウンドで通知します。">
+<!ENTITY downloadbarhelp.description74 "「設定のリセット」ボタンをクリックすると、通知オプションの設定項目がリセットされます。">
+<!ENTITY downloadbarhelp.description75 "このタブ内のオプションで、 Download Status Bar のインターフェイスをカスタマイズすることができます。">
+<!ENTITY downloadbarhelp.description76 "このオプション欄のカラー ピッカーで、ダウンロードアイテムの外観を変更することができます。各項目の色は、インターフェイス要素に素晴らしい効果を与えるために、グラデーションベースになります。色の変更は即時に適応されます:">
+<!ENTITY downloadbarhelp.description77 "ダウンロードアイテムの背景色をカラーピッカーから選んでください。ダウンロードが完了した時に、ダウンロードアイテムの進行状況の色が背景色の上に重なるので、大容量のファイルのダウンロードを開始したことを色で分かるようにするときには背景色を変えてください。">
+<!ENTITY downloadbarhelp.description78 "アクティブなダウンロードの進行状況の色をカラー ピッカーから選んでください。">
+<!ENTITY downloadbarhelp.description79 "ダウンロードアイテムのファイル名と進行状況のテキストの色をカラー ピッカーから選んでください。">
+<!ENTITY downloadbarhelp.description80 "完了したダウンロードを示す色をカラー ピッカーから選んでください。">
+<!ENTITY downloadbarhelp.description81 "一時停止したダウンロードを示す色をカラー ピッカーから選んでください。">
+<!ENTITY downloadbarhelp.description82 "ダウンロードバーの背景色をカラー ピッカーから選んでください。">
+<!ENTITY downloadbarhelp.description83 "「設定のリセット」ボタンを押すと、色オプションの設定項目がリセットされます。">
+<!ENTITY downloadbarhelp.description84 "このオプショングループで、ダウンロード速度に合わせて異なる色を割り当てることができます。速度に合わせて色を割り当てた場合は、色オプションで設定した「ダウンロードの進行状況の色」は割り当てた速度の色に上書きされます。">
+<!ENTITY downloadbarhelp.description85 "このオプショングループで、 Download Status Bar のインターフェイスを変更することができます:">
+<!ENTITY downloadbarhelp.description86 "これが Download Status Bar の既定のインターフェイスです。このオプションを選択すると、ダウンロードアイテムはブラウザーの下部に設置されたダウンロードバー上に配置されます。">
+<!ENTITY downloadbarhelp.description87 "もしも他人からあなたのダウンロード プライバシーを守りたい場合、このオプションを選択することで、すべてのダウンロードアイテムをツールバーボタン上パネルに配置する事ができます。ツールバーボタンは既定ではアドオンバーに配置されます。もし、アドオンバーがないか、アドオンバーが非表示の場合、ツールバーボタンは Firefox のナビゲーションツールバー内に配置されます。ツールバーボタンの隣にはカウンターを配置しています。カウンターの左側の数字は進行中のダウンロード数を、右側の数字は完了したダウンロードの数を示しています。">
+<!ENTITY downloadbarhelp.description88 "このオプションのチェックボックスを切り替えることで、ダウンロードアイテム内に表示されている進行状況、ダウンロード速度や残り時間を表示/非表示することができます。">
+<!ENTITY downloadbarhelp.description89 "このオプショングループで、ダウンロードアイテムに表示される進行状況の項目の配置を調整することができます。「水平方向」を選択すると、進行状況、ダウンロード速度と残り時間を横方向に並べて表示し、「垂直方向」ではすべての進行状況の項目を縦方向に並べます。">
+<!ENTITY downloadbarhelp.description90 "このオプションで、ダウンロードアイテムの幅や高さを変更する事ができます:">
+<!ENTITY downloadbarhelp.description91 "この欄に数値を入力して、ダウンロードアイテムの幅を設定します。">
+<!ENTITY downloadbarhelp.description92 "この欄に数値を入力して、ダウンロードアイテムの高さを設定します。">
+<!ENTITY downloadbarhelp.description93 "この欄に数値を入力して、ダウンロードアイテムのファイル名のフォントサイズを設定します。">
+<!ENTITY downloadbarhelp.description94 "この欄に数値を入力して、ダウンロードアイテムの進行状況のフォント サイズを設定します。">
+<!ENTITY downloadbarhelp.description95 "このオプションにチェックを付けると、ダウンロードバーの「消去」ボタンを非表示にします。">
+<!ENTITY downloadbarhelp.description96 "このオプションにチェックを付けると、ダウンロードバーの「ダウンロード」ボタンを非表示にします。">
+<!ENTITY downloadbarhelp.imagecaption1 "ダウンロードアイテムを右クリックすると、ダウンロードを管理するためのコンテキストメニューを開きます。">
+<!ENTITY downloadbarhelp.imagecaption2 "ダウンロードをボタンパネル内に配置して、他の人からあなたのダウンロード プライバシーを守ることができます。">
+<!ENTITY downloadbarhelp.imagecaption3 "ダウンロードの統計を表示し、あなたが最もダウンロードしたファイルの種類とその数を知ることができます。">
+<!ENTITY downloadbarhelp.imagecaption4 "ダウンロードアイテムをクリックすると、ダウンロードの詳細情報が記載された情報ポップアップを開きます。">
+<!ENTITY downloadbarhelp.imagecaption5 "オプションウィンドウには、あなたのニーズに合わせてダウンロードをすべて管理できるオプション項目が備わっています。">
+<!ENTITY downloadbarhelp.babelzilla "もしもあなたの母国語で表示された Download Status Bar を使いたい場合、Babelzilla に登録して、遠慮無く Download Status Bar を翻訳してください。">
+<!ENTITY downloadbarhelp.mozillazine "Mozillazine フォーラムで Download Status Bar についてのより詳細なサポートを受けることが可能です:">

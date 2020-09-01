@@ -1,0 +1,5 @@
+<!ENTITY downloadbarstats.title "ダウンロードの統計">
+<!ENTITY downloadbarstats.nostats "表示する統計はありません!">
+<!ENTITY downloadbarstats.dwnldgrph "統計グラフを表示するにはファイルをダウンロードしてください!">
+<!ENTITY downloadbarstats.bybyts "ダウンロード量">
+<!ENTITY downloadbarstats.bycnt "ダウンロード数">

@@ -1,0 +1,41 @@
+<!ENTITY downloadbar.lnch "Deschide">
+<!ENTITY downloadbar.shwfl "Deschide dosarul de stocare">
+<!ENTITY downloadbar.shwmngr "Afișează toate descărcările">
+<!ENTITY downloadbar.cncl "Anulează">
+<!ENTITY downloadbar.pause "Suspendă">
+<!ENTITY downloadbar.strt "Pornește">
+<!ENTITY downloadbar.clr "Elimină elementul de descărcare">
+<!ENTITY downloadbar.clsbr "Ascunde bara">
+<!ENTITY downloadbar.clrlldwnlds "Elimină toate descărcările">
+<!ENTITY downloadbar.pslldwnlds "Suspendă toate descărcările">
+<!ENTITY downloadbar.rsmlldwnlds "Reia toate descărcările">
+<!ENTITY downloadbar.cncllldwnlds "Anulează toate descărcările">
+<!ENTITY downloadbar.dwnlds "Descărcări">
+<!ENTITY downloadbar.vrscn "Scanează împotriva virușilor">
+<!ENTITY downloadbar.dltfl "Șterge fișierul">
+<!ENTITY downloadbar.rnm "Redenumește fișierul">
+<!ENTITY downloadbar.clrll "Elimină toate descărcările">
+<!ENTITY downloadbar.pndwnldtb "Afișează descărcările într-o filă">
+<!ENTITY downloadbar.shwlldwnldshstry "Afișează toate descărcările">
+<!ENTITY downloadbar.gtdwnlpg "Mergi la pagina de descărcare">
+<!ENTITY downloadbar.cpydwnldlnk "Copiază legătura de descărcare">
+<!ENTITY downloadbar.ptns "Opțiuni">
+<!ENTITY downloadbar.src "Sursă">
+<!ENTITY downloadbar.trgt "Destinație">
+<!ENTITY downloadbar.crrntspd "Viteză curentă">
+<!ENTITY downloadbar.vrgspd "Viteză medie">
+<!ENTITY downloadbar.prgrs "Progres">
+<!ENTITY downloadbar.rmngtm "Timp rămas">
+<!ENTITY downloadbar.dwnldbyt "Descărcat">
+<!ENTITY downloadbar.flsz "Dimensiune fișier">
+<!ENTITY downloadbar.dwnldtm "Timp descărcare">
+<!ENTITY downloadbar.resume "Reia">
+<!ENTITY downloadbar.sttstcs "Statistici">
+<!ENTITY downloadbar.chksm "Verifică suma de control">
+<!ENTITY downloadbar.cpy "Copiază">
+<!ENTITY downloadbar.hlp "Ajutor">
+<!ENTITY downloadbar.md5hsh "Sumă de control MD5">
+<!ENTITY downloadbar.sendto "Trimite la">
+<!ENTITY downloadbar.desktopfolder "Desktop">
+<!ENTITY downloadbar.downloadsfolder "Dosarul „Descărcări”">
+<!ENTITY downloadbar.customfolder "Altă locație…">

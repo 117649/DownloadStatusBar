@@ -1,0 +1,130 @@
+<!ENTITY downloadbarhelp.description "Kui sulle meeldib, et sul on oma allalaadimiste üle täielik kontroll, siis on lisa &quot;Download Status Bar&quot; just sulle mõeldud.">
+<!ENTITY downloadbarhelp.onlnvlbl1 "See leht on veebis saadaval ka teistes keeltes.">
+<!ENTITY downloadbarhelp.onlnvlbl2 "Tõlgitud lehe avamiseks uuel kaardil klõpsa palun sobival lipul.">
+<!ENTITY downloadbarhelp.description2sntc1 "Download Status Bar haldab sinu allalaadimiste iga külge">
+<!ENTITY downloadbarhelp.Launch "Käivita">
+<!ENTITY downloadbarhelp.Show "Näita">
+<!ENTITY downloadbarhelp.Scan "Viirusekontroll">
+<!ENTITY downloadbarhelp.Rename "Muuda nime">
+<!ENTITY downloadbarhelp.Checksum "Kontrollsumma">
+<!ENTITY downloadbarhelp.Pause "Peata">
+<!ENTITY downloadbarhelp.Resume "Jätka">
+<!ENTITY downloadbarhelp.Cancel "Tühista">
+<!ENTITY downloadbarhelp.Clean "Eemalda">
+<!ENTITY downloadbarhelp.Delete "Kustuta">
+<!ENTITY downloadbarhelp.description2sntc2 "koostab sinu allalaadimistest statistika, jätab meelde sinu eelmiste seansside allalaadimiste ajaloo ja palju muud. See pole ainult allalaadimiste haldamise lisa, vaid ka abitööriist tootlikkuse suurendamiseks.">
+<!ENTITY downloadbarhelp.description3 "Download Status Bar on spetsiaalselt loodud sinu vajadustele ja taotlustele vastama ning kõik su ootused on pandud selle lisa keskmesse, kasutades uusimaid Firefoxi võimalusi, täiustamaks veebilehitseja ja allalaadimiste sooritust. Download Status Bar on projekt, mida juhivad ja haldavad kasutajad, seega on see värske ja võimas.">
+<!ENTITY downloadbarhelp.description4 "Paigalda lisa Download Status Bar, et saavutada oma allalaadimiste üle täielik kontroll.">
+<!ENTITY downloadbarhelp.features "Võimalused">
+<!ENTITY downloadbarhelp.description5 "Internetist faile alla laadides paneb Download Status Bar allalaadimiste ribale edenemise üksused. Nagu nimigi ütleb, asub allalaadimiste riba Firefoxi alumises osas reeglina lisade riba kohal. Kuna Download Status Bar on piisavalt kasutajasõbralik ja nutikas, on allalaadimiste riba nähtav ainult siis, kui mõni allalaadimine käib. Kui mingit allalaadimist ei ole, peidab allalaadimiste riba end automaatselt, et suurendada veebilehe ala. Ja seda näidatakse uuesti siis, kui sa hakkad mõnda faili alla laadima.">
+<!ENTITY downloadbarhelp.description6 "Aga kui sa tahad allalaadimiste riba näha ka siis, kui ühtki allalaadimist pole, võid kasutada allolevaid klaviatuuri kiirklahve:">
+<!ENTITY downloadbarhelp.description7 "Windows: CTRL + ALT + D">
+<!ENTITY downloadbarhelp.description8b "Mac OS X: SHIFT + ALT + D">
+<!ENTITY downloadbarhelp.description9 "Linux: (CTRL/CMD) + ALT + D">
+<!ENTITY downloadbarhelp.description10 "Allalaadimiste riba igal ajal peitmiseks saab kasutada ülalnimetatud klaviatuuri kiirklahve. Teisisõnu - need kiirklahvid lülitavad allalaadimiste riba sisse/välja.">
+<!ENTITY downloadbarhelp.description10a "Teise valikuna saab allalaadimiste riba lülitada Firefoxi Tööriistade menüü Download Status Bar menüüvaliku kaudu.">
+<!ENTITY downloadbarhelp.fwdysntfcn "See abileht lõpetatakse mõne päeva jooksul. Täname sind mõistmise ja kannatlikkuse eest.">
+<!ENTITY downloadbarhelp.description11 "Kui avad allalaadimiste riba, näed selle vasakus servas allalaadimiste nuppu ja paremas servas eemaldamise nuppu. Allalaadimiste nupp on Download Status Bari peamine nupp, millel klõpsates avaneb lisa kontekstimenüü. Eemaldamise nuppu kasutatakse kõikide valmis saanud allalaadimiste eemaldamiseks allalaadimiste ribalt.">
+<!ENTITY downloadbarhelp.description12 "Allalaadimiste nupul klõpsates avaneb lisa kontekstimenüü, mida kirjeldatakse allpool">
+<!ENTITY downloadbarhelp.options "Sätted">
+<!ENTITY downloadbarhelp.description13 "See menüüvalik avab laienduse sätete akna, kus saab laiendust oma vajadustele vastavaks kohandada.">
+<!ENTITY downloadbarhelp.statistics "Statistika">
+<!ENTITY downloadbarhelp.description14 "See menüüvalik avab statistika lehe, mis koostab sinu eelmiste allalaadimiste kohta statistika üksikasjad ja graafiku.">
+<!ENTITY downloadbarhelp.showdownloadhistory "Näita allalaadimiste ajalugu">
+<!ENTITY downloadbarhelp.description15 "See menüüvalik avab vaikimisi Firefoxi ajaloo kogumiku, kui peaksid tahtma oma allalaadimisi vaadata nimekirjana.">
+<!ENTITY downloadbarhelp.opendownloadtab "Ava allalaadimiste kaart">
+<!ENTITY downloadbarhelp.description16 "See menüüvalik avab Firefoxi vaikimisi Ajaloo kogumiku veebilehitseja uuel kaardil.">
+<!ENTITY downloadbarhelp.downloads "Allalaadimised">
+<!ENTITY downloadbarhelp.description17 "See menüü pakub valikuid Peata kõik allalaadimised, Jätka kõiki allalaadimisi, Tühista kõik allalaadimised ja Eemalda kõik allalaadimised, mis käivad kõikide allalaadimiste kohta korraga.">
+<!ENTITY downloadbarhelp.help "Abi">
+<!ENTITY downloadbarhelp.description18 "See menüüvalik avab Download Status Bari abilehe, kus on kirja pandud üksikasjad lisa kohta ja kuidas seda efektiivselt kasutada.">
+<!ENTITY downloadbarhelp.closedownloadbar "Sulge allalaadimiste riba">
+<!ENTITY downloadbarhelp.description19 "See menüüvalik sulgeb allalaadimiste riba.">
+<!ENTITY downloadbarhelp.description20 "Veebist faile alla laadides paneb Download Status Bar allalaaditavad failid automaatselt allalaadimiste ribale. Allpool on mõned Mozilla programmid. Allalaadimise alustamiseks klõpsa nendel.">
+<!ENTITY downloadbarhelp.description21 "Iga allalaadimise üksus sisaldab allolevaid elemente:">
+<!ENTITY downloadbarhelp.dwnldcn "Allalaadimise ikoon">
+<!ENTITY downloadbarhelp.description22 "Spetsiifiline ikoon, mis näitab allalaaditava faili tüüpi. See ikoon võib vastavalt kasutatavale Firefoxi teemale teistsugune välja näha.">
+<!ENTITY downloadbarhelp.flnm "Faili nimi">
+<!ENTITY downloadbarhelp.description23 "Allalaaditava faili nimi. Kui faili nimi on allalaadimise üksusesse mahtumiseks liiga pikk, siis seda automaatselt kärbitakse.">
+<!ENTITY downloadbarhelp.prgrssctn "Edenemise sektsioon">
+<!ENTITY downloadbarhelp.description24 "See sektsioon koosneb edenemise protsendist, mis näitab, mitu protsenti failist on alla laaditud, ja kiiruse infost, mis näitab praegust allalaadimise kiirust sekundi kohta. Sellesse sektsiooni saab sätete aknas lisada ka järelejäänud aja info.">
+<!ENTITY downloadbarhelp.description25 "Sa võid ka igal allalaadimise üksusel paremklõpsata, et avada kontekstimenüü rohkemate tegevuste ja infoga, mida on kirjeldatud allpool">
+<!ENTITY downloadbarhelp.description26 "Avab või käivitab allalaaditud faili. Seda valikut saab valida siis, kui allalaadimine on valmis saanud.">
+<!ENTITY downloadbarhelp.description27 "Näitab allalaaditavat faili seda sisaldavas kaustas.">
+<!ENTITY downloadbarhelp.description28 "Näitab allalaadimiste ajaloo akent.">
+<!ENTITY downloadbarhelp.description29 "Kontrollib allalaaditud failist viirusi sinu määratud turvatarkvaraga. Kui viirusetõrjetarkvara pole veel määratud, küsitakse sul seda teha.">
+<!ENTITY downloadbarhelp.description30 "Avab kontrollsumma akna, kus saab arvutada ja võrrelda allalaaditud faili MD5, MD2, SHA1, SHA256, SHA384 ja SHA512 räsiväärtusi.">
+<!ENTITY downloadbarhelp.description31 "Avab faili nime muutmise akna, kus saab oma allalaaditud faili nime muuta. Seda valikut saab valida siis, kui allalaadimine on valmis saanud.">
+<!ENTITY downloadbarhelp.description32 "Kustutab allalaaditud faili sinu arvutist. Sinult küsitakse enne faili kustutamise üritamist kinnitust. See valik on saadaval pärast allalaadimise valmis saamist.">
+<!ENTITY downloadbarhelp.description33 "Avab uuel kaardil allalaadimise lehe.">
+<!ENTITY downloadbarhelp.description34 "Kopeerib allalaadimise aadressi Lõikelauale.">
+<!ENTITY downloadbarhelp.description35 "Tühistab aktiivse allalaadimise ja kustutab allalaaditava faili sinu arvutist. See valik on saadaval pooleliolevatele allalaadimistele.">
+<!ENTITY downloadbarhelp.description36 "Peatab aktiivse allalaadimise.">
+<!ENTITY downloadbarhelp.description37 "Jätkab peatatud allalaadimist.">
+<!ENTITY downloadbarhelp.description38 "Eemaldab allalaadimise üksuse allalaadimiste ribalt.">
+<!ENTITY downloadbarhelp.description39 "Sa võid ka allalaadimise üksusel klõpsata, et avada vastava allalaadimise infoaken, mida on allpool üksikasjalikult kirjeldatud:">
+<!ENTITY downloadbarhelp.description40 "Allalaaditava faili allika aadress. Allika lingil klõpsates avaneb veebilehitseja uuel kaardil allika aadress. Allika lingil paremklõpsates avaneb kopeerimise menüü, mille kaudu saab allalaadimise allika aadressit kopeerida.">
+<!ENTITY downloadbarhelp.description41 "Asukoht sinu arvuti kõvakettal, kuhu allalaaditud fail on talletatud. Sihtkohal klõpsates avaneb allalaaditud faili sisaldav kaust. Sihtkohal paremklõpsates avaneb kopeerimise menüü, mille kaudu saab allalaaditud faili asukoha raja kopeerida.">
+<!ENTITY downloadbarhelp.description42 "Aktiivse allalaadimise praegune kiirus ühikutes KB/s.">
+<!ENTITY downloadbarhelp.description43 "Valmis allalaadimise keskmine allalaadimiskiirus ühikutes KB/s. Seda infot näidatakse pärast allalaadimise valmis saamist.">
+<!ENTITY downloadbarhelp.description44 "Mitu protsenti failist on allalaaditud.">
+<!ENTITY downloadbarhelp.description45 "Kui palju aega on jäänud allalaadimise valmis saamiseni.">
+<!ENTITY downloadbarhelp.description46 "Kui kaua aega kulus allalaadimise valmis saamiseks. Seda teavet näidatakse pärast allalaadimise valmis saamist.">
+<!ENTITY downloadbarhelp.description47 "Selle välja esimene pool näitab juba allalaaditud baitide arvu, teine pool allalaaditava faili baitide koguarvu (mitu baiti kokku on vaja alla laadida, et faili allalaadimine valmis saaks).">
+<!ENTITY downloadbarhelp.description48 "Allalaaditava faili suurus kettal. Seda infot näidatakse pärast allalaadimise valmis saamist.">
+<!ENTITY downloadbarhelp.description49 "Allalaaditud faili automaatselt arvutatud MD5 kontrollsumma. Seda infot näidatakse pärast allalaadimise valmis saamist.">
+<!ENTITY downloadbarhelp.description50 "Infoaken sisaldab ka eelvaate funktsiooni, mis näitab allalaaditud piltide pisipilte. Eelvaate funktsioon toetab failitüüpe PNG, JPG, GIF ja BMP. Eelvaate pisipildil klõpsates avaneb allalaaditud pilt veebilehitseja uuel kaardil.">
+<!ENTITY downloadbarhelp.description51 "Sa võid allalaadimise üksikasjadele ka kiire pilgu heita, minnes hiirega allalaadimise üksuse peale, mis kuvab infoakna.">
+<!ENTITY downloadbarhelp.tip "Vihje">
+<!ENTITY downloadbarhelp.description52 "Allalaadimise üksusel topeltklõpsamine käivitab allalaaditud faili.">
+<!ENTITY downloadbarhelp.description53 "Allalaadimiste ribal topeltklõpsamine automaatselt eemaldab kõik valmis allalaadimised.">
+<!ENTITY downloadbarhelp.description54 "Allalaadimise üksusel hiire keskmise nupuga klõpsamine eemaldab selle allalaadimiste ribalt.">
+<!ENTITY downloadbarhelp.description55 "Allalaadimiste riba tühjal alal paremklõpsamine avab laienduse kontekstimenüü.">
+<!ENTITY downloadbarhelp.description56 "Sätete aknas saad Download Status Bari kohandada oma vajadustele vastavaks. Sätete akna saad avada, kui paremklõpsad allalaadimiste nupul ja valid menüüst Sätted. Alternatiivina võid Download Status Bari sätete akna avamiseks valida Firefoxi menüüst Tööriistad alammenüü 'Download Status Bar' valiku Sätted:">
+<!ENTITY downloadbarhelp.description57 "Selle valiku märgistamisel eemaldatakse allalaadimise üksus allalaadimiste ribalt automaatselt pärast faili käivitamist (kas kontekstimenüü valiku Käivita kaudu või lihtsalt allalaadimise üksusel topeltklõpsates).">
+<!ENTITY downloadbarhelp.description58 "Selle valiku märgistamisel eemaldatakse allalaadimise üksus allalaadimiste ribalt automaatselt pärast allalaaditavat faili sisaldava kausta avamist.">
+<!ENTITY downloadbarhelp.description59 "Selle valiku märgistamisel avatakse pärast allalaadimise valmis saamist allalaaditud faili sisaldav kaust.">
+<!ENTITY downloadbarhelp.description60 "Selle valiku märgistamisel avatakse allalaadimiste kaart automaatselt pärast allalaadimise algust.">
+<!ENTITY downloadbarhelp.description61 "Download Status Bar säilitab sinu eelnevate seansside allalaadimiste ajaloo ja näitab neid uue seansi alates allalaadimiste ribal. Kui sa ei taha allalaadimiste ajalugu allalaadimiste ribal hoida, võid märgistada selle valiku, et Firefoxi sulgumisel kõik allalaadimiste üksused ajaloost eemaldada.">
+<!ENTITY downloadbarhelp.description62 "Enne alla laaditud faili kustutamist küsib Download Status Bar kinnitust, et ära hoida failide tahtmatu kustutamine. Kui sa ei taha kustutamise protsessi kiirendamise huvides seda teavitusakent näha, võid sellelt valikult märgistuse eemaldada.">
+<!ENTITY downloadbarhelp.description63 "Selle valiku märgistamisel näidatakse allalaadimiste riba pooleliolevate allalaadimiste olemasolu korral, kuid see peidetakse veebilehe ala suurendamiseks automaatselt, kui kõik allalaadimised valmis saavad. Sa võid määrata ka ajavahemiku, mille möödudes allalaadimiste riba automaatselt peidetakse.">
+<!ENTITY downloadbarhelp.description64 "Sa võid mõndasid failitüüpe allalaadimiste ribal hoidmiseks pidada tähtsusetuks ja tahad need ribalt eemaldada automaatselt pärast teatud aja möödumist. Sa võid need faililaiendid sisestada komaga eraldatult sellesse kasti. Kõikide failide automaatseks ribalt eemaldamiseks sisesta sellesse kasti tähemärk *.">
+<!ENTITY downloadbarhelp.description65 "Selle valikute grupi väljade väärtusi muutes saab allalaaditud failidest automaatselt viiruseid kontrollida.">
+<!ENTITY downloadbarhelp.description66 "Asukoht sinu arvutis, kus sinu eelistatud viirusetõrjetarkvara talletatud on. Kui sa pole juba viirusekontrolli programmi määranud, klõpsa selle tegemiseks nupul Leia, mis avab failivaliku akna.">
+<!ENTITY downloadbarhelp.description67 "Kui sa tahad kindlate failitüüpide jaoks automaatse viirusekontrolli keelata, sisesta nende faililaiendid komadega eraldatuna siia väljale.">
+<!ENTITY downloadbarhelp.description68 "Enamus turvatarkvarasid ei vaja viiruste kontrollimiseks lisaargumente, nii et selle välja võib tühjaks jätta. Kui sinu turvatarkvara vajab lisaargumente, võid need sisestada siia väljale. Allalaaditud faili asukoha kohahoidjana võib kasutada väärtust &#37;1.">
+<!ENTITY downloadbarhelp.description69 "Märgista see valik, et allalaaditud faile oma viirusetõrjetarkvaraga automaatselt kontrollida, kui allalaadimine valmis saab.">
+<!ENTITY downloadbarhelp.description70 "Selle valikute grupi väljade väärtusi muutes saad seadistada allalaadimiste valmissaamisel esitatavaid heliteavitusi.">
+<!ENTITY downloadbarhelp.description71 "Sinu eelistatud teavitusheli asukoht sinu arvutis. Kui sa pole veel teavituse helifaili määranud, siis klõpsa nupul Leia ja vali sobiv helifail. Teavitusheliks saab panna failitüüpe .ogg, .wav ja .mp3. Vaikimisi heli on teavitusheli, mis on lisasse Download Status Bar sisse ehitatud.">
+<!ENTITY downloadbarhelp.description72 "Kui tahad praegust teavitusheli kuulata, võid määratud helifaili kuulamiseks klõpsata heliesitaja esitamise nupul.">
+<!ENTITY downloadbarhelp.description73 "Närgista see valik, kui tahad allalaadimiste valmis saamisel kuulda heliteavitusi.">
+<!ENTITY downloadbarhelp.description74 "Nupu Taasta algseaded klõpsamisel taastatakse Teavituse valikute vaikimisi väärtused.">
+<!ENTITY downloadbarhelp.description75 "Sellel sätete kaardil olevate valikute kaudu saab kohandada Download Status Bari liidest (välimust).">
+<!ENTITY downloadbarhelp.description76 "Selle valikute grupi värvivalijate värve muutes saad muuta allalaadimise üksuste välimust. Iga värv põhineb värvuse sujuval üleminekul, et liidese elementidele tekiks ilus efekt. Iga värvimuudatuse rakendab Download Status Bar koheselt:">
+<!ENTITY downloadbarhelp.description77 "Vali vastavas värvivaliku aknas allalaadimise üksuse taustavärv. Kuna edenemise värv katab pärast allalaadimise valmissaamist allalaadimise üksuse taustavärvi, on soovitatav enne selle värvi muutmist alustada mõne suure faili allalaadimist, et oleks aega värvi sobivust kontrollida.">
+<!ENTITY downloadbarhelp.description78 "Vali vastavas värvivaliku aknas aktiivsete allalaadimiste edenemise riba värv.">
+<!ENTITY downloadbarhelp.description79 "Vali vastavas värvivaliku aknas allalaadimise üksusel näidatava failinime ja edenemise sektsiooni teksti värv.">
+<!ENTITY downloadbarhelp.description80 "Vali vastavas värvivaliku aknas valmis allalaadimiste värv, tähistamaks valmis saanud (allalaadimise lõpetanud) allalaadimisi.">
+<!ENTITY downloadbarhelp.description81 "Vali vastavas värvivaliku aknas peatatud allalaadimise värv, tähistamaks peatatud allalaadimisi.">
+<!ENTITY downloadbarhelp.description82 "Vali vastavas värvivaliku aknas allalaadimiste riba taustavärv.">
+<!ENTITY downloadbarhelp.description83 "Nupul Taasta algseaded klõpsates taastatakse kõigi Download Status Bari värvivalikute vaikimisi väärtused.">
+<!ENTITY downloadbarhelp.description84 "Selles valikute grupis saad erinevatele allalaadimiskiirustele määrata eri värvid. Allalaadimise kiiruse värvi määramisel asendatakse sellega edenemise riba värv, kui oled selle määranud.">
+<!ENTITY downloadbarhelp.description85 "Selle valikute grupi väljade kaudu saad muuta Download Status Bari liidest:">
+<!ENTITY downloadbarhelp.description86 "See on Download Status Bari vaikimisi allalaadimise liides. Kui märgistad selle valiku, siis pannakse allalaadimise üksused veebilehitseja alumises osas paiknevale allalaadimiste ribale.">
+<!ENTITY downloadbarhelp.description87 "Kui tahad oma allalaadimisi teiste inimeste silmade eest varjata, võid märgistada selle valiku, et näidata kõiki allalaadimisi tööriistariba nupu paneelil. Vaikimisi paigutatakse tööriistariba nupp lisade ribale. Kui lisade riba ei ole või on see hetkel peidetud, paigutatakse see nupp Firefoxi navigeerimisribale. Tööriistariba nupu kõrval on ka loendur. Loenduri esimene osa näitab aktiivsete (pooleliolevate) allalaadimiste arvu, teine osa näitab valmis saanud allalaadimiste arvu.">
+<!ENTITY downloadbarhelp.description88 "Selles valikute grupis olevate märkeruutude kaudu saad allalaadimiste üksustel olevate edenemise sektsiooni näitajaid Edenemise protsent, Kiirus ja Aega jäänud kas peita või näidata.">
+<!ENTITY downloadbarhelp.description89 "Selles valikute grupis olevate väljade väärtusi muutes saad muuta edenemise sektsiooni joondust. Valik Horisontaalne asetab näitajad Edenemise protsent, Kiirus ja Aega jäänud üksteise kõrvale, Vertikaalne paneb kõik edenemise elemendid üksteise alla.">
+<!ENTITY downloadbarhelp.description90 "Sa saad muuta allalaadimise üksuse laiust ja kõrgust, muutes selles valikute grupis olevate väljade väärtusi:">
+<!ENTITY downloadbarhelp.description91 "Sisesta sellesse kasti arv, kui lai peaks allalaadimise üksus olema.">
+<!ENTITY downloadbarhelp.description92 "Sisesta sellesse kasti arv, kui kõrge peaks allalaadimise üksus olema.">
+<!ENTITY downloadbarhelp.description93 "Sisesta sellesse kasti arv, kui suur peaks allalaadimise üksuse failinime tekst olema.">
+<!ENTITY downloadbarhelp.description94 "Sisesta sellesse kasti arv, kui suur peaks allalaadimise üksuse edenemise sektsiooni tekst olema.">
+<!ENTITY downloadbarhelp.description95 "Selle valiku märgistamine peidab allalaadimiste ribal eemaldamise nupu.">
+<!ENTITY downloadbarhelp.description96 "Selle valiku märgistamine peidab allalaadimiste ribal allalaadimise nupu.">
+<!ENTITY downloadbarhelp.imagecaption1 "Allalaadimise üksustel paremklõpsates näidatakse kontekstimenüüd, mille kaudu saab allalaadimisi hallata.">
+<!ENTITY downloadbarhelp.imagecaption2 "Sa võid oma allalaadimised panna nupu paneelile, et hoida oma allalaadimisi teiste inimeste silmade eest peidus.">
+<!ENTITY downloadbarhelp.imagecaption3 "Sa saad vaadata oma allalaadimiste statistikat ja näha, millist tüüpi faile ja kui palju sa alla oled laadinud.">
+<!ENTITY downloadbarhelp.imagecaption4 "Allalaadimise üksusel klõpsates avaneb infoaken, kus saab allalaadimise kohta täpsemat infot.">
+<!ENTITY downloadbarhelp.imagecaption5 "Sätete aken pakub valikuid, millega saad oma allalaadimised muuta oma soovidele vastavaks.">
+<!ENTITY downloadbarhelp.babelzilla "Kui soovid Download Status Bari oma keeles näha, palun tõlgi seda Babelzilla saidil.">
+<!ENTITY downloadbarhelp.mozillazine "Download Status Bari üksikasjalikumat kasutajatuge saab Mozillazine'i foorumis:">

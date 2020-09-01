@@ -1,0 +1,41 @@
+<!ENTITY downloadbar.lnch "Launch">
+<!ENTITY downloadbar.shwfl "Show File">
+<!ENTITY downloadbar.shwmngr "Show Manager">
+<!ENTITY downloadbar.cncl "Cancel">
+<!ENTITY downloadbar.pause "Pause">
+<!ENTITY downloadbar.strt "Start">
+<!ENTITY downloadbar.clr "Clear">
+<!ENTITY downloadbar.clsbr "Close Bar">
+<!ENTITY downloadbar.clrlldwnlds "Clear All Downloads">
+<!ENTITY downloadbar.pslldwnlds "Pause All Downloads">
+<!ENTITY downloadbar.rsmlldwnlds "Resume All Downloads">
+<!ENTITY downloadbar.cncllldwnlds "Cancel All Downloads">
+<!ENTITY downloadbar.dwnlds "Downloads">
+<!ENTITY downloadbar.vrscn "Virus Scan">
+<!ENTITY downloadbar.dltfl "Delete File">
+<!ENTITY downloadbar.rnm "Rename">
+<!ENTITY downloadbar.clrll "Clear All">
+<!ENTITY downloadbar.pndwnldtb "Open Download Tab">
+<!ENTITY downloadbar.shwlldwnldshstry "Show Download History">
+<!ENTITY downloadbar.gtdwnlpg "Go to Download Page">
+<!ENTITY downloadbar.cpydwnldlnk "Copy Download Link">
+<!ENTITY downloadbar.ptns "Options">
+<!ENTITY downloadbar.src "Source">
+<!ENTITY downloadbar.trgt "Target">
+<!ENTITY downloadbar.crrntspd "Current Speed">
+<!ENTITY downloadbar.vrgspd "Average Speed">
+<!ENTITY downloadbar.prgrs "Progress">
+<!ENTITY downloadbar.rmngtm "Remaining Time">
+<!ENTITY downloadbar.dwnldbyt "Downloaded">
+<!ENTITY downloadbar.flsz "File Size">
+<!ENTITY downloadbar.dwnldtm "Download Time">
+<!ENTITY downloadbar.resume "Resume">
+<!ENTITY downloadbar.sttstcs "Statistics">
+<!ENTITY downloadbar.chksm "Checksum">
+<!ENTITY downloadbar.cpy "Copy">
+<!ENTITY downloadbar.hlp "Help">
+<!ENTITY downloadbar.md5hsh "MD5 Hash">
+<!ENTITY downloadbar.sendto "Send to">
+<!ENTITY downloadbar.desktopfolder "Desktop">
+<!ENTITY downloadbar.downloadsfolder "Downloads">
+<!ENTITY downloadbar.customfolder "Custom">

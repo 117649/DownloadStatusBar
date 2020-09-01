@@ -1,0 +1,5 @@
+<!ENTITY downloadbarstats.title "下載統計">
+<!ENTITY downloadbarstats.nostats "沒有統計數據顯示！">
+<!ENTITY downloadbarstats.dwnldgrph "請下載檔案以取得統計圖表！">
+<!ENTITY downloadbarstats.bybyts "按 位元組">
+<!ENTITY downloadbarstats.bycnt "按 計算次數">
