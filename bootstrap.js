@@ -5,9 +5,16 @@ Components.utils.import("resource://gre/modules/Services.jsm");
 Components.utils.import("resource://gre/modules/Downloads.jsm");
 Components.utils.import("resource://gre/modules/DownloadUtils.jsm");			
 Components.utils.import("resource://gre/modules/osfile.jsm");
-Components.utils.import("resource://gre/modules/Task.jsm");
 Components.utils.import("resource://gre/modules/DownloadIntegration.jsm");
 Components.utils.import("resource://gre/modules/XPCOMUtils.jsm");
+Components.utils.import("resource://gre/modules/ComponentUtils.jsm");
+
+
+// ChromeUtils.defineModuleGetter(
+// 	this,
+// 	"ComponentUtils",
+// 	"resource://gre/modules/ComponentUtils.jsm"
+//   );
 
 function DownloadBarComponent() { 
 }
@@ -15,7 +22,7 @@ DownloadBarComponent.prototype = {
 	classID:Components.ID("{3291e159-f321-4a35-b5f0-1f750accd22d}"),
 	contractID:"@downloadbar.com/bs;1",
 	classDescription:"Download Bar Component",
-	QueryInterface: XPCOMUtils.generateQI([Components.interfaces.nsIObserver, Components.interfaces.nsISupportsWeakReference, Components.interfaces.nsISupports]),
+	QueryInterface: ChromeUtils.generateQI([Components.interfaces.nsIObserver, Components.interfaces.nsISupportsWeakReference, Components.interfaces.nsISupports]),
 	get wrappedJSObject(){return(this);},
 	onDownloadAdded:function(download,isDownloadPrivate){
 
@@ -116,7 +123,7 @@ DownloadBarComponent.prototype = {
 				document.getElementById("downloadbar-ddnbr").hidden=false;								
 			}
 			
-			let stck=document.createElement("stack");
+			let stck=document.createXULElement("stack");
 			stck.setAttribute("id","downloadbar-stack-"+dlid);
 			stck.setAttribute("class","downloadbar-dwnldtmstck");
 			//stck.setAttribute("maxwidth","150");
@@ -140,7 +147,7 @@ DownloadBarComponent.prototype = {
 			stck.addEventListener("dblclick",DownloadBar.stckdbclck,false);
 			stck.addEventListener("click",DownloadBar.stckclck,false);
 			
-			let hbx=document.createElement("hbox");
+			let hbx=document.createXULElement("hbox");
 			hbx.setAttribute("id","downloadbar-hbox-"+dlid);
 			hbx.setAttribute("flex","1");
 			hbx.setAttribute("align","stretch");
@@ -151,15 +158,15 @@ DownloadBarComponent.prototype = {
 			else hbx.setAttribute("style","background-image:linear-gradient(to bottom, "+convert2RGBA(dpclr,0.59)+" 0%, "+convert2RGBA(dpclr,1)+" 100%) !important;background-size:0% auto;background-repeat:no-repeat;");
 			
 			
-			let vbx=document.createElement("hbox");
+			let vbx=document.createXULElement("hbox");
 			vbx.setAttribute("id","downloadbar-vbox-"+dlid);
 			vbx.setAttribute("class","downloadbar-dwnldtmhbx");
 			vbx.setAttribute("align","center");
-			let i=document.createElement("image");
+			let i=document.createXULElement("image");
 			i.setAttribute("src","moz-icon://"+targetFile.path+"?size=16");						
 			i.setAttribute("width","16");						
 			i.setAttribute("height","16");						
-			let lbl=document.createElement("label");
+			let lbl=document.createXULElement("label");
 			lbl.setAttribute("id","downloadbar-label-"+dlid);
 			lbl.setAttribute("value",basename + " - 0KB - 100%");
 			lbl.setAttribute("crop","end");							
@@ -168,19 +175,19 @@ DownloadBarComponent.prototype = {
 			if(brnch.getIntPref("extensions.downloadbar.filenamefontsize")!=0) lbl.style.setProperty("font-size", brnch.getIntPref("extensions.downloadbar.filenamefontsize")+"px", "important");								
 											
 			
-			let lbl2=document.createElement("label");
+			let lbl2=document.createXULElement("label");
 			lbl2.setAttribute("id","downloadbar-lbl-pgrss-"+dlid);
 			lbl2.setAttribute("value","");
 			lbl2.setAttribute("style","margin:0;");
 			lbl2.setAttribute("hidden",!brnch.getBoolPref("extensions.downloadbar.showprogressnotification"));
 			
-			let lbl3=document.createElement("label");
+			let lbl3=document.createXULElement("label");
 			lbl3.setAttribute("id","downloadbar-lbl-speed-"+dlid);
 			lbl3.setAttribute("value","");
 			lbl3.setAttribute("style","margin:0;");
 			lbl3.setAttribute("hidden",!brnch.getBoolPref("extensions.downloadbar.showspeednotification"));							
 			
-			let lbl4=document.createElement("label");
+			let lbl4=document.createXULElement("label");
 			lbl4.setAttribute("id","downloadbar-lbl-rmngtm-"+dlid);
 			lbl4.setAttribute("value","");
 			lbl4.setAttribute("style","margin:0;");
@@ -190,7 +197,7 @@ DownloadBarComponent.prototype = {
 
 			if(brnch.getCharPref("extensions.downloadbar.progressnotificationalignment")=="horizontal") {
 
-				ntfctnwnppr=document.createElement("box");
+				ntfctnwnppr=document.createXULElement("box");
 				ntfctnwnppr.setAttribute("id","downloadbar-ntfctnwrppr-"+dlid);
 				ntfctnwnppr.setAttribute("orient","horizontal");
 				if(brnch.getIntPref("extensions.downloadbar.progressfontsize")!=0) ntfctnwnppr.style.setProperty("font-size", brnch.getIntPref("extensions.downloadbar.progressfontsize")+"px", "important");
@@ -199,7 +206,7 @@ DownloadBarComponent.prototype = {
 			
 			else {
 			
-				ntfctnwnppr=document.createElement("box");
+				ntfctnwnppr=document.createXULElement("box");
 				ntfctnwnppr.setAttribute("id","downloadbar-ntfctnwrppr-"+dlid);			
 				ntfctnwnppr.setAttribute("orient","vertical");
 				if(brnch.getIntPref("extensions.downloadbar.progressfontsize")!=0) ntfctnwnppr.style.setProperty("font-size", brnch.getIntPref("extensions.downloadbar.progressfontsize")+"px", "important");							
@@ -679,14 +686,14 @@ DownloadBarComponent.prototype = {
  					
 					timer.initWithCallback({ 
 						
-						notify: function(aTimer) {
+						notify: async function(aTimer) {
 						
-							Task.spawn(function () {
+							try {
 								
-								let list = yield Downloads.getList(Downloads.ALL);
-								yield list.remove(download);			
+								let list = await Downloads.getList(Downloads.ALL);
+								await list.remove(download);			
 								
-							}).then(null, Components.utils.reportError);
+							}catch(e){Components.utils.reportError;}
 
 							that.timer.splice(that.timer.indexOf(timer), 1);
 						
@@ -1334,29 +1341,30 @@ DownloadBarComponent.prototype = {
 	},
 	public_view:null,
 	private_view:null,
-	rgstrVw:function(){
+	rgstrVw:async function(){
 		if(this.ff26above) {
 			Components.utils.import("resource://gre/modules/Downloads.jsm");
 			Components.utils.import("resource://gre/modules/DownloadUtils.jsm");			
 			Components.utils.import("resource://gre/modules/osfile.jsm");
-			Components.utils.import("resource://gre/modules/Task.jsm");
+
 			var that=this;
-			Task.spawn(function () {
-				let public_list = yield Downloads.getList(Downloads.PUBLIC);
+			try {
+				let public_list = await Downloads.getList(Downloads.PUBLIC);
 				that.public_view = {
 					onDownloadAdded: download => that.onDownloadAdded(download,false),
 					onDownloadChanged: download => that.onDownloadChanged(download,false),
 					onDownloadRemoved: download => that.onDownloadRemoved(download,false)
 				};
-				yield public_list.addView(that.public_view);
-				let private_list = yield Downloads.getList(Downloads.PRIVATE);
+				await public_list.addView(that.public_view);
+				let private_list = await Downloads.getList(Downloads.PRIVATE);
 				that.private_view = {
 					onDownloadAdded: download => that.onDownloadAdded(download,true),
 					onDownloadChanged: download => that.onDownloadChanged(download,true),
 					onDownloadRemoved: download => that.onDownloadRemoved(download,true)
 				};
-				yield private_list.addView(that.private_view);
-			}).then(null, Components.utils.reportError);		
+				await private_list.addView(that.private_view);
+			}
+			catch(e) {Components.utils.reportError;}		
 		}
 		else {
 			var dm = Components.classes["@mozilla.org/download-manager;1"].getService(Components.interfaces.nsIDownloadManager);
@@ -1672,8 +1680,8 @@ DownloadBarComponent.prototype = {
 	windowtype:"navigator:browser"
 }
 
-if (XPCOMUtils.generateNSGetFactory)
-	var NSGetFactory = XPCOMUtils.generateNSGetFactory([DownloadBarComponent]);
+if (ComponentUtils.generateNSGetFactory)
+	var NSGetFactory = ComponentUtils.generateNSGetFactory([DownloadBarComponent]);
 
 (function(){
 	var registrar = Components.manager.QueryInterface(Components.interfaces.nsIComponentRegistrar)
@@ -1866,8 +1874,8 @@ var DownloadBar = {
 			let oldkyst=document.getElementById("downloadbar-tgglky").parentNode;
 			oldkyst.parentNode.removeChild(oldkyst);
 			
-			let kyst = document.createElement("keyset");
-			let ky = document.createElement("key");
+			let kyst = document.createXULElement("keyset");
+			let ky = document.createXULElement("key");
 			ky.setAttribute("id","downloadbar-tgglky");
 			ky.setAttribute("modifiers", "shift alt");				
 			ky.setAttribute("key", brnch.getCharPref("extensions.downloadbar.keyshortcut").toUpperCase());
@@ -1883,7 +1891,7 @@ var DownloadBar = {
 		let document=event.currentTarget.ownerDocument;	
 		document.getElementById('downloadsbar-downnloads-menu').openPopup(document.getElementById('downloadsbar-mn'), 'before_start', 0, 0, false, false);
 	},
-	showfile:function(event){
+	showfile:async function(event){
 		let document=event.currentTarget.ownerDocument;
 		let s=DownloadBar.getStack(document.popupNode);
 		if(DownloadBar.ff26above){
@@ -1903,10 +1911,10 @@ var DownloadBar = {
 			let brnch=Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
 			if(brnch.getBoolPref("extensions.downloadbar.clearaftershowfile")){
 				if(DownloadBar.ff26above){
-					Task.spawn(function () {
-							let list = yield Downloads.getList(Downloads.ALL);
-							yield list.remove(s.dl);			
-					}).then(null, Components.utils.reportError);					
+					try {
+							let list = await Downloads.getList(Downloads.ALL);
+							await list.remove(s.dl);			
+					}catch(e){Components.utils.reportError;}				
 				}
 				else {
 					var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"]
@@ -1952,7 +1960,7 @@ var DownloadBar = {
 			}
 		}
 	},
-	launch:function(event){
+	launch:async function(event){
 		let document=event.currentTarget.ownerDocument;
 		if(DownloadBar.getStack(document.popupNode).getAttribute("downcompleted")=="true") {
 			let s=DownloadBar.getStack(document.popupNode);
@@ -1972,10 +1980,10 @@ var DownloadBar = {
 			let brnch=Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
 			if(brnch.getBoolPref("extensions.downloadbar.clearafterlaunch")){
 				if(DownloadBar.ff26above){
-					Task.spawn(function () {
-							let list = yield Downloads.getList(Downloads.ALL);
-							yield list.remove(s.dl);			
-					}).then(null, Components.utils.reportError);					
+					try {
+							let list = await Downloads.getList(Downloads.ALL);
+							await list.remove(s.dl);			
+					}catch(e){Components.utils.reportError;}					
 				}
 				else {
 					var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"]
@@ -2001,7 +2009,7 @@ var DownloadBar = {
 			}
 		}
 	},
-	start:function(event){
+	start:async function(event){
 		let document=event.currentTarget.ownerDocument;
 		let window=document.defaultView;
 		
@@ -2010,9 +2018,9 @@ var DownloadBar = {
 		let s=DownloadBar.getStack(document.popupNode);
 		
 		if(DownloadBar.ff26above){
-			Task.spawn(function () {
+			try {
 
-				let list = yield Downloads.getList(Downloads.ALL);
+				let list = await Downloads.getList(Downloads.ALL);
 				let dwnldlist=list._downloads;
 
 				for(var j=0;j<dwnldlist.length;j++){			
@@ -2020,7 +2028,7 @@ var DownloadBar = {
 					if(dwnldlist[j].target.path==s.dl.target.path) {
 					
 						let download=dwnldlist[j];
-						yield download.start();
+						await download.start();
 						
 						var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"]
 										   .getService(Components.interfaces.nsIWindowMediator);
@@ -2040,7 +2048,7 @@ var DownloadBar = {
 					}
 				}
 
-			}).then(null, Components.utils.reportError);	
+			}catch(e) {Components.utils.reportError;}	
 		}
 		else{
 		
@@ -2063,7 +2071,7 @@ var DownloadBar = {
 			
 		}
 	},
-	pause:function(event){
+	pause:async function(event){
 		let document=event.currentTarget.ownerDocument;
 		let window=document.defaultView;
 		
@@ -2074,9 +2082,9 @@ var DownloadBar = {
 			let s=DownloadBar.getStack(document.popupNode);
 	
 			if(DownloadBar.ff26above){
-				Task.spawn(function () {
+				try {
 
-					let list = yield Downloads.getList(Downloads.ALL);
+					let list = await Downloads.getList(Downloads.ALL);
 					let dwnldlist=list._downloads;
 
 					for(var j=0;j<dwnldlist.length;j++){			
@@ -2084,7 +2092,7 @@ var DownloadBar = {
 						if(dwnldlist[j].target.path==s.dl.target.path) {
 						
 							let download=dwnldlist[j];
-							yield download.cancel();
+							await download.cancel();
 		
 							var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"]
 											   .getService(Components.interfaces.nsIWindowMediator);
@@ -2112,7 +2120,7 @@ var DownloadBar = {
 						}
 					}
 
-				}).then(null, Components.utils.reportError);			
+				}catch(e) {Components.utils.reportError;}			
 			}
 			else{
 			
@@ -2144,7 +2152,7 @@ var DownloadBar = {
 			}
 		}		
 	},
-	pauseall:function(){
+	pauseall:async function(){
 		/*let uiid=DownloadBar.gtuiid();
 		let stcks=document.getElementById(uiid).getElementsByTagName("stack");		
 		for(var i=0;i<stcks.length;i++){
@@ -2167,9 +2175,9 @@ var DownloadBar = {
 					
 					if(DownloadBar.ff26above){
 					
-						Task.spawn(function () {
+						try {
 
-							let list = yield Downloads.getList(Downloads.ALL);
+							let list = await Downloads.getList(Downloads.ALL);
 							let dwnldlist=list._downloads;
 
 							for(var j=0;j<dwnldlist.length;j++){			
@@ -2177,7 +2185,7 @@ var DownloadBar = {
 								if(dwnldlist[j].target.path==s.dl.target.path) {
 								
 									let download=dwnldlist[j];
-									yield download.cancel();
+									await download.cancel();
 									
 									let sid=s.id;
 									s.setAttribute("paused","true");
@@ -2192,7 +2200,7 @@ var DownloadBar = {
 								}
 							}
 
-						}).then(null, Components.utils.reportError);				
+						}catch(e) {Components.utils.reportError;}				
 					
 					}
 					else {
@@ -2214,7 +2222,7 @@ var DownloadBar = {
 			}	
 		}		
 	},
-	resumeall:function(){
+	resumeall:async function(){
 		/*let uiid=DownloadBar.gtuiid();
 		let stcks=document.getElementById(uiid).getElementsByTagName("stack");		
 		for(var i=0;i<stcks.length;i++){
@@ -2236,9 +2244,9 @@ var DownloadBar = {
 					
 					if(DownloadBar.ff26above){
 					
-						Task.spawn(function () {
+						try {
 
-							let list = yield Downloads.getList(Downloads.ALL);
+							let list = await Downloads.getList(Downloads.ALL);
 							let dwnldlist=list._downloads;
 
 							for(var j=0;j<dwnldlist.length;j++){			
@@ -2249,12 +2257,12 @@ var DownloadBar = {
 									s.setAttribute("paused","false");								
 									
 									let download=dwnldlist[j];
-									yield download.start();								
+									await download.start();								
 
 								}
 							}
 
-						}).then(null, Components.utils.reportError);
+						}catch(e) {Components.utils.reportError;}
 						
 					}
 					else {
@@ -2270,7 +2278,7 @@ var DownloadBar = {
 			}	
 		}		
 	},
-	cancelall:function(event){
+	cancelall:async function(event){
 		let document=event.currentTarget.ownerDocument;
 		let window=document.defaultView;
 		
@@ -2285,9 +2293,9 @@ var DownloadBar = {
 
 				if(DownloadBar.ff26above){
 				
-					Task.spawn(function () {
+					try {
 
-						let list = yield Downloads.getList(Downloads.ALL);
+						let list = await Downloads.getList(Downloads.ALL);
 						let dwnldlist=list._downloads;
 
 						for(var j=0;j<dwnldlist.length;j++){			
@@ -2295,13 +2303,13 @@ var DownloadBar = {
 							if(dwnldlist[j].target.path==s.dl.target.path) {
 							
 								let download=dwnldlist[j];
-								yield list.remove(download);
-								yield download.finalize(true);
+								await list.remove(download);
+								await download.finalize(true);
 
 							}
 						}
 
-					}).then(null, Components.utils.reportError);
+					}catch(e) {Components.utils.reportError;}
 					
 				}
 				else{
@@ -2341,7 +2349,7 @@ var DownloadBar = {
 			}
 		}		
 	},
-	cancel:function(event){
+	cancel:async function(event){
 		let document=event.currentTarget.ownerDocument;
 		let window=document.defaultView;
 		
@@ -2352,17 +2360,17 @@ var DownloadBar = {
 			let s=DownloadBar.getStack(document.popupNode);
 			
 			if(DownloadBar.ff26above){
-				Task.spawn(function () {
+				try {
 
-					let list = yield Downloads.getList(Downloads.ALL);
+					let list = await Downloads.getList(Downloads.ALL);
 					let dwnldlist=list._downloads;
 
 					for(var j=0;j<dwnldlist.length;j++){			
 					
 						if(dwnldlist[j].target.path==s.dl.target.path) {
 							let download=dwnldlist[j];
-							yield list.remove(download);
-							yield download.finalize(true);
+							await list.remove(download);
+							await download.finalize(true);
 							return;
 						}
 						
@@ -2393,7 +2401,7 @@ var DownloadBar = {
 					}					
 					
 					
-				}).then(null, Components.utils.reportError);				
+				}catch(e) {Components.utils.reportError;}				
 			}
 			else {
 			
@@ -2447,7 +2455,7 @@ var DownloadBar = {
 		}
 		return d;
 	},
-	clear:function(event){
+	clear:async function(event){
 		let document=event.currentTarget.ownerDocument;
 		let window=document.defaultView;
 		
@@ -2457,17 +2465,17 @@ var DownloadBar = {
 			let s=DownloadBar.getStack(document.popupNode);
 			let that=DownloadBar;
 			
-			Task.spawn(function () {
+			try {
 
 				if(that.ff26above){
-					let list = yield Downloads.getList(Downloads.ALL);
+					let list = await Downloads.getList(Downloads.ALL);
 					let dwnldlist=list._downloads;
 					
 					for(var j=0;j<dwnldlist.length;j++){			
 					
 						if(dwnldlist[j].target.path==s.dl.target.path) {
 							let download=dwnldlist[j];
-							yield list.remove(download);
+							await list.remove(download);
 							return;
 						}
 						
@@ -2498,11 +2506,11 @@ var DownloadBar = {
 					}			
 				}				
 				
-			}).then(null, Components.utils.reportError);
+			}catch(e) {Components.utils.reportError;}
 			
 		}
 	},
-	clearall:function(event){
+	clearall:async function(event){
 		let document=event.currentTarget.ownerDocument;
 		let window=document.defaultView;
 	
@@ -2514,17 +2522,17 @@ var DownloadBar = {
 				let s=stcks[i];
 				let that=DownloadBar;
 				
-				Task.spawn(function () {
+				try {
 
 					if(that.ff26above){
-						let list = yield Downloads.getList(Downloads.ALL);
+						let list = await Downloads.getList(Downloads.ALL);
 						let dwnldlist=list._downloads;
 						
 						for(var j=0;j<dwnldlist.length;j++){			
 						
 							if(dwnldlist[j].target.path==s.dl.target.path) {
 								let download=dwnldlist[j];
-								yield list.remove(download);
+								await list.remove(download);
 								return;
 							}
 							
@@ -2555,7 +2563,7 @@ var DownloadBar = {
 						}			
 					}				
 					
-				}).then(null, Components.utils.reportError);
+				}catch(e) {Components.utils.reportError;}
 				
 			}
 			
@@ -2964,7 +2972,7 @@ var DownloadBar = {
 			document.getElementById("downloadsbar-downnloads-menu").openPopupAtScreen(event.screenX, event.screenY, true)
 		}		
 	},	
-	dltfl:function(event){
+	dltfl:async function(event){
 		let document=event.currentTarget.ownerDocument;
 		let window=document.defaultView;
 	
@@ -2999,17 +3007,17 @@ var DownloadBar = {
 
 		let that=DownloadBar;
 		
-		Task.spawn(function () {
+		try {
 
 			if(that.ff26above){
-				let list = yield Downloads.getList(Downloads.ALL);
+				let list = await Downloads.getList(Downloads.ALL);
 				let dwnldlist=list._downloads;
 				
 				for(var j=0;j<dwnldlist.length;j++){			
 				
 					if(dwnldlist[j].target.path==s.dl.target.path) {
 						let download=dwnldlist[j];
-						yield list.remove(download);
+						await list.remove(download);
 						return;
 					}
 					
@@ -3040,7 +3048,7 @@ var DownloadBar = {
 				}			
 			}				
 			
-		}).then(null, Components.utils.reportError);
+		}catch(e) {Components.utils.reportError;}
 			
 	},
 	onRenameAccept:function(s,filename){
@@ -3242,7 +3250,7 @@ var DownloadBar = {
 			}			
 		}	
 	},
-	stckdbclck:function(event){
+	stckdbclck:async function(event){
 		let document=event.currentTarget.ownerDocument;
 		let window=document.defaultView;		
 		let brnch=Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
@@ -3273,10 +3281,10 @@ var DownloadBar = {
 				}
 				if(brnch.getBoolPref("extensions.downloadbar.clearafterlaunch")){
 					if(DownloadBar.ff26above){
-						Task.spawn(function () {
-								let list = yield Downloads.getList(Downloads.ALL);
-								yield list.remove(s.dl);			
-						}).then(null, Components.utils.reportError);					
+						try {
+								let list = await Downloads.getList(Downloads.ALL);
+								await list.remove(s.dl);			
+						}catch(e) {Components.utils.reportError;}					
 					}
 					else {
 						var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"]
@@ -3323,10 +3331,10 @@ var DownloadBar = {
 			if(s.getAttribute("downcompleted")=="true") {
 				if(brnch.getBoolPref("extensions.downloadbar.clearaftershowfile")){
 					if(DownloadBar.ff26above){
-						Task.spawn(function () {
-								let list = yield Downloads.getList(Downloads.ALL);
-								yield list.remove(s.dl);			
-						}).then(null, Components.utils.reportError);					
+						try {
+								let list = await Downloads.getList(Downloads.ALL);
+								await list.remove(s.dl);			
+						}catch(e) {Components.utils.reportError;}					
 					}
 					else {
 						var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"]
@@ -3369,7 +3377,7 @@ var DownloadBar = {
 		let basename=OS.Path.basename(dl.target.path);
 		let dlid=hstryitem.id;
 
-		let stck=document.createElement("stack");
+		let stck=document.createXULElement("stack");
 		stck.setAttribute("id","downloadbar-stack-"+dlid);
 		stck.setAttribute("class","downloadbar-dwnldtmstck");
 		//stck.setAttribute("maxwidth","150");
@@ -3393,7 +3401,7 @@ var DownloadBar = {
 		stck.addEventListener("dblclick",DownloadBar.stckdbclck,false);		
 		stck.addEventListener("click",DownloadBar.stckclck,false);
 		
-		let hbx=document.createElement("hbox");
+		let hbx=document.createXULElement("hbox");
 		hbx.setAttribute("id","downloadbar-hbox-"+dlid);
 		hbx.setAttribute("flex","1");
 		hbx.setAttribute("align","stretch");
@@ -3404,15 +3412,15 @@ var DownloadBar = {
 		else hbx.setAttribute("style","background-image:linear-gradient(to bottom, "+ DownloadBar.convert2RGBA(dpclr,0.59) +" 0%, "+ DownloadBar.convert2RGBA(dpclr,1) +" 100%) !important;background-size:0% auto;background-repeat:no-repeat;");
 		
 		
-		let vbx=document.createElement("hbox");
+		let vbx=document.createXULElement("hbox");
 		vbx.setAttribute("id","downloadbar-vbox-"+dlid);
 		vbx.setAttribute("class","downloadbar-dwnldtmhbx");
 		vbx.setAttribute("align","center");
-		let i=document.createElement("image");
+		let i=document.createXULElement("image");
 		i.setAttribute("src","moz-icon://"+dl.target.path+"?size=16");						
 		i.setAttribute("width","16");						
 		i.setAttribute("height","16");						
-		let lbl=document.createElement("label");
+		let lbl=document.createXULElement("label");
 		lbl.setAttribute("id","downloadbar-label-"+dlid);
 		lbl.setAttribute("value",basename + " - 0KB - 100%");
 		lbl.setAttribute("crop","end");							
@@ -3420,17 +3428,17 @@ var DownloadBar = {
 		lbl.setAttribute("style","margin-right:0;");
 		if(brnch.getIntPref("extensions.downloadbar.filenamefontsize")!=0) lbl.style.setProperty("font-size", brnch.getIntPref("extensions.downloadbar.filenamefontsize")+"px", "important");			
 		
-		let lbl2=document.createElement("label");
+		let lbl2=document.createXULElement("label");
 		lbl2.setAttribute("id","downloadbar-lbl-pgrss-"+dlid);
 		lbl2.setAttribute("value","");
 		lbl2.setAttribute("style","margin:0;");
 		
-		let lbl3=document.createElement("label");
+		let lbl3=document.createXULElement("label");
 		lbl3.setAttribute("id","downloadbar-lbl-speed-"+dlid);
 		lbl3.setAttribute("value","");
 		lbl3.setAttribute("style","margin:0;");								
 		
-		let lbl4=document.createElement("label");
+		let lbl4=document.createXULElement("label");
 		lbl4.setAttribute("id","downloadbar-lbl-rmngtm-"+dlid);
 		lbl4.setAttribute("value","");
 		lbl4.setAttribute("style","margin:0;");
@@ -3439,7 +3447,7 @@ var DownloadBar = {
 
 		if(brnch.getCharPref("extensions.downloadbar.progressnotificationalignment")=="horizontal") {
 
-			ntfctnwnppr=document.createElement("box");
+			ntfctnwnppr=document.createXULElement("box");
 			ntfctnwnppr.setAttribute("id","downloadbar-ntfctnwrppr-"+dlid);
 			ntfctnwnppr.setAttribute("orient","horizontal");
 			if(brnch.getIntPref("extensions.downloadbar.progressfontsize")!=0) ntfctnwnppr.style.setProperty("font-size", brnch.getIntPref("extensions.downloadbar.progressfontsize")+"px", "important");
@@ -3448,7 +3456,7 @@ var DownloadBar = {
 		
 		else {
 		
-			ntfctnwnppr=document.createElement("box");
+			ntfctnwnppr=document.createXULElement("box");
 			ntfctnwnppr.setAttribute("id","downloadbar-ntfctnwrppr-"+dlid);			
 			ntfctnwnppr.setAttribute("orient","vertical");
 			if(brnch.getIntPref("extensions.downloadbar.progressfontsize")!=0) ntfctnwnppr.style.setProperty("font-size", brnch.getIntPref("extensions.downloadbar.progressfontsize")+"px", "important");			
@@ -3518,32 +3526,34 @@ var DownloadBar = {
 			stck.dl=dl;
 			let sid=stck.id;
 			
-			Task.spawn(function () {
+			(async function () {
+				try {
+					let list = await Downloads.getList(Downloads.ALL);
+					let dwnldlist = list._downloads;
 
-			  let list = yield Downloads.getList(Downloads.ALL);
-			  let dwnldlist=list._downloads;
-			  
-			  for(var i=0;i<dwnldlist.length;i++){
-			  
-				if(dwnldlist[i].target.path==stck.dl.target.path) {
-					stck.dl=dwnldlist[i];
-							
-					if(stck.dl.canceled){
-						let hbx=document.getElementById("downloadbar-hbox-"+sid.replace("downloadbar-stack-",""));
-						
-						let dpsclr=brnch.getCharPref("extensions.downloadbar.downloadpausecolor");
-						if(dpsclr=="null") {}
-						else {
-							hbx.style.setProperty("background-image", "linear-gradient(to bottom, "+DownloadBar.convert2RGBA(dpsclr,0.59)+" 0%, "+DownloadBar.convert2RGBA(dpsclr,1)+" 100%)", "important");
-							hbx.style.setProperty("background-size", stck.dl.progress+"%", "important");
+					for (var i = 0; i < dwnldlist.length; i++) {
+
+						if (dwnldlist[i].target.path == stck.dl.target.path) {
+							stck.dl = dwnldlist[i];
+
+							if (stck.dl.canceled) {
+								let hbx = document.getElementById("downloadbar-hbox-" + sid.replace("downloadbar-stack-", ""));
+
+								let dpsclr = brnch.getCharPref("extensions.downloadbar.downloadpausecolor");
+								if (dpsclr == "null") { }
+								else {
+									hbx.style.setProperty("background-image", "linear-gradient(to bottom, " + DownloadBar.convert2RGBA(dpsclr, 0.59) + " 0%, " + DownloadBar.convert2RGBA(dpsclr, 1) + " 100%)", "important");
+									hbx.style.setProperty("background-size", stck.dl.progress + "%", "important");
+								}
+							}
+
 						}
-					}					
-					
-				}
-				
-			  }
 
-			}).then(null, Components.utils.reportError);
+					}
+				} catch (error) {
+					Components.utils.reportError;
+				}
+			})
 				
 			if(document.getElementById("downloadbar-cntr")){
 				let prgrscnt=parseInt(document.getElementById("downloadbar-cntr").getAttribute("value").split(":")[0])+1;
@@ -3761,7 +3771,7 @@ var DownloadBar = {
 		var children = branch.getChildList("", obj);
 		for (var i=0;i<children.length;i++){
 			var customfolder=branch.getComplexValue(children[i], Components.interfaces.nsILocalFile);
-			var cstmfldrmntm=document.createElement("menuitem");
+			var cstmfldrmntm=document.createXULElement("menuitem");
 			cstmfldrmntm.setAttribute("label",customfolder.leafName);
 			cstmfldrmntm.setAttribute("class","menuitem-iconic downloadbar-sendtocustomfolder");
 			cstmfldrmntm.customfolder=customfolder;
@@ -3958,16 +3968,16 @@ var DownloadBar = {
 	
 		let windowtype = document.documentElement.getAttribute("windowtype");
 	
-		var downloadbar_tls_root_1_menu = document.createElement("menu");
+		var downloadbar_tls_root_1_menu = document.createXULElement("menu");
 		downloadbar_tls_root_1_menu.setAttribute("id", "downloadbar-tls");
 		downloadbar_tls_root_1_menu.setAttribute("label", "Download Status Bar");
 		downloadbar_tls_root_1_menu.setAttribute("class", "menu-iconic");	
 		//downloadbar_tls_root_1_menu.addEventListener("command", DownloadBar.tgglbr, true);
 					
-		var downloadbar_downloads_menu_root_1_menupopup = document.createElement("menupopup");
+		var downloadbar_downloads_menu_root_1_menupopup = document.createXULElement("menupopup");
 		downloadbar_downloads_menu_root_1_menupopup.setAttribute("id", "downloadsbar-downnloads-tools-menu");
 		downloadbar_downloads_menu_root_1_menupopup.addEventListener("popupshowing", DownloadBar.dwnldbrmnpop, true);
-		var downloadbar_downloads_menu_root_1_menupopup_1_menuitem = document.createElement("menuitem");
+		var downloadbar_downloads_menu_root_1_menupopup_1_menuitem = document.createXULElement("menuitem");
 		downloadbar_downloads_menu_root_1_menupopup_1_menuitem.setAttribute("label", DownloadBar.gtPrpVlAdvncd("downloadbar-prprts_b1","downloadbar.tgglbr"));
 		downloadbar_downloads_menu_root_1_menupopup_1_menuitem.setAttribute("id", "downloadsbar-tools-dmclose");
 		downloadbar_downloads_menu_root_1_menupopup_1_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVlAdvncd("downloadbar-prprts_b1","downloadbar.tgglbr"));
@@ -3975,10 +3985,10 @@ var DownloadBar = {
 		downloadbar_downloads_menu_root_1_menupopup_1_menuitem.setAttribute("style", "-moz-image-region: rect(64px, 112px, 80px, 96px) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 		downloadbar_downloads_menu_root_1_menupopup_1_menuitem.setAttribute("class", "menuitem-iconic");
 		downloadbar_downloads_menu_root_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_1_menuitem);
-		var downloadbar_downloads_menu_root_1_menupopup_2_menuseparator = document.createElement("menuseparator");
+		var downloadbar_downloads_menu_root_1_menupopup_2_menuseparator = document.createXULElement("menuseparator");
 		downloadbar_downloads_menu_root_1_menupopup_2_menuseparator.setAttribute("id", "downloadsbar-tools-dmclosems");
 		downloadbar_downloads_menu_root_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_2_menuseparator);
-		var downloadbar_downloads_menu_root_1_menupopup_3_menuitem = document.createElement("menuitem");
+		var downloadbar_downloads_menu_root_1_menupopup_3_menuitem = document.createXULElement("menuitem");
 		downloadbar_downloads_menu_root_1_menupopup_3_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.hlp"));
 		downloadbar_downloads_menu_root_1_menupopup_3_menuitem.setAttribute("id", "downloadsbar-tools-help");
 		downloadbar_downloads_menu_root_1_menupopup_3_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.hlp"));
@@ -3986,34 +3996,34 @@ var DownloadBar = {
 		downloadbar_downloads_menu_root_1_menupopup_3_menuitem.setAttribute("style", "-moz-image-region: rect(64px, 64px, 80px, 48px) !important; list-style-image: url('chrome://downloadbar/skin/images/Crystal Project.png') !important;");
 		downloadbar_downloads_menu_root_1_menupopup_3_menuitem.setAttribute("class", "menuitem-iconic");
 		downloadbar_downloads_menu_root_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_3_menuitem);
-		var downloadbar_downloads_menu_root_1_menupopup_4_menuseparator = document.createElement("menuseparator");
+		var downloadbar_downloads_menu_root_1_menupopup_4_menuseparator = document.createXULElement("menuseparator");
 		downloadbar_downloads_menu_root_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_4_menuseparator);
-		var downloadbar_downloads_menu_root_1_menupopup_5_menu = document.createElement("menu");
+		var downloadbar_downloads_menu_root_1_menupopup_5_menu = document.createXULElement("menu");
 		downloadbar_downloads_menu_root_1_menupopup_5_menu.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.dwnlds"));
 		downloadbar_downloads_menu_root_1_menupopup_5_menu.setAttribute("style", "-moz-image-region: rect(48px, 112px, 64px, 96px) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 		downloadbar_downloads_menu_root_1_menupopup_5_menu.setAttribute("class", "menu-iconic");
-		var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup = document.createElement("menupopup");
-		var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_1_menuitem = document.createElement("menuitem");
+		var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup = document.createXULElement("menupopup");
+		var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_1_menuitem = document.createXULElement("menuitem");
 		downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_1_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.pslldwnlds"));
 		downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_1_menuitem.addEventListener("command", DownloadBar.pauseall, true);
 		downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_1_menuitem.setAttribute("style", "-moz-image-region: rect(320px, 112px, 336px, 96px) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 		downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_1_menuitem.setAttribute("class", "menuitem-iconic");
 		downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_1_menuitem);
-		var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_2_menuitem = document.createElement("menuitem");
+		var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_2_menuitem = document.createXULElement("menuitem");
 		downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_2_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.rsmlldwnlds"));
 		downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_2_menuitem.addEventListener("command", DownloadBar.resumeall, true);
 		downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_2_menuitem.setAttribute("style", "-moz-image-region: rect(336px, 16px, 352px, 0) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 		downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_2_menuitem.setAttribute("class", "menuitem-iconic");
 		downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_2_menuitem);
-		var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_3_menuitem = document.createElement("menuitem");
+		var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_3_menuitem = document.createXULElement("menuitem");
 		downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_3_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.cncllldwnlds"));
 		downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_3_menuitem.addEventListener("command", DownloadBar.cancelall, true);
 		downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_3_menuitem.setAttribute("style", "-moz-image-region: rect(320px, 128px, 336px, 112px) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 		downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_3_menuitem.setAttribute("class", "menuitem-iconic");
 		downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_3_menuitem);
-		var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_4_menuseparator = document.createElement("menuseparator");
+		var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_4_menuseparator = document.createXULElement("menuseparator");
 		downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_4_menuseparator);
-		var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_5_menuitem = document.createElement("menuitem");
+		var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_5_menuitem = document.createXULElement("menuitem");
 		downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_5_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.clrlldwnlds"));
 		downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_5_menuitem.setAttribute("id", "downloadsbar-tools-dmclearall");
 		downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_5_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.clrlldwnlds"));
@@ -4023,9 +4033,9 @@ var DownloadBar = {
 		downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_5_menuitem);
 		downloadbar_downloads_menu_root_1_menupopup_5_menu.appendChild(downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup);
 		downloadbar_downloads_menu_root_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_5_menu);
-		var downloadbar_downloads_menu_root_1_menupopup_6_menuseparator = document.createElement("menuseparator");
+		var downloadbar_downloads_menu_root_1_menupopup_6_menuseparator = document.createXULElement("menuseparator");
 		downloadbar_downloads_menu_root_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_6_menuseparator);
-		var downloadbar_downloads_menu_root_1_menupopup_7_menuitem = document.createElement("menuitem");
+		var downloadbar_downloads_menu_root_1_menupopup_7_menuitem = document.createXULElement("menuitem");
 		downloadbar_downloads_menu_root_1_menupopup_7_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.pndwnldtb"));
 		downloadbar_downloads_menu_root_1_menupopup_7_menuitem.setAttribute("id", "downloadsbar-tools-dwnldtb");
 		downloadbar_downloads_menu_root_1_menupopup_7_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.pndwnldtb"));
@@ -4033,7 +4043,7 @@ var DownloadBar = {
 		downloadbar_downloads_menu_root_1_menupopup_7_menuitem.setAttribute("style", "-moz-image-region: rect(16px, 96px, 32px, 80px) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 		downloadbar_downloads_menu_root_1_menupopup_7_menuitem.setAttribute("class", "menuitem-iconic");
 		downloadbar_downloads_menu_root_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_7_menuitem);
-		var downloadbar_downloads_menu_root_1_menupopup_8_menuitem = document.createElement("menuitem");
+		var downloadbar_downloads_menu_root_1_menupopup_8_menuitem = document.createXULElement("menuitem");
 		downloadbar_downloads_menu_root_1_menupopup_8_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.shwlldwnldshstry"));
 		downloadbar_downloads_menu_root_1_menupopup_8_menuitem.setAttribute("id", "downloadsbar-tools-shwDwnldsHstry");
 		downloadbar_downloads_menu_root_1_menupopup_8_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.shwlldwnldshstry"));
@@ -4041,7 +4051,7 @@ var DownloadBar = {
 		downloadbar_downloads_menu_root_1_menupopup_8_menuitem.setAttribute("style", "-moz-image-region: rect(32px, 144px, 48px, 128px) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 		downloadbar_downloads_menu_root_1_menupopup_8_menuitem.setAttribute("class", "menuitem-iconic");
 		downloadbar_downloads_menu_root_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_8_menuitem);
-		var downloadbar_downloads_menu_root_1_menupopup_9_menuitem = document.createElement("menuitem");
+		var downloadbar_downloads_menu_root_1_menupopup_9_menuitem = document.createXULElement("menuitem");
 		downloadbar_downloads_menu_root_1_menupopup_9_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.sttstcs"));
 		downloadbar_downloads_menu_root_1_menupopup_9_menuitem.setAttribute("id", "downloadsbar-tools-sttstcs");
 		downloadbar_downloads_menu_root_1_menupopup_9_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.sttstcs"));
@@ -4049,9 +4059,9 @@ var DownloadBar = {
 		downloadbar_downloads_menu_root_1_menupopup_9_menuitem.setAttribute("style", "list-style-image: url('chrome://downloadbar/skin/images/statistics.png') !important;");
 		downloadbar_downloads_menu_root_1_menupopup_9_menuitem.setAttribute("class", "menuitem-iconic");
 		downloadbar_downloads_menu_root_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_9_menuitem);
-		var downloadbar_downloads_menu_root_1_menupopup_10_menuseparator = document.createElement("menuseparator");
+		var downloadbar_downloads_menu_root_1_menupopup_10_menuseparator = document.createXULElement("menuseparator");
 		downloadbar_downloads_menu_root_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_10_menuseparator);
-		var downloadbar_downloads_menu_root_1_menupopup_11_menuitem = document.createElement("menuitem");
+		var downloadbar_downloads_menu_root_1_menupopup_11_menuitem = document.createXULElement("menuitem");
 		downloadbar_downloads_menu_root_1_menupopup_11_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.ptns"));
 		downloadbar_downloads_menu_root_1_menupopup_11_menuitem.setAttribute("id", "downloadsbar-tools-pnts");
 		downloadbar_downloads_menu_root_1_menupopup_11_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.ptns"));
@@ -4073,7 +4083,7 @@ var DownloadBar = {
 	},	
 	appndDtlsPnl:function(document){
 		let brnch=Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);	
-		var downloadbar_itempanel_root_1_panel = document.createElement("panel");
+		var downloadbar_itempanel_root_1_panel = document.createXULElement("panel");
 		downloadbar_itempanel_root_1_panel.setAttribute("id", "downloadbar-itempanel");
 		downloadbar_itempanel_root_1_panel.setAttribute("type", "arrow");
 		downloadbar_itempanel_root_1_panel.setAttribute("noautofocus", "true");
@@ -4085,108 +4095,108 @@ var DownloadBar = {
 		if(Components.classes["@mozilla.org/xre/app-info;1"].getService(Components.interfaces.nsIXULRuntime).OS=="Darwin" && DownloadBar.gtuiid()=="downloadbar-downloadpanel") downloadbar_itempanel_root_1_panel.setAttribute("level", "top");//top is necessary
 		downloadbar_itempanel_root_1_panel.setAttribute("side", "top");
 		downloadbar_itempanel_root_1_panel.setAttribute("position", "bottomcenter topleft");
-		var downloadbar_itempanel_root_1_panel_1_vbox = document.createElement("vbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox = document.createXULElement("vbox");
 		downloadbar_itempanel_root_1_panel_1_vbox.setAttribute("style", "padding:5px;");
-		var downloadbar_itempanel_root_1_panel_1_vbox_1_hbox = document.createElement("hbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_1_hbox = document.createXULElement("hbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_1_hbox.setAttribute("align", "center");
 		//downloadbar_itempanel_root_1_panel_1_vbox_1_hbox.setAttribute("style", "padding:0px 4px 4px 4px;");
-		var downloadbar_itempanel_root_1_panel_1_vbox_1_hbox_1_image = document.createElement("image");
+		var downloadbar_itempanel_root_1_panel_1_vbox_1_hbox_1_image = document.createXULElement("image");
 		downloadbar_itempanel_root_1_panel_1_vbox_1_hbox_1_image.setAttribute("src", "null");
 		downloadbar_itempanel_root_1_panel_1_vbox_1_hbox_1_image.setAttribute("id", "downloadbar-itempanel-imgcn");
 		downloadbar_itempanel_root_1_panel_1_vbox_1_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_1_hbox_1_image);
-		var downloadbar_itempanel_root_1_panel_1_vbox_1_hbox_2_label = document.createElement("label");
+		var downloadbar_itempanel_root_1_panel_1_vbox_1_hbox_2_label = document.createXULElement("label");
 		downloadbar_itempanel_root_1_panel_1_vbox_1_hbox_2_label.setAttribute("id", "downloadbar-itempanel-flnmbl");
 		downloadbar_itempanel_root_1_panel_1_vbox_1_hbox_2_label.setAttribute("value", "null");
 		downloadbar_itempanel_root_1_panel_1_vbox_1_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_1_hbox_2_label);
 		downloadbar_itempanel_root_1_panel_1_vbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_1_hbox);
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox = document.createElement("hbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox = document.createXULElement("hbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox.setAttribute("align","center");	
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox = document.createElement("vbox");
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_1_hbox = document.createElement("hbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox = document.createXULElement("vbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_1_hbox = document.createXULElement("hbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_1_hbox.setAttribute("align", "right");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_1_hbox.setAttribute("style", "margin-top:2px !important;");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_1_hbox.setAttribute("class", "downloadbar-itempanel-hblft");
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_1_hbox_1_label = document.createElement("label");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_1_hbox_1_label = document.createXULElement("label");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_1_hbox_1_label.setAttribute("value", DownloadBar.gtPrpVl("downloadbar.src")+" :");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_1_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_1_hbox_1_label);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_1_hbox);
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_2_hbox = document.createElement("hbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_2_hbox = document.createXULElement("hbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_2_hbox.setAttribute("align", "right");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_2_hbox.setAttribute("class", "downloadbar-itempanel-hblft");
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_2_hbox_1_label = document.createElement("label");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_2_hbox_1_label = document.createXULElement("label");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_2_hbox_1_label.setAttribute("value", DownloadBar.gtPrpVl("downloadbar.trgt")+" :");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_2_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_2_hbox_1_label);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_2_hbox);
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_3_hbox = document.createElement("hbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_3_hbox = document.createXULElement("hbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_3_hbox.setAttribute("align", "right");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_3_hbox.setAttribute("class", "downloadbar-itempanel-hblft");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_3_hbox.setAttribute("id", "downloadbar-itempanel-vrgspdnmhb");
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_3_hbox_1_label = document.createElement("label");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_3_hbox_1_label = document.createXULElement("label");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_3_hbox_1_label.setAttribute("value", DownloadBar.gtPrpVl("downloadbar.vrgspd")+" :");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_3_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_3_hbox_1_label);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_3_hbox);
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_4_hbox = document.createElement("hbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_4_hbox = document.createXULElement("hbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_4_hbox.setAttribute("align", "right");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_4_hbox.setAttribute("class", "downloadbar-itempanel-hblft");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_4_hbox.setAttribute("id", "downloadbar-itempanel-crrntspdnmhb");
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_4_hbox_1_label = document.createElement("label");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_4_hbox_1_label = document.createXULElement("label");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_4_hbox_1_label.setAttribute("value", DownloadBar.gtPrpVl("downloadbar.crrntspd")+" :");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_4_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_4_hbox_1_label);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_4_hbox);
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_5_hbox = document.createElement("hbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_5_hbox = document.createXULElement("hbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_5_hbox.setAttribute("align", "right");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_5_hbox.setAttribute("class", "downloadbar-itempanel-hblft");
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_5_hbox_1_label = document.createElement("label");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_5_hbox_1_label = document.createXULElement("label");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_5_hbox_1_label.setAttribute("value", DownloadBar.gtPrpVl("downloadbar.prgrs")+" :");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_5_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_5_hbox_1_label);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_5_hbox);
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_6_hbox = document.createElement("hbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_6_hbox = document.createXULElement("hbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_6_hbox.setAttribute("align", "right");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_6_hbox.setAttribute("class", "downloadbar-itempanel-hblft");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_6_hbox.setAttribute("id", "downloadbar-itempanel-rmngtmnmhb");
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_6_hbox_1_label = document.createElement("label");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_6_hbox_1_label = document.createXULElement("label");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_6_hbox_1_label.setAttribute("value", DownloadBar.gtPrpVl("downloadbar.rmngtm")+" :");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_6_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_6_hbox_1_label);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_6_hbox);
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_7_hbox = document.createElement("hbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_7_hbox = document.createXULElement("hbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_7_hbox.setAttribute("align", "right");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_7_hbox.setAttribute("class", "downloadbar-itempanel-hblft");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_7_hbox.setAttribute("id", "downloadbar-itempanel-dwnldtmnmhb");
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_7_hbox_1_label = document.createElement("label");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_7_hbox_1_label = document.createXULElement("label");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_7_hbox_1_label.setAttribute("value", DownloadBar.gtPrpVl("downloadbar.dwnldtm")+" :");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_7_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_7_hbox_1_label);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_7_hbox);
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_8_hbox = document.createElement("hbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_8_hbox = document.createXULElement("hbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_8_hbox.setAttribute("align", "right");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_8_hbox.setAttribute("class", "downloadbar-itempanel-hblft");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_8_hbox.setAttribute("id", "downloadbar-itempanel-dwnldbytnmhb");
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_8_hbox_1_label = document.createElement("label");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_8_hbox_1_label = document.createXULElement("label");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_8_hbox_1_label.setAttribute("value", DownloadBar.gtPrpVl("downloadbar.dwnldbyt")+" :");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_8_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_8_hbox_1_label);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_8_hbox);
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_9_hbox = document.createElement("hbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_9_hbox = document.createXULElement("hbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_9_hbox.setAttribute("align", "right");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_9_hbox.setAttribute("class", "downloadbar-itempanel-hblft");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_9_hbox.setAttribute("id", "downloadbar-itempanel-flsznmhb");
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_9_hbox_1_label = document.createElement("label");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_9_hbox_1_label = document.createXULElement("label");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_9_hbox_1_label.setAttribute("value", DownloadBar.gtPrpVl("downloadbar.flsz")+" :");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_9_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_9_hbox_1_label);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_9_hbox);
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_10_hbox = document.createElement("hbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_10_hbox = document.createXULElement("hbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_10_hbox.setAttribute("align", "right");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_10_hbox.setAttribute("class", "downloadbar-itempanel-hblft");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_10_hbox.setAttribute("id", "downloadbar-itempanel-flhshnmhb");
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_10_hbox_1_label = document.createElement("label");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_10_hbox_1_label = document.createXULElement("label");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_10_hbox_1_label.setAttribute("value", DownloadBar.gtPrpVl("downloadbar.md5hsh")+" :");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_10_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_10_hbox_1_label);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox_10_hbox);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_1_vbox);
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox = document.createElement("vbox");
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_1_hbox = document.createElement("hbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox = document.createXULElement("vbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_1_hbox = document.createXULElement("hbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_1_hbox.setAttribute("style", "margin-top:2px !important;");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_1_hbox.setAttribute("class", "downloadbar-itempanel-hbright");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_1_hbox.setAttribute("id", "downloadbar-itempanel-src");
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_1_hbox_1_label = document.createElement("label");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_1_hbox_1_label = document.createXULElement("label");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_1_hbox_1_label.addEventListener("click", DownloadBar.gtsrc, true);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_1_hbox_1_label.setAttribute("style", "border:none !important;");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_1_hbox_1_label.setAttribute("id", "downloadbar-itempanel-srclbl");
@@ -4197,10 +4207,10 @@ var DownloadBar = {
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_1_hbox_1_label.setAttribute("context", "downloadsbar-copy-menu");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_1_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_1_hbox_1_label);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_1_hbox);
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_2_hbox = document.createElement("hbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_2_hbox = document.createXULElement("hbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_2_hbox.setAttribute("class", "downloadbar-itempanel-hbright");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_2_hbox.setAttribute("id", "downloadbar-itempanel-trgtvlhb");
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_2_hbox_1_label = document.createElement("label");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_2_hbox_1_label = document.createXULElement("label");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_2_hbox_1_label.addEventListener("click", DownloadBar.showtrgt, true);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_2_hbox_1_label.setAttribute("style", "border:none !important;");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_2_hbox_1_label.setAttribute("id", "downloadbar-itempanel-trgtlbl");
@@ -4208,71 +4218,71 @@ var DownloadBar = {
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_2_hbox_1_label.setAttribute("context", "downloadsbar-copy-menu");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_2_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_2_hbox_1_label);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_2_hbox);
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_3_hbox = document.createElement("hbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_3_hbox = document.createXULElement("hbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_3_hbox.setAttribute("class", "downloadbar-itempanel-hbright");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_3_hbox.setAttribute("id", "downloadbar-itempanel-vrgspdvlhb");
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_3_hbox_1_label = document.createElement("label");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_3_hbox_1_label = document.createXULElement("label");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_3_hbox_1_label.setAttribute("id", "downloadbar-itempanel-vrgspdlbl");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_3_hbox_1_label.setAttribute("value", "null");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_3_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_3_hbox_1_label);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_3_hbox);
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_4_hbox = document.createElement("hbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_4_hbox = document.createXULElement("hbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_4_hbox.setAttribute("class", "downloadbar-itempanel-hbright");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_4_hbox.setAttribute("id", "downloadbar-itempanel-crrntspdvlhb");
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_4_hbox_1_label = document.createElement("label");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_4_hbox_1_label = document.createXULElement("label");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_4_hbox_1_label.setAttribute("id", "downloadbar-itempanel-crrntspdlbl");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_4_hbox_1_label.setAttribute("value", "null");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_4_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_4_hbox_1_label);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_4_hbox);
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_5_hbox = document.createElement("hbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_5_hbox = document.createXULElement("hbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_5_hbox.setAttribute("class", "downloadbar-itempanel-hbright");
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_5_hbox_1_label = document.createElement("label");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_5_hbox_1_label = document.createXULElement("label");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_5_hbox_1_label.setAttribute("id", "downloadbar-itempanel-pgrsslbl");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_5_hbox_1_label.setAttribute("value", "null");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_5_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_5_hbox_1_label);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_5_hbox);
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_6_hbox = document.createElement("hbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_6_hbox = document.createXULElement("hbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_6_hbox.setAttribute("class", "downloadbar-itempanel-hbright");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_6_hbox.setAttribute("id", "downloadbar-itempanel-rmngtmvlhb");
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_6_hbox_1_label = document.createElement("label");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_6_hbox_1_label = document.createXULElement("label");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_6_hbox_1_label.setAttribute("id", "downloadbar-itempanel-rmngtmlbl");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_6_hbox_1_label.setAttribute("value", "null");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_6_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_6_hbox_1_label);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_6_hbox);
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_7_hbox = document.createElement("hbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_7_hbox = document.createXULElement("hbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_7_hbox.setAttribute("class", "downloadbar-itempanel-hbright");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_7_hbox.setAttribute("id", "downloadbar-itempanel-dwnldtmvlhb");
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_7_hbox_1_label = document.createElement("label");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_7_hbox_1_label = document.createXULElement("label");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_7_hbox_1_label.setAttribute("id", "downloadbar-itempanel-dwnldtmlbl");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_7_hbox_1_label.setAttribute("value", "null");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_7_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_7_hbox_1_label);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_7_hbox);
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_8_hbox = document.createElement("hbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_8_hbox = document.createXULElement("hbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_8_hbox.setAttribute("class", "downloadbar-itempanel-hbright");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_8_hbox.setAttribute("id", "downloadbar-itempanel-dwnldbytvlhb");
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_8_hbox_1_label = document.createElement("label");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_8_hbox_1_label = document.createXULElement("label");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_8_hbox_1_label.setAttribute("id", "downloadbar-itempanel-dwnldbytlbl");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_8_hbox_1_label.setAttribute("value", "null");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_8_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_8_hbox_1_label);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_8_hbox);
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_9_hbox = document.createElement("hbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_9_hbox = document.createXULElement("hbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_9_hbox.setAttribute("class", "downloadbar-itempanel-hbright");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_9_hbox.setAttribute("id", "downloadbar-itempanel-flszvlhb");
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_9_hbox_1_label = document.createElement("label");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_9_hbox_1_label = document.createXULElement("label");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_9_hbox_1_label.setAttribute("id", "downloadbar-itempanel-flszlbl");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_9_hbox_1_label.setAttribute("value", "null");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_9_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_9_hbox_1_label);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_9_hbox);
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_10_hbox = document.createElement("hbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_10_hbox = document.createXULElement("hbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_10_hbox.setAttribute("class", "downloadbar-itempanel-hbright");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_10_hbox.setAttribute("id", "downloadbar-itempanel-flhshvlhb");
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_10_hbox_1_label = document.createElement("label");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_10_hbox_1_label = document.createXULElement("label");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_10_hbox_1_label.setAttribute("id", "downloadbar-itempanel-flhshlbl");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_10_hbox_1_label.setAttribute("value", "null");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_10_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_10_hbox_1_label);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox_10_hbox);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox.appendChild(downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_2_vbox);
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_3_vbox = document.createElement("vbox");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_3_vbox = document.createXULElement("vbox");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_3_vbox.setAttribute("id", "downloadbar-ppprvwimgwrp");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_3_vbox.setAttribute("align", "center");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_3_vbox.setAttribute("pack", "center");
@@ -4280,7 +4290,7 @@ var DownloadBar = {
 		let imagesize=128;
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_3_vbox.setAttribute("width", imagesize+28);
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_3_vbox.setAttribute("height", imagesize+28);	
-		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_3_vbox_1_image = document.createElement("image");
+		var downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_3_vbox_1_image = document.createXULElement("image");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_3_vbox_1_image.setAttribute("id", "downloadbar-ppprvwimg");
 		downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_3_vbox_1_image.setAttribute("src", "null");
 		//downloadbar_itempanel_root_1_panel_1_vbox_2_hbox_3_vbox_1_image.setAttribute("style", "box-shadow:0 0 1em grey;background-size:contain;background-repeat:no-repeat;background-position:center;background-color:white;border:1px solid grey;");
@@ -4300,11 +4310,13 @@ var DownloadBar = {
 }
 
 function setComplexCharValue(aBranch, aPrefName, aValue){
-    var string = Components.classes["@mozilla.org/supports-string;1"]
-                           .createInstance(Components.interfaces.nsISupportsString);
-    string.data = aValue;
-    aBranch = aBranch ? aBranch : Services.prefs;
-    aBranch.setComplexValue(aPrefName, Components.interfaces.nsISupportsString, string);
+    // var string = Components.classes["@mozilla.org/supports-string;1"]
+    //                        .createInstance(Components.interfaces.nsISupportsString);
+    // string.data = aValue;
+    // aBranch = aBranch ? aBranch : Services.prefs;
+	// aBranch.setComplexValue(aPrefName, Components.interfaces.nsISupportsString, string);
+	
+	aBranch.setStringPref(aPrefName, aValue);
 }
 
 function setPrefs(aBranch, aPrefName, aValue){
@@ -4333,8 +4345,8 @@ var WindowListener = {
     let windowtype = document.documentElement.getAttribute("windowtype");
 	let brnch=Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);	
 	
-	var downloadbar_keyset_root_1_keyset = document.createElement("keyset");
-	var downloadbar_keyset_root_1_keyset_1_key = document.createElement("key");
+	var downloadbar_keyset_root_1_keyset = document.createXULElement("keyset");
+	var downloadbar_keyset_root_1_keyset_1_key = document.createXULElement("key");
 	downloadbar_keyset_root_1_keyset_1_key.setAttribute("id", "downloadbar-tgglky");
 	downloadbar_keyset_root_1_keyset_1_key.setAttribute("modifiers", "accel alt");
 	downloadbar_keyset_root_1_keyset_1_key.setAttribute("key", brnch.getCharPref("extensions.downloadbar.keyshortcut"));
@@ -4344,14 +4356,14 @@ var WindowListener = {
 	if(windowtype=="navigator:browser") document.getElementById("main-window").appendChild(downloadbar_keyset_root_1_keyset);	
 	else if(windowtype=="mail:3pane") document.getElementById("messengerWindow").appendChild(downloadbar_keyset_root_1_keyset);	
 	
-	/*var downloadbar_stringbundleset_root_1_stringbundleset = document.createElement("stringbundleset");
-	var downloadbar_stringbundleset_root_1_stringbundleset_1_stringbundle = document.createElement("stringbundle");
+	/*var downloadbar_stringbundleset_root_1_stringbundleset = document.createXULElement("stringbundleset");
+	var downloadbar_stringbundleset_root_1_stringbundleset_1_stringbundle = document.createXULElement("stringbundle");
 	downloadbar_stringbundleset_root_1_stringbundleset_1_stringbundle.setAttribute("id", "downloadbar-prprts");
 	downloadbar_stringbundleset_root_1_stringbundleset_1_stringbundle.setAttribute("src", "chrome://downloadbar/locale/browserOverlay.properties");
-	var downloadbar_stringbundleset_root_1_stringbundleset_2_stringbundle = document.createElement("stringbundle");
+	var downloadbar_stringbundleset_root_1_stringbundleset_2_stringbundle = document.createXULElement("stringbundle");
 	downloadbar_stringbundleset_root_1_stringbundleset_2_stringbundle.setAttribute("id", "downloadbar-optsprprts");
 	downloadbar_stringbundleset_root_1_stringbundleset_2_stringbundle.setAttribute("src", "chrome://downloadbar/locale/options.properties");
-	var downloadbar_stringbundleset_root_1_stringbundleset_3_stringbundle = document.createElement("stringbundle");
+	var downloadbar_stringbundleset_root_1_stringbundleset_3_stringbundle = document.createXULElement("stringbundle");
 	downloadbar_stringbundleset_root_1_stringbundleset_3_stringbundle.setAttribute("id", "downloadbar-prprts_b1");
 	downloadbar_stringbundleset_root_1_stringbundleset_3_stringbundle.setAttribute("src", "chrome://downloadbar/locale/browserOverlay_b1.properties");	
 	downloadbar_stringbundleset_root_1_stringbundleset.appendChild(downloadbar_stringbundleset_root_1_stringbundleset_1_stringbundle);
@@ -4360,10 +4372,10 @@ var WindowListener = {
 	if(windowtype=="navigator:browser") document.getElementById("main-window").appendChild(downloadbar_stringbundleset_root_1_stringbundleset);		
 	else if(windowtype=="mail:3pane") document.getElementById("messengerWindow").appendChild(downloadbar_stringbundleset_root_1_stringbundleset);*/		
 	
-	var downloadbar_statusbar_menu_root_1_menupopup = document.createElement("menupopup");
+	var downloadbar_statusbar_menu_root_1_menupopup = document.createXULElement("menupopup");
 	downloadbar_statusbar_menu_root_1_menupopup.setAttribute("id", "downloadsbar-statusbar-menu");
 	downloadbar_statusbar_menu_root_1_menupopup.addEventListener("popupshowing", DownloadBar.pop, true);
-	var downloadbar_statusbar_menu_root_1_menupopup_1_menuitem = document.createElement("menuitem");
+	var downloadbar_statusbar_menu_root_1_menupopup_1_menuitem = document.createXULElement("menuitem");
 	downloadbar_statusbar_menu_root_1_menupopup_1_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.lnch"));
 	downloadbar_statusbar_menu_root_1_menupopup_1_menuitem.setAttribute("id", "downloadsbar-slmenu");
 	downloadbar_statusbar_menu_root_1_menupopup_1_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.lnch"));
@@ -4371,31 +4383,31 @@ var WindowListener = {
 	downloadbar_statusbar_menu_root_1_menupopup_1_menuitem.setAttribute("style", "font-weight:bold; list-style-image: url('chrome://downloadbar/skin/images/launch.png') !important;");
 	downloadbar_statusbar_menu_root_1_menupopup_1_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_statusbar_menu_root_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_1_menuitem);
-	var downloadbar_statusbar_menu_root_1_menupopup_2_menuseparator = document.createElement("menuseparator");
+	var downloadbar_statusbar_menu_root_1_menupopup_2_menuseparator = document.createXULElement("menuseparator");
 	downloadbar_statusbar_menu_root_1_menupopup_2_menuseparator.setAttribute("id", "downloadsbar-slmenusp");
 	downloadbar_statusbar_menu_root_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_2_menuseparator);
-	var downloadbar_statusbar_menu_root_1_menupopup_3_menuitem = document.createElement("menuitem");
+	var downloadbar_statusbar_menu_root_1_menupopup_3_menuitem = document.createXULElement("menuitem");
 	downloadbar_statusbar_menu_root_1_menupopup_3_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.shwfl"));
 	downloadbar_statusbar_menu_root_1_menupopup_3_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.shwfl"));
 	downloadbar_statusbar_menu_root_1_menupopup_3_menuitem.addEventListener("command", DownloadBar.showfile, true);
 	downloadbar_statusbar_menu_root_1_menupopup_3_menuitem.setAttribute("style", "-moz-image-region: rect(80px, 80px, 96px, 64px) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 	downloadbar_statusbar_menu_root_1_menupopup_3_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_statusbar_menu_root_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_3_menuitem);
-	var downloadbar_statusbar_menu_root_1_menupopup_4_menuitem = document.createElement("menuitem");
+	var downloadbar_statusbar_menu_root_1_menupopup_4_menuitem = document.createXULElement("menuitem");
 	downloadbar_statusbar_menu_root_1_menupopup_4_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.shwmngr"));
 	downloadbar_statusbar_menu_root_1_menupopup_4_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.shwmngr"));
 	downloadbar_statusbar_menu_root_1_menupopup_4_menuitem.addEventListener("command", DownloadBar.shwlldwnldshstry, true);
 	downloadbar_statusbar_menu_root_1_menupopup_4_menuitem.setAttribute("style", "-moz-image-region: rect(32px, 144px, 48px, 128px) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 	downloadbar_statusbar_menu_root_1_menupopup_4_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_statusbar_menu_root_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_4_menuitem);
-	var downloadbar_statusbar_menu_root_1_menupopup_5_menuitem = document.createElement("menuitem");
+	var downloadbar_statusbar_menu_root_1_menupopup_5_menuitem = document.createXULElement("menuitem");
 	downloadbar_statusbar_menu_root_1_menupopup_5_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.vrscn"));
 	downloadbar_statusbar_menu_root_1_menupopup_5_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.vrscn"));
 	downloadbar_statusbar_menu_root_1_menupopup_5_menuitem.addEventListener("command", DownloadBar.scan, true);
 	downloadbar_statusbar_menu_root_1_menupopup_5_menuitem.setAttribute("style", "-moz-image-region: rect(64px, 32px, 80px, 16px) !important; list-style-image: url('chrome://downloadbar/skin/images/Silk.png') !important;");
 	downloadbar_statusbar_menu_root_1_menupopup_5_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_statusbar_menu_root_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_5_menuitem);
-	var downloadbar_statusbar_menu_root_1_menupopup_6_menuitem = document.createElement("menuitem");
+	var downloadbar_statusbar_menu_root_1_menupopup_6_menuitem = document.createXULElement("menuitem");
 	downloadbar_statusbar_menu_root_1_menupopup_6_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.chksm"));
 	downloadbar_statusbar_menu_root_1_menupopup_6_menuitem.setAttribute("id", "downloadsbar-chksm");
 	downloadbar_statusbar_menu_root_1_menupopup_6_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.chksm"));
@@ -4403,7 +4415,7 @@ var WindowListener = {
 	downloadbar_statusbar_menu_root_1_menupopup_6_menuitem.setAttribute("style", "-moz-image-region: rect(64px, 144px, 80px, 128px) !important; list-style-image: url('chrome://downloadbar/skin/images/Silk.png') !important;");
 	downloadbar_statusbar_menu_root_1_menupopup_6_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_statusbar_menu_root_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_6_menuitem);
-	var downloadbar_statusbar_menu_root_1_menupopup_7_menuitem = document.createElement("menuitem");
+	var downloadbar_statusbar_menu_root_1_menupopup_7_menuitem = document.createXULElement("menuitem");
 	downloadbar_statusbar_menu_root_1_menupopup_7_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.rnm"));
 	downloadbar_statusbar_menu_root_1_menupopup_7_menuitem.setAttribute("id", "downloadsbar-rnm");
 	downloadbar_statusbar_menu_root_1_menupopup_7_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.rnm"));
@@ -4411,41 +4423,41 @@ var WindowListener = {
 	downloadbar_statusbar_menu_root_1_menupopup_7_menuitem.setAttribute("style", "-moz-image-region: rect(0, 112px, 16px, 96px) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 	downloadbar_statusbar_menu_root_1_menupopup_7_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_statusbar_menu_root_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_7_menuitem);
-	var downloadbar_statusbar_menu_root_1_menupopup_8_menu = document.createElement("menu");
+	var downloadbar_statusbar_menu_root_1_menupopup_8_menu = document.createXULElement("menu");
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.sendto"));
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu.addEventListener("command", DownloadBar.sendto, true);
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu.setAttribute("style", "-moz-image-region: rect(224px, 32px, 240px, 16px) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu.setAttribute("class", "menu-iconic");
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu.setAttribute("id", "downloadsbar-sendto");
-	var downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup = document.createElement("menupopup");
+	var downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup = document.createXULElement("menupopup");
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup.setAttribute("id", "downloadsbar-sendtomn");
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup.addEventListener("popupshowing", DownloadBar.sendtopop, true);
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup.addEventListener("popuphiding", DownloadBar.sendtopophid, true);
-	var downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_1_menuitem = document.createElement("menuitem");
+	var downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_1_menuitem = document.createXULElement("menuitem");
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_1_menuitem.setAttribute("id", "downloadsbar-sendto-desktp");
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_1_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.desktopfolder"));
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_1_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_1_menuitem);
-	var downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_2_menuitem = document.createElement("menuitem");
+	var downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_2_menuitem = document.createXULElement("menuitem");
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_2_menuitem.setAttribute("id", "downloadsbar-sendto-dwnlds");
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_2_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.downloadsfolder"));
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_2_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_2_menuitem);
-	var downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_3_menuseparator_1 = document.createElement("menuseparator");
+	var downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_3_menuseparator_1 = document.createXULElement("menuseparator");
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_3_menuseparator_1.setAttribute("id", "downloadsbar-sendto-customfoldersseparatorabove");
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_3_menuseparator_1.setAttribute("hidden", "true");
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_3_menuseparator_1);
-	var downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_3_menuseparator_2 = document.createElement("menuseparator");
+	var downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_3_menuseparator_2 = document.createXULElement("menuseparator");
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_3_menuseparator_2.setAttribute("id", "downloadsbar-sendto-customfoldersseparatorbelow");
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_3_menuseparator_2);
-	var downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_4_menuitem = document.createElement("menuitem");
+	var downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_4_menuitem = document.createXULElement("menuitem");
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_4_menuitem.setAttribute("id", "downloadsbar-sendto-cstm");
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_4_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.customfolder"));
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_4_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_4_menuitem);
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu.appendChild(downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup);
 	downloadbar_statusbar_menu_root_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_8_menu);
-	var downloadbar_statusbar_menu_root_1_menupopup_9_menuitem = document.createElement("menuitem");
+	var downloadbar_statusbar_menu_root_1_menupopup_9_menuitem = document.createXULElement("menuitem");
 	downloadbar_statusbar_menu_root_1_menupopup_9_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.dltfl"));
 	downloadbar_statusbar_menu_root_1_menupopup_9_menuitem.setAttribute("id", "downloadsbar-dltfl");
 	downloadbar_statusbar_menu_root_1_menupopup_9_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.dltfl"));
@@ -4453,9 +4465,9 @@ var WindowListener = {
 	downloadbar_statusbar_menu_root_1_menupopup_9_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_statusbar_menu_root_1_menupopup_9_menuitem.addEventListener("command", DownloadBar.dltfl, true);
 	downloadbar_statusbar_menu_root_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_9_menuitem);
-	var downloadbar_statusbar_menu_root_1_menupopup_10_menuseparator = document.createElement("menuseparator");
+	var downloadbar_statusbar_menu_root_1_menupopup_10_menuseparator = document.createXULElement("menuseparator");
 	downloadbar_statusbar_menu_root_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_10_menuseparator);
-	var downloadbar_statusbar_menu_root_1_menupopup_11_menuitem = document.createElement("menuitem");
+	var downloadbar_statusbar_menu_root_1_menupopup_11_menuitem = document.createXULElement("menuitem");
 	downloadbar_statusbar_menu_root_1_menupopup_11_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.gtdwnlpg"));
 	downloadbar_statusbar_menu_root_1_menupopup_11_menuitem.setAttribute("id", "downloadsbar-gtdwnlpg");
 	downloadbar_statusbar_menu_root_1_menupopup_11_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.gtdwnlpg"));
@@ -4463,7 +4475,7 @@ var WindowListener = {
 	downloadbar_statusbar_menu_root_1_menupopup_11_menuitem.setAttribute("style", "-moz-image-region: rect(304px, 64px, 320px, 48px) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 	downloadbar_statusbar_menu_root_1_menupopup_11_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_statusbar_menu_root_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_11_menuitem);
-	var downloadbar_statusbar_menu_root_1_menupopup_11b_menuitem = document.createElement("menuitem");
+	var downloadbar_statusbar_menu_root_1_menupopup_11b_menuitem = document.createXULElement("menuitem");
 	downloadbar_statusbar_menu_root_1_menupopup_11b_menuitem.setAttribute("label", "Copy Target Path");
 	downloadbar_statusbar_menu_root_1_menupopup_11b_menuitem.setAttribute("id", "downloadsbar-cpytrgtpth");
 	downloadbar_statusbar_menu_root_1_menupopup_11b_menuitem.setAttribute("tooltiptext", "Copy Target Path");
@@ -4471,16 +4483,16 @@ var WindowListener = {
 	downloadbar_statusbar_menu_root_1_menupopup_11b_menuitem.setAttribute("style", "-moz-image-region: rect(0px, 144px, 16px, 128px) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 	downloadbar_statusbar_menu_root_1_menupopup_11b_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_statusbar_menu_root_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_11b_menuitem);
-	var downloadbar_statusbar_menu_root_1_menupopup_12_menuitem = document.createElement("menuitem");
+	var downloadbar_statusbar_menu_root_1_menupopup_12_menuitem = document.createXULElement("menuitem");
 	downloadbar_statusbar_menu_root_1_menupopup_12_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.cpydwnldlnk"));
 	downloadbar_statusbar_menu_root_1_menupopup_12_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.cpydwnldlnk"));
 	downloadbar_statusbar_menu_root_1_menupopup_12_menuitem.addEventListener("command", DownloadBar.cpydwnldlnk, true);
 	downloadbar_statusbar_menu_root_1_menupopup_12_menuitem.setAttribute("style", "-moz-image-region: rect(208px, 128px, 224px, 112px) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 	downloadbar_statusbar_menu_root_1_menupopup_12_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_statusbar_menu_root_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_12_menuitem);
-	var downloadbar_statusbar_menu_root_1_menupopup_13_menuseparator = document.createElement("menuseparator");
+	var downloadbar_statusbar_menu_root_1_menupopup_13_menuseparator = document.createXULElement("menuseparator");
 	downloadbar_statusbar_menu_root_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_13_menuseparator);
-	var downloadbar_statusbar_menu_root_1_menupopup_14_menuitem = document.createElement("menuitem");
+	var downloadbar_statusbar_menu_root_1_menupopup_14_menuitem = document.createXULElement("menuitem");
 	downloadbar_statusbar_menu_root_1_menupopup_14_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.cncl"));
 	downloadbar_statusbar_menu_root_1_menupopup_14_menuitem.setAttribute("id", "downloadsbar-cncl");
 	downloadbar_statusbar_menu_root_1_menupopup_14_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.cncl"));
@@ -4488,7 +4500,7 @@ var WindowListener = {
 	downloadbar_statusbar_menu_root_1_menupopup_14_menuitem.setAttribute("style", "-moz-image-region: rect(320px, 128px, 336px, 112px) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 	downloadbar_statusbar_menu_root_1_menupopup_14_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_statusbar_menu_root_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_14_menuitem);
-	var downloadbar_statusbar_menu_root_1_menupopup_15_menuitem = document.createElement("menuitem");
+	var downloadbar_statusbar_menu_root_1_menupopup_15_menuitem = document.createXULElement("menuitem");
 	downloadbar_statusbar_menu_root_1_menupopup_15_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.resume"));
 	downloadbar_statusbar_menu_root_1_menupopup_15_menuitem.setAttribute("id", "downloadsbar-strt");
 	downloadbar_statusbar_menu_root_1_menupopup_15_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.resume"));
@@ -4496,7 +4508,7 @@ var WindowListener = {
 	downloadbar_statusbar_menu_root_1_menupopup_15_menuitem.setAttribute("style", "-moz-image-region: rect(336px, 16px, 352px, 0) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 	downloadbar_statusbar_menu_root_1_menupopup_15_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_statusbar_menu_root_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_15_menuitem);
-	var downloadbar_statusbar_menu_root_1_menupopup_16_menuitem = document.createElement("menuitem");
+	var downloadbar_statusbar_menu_root_1_menupopup_16_menuitem = document.createXULElement("menuitem");
 	downloadbar_statusbar_menu_root_1_menupopup_16_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.pause"));
 	downloadbar_statusbar_menu_root_1_menupopup_16_menuitem.setAttribute("id", "downloadsbar-pause");
 	downloadbar_statusbar_menu_root_1_menupopup_16_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.pause"));
@@ -4504,17 +4516,17 @@ var WindowListener = {
 	downloadbar_statusbar_menu_root_1_menupopup_16_menuitem.setAttribute("style", "-moz-image-region: rect(320px, 112px, 336px, 96px) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 	downloadbar_statusbar_menu_root_1_menupopup_16_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_statusbar_menu_root_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_16_menuitem);
-	var downloadbar_statusbar_menu_root_1_menupopup_17_menuseparator = document.createElement("menuseparator");
+	var downloadbar_statusbar_menu_root_1_menupopup_17_menuseparator = document.createXULElement("menuseparator");
 	downloadbar_statusbar_menu_root_1_menupopup_17_menuseparator.setAttribute("id", "downloadsbar-ctnsmns");
 	downloadbar_statusbar_menu_root_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_17_menuseparator);
-	var downloadbar_statusbar_menu_root_1_menupopup_18_menuitem = document.createElement("menuitem");
+	var downloadbar_statusbar_menu_root_1_menupopup_18_menuitem = document.createXULElement("menuitem");
 	downloadbar_statusbar_menu_root_1_menupopup_18_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.clr"));
 	downloadbar_statusbar_menu_root_1_menupopup_18_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.clr"));
 	downloadbar_statusbar_menu_root_1_menupopup_18_menuitem.addEventListener("command", DownloadBar.clear, true);
 	downloadbar_statusbar_menu_root_1_menupopup_18_menuitem.setAttribute("style", "-moz-image-region: rect(176px, 144px, 192px, 128px) !important; list-style-image: url('chrome://downloadbar/skin/images/Tango.png') !important;");
 	downloadbar_statusbar_menu_root_1_menupopup_18_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_statusbar_menu_root_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_18_menuitem);
-	var downloadbar_statusbar_menu_root_1_menupopup_19_menuitem = document.createElement("menuitem");
+	var downloadbar_statusbar_menu_root_1_menupopup_19_menuitem = document.createXULElement("menuitem");
 	downloadbar_statusbar_menu_root_1_menupopup_19_menuitem.setAttribute("id", "downloadsbar-clrll");
 	downloadbar_statusbar_menu_root_1_menupopup_19_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.clrll"));
 	downloadbar_statusbar_menu_root_1_menupopup_19_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.clrll"));
@@ -4525,10 +4537,10 @@ var WindowListener = {
 	downloadbar_statusbar_menu_root_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_19_menuitem);
 	document.getElementById("mainPopupSet").appendChild(downloadbar_statusbar_menu_root_1_menupopup);	
 
-	var downloadbar_downloads_menu_root_1_menupopup = document.createElement("menupopup");
+	var downloadbar_downloads_menu_root_1_menupopup = document.createXULElement("menupopup");
 	downloadbar_downloads_menu_root_1_menupopup.setAttribute("id", "downloadsbar-downnloads-menu");
 	downloadbar_downloads_menu_root_1_menupopup.addEventListener("popupshowing", DownloadBar.dwnldbrmnpop, true);
-	var downloadbar_downloads_menu_root_1_menupopup_1_menuitem = document.createElement("menuitem");
+	var downloadbar_downloads_menu_root_1_menupopup_1_menuitem = document.createXULElement("menuitem");
 	downloadbar_downloads_menu_root_1_menupopup_1_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.clsbr"));
 	downloadbar_downloads_menu_root_1_menupopup_1_menuitem.setAttribute("id", "downloadsbar-dmclose");
 	downloadbar_downloads_menu_root_1_menupopup_1_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.clsbr"));
@@ -4536,10 +4548,10 @@ var WindowListener = {
 	downloadbar_downloads_menu_root_1_menupopup_1_menuitem.setAttribute("style", "-moz-image-region: rect(64px, 112px, 80px, 96px) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 	downloadbar_downloads_menu_root_1_menupopup_1_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_downloads_menu_root_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_1_menuitem);
-	var downloadbar_downloads_menu_root_1_menupopup_2_menuseparator = document.createElement("menuseparator");
+	var downloadbar_downloads_menu_root_1_menupopup_2_menuseparator = document.createXULElement("menuseparator");
 	downloadbar_downloads_menu_root_1_menupopup_2_menuseparator.setAttribute("id", "downloadsbar-dmclosems");
 	downloadbar_downloads_menu_root_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_2_menuseparator);
-	var downloadbar_downloads_menu_root_1_menupopup_3_menuitem = document.createElement("menuitem");
+	var downloadbar_downloads_menu_root_1_menupopup_3_menuitem = document.createXULElement("menuitem");
 	downloadbar_downloads_menu_root_1_menupopup_3_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.hlp"));
 	downloadbar_downloads_menu_root_1_menupopup_3_menuitem.setAttribute("id", "downloadsbar-help");
 	downloadbar_downloads_menu_root_1_menupopup_3_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.hlp"));
@@ -4547,34 +4559,34 @@ var WindowListener = {
 	downloadbar_downloads_menu_root_1_menupopup_3_menuitem.setAttribute("style", "-moz-image-region: rect(64px, 64px, 80px, 48px) !important; list-style-image: url('chrome://downloadbar/skin/images/Crystal Project.png') !important;");
 	downloadbar_downloads_menu_root_1_menupopup_3_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_downloads_menu_root_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_3_menuitem);
-	var downloadbar_downloads_menu_root_1_menupopup_4_menuseparator = document.createElement("menuseparator");
+	var downloadbar_downloads_menu_root_1_menupopup_4_menuseparator = document.createXULElement("menuseparator");
 	downloadbar_downloads_menu_root_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_4_menuseparator);
-	var downloadbar_downloads_menu_root_1_menupopup_5_menu = document.createElement("menu");
+	var downloadbar_downloads_menu_root_1_menupopup_5_menu = document.createXULElement("menu");
 	downloadbar_downloads_menu_root_1_menupopup_5_menu.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.dwnlds"));
 	downloadbar_downloads_menu_root_1_menupopup_5_menu.setAttribute("style", "-moz-image-region: rect(48px, 112px, 64px, 96px) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 	downloadbar_downloads_menu_root_1_menupopup_5_menu.setAttribute("class", "menu-iconic");
-	var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup = document.createElement("menupopup");
-	var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_1_menuitem = document.createElement("menuitem");
+	var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup = document.createXULElement("menupopup");
+	var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_1_menuitem = document.createXULElement("menuitem");
 	downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_1_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.pslldwnlds"));
 	downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_1_menuitem.addEventListener("command", DownloadBar.pauseall, true);
 	downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_1_menuitem.setAttribute("style", "-moz-image-region: rect(320px, 112px, 336px, 96px) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 	downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_1_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_1_menuitem);
-	var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_2_menuitem = document.createElement("menuitem");
+	var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_2_menuitem = document.createXULElement("menuitem");
 	downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_2_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.rsmlldwnlds"));
 	downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_2_menuitem.addEventListener("command", DownloadBar.resumeall, true);
 	downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_2_menuitem.setAttribute("style", "-moz-image-region: rect(336px, 16px, 352px, 0) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 	downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_2_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_2_menuitem);
-	var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_3_menuitem = document.createElement("menuitem");
+	var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_3_menuitem = document.createXULElement("menuitem");
 	downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_3_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.cncllldwnlds"));
 	downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_3_menuitem.addEventListener("command", DownloadBar.cancelall, true);
 	downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_3_menuitem.setAttribute("style", "-moz-image-region: rect(320px, 128px, 336px, 112px) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 	downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_3_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_3_menuitem);
-	var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_4_menuseparator = document.createElement("menuseparator");
+	var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_4_menuseparator = document.createXULElement("menuseparator");
 	downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_4_menuseparator);
-	var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_5_menuitem = document.createElement("menuitem");
+	var downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_5_menuitem = document.createXULElement("menuitem");
 	downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_5_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.clrlldwnlds"));
 	downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_5_menuitem.setAttribute("id", "downloadsbar-dmclearall");
 	downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_5_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.clrlldwnlds"));
@@ -4584,9 +4596,9 @@ var WindowListener = {
 	downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup_5_menuitem);
 	downloadbar_downloads_menu_root_1_menupopup_5_menu.appendChild(downloadbar_downloads_menu_root_1_menupopup_5_menu_1_menupopup);
 	downloadbar_downloads_menu_root_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_5_menu);
-	var downloadbar_downloads_menu_root_1_menupopup_6_menuseparator = document.createElement("menuseparator");
+	var downloadbar_downloads_menu_root_1_menupopup_6_menuseparator = document.createXULElement("menuseparator");
 	downloadbar_downloads_menu_root_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_6_menuseparator);
-	var downloadbar_downloads_menu_root_1_menupopup_65_menuitem = document.createElement("menuitem");
+	var downloadbar_downloads_menu_root_1_menupopup_65_menuitem = document.createXULElement("menuitem");
 	downloadbar_downloads_menu_root_1_menupopup_65_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.clrlldwnlds"));
 	downloadbar_downloads_menu_root_1_menupopup_65_menuitem.setAttribute("id", "downloadsbar-dwnldtb");
 	downloadbar_downloads_menu_root_1_menupopup_65_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.clrlldwnlds"));
@@ -4594,9 +4606,9 @@ var WindowListener = {
 	downloadbar_downloads_menu_root_1_menupopup_65_menuitem.setAttribute("style", "-moz-image-region: rect(176px, 144px, 192px, 128px) !important; list-style-image: url('chrome://downloadbar/skin/images/Tango.png') !important;");
 	downloadbar_downloads_menu_root_1_menupopup_65_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_downloads_menu_root_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_65_menuitem);
-	var downloadbar_downloads_menu_root_1_menupopup_675_menuseparator = document.createElement("menuseparator");
+	var downloadbar_downloads_menu_root_1_menupopup_675_menuseparator = document.createXULElement("menuseparator");
 	downloadbar_downloads_menu_root_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_675_menuseparator);	
-	var downloadbar_downloads_menu_root_1_menupopup_7_menuitem = document.createElement("menuitem");
+	var downloadbar_downloads_menu_root_1_menupopup_7_menuitem = document.createXULElement("menuitem");
 	downloadbar_downloads_menu_root_1_menupopup_7_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.pndwnldtb"));
 	downloadbar_downloads_menu_root_1_menupopup_7_menuitem.setAttribute("id", "downloadsbar-dwnldtb");
 	downloadbar_downloads_menu_root_1_menupopup_7_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.pndwnldtb"));
@@ -4604,7 +4616,7 @@ var WindowListener = {
 	downloadbar_downloads_menu_root_1_menupopup_7_menuitem.setAttribute("style", "-moz-image-region: rect(16px, 96px, 32px, 80px) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 	downloadbar_downloads_menu_root_1_menupopup_7_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_downloads_menu_root_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_7_menuitem);
-	var downloadbar_downloads_menu_root_1_menupopup_8_menuitem = document.createElement("menuitem");
+	var downloadbar_downloads_menu_root_1_menupopup_8_menuitem = document.createXULElement("menuitem");
 	downloadbar_downloads_menu_root_1_menupopup_8_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.shwlldwnldshstry"));
 	downloadbar_downloads_menu_root_1_menupopup_8_menuitem.setAttribute("id", "downloadsbar-shwDwnldsHstry");
 	downloadbar_downloads_menu_root_1_menupopup_8_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.shwlldwnldshstry"));
@@ -4612,7 +4624,7 @@ var WindowListener = {
 	downloadbar_downloads_menu_root_1_menupopup_8_menuitem.setAttribute("style", "-moz-image-region: rect(32px, 144px, 48px, 128px) !important; list-style-image: url('chrome://downloadbar/skin/images/Fugue.png') !important;");
 	downloadbar_downloads_menu_root_1_menupopup_8_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_downloads_menu_root_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_8_menuitem);
-	var downloadbar_downloads_menu_root_1_menupopup_9_menuitem = document.createElement("menuitem");
+	var downloadbar_downloads_menu_root_1_menupopup_9_menuitem = document.createXULElement("menuitem");
 	downloadbar_downloads_menu_root_1_menupopup_9_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.sttstcs"));
 	downloadbar_downloads_menu_root_1_menupopup_9_menuitem.setAttribute("id", "downloadsbar-sttstcs");
 	downloadbar_downloads_menu_root_1_menupopup_9_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.sttstcs"));
@@ -4620,9 +4632,9 @@ var WindowListener = {
 	downloadbar_downloads_menu_root_1_menupopup_9_menuitem.setAttribute("style", "list-style-image: url('chrome://downloadbar/skin/images/statistics.png') !important;");
 	downloadbar_downloads_menu_root_1_menupopup_9_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_downloads_menu_root_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_9_menuitem);
-	var downloadbar_downloads_menu_root_1_menupopup_10_menuseparator = document.createElement("menuseparator");
+	var downloadbar_downloads_menu_root_1_menupopup_10_menuseparator = document.createXULElement("menuseparator");
 	downloadbar_downloads_menu_root_1_menupopup.appendChild(downloadbar_downloads_menu_root_1_menupopup_10_menuseparator);
-	var downloadbar_downloads_menu_root_1_menupopup_11_menuitem = document.createElement("menuitem");
+	var downloadbar_downloads_menu_root_1_menupopup_11_menuitem = document.createXULElement("menuitem");
 	downloadbar_downloads_menu_root_1_menupopup_11_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.ptns"));
 	downloadbar_downloads_menu_root_1_menupopup_11_menuitem.setAttribute("id", "downloadsbar-pnts");
 	downloadbar_downloads_menu_root_1_menupopup_11_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.ptns"));
@@ -4634,7 +4646,7 @@ var WindowListener = {
 
 	DownloadBar.appndDtlsPnl(document);
 	
-	var downloadbar_panel_root_1_panel = document.createElement("panel");
+	var downloadbar_panel_root_1_panel = document.createXULElement("panel");
 	downloadbar_panel_root_1_panel.setAttribute("id", "downloadbar-panel");
 	downloadbar_panel_root_1_panel.setAttribute("type", "arrow");
 	downloadbar_panel_root_1_panel.setAttribute("orient", "vertical");
@@ -4643,25 +4655,25 @@ var WindowListener = {
 	downloadbar_panel_root_1_panel.setAttribute("flip", "both");
 	downloadbar_panel_root_1_panel.setAttribute("side", "top");
 	downloadbar_panel_root_1_panel.setAttribute("position", "bottomcenter topleft");
-	var downloadbar_panel_root_1_panel_1_vbox = document.createElement("arrowscrollbox");
+	var downloadbar_panel_root_1_panel_1_vbox = document.createXULElement("arrowscrollbox");
 	downloadbar_panel_root_1_panel_1_vbox.setAttribute("id", "downloadbar-downloadpanel");
 	downloadbar_panel_root_1_panel_1_vbox.setAttribute("flex", "1");
 	downloadbar_panel_root_1_panel_1_vbox.setAttribute("orient", "vertical");
 	downloadbar_panel_root_1_panel_1_vbox.setAttribute("maxheight", "500");
-	var downloadbar_panel_root_1_panel_1_vbox_1_hbox = document.createElement("hbox");
+	var downloadbar_panel_root_1_panel_1_vbox_1_hbox = document.createXULElement("hbox");
 	downloadbar_panel_root_1_panel_1_vbox_1_hbox.setAttribute("id", "downloadbar-pnlbll");
 	downloadbar_panel_root_1_panel_1_vbox_1_hbox.setAttribute("align", "center");
 	downloadbar_panel_root_1_panel_1_vbox_1_hbox.setAttribute("pack", "center");
-	var downloadbar_panel_root_1_panel_1_vbox_1_hbox_1_label = document.createElement("label");
+	var downloadbar_panel_root_1_panel_1_vbox_1_hbox_1_label = document.createXULElement("label");
 	downloadbar_panel_root_1_panel_1_vbox_1_hbox_1_label.setAttribute("value", "Download Status Bar");
 	downloadbar_panel_root_1_panel_1_vbox_1_hbox.appendChild(downloadbar_panel_root_1_panel_1_vbox_1_hbox_1_label);
 	downloadbar_panel_root_1_panel_1_vbox.appendChild(downloadbar_panel_root_1_panel_1_vbox_1_hbox);
 	downloadbar_panel_root_1_panel.appendChild(downloadbar_panel_root_1_panel_1_vbox);
 	document.getElementById("mainPopupSet").appendChild(downloadbar_panel_root_1_panel);
 	
-	var downloadbar_copy_menu_root_1_menupopup = document.createElement("menupopup");
+	var downloadbar_copy_menu_root_1_menupopup = document.createXULElement("menupopup");
 	downloadbar_copy_menu_root_1_menupopup.setAttribute("id", "downloadsbar-copy-menu");
-	var downloadbar_copy_menu_root_1_menupopup_1_menuitem = document.createElement("menuitem");
+	var downloadbar_copy_menu_root_1_menupopup_1_menuitem = document.createXULElement("menuitem");
 	downloadbar_copy_menu_root_1_menupopup_1_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.cpy"));
 	downloadbar_copy_menu_root_1_menupopup_1_menuitem.setAttribute("id", "downloadsbar-cpymenu");
 	downloadbar_copy_menu_root_1_menupopup_1_menuitem.setAttribute("tooltiptext", DownloadBar.gtPrpVl("downloadbar.cpy"));
@@ -4671,20 +4683,20 @@ var WindowListener = {
 	downloadbar_copy_menu_root_1_menupopup.appendChild(downloadbar_copy_menu_root_1_menupopup_1_menuitem);
 	document.getElementById("mainPopupSet").appendChild(downloadbar_copy_menu_root_1_menupopup);
 	
-	var downloadbar_downloadbar_root_1_vbox_1_hbox = document.createElement("hbox");
+	var downloadbar_downloadbar_root_1_vbox_1_hbox = document.createXULElement("hbox");
 	downloadbar_downloadbar_root_1_vbox_1_hbox.setAttribute("id", "downloadbar-bar");
 	downloadbar_downloadbar_root_1_vbox_1_hbox.setAttribute("insertbefore", "addon-bar");
 	downloadbar_downloadbar_root_1_vbox_1_hbox.setAttribute("style", "overflow-x:hidden;overflow-y:hidden;");
-	var downloadbar_downloadbar_root_1_vbox_1_hbox_1_vbox = document.createElement("hbox");
+	var downloadbar_downloadbar_root_1_vbox_1_hbox_1_vbox = document.createXULElement("hbox");
 	downloadbar_downloadbar_root_1_vbox_1_hbox_1_vbox.setAttribute("align", "center");
 	downloadbar_downloadbar_root_1_vbox_1_hbox_1_vbox.setAttribute("pack", "center");
 	downloadbar_downloadbar_root_1_vbox_1_hbox_1_vbox.setAttribute("id", "downloadsbar-mn");
 	downloadbar_downloadbar_root_1_vbox_1_hbox_1_vbox.setAttribute("context", "downloadsbar-downnloads-menu");
 	downloadbar_downloadbar_root_1_vbox_1_hbox_1_vbox.setAttribute("class", "db"+brnch.getCharPref("extensions.downloadbar.buttontype"));
-	var downloadbar_downloadbar_root_1_vbox_1_hbox_1_vbox_1_image = document.createElement("image");
+	var downloadbar_downloadbar_root_1_vbox_1_hbox_1_vbox_1_image = document.createXULElement("image");
 	downloadbar_downloadbar_root_1_vbox_1_hbox_1_vbox_1_image.setAttribute("src", "chrome://downloadbar/skin/16.png");
 	downloadbar_downloadbar_root_1_vbox_1_hbox_1_vbox.appendChild(downloadbar_downloadbar_root_1_vbox_1_hbox_1_vbox_1_image);	
-	var downloadbar_downloadbar_root_1_vbox_1_hbox_1_vbox_1_label = document.createElement("label");
+	var downloadbar_downloadbar_root_1_vbox_1_hbox_1_vbox_1_label = document.createXULElement("label");
 	downloadbar_downloadbar_root_1_vbox_1_hbox_1_vbox_1_label.setAttribute("value", DownloadBar.gtPrpVl("downloadbar.dwnlds"));
 	downloadbar_downloadbar_root_1_vbox_1_hbox_1_vbox.appendChild(downloadbar_downloadbar_root_1_vbox_1_hbox_1_vbox_1_label);
 	var downloadbar_downloadbar_root_1_vbox_1_hbox_1_vbox_1_audio = document.createElementNS("http://www.w3.org/1999/xhtml","audio");
@@ -4694,24 +4706,24 @@ var WindowListener = {
 	downloadbar_downloadbar_root_1_vbox_1_hbox_1_vbox_1_audio.setAttribute("preload", "auto");	
 	downloadbar_downloadbar_root_1_vbox_1_hbox_1_vbox.appendChild(downloadbar_downloadbar_root_1_vbox_1_hbox_1_vbox_1_audio);	
 	downloadbar_downloadbar_root_1_vbox_1_hbox.appendChild(downloadbar_downloadbar_root_1_vbox_1_hbox_1_vbox);
-	var downloadbar_downloadbar_root_1_vbox_1_hbox_2_arrowscrollbox = document.createElement("arrowscrollbox");
+	var downloadbar_downloadbar_root_1_vbox_1_hbox_2_arrowscrollbox = document.createXULElement("arrowscrollbox");
 	downloadbar_downloadbar_root_1_vbox_1_hbox_2_arrowscrollbox.setAttribute("id", "downloadbar-bar-wrbx");
 	downloadbar_downloadbar_root_1_vbox_1_hbox_2_arrowscrollbox.setAttribute("flex", "1");
 	downloadbar_downloadbar_root_1_vbox_1_hbox_2_arrowscrollbox.addEventListener("click", DownloadBar.rghtClckMn, true);
 	downloadbar_downloadbar_root_1_vbox_1_hbox_2_arrowscrollbox.addEventListener("dblclick", DownloadBar.dblclckclrll, true);
 	downloadbar_downloadbar_root_1_vbox_1_hbox_2_arrowscrollbox.setAttribute("orient", "horizontal");
 	downloadbar_downloadbar_root_1_vbox_1_hbox.appendChild(downloadbar_downloadbar_root_1_vbox_1_hbox_2_arrowscrollbox);
-	var downloadbar_downloadbar_root_1_vbox_1_hbox_3_vbox = document.createElement("hbox");
+	var downloadbar_downloadbar_root_1_vbox_1_hbox_3_vbox = document.createXULElement("hbox");
 	downloadbar_downloadbar_root_1_vbox_1_hbox_3_vbox.setAttribute("id", "downloadbar-bar-clrbttn");
 	downloadbar_downloadbar_root_1_vbox_1_hbox_3_vbox.setAttribute("pack", "center");
 	downloadbar_downloadbar_root_1_vbox_1_hbox_3_vbox.setAttribute("align", "center");
 	downloadbar_downloadbar_root_1_vbox_1_hbox_3_vbox.setAttribute("class", "db"+brnch.getCharPref("extensions.downloadbar.buttontype"));	
 	downloadbar_downloadbar_root_1_vbox_1_hbox_3_vbox.addEventListener("click", DownloadBar.clearall, true);
-	var downloadbar_downloadbar_root_1_vbox_1_hbox_3_vbox_1_image = document.createElement("image");
+	var downloadbar_downloadbar_root_1_vbox_1_hbox_3_vbox_1_image = document.createXULElement("image");
 	//downloadbar_downloadbar_root_1_vbox_1_hbox_3_vbox_1_image.setAttribute("src", "chrome://downloadbar/skin/16.png");
 	downloadbar_downloadbar_root_1_vbox_1_hbox_3_vbox_1_image.setAttribute("style", "-moz-image-region: rect(176px, 144px, 192px, 128px) !important; list-style-image: url('chrome://downloadbar/skin/images/Tango.png') !important;");
 	downloadbar_downloadbar_root_1_vbox_1_hbox_3_vbox.appendChild(downloadbar_downloadbar_root_1_vbox_1_hbox_3_vbox_1_image);	
-	var downloadbar_downloadbar_root_1_vbox_1_hbox_3_vbox_1_label = document.createElement("label");
+	var downloadbar_downloadbar_root_1_vbox_1_hbox_3_vbox_1_label = document.createXULElement("label");
 	downloadbar_downloadbar_root_1_vbox_1_hbox_3_vbox_1_label.setAttribute("value", DownloadBar.gtPrpVl("downloadbar.clr"));
 	downloadbar_downloadbar_root_1_vbox_1_hbox_3_vbox.appendChild(downloadbar_downloadbar_root_1_vbox_1_hbox_3_vbox_1_label);
 	downloadbar_downloadbar_root_1_vbox_1_hbox.appendChild(downloadbar_downloadbar_root_1_vbox_1_hbox_3_vbox);
@@ -4721,14 +4733,16 @@ var WindowListener = {
 			else document.getElementById("browser-bottombox").appendChild(downloadbar_downloadbar_root_1_vbox_1_hbox);
 		}
 		else{
-			document.getElementById("status-bar").parentNode.insertBefore(downloadbar_downloadbar_root_1_vbox_1_hbox,document.getElementById("status-bar"));
+			document.getElementById("browser-bottombox").appendChild(downloadbar_downloadbar_root_1_vbox_1_hbox);
+			// document.getElementById("status-bar").parentNode.insertBefore(downloadbar_downloadbar_root_1_vbox_1_hbox,document.getElementById("status-bar"));
 		}
 	}
 	else if(windowtype=="mail:3pane"){
-		document.getElementById("status-bar").parentNode.insertBefore(downloadbar_downloadbar_root_1_vbox_1_hbox,document.getElementById("status-bar"));
+		document.getElementById("browser-bottombox").appendChild(downloadbar_downloadbar_root_1_vbox_1_hbox);
+		// document.getElementById("status-bar").parentNode.insertBefore(downloadbar_downloadbar_root_1_vbox_1_hbox,document.getElementById("status-bar"));
 	}
 
-	var downloadbar_ddnbr_root_1_toolbarbutton = document.createElement("toolbarbutton");
+	var downloadbar_ddnbr_root_1_toolbarbutton = document.createXULElement("toolbarbutton");
 	downloadbar_ddnbr_root_1_toolbarbutton.setAttribute("id", "downloadbar-ddnbr");
 	downloadbar_ddnbr_root_1_toolbarbutton.setAttribute("label", "Download Status Bar");
 	downloadbar_ddnbr_root_1_toolbarbutton.setAttribute("tooltiptext", "Download Status Bar");
@@ -4738,12 +4752,12 @@ var WindowListener = {
 	downloadbar_ddnbr_root_1_toolbarbutton.setAttribute("popup", "downloadbar-panel");
 	downloadbar_ddnbr_root_1_toolbarbutton.setAttribute("context", "downloadsbar-downnloads-menu");
 	downloadbar_ddnbr_root_1_toolbarbutton.setAttribute("removable", "true");
-	var downloadbar_ddnbr_root_1_toolbarbutton_1_hbox = document.createElement("hbox");
+	var downloadbar_ddnbr_root_1_toolbarbutton_1_hbox = document.createXULElement("hbox");
 	downloadbar_ddnbr_root_1_toolbarbutton_1_hbox.setAttribute("align", "center");
 	downloadbar_ddnbr_root_1_toolbarbutton_1_hbox.setAttribute("class","toolbarbutton-icon");	
-	var downloadbar_ddnbr_root_1_toolbarbutton_1_hbox_1_image = document.createElement("image");	
+	var downloadbar_ddnbr_root_1_toolbarbutton_1_hbox_1_image = document.createXULElement("image");	
 	downloadbar_ddnbr_root_1_toolbarbutton_1_hbox.appendChild(downloadbar_ddnbr_root_1_toolbarbutton_1_hbox_1_image);
-	var downloadbar_ddnbr_root_1_toolbarbutton_1_hbox_2_label = document.createElement("label");
+	var downloadbar_ddnbr_root_1_toolbarbutton_1_hbox_2_label = document.createXULElement("label");
 	downloadbar_ddnbr_root_1_toolbarbutton_1_hbox_2_label.setAttribute("id", "downloadbar-cntr");
 	downloadbar_ddnbr_root_1_toolbarbutton_1_hbox_2_label.setAttribute("value", "0:0");
 	downloadbar_ddnbr_root_1_toolbarbutton_1_hbox.appendChild(downloadbar_ddnbr_root_1_toolbarbutton_1_hbox_2_label);
@@ -4938,7 +4952,7 @@ function startup(data, reason) {
 	// Get the list of browser windows already open
 	let windows = wm.getEnumerator(dbcomp.windowtype);
 	while (windows.hasMoreElements()) {
-		let domWindow = windows.getNext().QueryInterface(Ci.nsIDOMWindow);
+		let domWindow = windows.getNext()/* .QueryInterface(Ci.nsIDOMWindow) */;
 		WindowListener.setupBrowserUI(domWindow,(isupdateavailable && closebar));
 	}
 
@@ -4957,7 +4971,7 @@ function startup(data, reason) {
 
 }
 
-function shutdown(data, reason) {
+async function shutdown(data, reason) {
 
 	let brnch=Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
 	let dbcomp=Components.classes["@downloadbar.com/bs;1"].getService().wrappedJSObject;
@@ -4980,7 +4994,7 @@ function shutdown(data, reason) {
 	// Get the list of browser windows already open
 	let windows = wm2.getEnumerator(dbcomp.windowtype);
 	while (windows.hasMoreElements()) {
-		let domWindow = windows.getNext().QueryInterface(Ci.nsIDOMWindow);
+		let domWindow = windows.getNext()/* .QueryInterface(Ci.nsIDOMWindow) */;
 
 		WindowListener.tearDownBrowserUI(domWindow);
 	}
@@ -4997,15 +5011,15 @@ function shutdown(data, reason) {
 	  sss.unregisterSheet(u, sss.USER_SHEET); 
 	
 	if(dbcomp.ff26above) {	
-		Task.spawn(function () {
-			let public_list = yield Downloads.getList(Downloads.PUBLIC);
-			yield public_list.removeView(dbcomp.public_view);
+		try {
+			let public_list = await Downloads.getList(Downloads.PUBLIC);
+			await public_list.removeView(dbcomp.public_view);
 			//dbcomp.public_view=null;
 			
-			let private_list = yield Downloads.getList(Downloads.PRIVATE);
-			yield private_list.removeView(dbcomp.private_view);
+			let private_list = await Downloads.getList(Downloads.PRIVATE);
+			await private_list.removeView(dbcomp.private_view);
 			//dbcomp.private_view=null;
-		}).then(null, Components.utils.reportError);
+		}catch(e) {Components.utils.reportError;}
 	}
 	else{
 		var dm = Components.classes["@mozilla.org/download-manager;1"].getService(Components.interfaces.nsIDownloadManager);

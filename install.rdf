@@ -5,6 +5,7 @@
 <em:id>{6c28e999-e900-4635-a39d-b1ec90ba0c0f}</em:id>
 <em:version>15.0.0.1</em:version>
 <em:type>2</em:type>
+<em:optionsType>3</em:optionsType>
 <em:bootstrap>true</em:bootstrap>
 <em:unpack>false</em:unpack>
 
@@ -45,7 +46,7 @@
 
 <!-- Front End MetaData -->
 <em:name>Download Status Bar</em:name>
-<em:optionsURL>chrome://downloadbar/content/options.xul</em:optionsURL>
+<em:optionsURL>chrome://downloadbar/content/options.xhtml</em:optionsURL>
 <em:multiprocessCompatible>true</em:multiprocessCompatible>
 
 <em:translator>Grinch Finnish</em:translator>
