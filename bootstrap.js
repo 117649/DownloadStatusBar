@@ -8,6 +8,7 @@ Components.utils.import("resource://gre/modules/osfile.jsm");
 Components.utils.import("resource://gre/modules/DownloadIntegration.jsm");
 Components.utils.import("resource://gre/modules/XPCOMUtils.jsm");
 Components.utils.import("resource://gre/modules/ComponentUtils.jsm");
+Components.utils.import("resource://gre/modules/FileUtils.jsm");
 
 
 // ChromeUtils.defineModuleGetter(
@@ -50,7 +51,7 @@ DownloadBarComponent.prototype = {
 			totalBytes=dl.totalBytes;
 			amountTransferred=dl.currentBytes;
 			source=dl.source.url;
-			referrer=dl.source.referrer;
+			referrer=dl.source.referrerInfo ? dl.source.referrerInfo.computedReferrerSpec : null;
 			progress=(dl.progress!=undefined ? dl.progress : (dl.percentComplete!=-1 ? dl.percentComplete : 0));
 		}
 		else{
@@ -142,8 +143,8 @@ DownloadBarComponent.prototype = {
 			stck.setAttribute("flex","1");
 			stck.setAttribute("downcompleted","false");
 			stck.setAttribute("paused","false");
-			stck.setAttribute("sourceurl","");
-			stck.setAttribute("sourcereferrer","");
+			stck.setAttribute("sourceurl",source);
+			stck.setAttribute("sourcereferrer",referrer);
 			stck.addEventListener("dblclick",DownloadBar.stckdbclck,false);
 			stck.addEventListener("click",DownloadBar.stckclck,false);
 			
@@ -319,7 +320,7 @@ DownloadBarComponent.prototype = {
 					if (recentWindow) {
 					  // Use an existing browser window
 					  //recentWindow.delayedOpenTab(url, null, null, null, null);
-					  rwin.gBrowser.selectedTab=rwin.gBrowser.addTab("about:downloads",{relatedToCurrent: true});
+					  rwin.gBrowser.selectedTab=rwin.gBrowser.addTab("about:downloads",{relatedToCurrent: true , triggeringPrincipal: Services.scriptSecurityManager.getSystemPrincipal()});
 					}
 					else {
 					  // No browser windows are open, so open a new one.
@@ -363,7 +364,7 @@ DownloadBarComponent.prototype = {
 				objct[dlid].id = dlid;
 				objct[dlid].target={path : encodeURIComponent(targetFile.path)};
 				objct[dlid].succeeded = dl.succeeded;
-				objct[dlid].source = {url : encodeURIComponent(dl.source.url), referrer : encodeURIComponent(dl.source.referrer)};
+				objct[dlid].source = {url : encodeURIComponent(dl.source.url), referrer : encodeURIComponent(dl.source.referrerInfo.computedReferrerSpec)};
 				var newentry='"'+dlid+'":'+JSON.stringify(objct[dlid]);							
 
 				this.writeJSON("history.json",oldhstry.replace(tempentry,newentry));
@@ -406,13 +407,13 @@ DownloadBarComponent.prototype = {
 		hstry[dlid].id = dlid;
 		hstry[dlid].target={path : encodeURIComponent(targetFile.path)};
 		hstry[dlid].succeeded = dl.succeeded;
-		hstry[dlid].source = {url : encodeURIComponent(dl.source.url), referrer : encodeURIComponent(dl.source.referrer)};
+		hstry[dlid].source = {url : encodeURIComponent(dl.source.url), referrer : encodeURIComponent(dl.source.referrerInfo.computedReferrerSpec)};
 
 		if (download.succeeded) {
 			let endTime=new Date().getTime();
 			
 			hstry[dlid].endTime = endTime;
-			hstry[dlid].source = {url : encodeURIComponent(dl.source.url), referrer : encodeURIComponent(dl.source.referrer)};
+			hstry[dlid].source = {url : encodeURIComponent(dl.source.url), referrer : encodeURIComponent(dl.source.referrerInfo.computedReferrerSpec)};
 			hstry[dlid].speed = dl.speed;
 			hstry[dlid].totalBytes = dl.totalBytes;
 			hstry[dlid].currentBytes = dl.currentBytes;
@@ -451,7 +452,7 @@ DownloadBarComponent.prototype = {
 				totalBytes=dl.totalBytes;
 				amountTransferred=dl.currentBytes;
 				source=dl.source.url;
-				referrer=dl.source.referrer;
+				referrer=dl.source.referrerInfo ? dl.source.referrerInfo.computedReferrerSpec : null;
 				progress=(dl.progress!=undefined ? dl.progress : (dl.percentComplete!=-1 ? dl.percentComplete : 0));
 			}
 			else{
@@ -556,8 +557,8 @@ DownloadBarComponent.prototype = {
 						let prefs = Components.classes["@mozilla.org/preferences-service;1"].
 									getService(Components.interfaces.nsIPrefService).
 									getBranch("extensions.downloadbar.")
-						let audioplayerpath=prefs.getComplexValue("audioplayerpath", Components.interfaces.nsILocalFile).path;					
-						var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsILocalFile);
+						let audioplayerpath=prefs.getComplexValue("audioplayerpath", Components.interfaces.nsIFile).path;					
+						var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);
 						file.initWithPath(audioplayerpath);		
 						var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService)
 						rwin.document.getElementById("downloadbar-opt-doplyr").setAttribute("src",ioService.newFileURI(file).spec);
@@ -710,7 +711,7 @@ DownloadBarComponent.prototype = {
 							let prefs = Components.classes["@mozilla.org/preferences-service;1"].
 										getService(Components.interfaces.nsIPrefService).
 										getBranch("extensions.downloadbar.")
-							let viruscanpath=prefs.getComplexValue("viruscanpath", Components.interfaces.nsILocalFile).path;		
+							let viruscanpath=prefs.getComplexValue("viruscanpath", Components.interfaces.nsIFile).path;		
 							let virusarguments=brnch.getCharPref("extensions.downloadbar.virusscanarguments");
 
 							if(virusarguments.search(/%1/g)!=-1){
@@ -758,7 +759,7 @@ DownloadBarComponent.prototype = {
 				}						
 				
 				hstry[dlid].endTime = endTime;
-				hstry[dlid].source = {url : encodeURIComponent(dl.source.url), referrer : encodeURIComponent(dl.source.referrer)};
+				hstry[dlid].source = {url : encodeURIComponent(dl.source.url), referrer : encodeURIComponent(dl.source.referrerInfo.computedReferrerSpec)};
 				hstry[dlid].speed = dl.speed;
 				hstry[dlid].totalBytes = this.hasDLProgress(dl) ? totalBytes: amountTransferred;
 				hstry[dlid].currentBytes = dl.currentBytes;
@@ -1045,7 +1046,7 @@ DownloadBarComponent.prototype = {
 			totalBytes=dl.totalBytes;
 			amountTransferred=dl.currentBytes;
 			source=dl.source.url;
-			referrer=dl.source.referrer;
+			referrer=dl.source.referrerInfo ? dl.source.referrerInfo.computedReferrerSpec : null;
 			progress=(dl.progress!=undefined ? dl.progress : (dl.percentComplete!=-1 ? dl.percentComplete : 0));
 		}
 		else{
@@ -1097,8 +1098,8 @@ DownloadBarComponent.prototype = {
 				let prefs = Components.classes["@mozilla.org/preferences-service;1"].
 							getService(Components.interfaces.nsIPrefService).
 							getBranch("extensions.downloadbar.")
-				let audioplayerpath=prefs.getComplexValue("audioplayerpath", Components.interfaces.nsILocalFile).path;					
-				var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsILocalFile);
+				let audioplayerpath=prefs.getComplexValue("audioplayerpath", Components.interfaces.nsIFile).path;					
+				var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);
 				file.initWithPath(audioplayerpath);		
 				var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService)
 				rwin.document.getElementById("downloadbar-opt-doplyr").setAttribute("src",ioService.newFileURI(file).spec);
@@ -1248,7 +1249,7 @@ DownloadBarComponent.prototype = {
 					let prefs = Components.classes["@mozilla.org/preferences-service;1"].
 								getService(Components.interfaces.nsIPrefService).
 								getBranch("extensions.downloadbar.")
-					let viruscanpath=prefs.getComplexValue("viruscanpath", Components.interfaces.nsILocalFile).path;		
+					let viruscanpath=prefs.getComplexValue("viruscanpath", Components.interfaces.nsIFile).path;		
 					let virusarguments=brnch.getCharPref("extensions.downloadbar.virusscanarguments");
 
 					if(virusarguments.search(/%1/g)!=-1 || !this.ff26above){
@@ -1290,7 +1291,7 @@ DownloadBarComponent.prototype = {
 					dl.targetFile.reveal();
 				}			
 				else{
-					var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsILocalFile);
+					var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);
 					file.initWithPath(s.dl.target.path);	
 					file.reveal();	
 				}
@@ -1902,7 +1903,7 @@ var DownloadBar = {
 				s.dl.targetFile.reveal();
 			}			
 			else{
-				var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsILocalFile);
+				var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);
 				file.initWithPath(s.dl.target.path);	
 				file.reveal();	
 			}
@@ -1953,7 +1954,7 @@ var DownloadBar = {
 					s.dl.targetFile.reveal();
 				}			
 				else{
-					var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsILocalFile);
+					var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);
 					file.initWithPath(s.dl.target.path);	
 					file.reveal();	
 				}
@@ -1972,7 +1973,7 @@ var DownloadBar = {
 					s.dl.targetFile.launch();
 				}			
 				else{
-					var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsILocalFile);
+					var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);
 					file.initWithPath(s.dl.target.path);	
 					file.launch();	
 				}
@@ -2607,7 +2608,7 @@ var DownloadBar = {
 		document.getElementById("downloadsbar-sendto").hidden=!succeeded;
 		document.getElementById("downloadsbar-dltfl").hidden=!succeeded;
 		document.getElementById("downloadsbar-slmenusp").hidden=!succeeded;
-		document.getElementById("downloadsbar-gtdwnlpg").disabled=s.getAttribute("sourcereferrer")=="null";
+		document.getElementById("downloadsbar-gtdwnlpg").disabled=!s.getAttribute("sourcereferrer");
 		document.getElementById("downloadsbar-cpytrgtpth").hidden=!brnch.getBoolPref("extensions.downloadbar.enablecopytargetpathmenuitem");
 		document.getElementById("downloadsbar-cncl").hidden=succeeded;
 		document.getElementById("downloadsbar-strt").hidden=!paused;
@@ -2636,7 +2637,7 @@ var DownloadBar = {
 			totalBytes=(dl.totalBytes!=0 ? dl.totalBytes : dl.currentBytes);
 			amountTransferred=dl.currentBytes;
 			source=dl.source.url;
-			referrer=dl.source.referrer;
+			referrer=dl.source.referrerInfo ? dl.source.referrerInfo.computedReferrerSpec : null;
 			progress=(dl.progress!=undefined ? dl.progress : (dl.percentComplete!=-1 ? dl.percentComplete : 0));
 		}
 		else{
@@ -2655,7 +2656,7 @@ var DownloadBar = {
 				totalBytes=dl.totalBytes;
 				amountTransferred=dl.currentBytes;
 				source=dl.source.url;
-				referrer=dl.source.referrer;
+				referrer=dl.source.referrerInfo ? dl.source.referrerInfo.computedReferrerSpec : null;
 				progress=(dl.progress!=undefined ? dl.progress : (dl.percentComplete!=-1 ? dl.percentComplete : 0));
 			}			
 		}
@@ -2731,7 +2732,7 @@ var DownloadBar = {
 			document.getElementById("downloadbar-ppprvwimgwrp").hidden=!(s.getAttribute("downcompleted")=="true");
 			if(event.target.getAttribute("leftclick")=="true") document.getElementById("downloadbar-ppprvwimg").style.setProperty("cursor","pointer","important");
 			
-			var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsILocalFile);
+			var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);
 			file.initWithPath(targetpath);		
 			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService)
 			//document.getElementById("downloadbar-ppprvwimg").setAttribute("src",ioService.newFileURI(file).spec);		
@@ -2799,7 +2800,7 @@ var DownloadBar = {
 			aboutDownloadsAvailable=true;
 		}
 		
-		DownloadBar.openTab(window, aboutDownloadsAvailable ? "about:downloads" : "chrome://mozapps/content/downloads/downloads.xul");
+		DownloadBar.openTab(window, aboutDownloadsAvailable ? "about:downloads" : "chrome://mozapps/content/downloads/downloads.xhtml");
 	},
 	shwlldwnldshstry:function(event){
 		let document=event.currentTarget.ownerDocument;
@@ -2831,7 +2832,7 @@ var DownloadBar = {
 					var prefs = Components.classes["@mozilla.org/preferences-service;1"].
 								getService(Components.interfaces.nsIPrefService).
 								getBranch("extensions.downloadbar.");
-					prefs.setComplexValue("viruscanpath", Components.interfaces.nsILocalFile, fp.file);
+					prefs.setComplexValue("viruscanpath", Components.interfaces.nsIFile, fp.file);
 				}			
 			}
 			else return;
@@ -2841,7 +2842,7 @@ var DownloadBar = {
 		let prefs2 = Components.classes["@mozilla.org/preferences-service;1"].
 					getService(Components.interfaces.nsIPrefService).
 					getBranch("extensions.downloadbar.")
-		let viruscanpath=prefs2.getComplexValue("viruscanpath", Components.interfaces.nsILocalFile).path;		
+		let viruscanpath=prefs2.getComplexValue("viruscanpath", Components.interfaces.nsIFile).path;		
 		let virusarguments=brnch.getCharPref("extensions.downloadbar.virusscanarguments");
 		let s=DownloadBar.getStack(document.popupNode);
 
@@ -2882,12 +2883,12 @@ var DownloadBar = {
 		s.dl.launch();
 	},
 	pnptns:function(){
-		gBrowser.selectedTab=gBrowser.addTab("chrome://downloadbar/content/options.xul",{relatedToCurrent: true});
+		gBrowser.selectedTab=gBrowser.addTab("chrome://downloadbar/content/options.xhtml",{relatedToCurrent: true , triggeringPrincipal: Services.scriptSecurityManager.getSystemPrincipal()});
 	},
 	pnptnsdlg:function(event){
 		let document=event.currentTarget.ownerDocument;
 		let window=document.defaultView;	
-		let ow=window.openDialog("chrome://downloadbar/content/options.xul", "Download Status Statusbar", "centerscreen,chrome");
+		let ow=window.openDialog("chrome://downloadbar/content/options.xhtml", "Download Status Statusbar", "centerscreen,chrome");
 		ow.focus();
 	},
 	checksum:function(event){
@@ -2906,7 +2907,7 @@ var DownloadBar = {
 				targetpath=s.dl.target.path;
 			}
 		}			
-		let cw=window.openDialog("chrome://downloadbar/content/checksum.xul", "Checksum", "centerscreen,chrome",targetpath,"MD5");
+		let cw=window.openDialog("chrome://downloadbar/content/checksum.xhtml", "Checksum", "centerscreen,chrome",targetpath,"MD5");
 		cw.focus();
 	},
 	tgglbr:function(event){
@@ -2925,7 +2926,7 @@ var DownloadBar = {
 		let window=document.defaultView;
 		let gBrowser=window.gBrowser;	
 		let s=DownloadBar.getStack(document.popupNode);
-		gBrowser.selectedTab=gBrowser.addTab(s.getAttribute("sourcereferrer"),{relatedToCurrent: true});
+		gBrowser.selectedTab=gBrowser.addTab(s.getAttribute("sourcereferrer"),{relatedToCurrent: true , triggeringPrincipal: Services.scriptSecurityManager.getSystemPrincipal()});
 	},
 	gtsrc:function(event){
 		if(event.button == 0) {
@@ -2940,7 +2941,7 @@ var DownloadBar = {
 		let document=event.currentTarget.ownerDocument;
 		let window=document.defaultView;
 		let s=DownloadBar.getStack(document.popupNode);
-		var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsILocalFile);
+		var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);
 		let path = DownloadBar.gtTrgtPth(s);
 		file.initWithPath(path);		
 		var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
@@ -2999,7 +3000,7 @@ var DownloadBar = {
 				targetpath=s.dl.target.path;
 			}
 		}		
-		var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsILocalFile);
+		var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);
 		file.initWithPath(targetpath);
 		if(file.exists()){
 			file.remove(true);
@@ -3057,7 +3058,7 @@ var DownloadBar = {
 		
 		var isDownloadPrivate=DownloadBar.isWindowPrivate(window);
 		
-		var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsILocalFile);
+		var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);
 		let path = DownloadBar.gtTrgtPth(s);		
 		file.initWithPath(path);
 
@@ -3097,7 +3098,7 @@ var DownloadBar = {
 		let document=event.currentTarget.ownerDocument;
 		let window=document.defaultView;	
 		let s=DownloadBar.getStack(document.popupNode);	
-		let cw=window.openDialog("chrome://downloadbar/content/rename.xul", "Rename", "centerscreen,chrome,resizable",s);
+		let cw=window.openDialog("chrome://downloadbar/content/rename.xhtml", "Rename", "centerscreen,chrome,resizable",s);
 		cw.focus();	
 	},
 	rnm:function(event){
@@ -3105,7 +3106,7 @@ var DownloadBar = {
 		var isDownloadPrivate=DownloadBar.isWindowPrivate(window);
 	
 		let s=DownloadBar.getStack(document.popupNode);	
-		var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsILocalFile);
+		var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);
 		file.initWithPath(s.dl.target.path);
 		
 		var prompts = Components.classes["@mozilla.org/embedcomp/prompt-service;1"]
@@ -3160,7 +3161,7 @@ var DownloadBar = {
 	},
 	drgstrt:function(event){		
 		let s=event.currentTarget;	
-		var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsILocalFile);
+		var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);
 		file.initWithPath(s.dl.target.path);
 		let dataTransfer = event.dataTransfer;
 		dataTransfer.mozSetDataAt("application/x-moz-file", file, 0);
@@ -3274,7 +3275,7 @@ var DownloadBar = {
 						s.dl.targetFile.launch();
 					}			
 					else{
-						var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsILocalFile);
+						var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);
 						file.initWithPath(s.dl.target.path);	
 						file.launch();	
 					}
@@ -3323,7 +3324,7 @@ var DownloadBar = {
 					s.dl.targetFile.reveal();
 				}			
 				else{
-					var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsILocalFile);
+					var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);
 					file.initWithPath(s.dl.target.path);	
 					file.reveal();	
 				}
@@ -3574,7 +3575,7 @@ var DownloadBar = {
 		// hardcoded here for convenience
 		var path = path;
 		var f = Components.classes["@mozilla.org/file/local;1"]
-						  .createInstance(Components.interfaces.nsILocalFile);
+						  .createInstance(Components.interfaces.nsIFile);
 		f.initWithPath(path);
 		var istream = Components.classes["@mozilla.org/network/file-input-stream;1"]           
 								.createInstance(Components.interfaces.nsIFileInputStream);
@@ -3646,7 +3647,7 @@ var DownloadBar = {
 		let window=document.defaultView;
 		DownloadBar.openTab(window,"chrome://downloadbar/content/help.xhtml");
 	},
-	sendto:function(event){
+	sendto:async function(event){
 		let document=event.currentTarget.ownerDocument;
 		let window=document.defaultView;
 		
@@ -3666,37 +3667,47 @@ var DownloadBar = {
 			}
 		}	
 		
-		var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsILocalFile);
+		var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);
 		file.initWithPath(targetpath);	
 	
 		var dir;
-	
-		if(event.target.id=="downloadsbar-sendto-desktp") {
+		var prefs = Components.classes["@mozilla.org/preferences-service;1"].
+			getService(Components.interfaces.nsIPrefService).
+			getBranch("extensions.downloadbar.customfolders.");
+
+		if (event.target.id == "downloadsbar-sendto-desktp") {
 			dir = Components.classes["@mozilla.org/file/directory_service;1"].
 					   getService(Components.interfaces.nsIProperties).
 					   get("Desk", Components.interfaces.nsIFile);		
 		}
 		else if(event.target.id=="downloadsbar-sendto-dwnlds") {
-			var dnldMgr = Components.classes["@mozilla.org/download-manager;1"]
-									.getService(Components.interfaces.nsIDownloadManager);
-			dir=dnldMgr.defaultDownloadsDirectory;	
+			// var dnldMgr = Components.classes["@mozilla.org/download-manager;1"]
+			// 						.getService(Components.interfaces.nsIDownloadManager);
+			// dir=dnldMgr.defaultDownloadsDirectory;	
+
+			dir=new FileUtils.File(await Downloads.getSystemDownloadsDirectory());
 		}
 		else if(event.target.id=="downloadsbar-sendto-cstm") {
 			const nsIFilePicker = Components.interfaces.nsIFilePicker;
 			var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
 			fp.init(window, DownloadBar.gtPrpVl("chsfldr") , nsIFilePicker.modeGetFolder);
-			var rv = fp.show();
+			// var rv = fp.show();
+			fp.open(function (rv) {
 			if (rv == nsIFilePicker.returnOK) {
-				dir=fp.file;				
-				var prefs = Components.classes["@mozilla.org/preferences-service;1"].
-							getService(Components.interfaces.nsIPrefService).
-							getBranch("extensions.downloadbar.customfolders.");
-				prefs.setComplexValue(new Date().getTime(), Components.interfaces.nsILocalFile, fp.file);
-			
+				dir=fp.file;
+
+				let children = prefs.getChildList("", {});
+				for (let i=0;i<children.length;i++){
+					if(fp.file.path == prefs.getComplexValue(children[i], Components.interfaces.nsIFile).path) return;
+				}
+				prefs.setComplexValue(new Date().getTime(), Components.interfaces.nsIFile, fp.file);
 			}	
 			else if (rv == nsIFilePicker.returnCancel) {
 				return;
-			}			
+			}});		
+		}
+		else if(event.target.id=="downloadsbar-sendto-cstm-clear"){
+			prefs.deleteBranch("");
 		}
 		else if(event.target.classList.contains("downloadbar-sendtocustomfolder")) {
 			if(event.target.customfolder.exists()){
@@ -3736,7 +3747,7 @@ var DownloadBar = {
 		//s.dl.showContainingDirectory();
 		
 	},
-	sendtopop:function(event){
+	sendtopop:async function(event){
 		let document=event.currentTarget.ownerDocument;
 		
 		if(event.target.id!=event.currentTarget.id) return;
@@ -3745,10 +3756,12 @@ var DownloadBar = {
 				   getService(Components.interfaces.nsIProperties).
 				   get("Desk", Components.interfaces.nsIFile);
 
-		var dnldMgr = Components.classes["@mozilla.org/download-manager;1"]
-					.getService(Components.interfaces.nsIDownloadManager);
+		// var dnldMgr = Components.classes["@mozilla.org/download-manager;1"]
+		// 			.getService(Components.interfaces.nsIDownloadManager);
 					   
-		var dwnlddir = dnldMgr.defaultDownloadsDirectory
+		// var dwnlddir = dnldMgr.defaultDownloadsDirectory
+
+		var dwnlddir = await Downloads.getSystemDownloadsDirectory();
 		
 		var profdir = Components.classes["@mozilla.org/file/directory_service;1"].
 				   getService(Components.interfaces.nsIProperties).
@@ -3758,7 +3771,7 @@ var DownloadBar = {
 		.getService(Components.interfaces.nsIIOService);
 
 		var dsktpdirurl = iOService.newFileURI(dsktpdir);
-		var dwnlddirurl = iOService.newFileURI(dwnlddir);
+		var dwnlddirurl = iOService.newFileURI(new FileUtils.File(dwnlddir));
 		var profdirurl = iOService.newFileURI(profdir);		
 
 		document.getElementById("downloadsbar-sendto-desktp").style.setProperty("list-style-image", "url('"+"moz-icon:"+dsktpdirurl.spec+"?size=16"+"')", "important");		
@@ -3770,7 +3783,7 @@ var DownloadBar = {
 		var obj={}
 		var children = branch.getChildList("", obj);
 		for (var i=0;i<children.length;i++){
-			var customfolder=branch.getComplexValue(children[i], Components.interfaces.nsILocalFile);
+			var customfolder=branch.getComplexValue(children[i], Components.interfaces.nsIFile);
 			var cstmfldrmntm=document.createXULElement("menuitem");
 			cstmfldrmntm.setAttribute("label",customfolder.leafName);
 			cstmfldrmntm.setAttribute("class","menuitem-iconic downloadbar-sendtocustomfolder");
@@ -3779,6 +3792,7 @@ var DownloadBar = {
 			document.getElementById("downloadsbar-sendtomn").insertBefore(cstmfldrmntm, document.getElementById("downloadsbar-sendto-customfoldersseparatorbelow"));
 
 			document.getElementById("downloadsbar-sendto-customfoldersseparatorabove").setAttribute("hidden","false");
+			document.getElementById("downloadsbar-sendto-cstm-clear").setAttribute("hidden","false");
 		}
 	},
 	sendtopophid:function(event){
@@ -3790,6 +3804,7 @@ var DownloadBar = {
 			children[i].parentNode.removeChild(children[i]);
 		}
 		document.getElementById("downloadsbar-sendto-customfoldersseparatorabove").setAttribute("hidden","true");
+		document.getElementById("downloadsbar-sendto-cstm-clear").setAttribute("hidden","true");
 	},
 	Chksm:{
 		clcltHash: function(path,algorithm,stck) {
@@ -3801,7 +3816,7 @@ var DownloadBar = {
 			  
 				var path=path;
 				var file=Components.classes["@mozilla.org/file/local;1"]
-								  .createInstance(Components.interfaces.nsILocalFile);
+								  .createInstance(Components.interfaces.nsIFile);
 				file.initWithPath(path);
 				
 				this.file=file;
@@ -3920,7 +3935,7 @@ var DownloadBar = {
 			}
 		}
 
-		if(brnch.getBoolPref("extensions.downloadbar.continuedownloadsonquit") && w == 0 && !allcompleted)	window.openDialog("chrome://downloadbar/content/downloads.xul", "about:downloads", "centerscreen,chrome,resizable");
+		if(brnch.getBoolPref("extensions.downloadbar.continuedownloadsonquit") && w == 0 && !allcompleted)	window.openDialog("chrome://downloadbar/content/downloads.xhtml", "about:downloads", "centerscreen,chrome,resizable");
 		
 	},
 	brwsrVrlyPrprts:Components.classes["@mozilla.org/intl/stringbundle;1"].getService(Components.interfaces.nsIStringBundleService).createBundle("chrome://downloadbar/locale/browserOverlay.properties"),
@@ -3946,7 +3961,7 @@ var DownloadBar = {
 		case "Fennec": break;
 		default: //"Firefox", "SeaMonkey"
 			let gBrowser=window.gBrowser;
-			gBrowser.selectedTab=gBrowser.addTab(URI,{relatedToCurrent: true});
+			gBrowser.selectedTab=gBrowser.addTab(URI,{relatedToCurrent: true , triggeringPrincipal: Services.scriptSecurityManager.getSystemPrincipal()});
 		}
 	},
 	gtTrgtPth:function(s){
@@ -4455,6 +4470,13 @@ var WindowListener = {
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_4_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.customfolder"));
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_4_menuitem.setAttribute("class", "menuitem-iconic");
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_4_menuitem);
+	var downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_5_menuitem = document.createXULElement("menuitem");
+	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_5_menuitem.setAttribute("id", "downloadsbar-sendto-cstm-clear");
+	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_5_menuitem.setAttribute("hidden", "true");
+	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_5_menuitem.setAttribute("label", DownloadBar.gtPrpVl("downloadbar.clr"));
+	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_5_menuitem.setAttribute("class", "menuitem-iconic");
+	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_5_menuitem.setAttribute("style", "-moz-image-region: rect(176px, 144px, 192px, 128px) !important; list-style-image: url('chrome://downloadbar/skin/images/Tango.png') !important;");
+	downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup_5_menuitem);
 	downloadbar_statusbar_menu_root_1_menupopup_8_menu.appendChild(downloadbar_statusbar_menu_root_1_menupopup_8_menu_1_menupopup);
 	downloadbar_statusbar_menu_root_1_menupopup.appendChild(downloadbar_statusbar_menu_root_1_menupopup_8_menu);
 	var downloadbar_statusbar_menu_root_1_menupopup_9_menuitem = document.createXULElement("menuitem");

@@ -33,7 +33,7 @@ var DownloadBarOpt = {
 			let prefs = Components.classes["@mozilla.org/preferences-service;1"].
 						getService(Components.interfaces.nsIPrefService).
 						getBranch("extensions.downloadbar.")
-			let viruscanpath=prefs.getComplexValue("viruscanpath", Components.interfaces.nsILocalFile).path;		
+			let viruscanpath=prefs.getComplexValue("viruscanpath", Components.interfaces.nsIFile).path;		
 			document.getElementById('downloadbar-opt-vrsscnpath').value=viruscanpath;
 		}
 		document.getElementById('downloadbar-opt-vrsscnbtn').addEventListener("command",DownloadBarOpt.lct,false);
@@ -205,9 +205,9 @@ var DownloadBarOpt = {
 			let prefs = Components.classes["@mozilla.org/preferences-service;1"].
 						getService(Components.interfaces.nsIPrefService).
 						getBranch("extensions.downloadbar.")
-			let audioplayerpath=prefs.getComplexValue("audioplayerpath", Components.interfaces.nsILocalFile).path;		
+			let audioplayerpath=prefs.getComplexValue("audioplayerpath", Components.interfaces.nsIFile).path;		
 			document.getElementById('downloadbar-opt-doflpth').value=audioplayerpath;
-			var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsILocalFile);
+			var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);
 			file.initWithPath(audioplayerpath);		
 			if(file.exists()){
 				var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService)
@@ -960,7 +960,7 @@ var DownloadBarOpt = {
 					var prefs = Components.classes["@mozilla.org/preferences-service;1"].
 								getService(Components.interfaces.nsIPrefService).
 								getBranch("extensions.downloadbar.");
-					prefs.setComplexValue("viruscanpath", Components.interfaces.nsILocalFile, fp.file);
+					prefs.setComplexValue("viruscanpath", Components.interfaces.nsIFile, fp.file);
 					document.getElementById('downloadbar-opt-vrsscnpath').value=fp.file.path;
 				}			
 			}
@@ -975,7 +975,7 @@ var DownloadBarOpt = {
 			var prefs = Components.classes["@mozilla.org/preferences-service;1"].
 						getService(Components.interfaces.nsIPrefService).
 						getBranch("extensions.downloadbar.");
-			prefs.setComplexValue("viruscanpath", Components.interfaces.nsILocalFile, fp.file);
+			prefs.setComplexValue("viruscanpath", Components.interfaces.nsIFile, fp.file);
 			document.getElementById('downloadbar-opt-vrsscnpath').value=fp.file.path;
 		}			
 	},
@@ -988,7 +988,7 @@ var DownloadBarOpt = {
 			var prefs = Components.classes["@mozilla.org/preferences-service;1"].
 						getService(Components.interfaces.nsIPrefService).
 						getBranch("extensions.downloadbar.");
-			prefs.setComplexValue("audioplayerpath", Components.interfaces.nsILocalFile, fp.file);
+			prefs.setComplexValue("audioplayerpath", Components.interfaces.nsIFile, fp.file);
 			document.getElementById('downloadbar-opt-doflpth').value=fp.file.path;
 			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService)
 			document.getElementById("downloadbar-opt-doplyr").setAttribute("src",ioService.newFileURI(fp.file).spec);

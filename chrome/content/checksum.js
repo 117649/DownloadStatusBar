@@ -31,7 +31,7 @@ var DownloadBarChksm = {
 		// hardcoded here for convenience
 		var path = path;
 		var f = Components.classes["@mozilla.org/file/local;1"]
-						  .createInstance(Components.interfaces.nsILocalFile);
+						  .createInstance(Components.interfaces.nsIFile);
 		f.initWithPath(path);
 		var istream = Components.classes["@mozilla.org/network/file-input-stream;1"]           
 								.createInstance(Components.interfaces.nsIFileInputStream);
@@ -84,7 +84,7 @@ var DownloadBarChksm = {
           
 			var path=path;
 			var file=Components.classes["@mozilla.org/file/local;1"]
-							  .createInstance(Components.interfaces.nsILocalFile);
+							  .createInstance(Components.interfaces.nsIFile);
 			file.initWithPath(path);
 			
 			this.file=file;
