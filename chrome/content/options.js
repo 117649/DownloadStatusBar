@@ -951,18 +951,19 @@ var DownloadBarOpt = {
 			var prompts = Components.classes["@mozilla.org/embedcomp/prompt-service;1"]
 									.getService(Components.interfaces.nsIPromptService);
 			var result = prompts.confirm(null, "Download Status Bar", document.getElementById("downloadbar-prprts").getString("vrscnnrlnfrst") + "\n" + document.getElementById("downloadbar-prprts").getString("vrscnnrlnsnd"));
-			if(result){
+			if (result) {
 				const nsIFilePicker = Components.interfaces.nsIFilePicker;
 				var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
-				fp.init(window, document.getElementById("downloadbar-prprts").getString("lctvrsscnnr") , nsIFilePicker.modeOpen);
-				var rv = fp.show();
-				if (rv == nsIFilePicker.returnOK || rv == nsIFilePicker.returnReplace) {
-					var prefs = Components.classes["@mozilla.org/preferences-service;1"].
-								getService(Components.interfaces.nsIPrefService).
-								getBranch("extensions.downloadbar.");
-					prefs.setComplexValue("viruscanpath", Components.interfaces.nsIFile, fp.file);
-					document.getElementById('downloadbar-opt-vrsscnpath').value=fp.file.path;
-				}			
+				fp.init(window, document.getElementById("downloadbar-prprts").getString("lctvrsscnnr"), nsIFilePicker.modeOpen);
+				fp.open(rv => {
+					if (rv == nsIFilePicker.returnOK || rv == nsIFilePicker.returnReplace) {
+						var prefs = Components.classes["@mozilla.org/preferences-service;1"].
+							getService(Components.interfaces.nsIPrefService).
+							getBranch("extensions.downloadbar.");
+						prefs.setComplexValue("viruscanpath", Components.interfaces.nsIFile, fp.file);
+						document.getElementById('downloadbar-opt-vrsscnpath').value = fp.file.path;
+					}
+				});
 			}
 		}		
 	},
@@ -970,29 +971,31 @@ var DownloadBarOpt = {
 		const nsIFilePicker = Components.interfaces.nsIFilePicker;
 		var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
 		fp.init(window, document.getElementById("downloadbar-prprts").getString("lctvrsscnnr"), nsIFilePicker.modeOpen);
-		var rv = fp.show();
-		if (rv == nsIFilePicker.returnOK || rv == nsIFilePicker.returnReplace) {
-			var prefs = Components.classes["@mozilla.org/preferences-service;1"].
-						getService(Components.interfaces.nsIPrefService).
-						getBranch("extensions.downloadbar.");
-			prefs.setComplexValue("viruscanpath", Components.interfaces.nsIFile, fp.file);
-			document.getElementById('downloadbar-opt-vrsscnpath').value=fp.file.path;
-		}			
+		fp.open(rv => {
+			if (rv == nsIFilePicker.returnOK || rv == nsIFilePicker.returnReplace) {
+				var prefs = Components.classes["@mozilla.org/preferences-service;1"].
+					getService(Components.interfaces.nsIPrefService).
+					getBranch("extensions.downloadbar.");
+				prefs.setComplexValue("viruscanpath", Components.interfaces.nsIFile, fp.file);
+				document.getElementById('downloadbar-opt-vrsscnpath').value = fp.file.path;
+			}
+		});
 	},
 	dolct:function(){
 		const nsIFilePicker = Components.interfaces.nsIFilePicker;
 		var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
 		fp.init(window, document.getElementById("downloadbar-prprts").getString("lctaudiofl"), nsIFilePicker.modeOpen);
-		var rv = fp.show();
-		if (rv == nsIFilePicker.returnOK || rv == nsIFilePicker.returnReplace) {
-			var prefs = Components.classes["@mozilla.org/preferences-service;1"].
-						getService(Components.interfaces.nsIPrefService).
-						getBranch("extensions.downloadbar.");
-			prefs.setComplexValue("audioplayerpath", Components.interfaces.nsIFile, fp.file);
-			document.getElementById('downloadbar-opt-doflpth').value=fp.file.path;
-			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService)
-			document.getElementById("downloadbar-opt-doplyr").setAttribute("src",ioService.newFileURI(fp.file).spec);
-		}			
+		fp.open(rv => {
+			if (rv == nsIFilePicker.returnOK || rv == nsIFilePicker.returnReplace) {
+				var prefs = Components.classes["@mozilla.org/preferences-service;1"].
+					getService(Components.interfaces.nsIPrefService).
+					getBranch("extensions.downloadbar.");
+				prefs.setComplexValue("audioplayerpath", Components.interfaces.nsIFile, fp.file);
+				document.getElementById('downloadbar-opt-doflpth').value = fp.file.path;
+				var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService)
+				document.getElementById("downloadbar-opt-doplyr").setAttribute("src", ioService.newFileURI(fp.file).spec);
+			}
+		});
 	},
 	setWidth:function(){
 

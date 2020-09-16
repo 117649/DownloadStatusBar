@@ -90,39 +90,39 @@
 						<vbox pack="center"><checkbox label="&downloadbaropt.attclswhndlcmp;" id="downloadbar-opt-clsbrwhndwnldscmplt" /></vbox>
 						<hbox>
 							<vbox pack="center"><label value="&downloadbaropt.ftr;" /></vbox>					
-							<textbox id="downloadbar-opt-ttclsscnd" flex="1" type="number" increment="1" />
+							<html:input id="downloadbar-opt-ttclsscnd" flex="1" type="number" increment="1" />
 							<vbox pack="center"><label value="&downloadbaropt.scnds;" /></vbox>
 						</hbox>	
 					  </row>
 					  <row>
 						<hbox>
 							<vbox pack="center"><label value="&downloadbaropt.ttclrthsfltyps;" /></vbox>
-							<vbox pack="center" flex="1"><textbox id="downloadbar-opt-ttclrfltyps" /></vbox>
+							<vbox pack="center" flex="1"><html:input type="text" id="downloadbar-opt-ttclrfltyps" /></vbox>
 						</hbox>
 						<hbox>
 							<vbox pack="center"><label value="&downloadbaropt.ftr;" /></vbox>
-							<textbox id="downloadbar-opt-ttclrscnd" flex="1" type="number" increment="1" />
+							<html:input id="downloadbar-opt-ttclrscnd" flex="1" type="number" increment="1" />
 							<vbox pack="center"><label value="&downloadbaropt.scnds;" /></vbox>
 						</hbox>					
 					  </row>
 					</rows>
 				</grid>			
-				<groupbox>
-				<caption label="&downloadbaropt.vrscn;" />
+				<html:fieldset>
+				<html:legend>&downloadbaropt.vrscn;</html:legend>
 					<hbox>
 						<vbox pack="center"><label value="&downloadbaropt.vrscnnrpth;" /></vbox>
-						<textbox id="downloadbar-opt-vrsscnpath" flex="1" />
+						<html:input type="text" id="downloadbar-opt-vrsscnpath" flex="1" />
 						<button id="downloadbar-opt-vrsscnbtn" label="&downloadbaropt.vrscnlct;" />
 					</hbox>
-					<hbox><vbox pack="center"><label value="&downloadbaropt.dsbscnfltyps;" /></vbox><textbox id="downloadbar-opt-scnxcldfltyps" flex="1"/></hbox>
-					<hbox><vbox pack="center"><label value="&downloadbaropt.vrsscnrgmnts;" /></vbox><textbox id="downloadbar-opt-vrsscnrgmnts" flex="1"/></hbox>
+					<hbox><vbox pack="center"><label value="&downloadbaropt.dsbscnfltyps;" /></vbox><html:input type="text" id="downloadbar-opt-scnxcldfltyps" flex="1"/></hbox>
+					<hbox><vbox pack="center"><label value="&downloadbaropt.vrsscnrgmnts;" /></vbox><html:input type="text" id="downloadbar-opt-vrsscnrgmnts" flex="1"/></hbox>
 					<checkbox id="downloadbar-opt-tmtcvrsscan" label="&downloadbaropt.ttscndwnldfl;" />
-				</groupbox>		
-				<groupbox>
-				<caption label="&downloadbaropt.ntfctn;" />
+				</html:fieldset>		
+				<html:fieldset>
+				<html:legend>&downloadbaropt.ntfctn;</html:legend>
 					<hbox>
 						<vbox pack="center"><label value="&downloadbaropt.doflpth;" /></vbox>
-						<textbox id="downloadbar-opt-doflpth" flex="1" />
+						<html:input type="text" id="downloadbar-opt-doflpth" flex="1" />
 						<button id="downloadbar-opt-dofllct" label="&downloadbaropt.dofllct;" />
 					</hbox>
 					<hbox style="padding-top:10px;padding-bottom:5px;"><vbox pack="center" style="margin-right:10px;"><label value="&downloadbaropt.prvwsnd;" /></vbox><vbox flex="1"><html:audio src="" id="downloadbar-opt-doplyr" preload="auto" controls="controls"></html:audio></vbox></hbox>
@@ -130,7 +130,7 @@
 					<hbox pack="end" id="downloadbar-opt-plysndrst">
 						<button label="&downloadbaropt.rststtngs;" />
 					</hbox>							
-				</groupbox>
+				</html:fieldset>
 			</vbox>
 			</tabpanel>
 			<tabpanel id="">
@@ -142,8 +142,8 @@
 						</columns>
 						<rows>
 							<row>
-								<groupbox flex="1" id="colorgrid" class="colorgroupbox">
-								<caption label="&downloadbaropt.clr;" />
+								<html:fieldset flex="1" id="colorgrid" class="colorgroupbox">
+								<html:legend>&downloadbaropt.clr;</html:legend>
 									<grid>
 										<columns>
 										  <column flex="1"/>
@@ -195,37 +195,37 @@
 									<hbox pack="end" style="margin-top:10px;" id="downloadbar-opt-dwnclrrst">
 										<button label="&downloadbaropt.rststtngs;" />
 									</hbox>					
-								</groupbox>	
-								<groupbox style="padding-right:10px;">
-								<caption label="&downloadbaropt.spdd;" />
+								</html:fieldset>	
+								<html:fieldset style="padding-right:10px;">
+								<html:legend>&downloadbaropt.spdd;</html:legend>
 									<hbox align="center">
 										<spacer flex="12"/>
-										<textbox value="0" disabled="true" maxlength="5" size="5" />
+										<html:input type="text" value="0" disabled="true" maxlength="5" size="5" />
 										<label value="-"/>						
-										<textbox id="downloadbar-opt-slwstspdtxt" type="number" increment="10" maxlength="5" size="5" />
+										<html:input id="downloadbar-opt-slwstspdtxt" type="number" increment="10" maxlength="5" size="5" />
 										<label value="KB/s"/>						
 										<colorpicker type="button" id="downloadbar-opt-slwstspdclr" />
 									</hbox>
 									<hbox align="center">
 										<spacer flex="12"/>
-										<textbox id="downloadbar-opt-vrgspdfrsttxtbxdsbld" disabled="true" maxlength="5" size="5" />
+										<html:input type="text" id="downloadbar-opt-vrgspdfrsttxtbxdsbld" disabled="true" maxlength="5" size="5" />
 										<label value="-"/>
-										<textbox id="downloadbar-opt-vrgspdfrsttxtbx" type="number" increment="10" maxlength="5" size="5" />
+										<html:input id="downloadbar-opt-vrgspdfrsttxtbx" type="number" increment="10" maxlength="5" size="5" />
 										<label value="KB/s"/>						
 										<colorpicker type="button" id="downloadbar-opt-vrgspdfrstclr" />
 									</hbox>
 									<hbox align="center">
 										<spacer flex="12"/>
-										<textbox id="downloadbar-opt-vrgspdscndtxtbxdsbld" disabled="true" maxlength="5" size="5" />
+										<html:input type="text" id="downloadbar-opt-vrgspdscndtxtbxdsbld" disabled="true" maxlength="5" size="5" />
 										<label value="-"/>
-										<textbox id="downloadbar-opt-vrgspdscndtxtbx" type="number" increment="10" maxlength="5" size="5" />
+										<html:input id="downloadbar-opt-vrgspdscndtxtbx" type="number" increment="10" maxlength="5" size="5" />
 										<label value="KB/s"/>						
 										<colorpicker type="button" id="downloadbar-opt-vrgspdscndclr" />
 									</hbox>
 									<hbox align="center">
 										<spacer flex="12"/>          
 										<label value="&downloadbaropt.over; >"/>						
-										<textbox id="downloadbar-opt-fststtxtbxdsbld" disabled="true" type="number" increment="10" maxlength="5" size="5"/>
+										<html:input id="downloadbar-opt-fststtxtbxdsbld" disabled="true" type="number" increment="10" maxlength="5" size="5"/>
 										<label value="KB/s"/>						
 										<colorpicker type="button" id="downloadbar-opt-fstsspdclr" />
 									</hbox>
@@ -233,42 +233,42 @@
 									<hbox pack="end" style="margin-top:10px;" id="downloadbar-opt-spdclrrst">
 										<button label="&downloadbaropt.rststtngs;" />
 									</hbox>						
-								</groupbox>	
+								</html:fieldset>	
 						  </row>
 						  <row>
 								<vbox flex="2">
-									<groupbox flex="12">
-									<caption label="&downloadbaropt.srntrfc;" />
+									<html:fieldset flex="12">
+									<html:legend>&downloadbaropt.srntrfc;</html:legend>
 										<hbox>
 											<radiogroup id="downloadbar-opt-srntrfcrdgrp">					
 												<radio id="downloadbar-opt-dwnldbrrdio" label="&downloadbaropt.dnwldbr;" value="bar" />
 												<radio id="downloadbar-opt-dwnldpnlrdio" label="&downloadbaropt.dnwlpnl;" value="panel" />
 											</radiogroup>	
 										</hbox>					
-									</groupbox>
+									</html:fieldset>
 									<hbox>
-										<groupbox flex="1">
-										<caption label="&downloadbaropt.prgrsntfcts;" />
+										<html:fieldset flex="1">
+										<html:legend>&downloadbaropt.prgrsntfcts;</html:legend>
 											<vbox>
 												<checkbox label="&downloadbaropt.prgrssntfct;" id="downloadbar-opt-prgrssntfct" />
 												<checkbox label="&downloadbaropt.spdntfct;" id="downloadbar-opt-spdntfct" />		
 												<checkbox label="&downloadbaropt.tmntfct;" id="downloadbar-opt-tmntfct" />				
 											</vbox>			
-										</groupbox>
-										<groupbox flex="1">
-										<caption label="&downloadbaropt.prgrsslgnmnt;" />
+										</html:fieldset>
+										<html:fieldset flex="1">
+										<html:legend>&downloadbaropt.prgrsslgnmnt;</html:legend>
 											<vbox>
 												<radiogroup id="downloadbar-opt-prgrsslngmntrdgrp">					
 													<radio id="downloadbar-opt-hrzntllgnmntrdio" label="&downloadbaropt.hrzntllgnmnt;" value="horizontal" />
 													<radio id="downloadbar-opt-vrtcllgnmntrdio" label="&downloadbaropt.vrtcllgnmnt;" value="vertical" />
 												</radiogroup>		
 											</vbox>			
-										</groupbox>
+										</html:fieldset>
 									</hbox>
 								</vbox>
 								<vbox flex="1">
-									<groupbox flex="1">
-									<caption label="&downloadbaropt.dwldtm;" />					
+									<html:fieldset flex="1">
+									<html:legend>&downloadbaropt.dwldtm;</html:legend>					
 									  <grid>
 										<columns>
 										  <column flex="1"/>
@@ -277,29 +277,29 @@
 										<rows>
 										  <row>
 												<vbox pack="center" style="width:100px;"><label value="&downloadbaropt.width;" /></vbox>
-												<textbox id="downloadbar-opt-dwnldtmwdth" type="number" increment="10" maxlength="5" size="10"/>
+												<html:input id="downloadbar-opt-dwnldtmwdth" type="number" increment="10" maxlength="5" size="10"/>
 										  </row>
 										  <row>
 												<vbox pack="center" style="width:100px;"><label value="&downloadbaropt.height;" /></vbox>
-												<textbox id="downloadbar-opt-dwnldtmhght" type="number" increment="1" maxlength="5" size="10" />						
+												<html:input id="downloadbar-opt-dwnldtmhght" type="number" increment="1" maxlength="5" size="10" />						
 										  </row>
 										  <row>
 												<vbox pack="center" style="width:100px;"><label value="&downloadbaropt.flnmszfntsz;" /></vbox>
-												<textbox id="downloadbar-opt-flnmsz" type="number" increment="1" maxlength="5" size="10" />
+												<html:input id="downloadbar-opt-flnmsz" type="number" increment="1" maxlength="5" size="10" />
 										  </row>
 										  <row>
 												<vbox pack="center" style="width:100px;"><label value="&downloadbaropt.prgrssszfntsz;" /></vbox>
-												<textbox id="downloadbar-opt-prgrsssz" type="number" increment="1" maxlength="5" size="10" />						
+												<html:input id="downloadbar-opt-prgrsssz" type="number" increment="1" maxlength="5" size="10" />						
 										  </row>
 										</rows>
 									  </grid>					
-									</groupbox>									
+									</html:fieldset>									
 								</vbox>	
 						  </row>
 						</rows>
 					</grid>
-					<groupbox style="padding-right:10px;">
-					<caption label="&downloadbaropt.bttns;" />
+					<html:fieldset style="padding-right:10px;">
+					<html:legend>&downloadbaropt.bttns;</html:legend>
 						<checkbox label="&downloadbaropt.hdclrbttn;" id="downloadbar-opt-hdclrbttn" />				
 						<checkbox label="&downloadbaropt.hddwnldsbttn;" id="downloadbar-opt-hddwnldsbttn" />
 						<hbox align="center">
@@ -310,7 +310,7 @@
 								<radio id="downloadbar-opt-bttntyptxtrdio" label="&downloadbaropt.txt;" value="txt" />
 							</radiogroup>							
 						</hbox>							
-					</groupbox>						
+					</html:fieldset>						
 				</vbox>
 			</tabpanel>
 		</tabpanels>
