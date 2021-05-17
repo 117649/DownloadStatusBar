@@ -4934,8 +4934,8 @@ var WindowListener = {
 	}
 };
 
-async function install(data) {
-	(await AddonManager.getAddonByID(`${data.id}`)).__AddonInternal__.signedState = AddonManager.SIGNEDSTATE_NOT_REQUIRED;
+function install(data) {
+
 }
 
 function uninstall(data, reason) {
@@ -5005,6 +5005,13 @@ function startup(data, reason) {
 
 	dbcomp.init();
 
+	(async function () {
+		try {
+			Services.prefs.getBoolPref("extensions.downloadbar.hide_warring") ?
+				(await AddonManager.getAddonByID(`${data.id}`)).__AddonInternal__.signedState = AddonManager.SIGNEDSTATE_NOT_REQUIRED
+				: (await AddonManager.getAddonByID(`${data.id}`)).__AddonInternal__.signedState === AddonManager.SIGNEDSTATE_NOT_REQUIRED ? (await AddonManager.getAddonByID(`${data.id}`)).__AddonInternal__.signedState = AddonManager.SIGNEDSTATE_MISSING : '';
+		} catch (error) { }
+	}());
 }
 
 async function shutdown(data, reason) {
